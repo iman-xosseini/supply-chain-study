@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-10",
+    "url": "https://asianews.network/overcoming-looming-economic-challenges-in-2023/",
+    "body_preview": "DHAKA - In 2023, several economies globally will face recession, while three large economies - the US, the EU and China - will continue to slow down, as the International Monetary Fund (IMF) observed on the eve of the new year. In October 2022, the IMF projected global economic growth to decrease from 3.2 percent in 2022 to 2.7 percent in 2023. This has been causing difficulties across countries and affecting the living standards of low-income households.\n\nFor Bangladesh, though inflation has su"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar supply shortage",
+      "edge_label": "drives depreciation",
+      "evidence_quote": "The supply shortage of dollars in the market has led to a free fall of the taka against the US dollar.",
+      "scope_justification": "The article explicitly ties a shortage of dollars to a 'free fall of the taka against the US dollar', directly describing USD–BDT exchange-rate movement matching the feature's scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The supply shortage of dollars in the market has led to a free fall of the taka against the US dollar.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence \"The supply shortage of dollars in the market has led to a free fall of the taka against the US dollar.\" appears in the article, which explicitly states a causal link from dollar shortage to taka depreciation at the country (Bangladesh) level."
+      }
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "US dollar injection",
+      "edge_label": "artificially strengthens",
+      "evidence_quote": "Policymakers have kept the taka artificially stronger against the dollar for a long time by injecting US dollars into the market.",
+      "scope_justification": "The article states that injecting US dollars kept the taka 'artificially stronger against the dollar', directly addressing USD–BDT exchange-rate behavior consistent with the feature's scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Policymakers have kept the taka artificially stronger against the dollar for a long time by injecting US dollars into the market.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence stating that policymakers kept the taka 'artificially stronger against the dollar by injecting US dollars into the market,' which explicitly asserts a causal link at the national (Bangladesh) exchange-rate level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-10",
+      "currency_log_return",
+      "drives depreciation",
+      "dollar supply shortage"
+    ],
+    [
+      "2023-01-10",
+      "currency_log_return",
+      "artificially strengthens",
+      "US dollar injection"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 2
+}

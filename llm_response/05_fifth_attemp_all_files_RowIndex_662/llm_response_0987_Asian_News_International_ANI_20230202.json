@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Asian News International (ANI)",
+    "date": "2023-02-02",
+    "url": "https://www.aninews.in/news/world/asia/sheikh-hasina-govt-turned-the-tide-pushed-bangladesh-toward-development20230202122759/",
+    "body_preview": "Dhaka [Bangladesh], February 2 (ANI): The Sheikh Hasina-led Awami League government is taking Bangladesh to extraordinary heights in terms of developmental parameters, reported Bangla Daily.\n\nOwing to its remarkable story of poverty reduction and development under the Awami League government, Bangladesh is on track to graduate from the UN's Least Developed Countries (LDC) list by 2026.\n\nDespite taking over the country in a poor state of affairs from the BNP-Jamaat alliance which had unleashed a "
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Economic Zones Act enacted",
+      "edge_label": "promotes export growth",
+      "evidence_quote": "enacting the Bangladesh Economic Zones Act, 2010, establishing economic zones in areas that can help develop export-orient industries and attract Foreign Direct Investments (FDI).",
+      "scope_justification": "The article explicitly states the Act will 'help develop export-orient industries' at the national policy level, which pertains to aggregate exports relevant to the country's trade balance."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "promotes export growth",
+      "Economic Zones Act enacted"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

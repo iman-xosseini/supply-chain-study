@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-23",
+    "url": "https://www.bssnews.net/news-flash/112117",
+    "body_preview": "DHAKA, Feb 23, 2023 (BSS) - Prime Minister Sheikh Hasina today asked agriculturists to carry on their efforts to increase food yield keeping in mind the adverse global circumstances and climate change.\n\n\"In view of the (global) situation, we have to produce our crops,\" she said, opening golden jubilee celebrations of Bangladesh Rice Research Institute (BRRI).\n\nShe added that climate change phenomenon also required Bangladesh to produce new crop varieties alongside the traditional crops.\n\nSheikh "
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "Produce new crop varieties",
+      "edge_label": "necessitates production",
+      "evidence_quote": "climate change phenomenon also required Bangladesh to produce new crop varieties alongside the traditional crops.",
+      "scope_justification": "The quote explicitly states climate change forces Bangladesh to produce new crop varieties, which is an explicit change/introduction at the level of specific commercial items (products)."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "necessitates production",
+      "Produce new crop varieties"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

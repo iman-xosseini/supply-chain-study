@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-04-24",
+    "url": "https://www.bssnews.net/business/122184",
+    "body_preview": "DHAKA, April 24, 2023 (BSS) - Stocks today witnessed positive trends after five-day Eid holiday as investors are showing their buying appetite on sector-wise issues.\n\nDSEX, the key index of the Dhaka Stock Exchange (DSE), went up by 23.51 points or 0.38 percent to settle at 6252.16. The DS30 index, comprising blue chips, and the DSE Shariah Index also advanced 10.20 points and 5.59 points to finish at 2,213.04 and 1,354.99 respectively.\n\nTurnover, another important indicator of the market, stood"
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "Post-Eid market rise",
+      "edge_label": "drives market rise",
+      "evidence_quote": "Stocks today witnessed positive trends after five-day Eid holiday as investors are showing their buying appetite on sector-wise issues.",
+      "scope_justification": "The article explicitly attributes positive trends in the DSE equity market to investors' buying appetite and also reports DSEX rising, matching the feature's overall equity-market scope."
+    }
+  ],
+  "triplets": [
+    [
+      "stock_market_close",
+      "drives market rise",
+      "Post-Eid market rise"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

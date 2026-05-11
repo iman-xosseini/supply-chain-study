@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-06-05",
+    "url": "https://www.daily-sun.com/post/693276/PM-sees-next-election-as-a-challenge",
+    "body_preview": "DHAKA - Awami League President and Prime Minister Sheikh Hasina today urged the party leaders and activists to take all out preparations for the next national polls saying it would be a challenge due to multifaceted conspiracies.\n\n\"The next election is a challenge because there are conspiracies from various quarters,\" she said while exchanging views with the leaders, activists of Awami League (AL) and its associates bodies at her official residence Ganabhaban.\n\nSome people raise misconceptions a"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "boost agricultural production",
+      "edge_label": "increases exports",
+      "evidence_quote": "boost up agricultural production by not keeping any piece of land uncultivated in the country, in order to meet the local demand and also export those.",
+      "scope_justification": "The article describes a national-level policy urging increased agricultural production to enable exports, which directly pertains to the country-wide exports component of the balance of trade.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "boost up agricultural production by not keeping any piece of land uncultivated in the country, in order to meet the local demand and also export those.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article urging to \"boost up agricultural production... in order to meet the local demand and also export those,\" which explicitly links increasing production as a means to enable exports; the statement is made at the national level, matching the country-wide balance-of-trade scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-05",
+      "balance_of_trade",
+      "increases exports",
+      "boost agricultural production"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

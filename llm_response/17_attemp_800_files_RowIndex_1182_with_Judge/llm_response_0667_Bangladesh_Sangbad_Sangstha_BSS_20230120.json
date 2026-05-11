@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-20",
+    "url": "https://www.bssnews.net/business/106297",
+    "body_preview": "DHAKA, Jan 20, 2023 (BSS) - Commerce Minister Tipu Munshi today sought duty\n\nfree benefits from the United States of America (USA) in importing cotton.\n\n\"Bangladesh is the second largest exporter of Ready-made Garments (RMG) in\n\nthe world. About 82 percent of Bangladesh's total exports come from RMG. The\n\nUSA is a major cotton producer. Every year, Bangladesh imports a huge amount\n\nof cotton from different countries for use in garment factories. If the USA\n\ngrants Bangladesh duty-free trade faci"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "low domestic cotton production",
+      "edge_label": "necessitates imports",
+      "evidence_quote": "production is about 1.6 percent of the total demand, he added. He said, 'Bangladesh has to import the remaining huge amount of cotton from different countries.'",
+      "scope_justification": "The article links a national cotton production shortfall (1.6% of demand) to the need to import the remaining quantity, matching the feature's country-level import volume driven by raw-material needs.",
+      "verification": {
+        "quote_similarity": 0.991,
+        "quote_best_match": "production is about 1.6 percent of the total demand, he added. He said, \"Bangladesh has to import the remaining huge amount of cotton from different countries.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted lines verbatim and explicitly states that because domestic production is only about 1.6% of demand, \"Bangladesh has to import the remaining huge amount of cotton from different countries,\" which directly links the low national production to the necessity of imports at the country level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-20",
+      "imports",
+      "necessitates imports",
+      "low domestic cotton production"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

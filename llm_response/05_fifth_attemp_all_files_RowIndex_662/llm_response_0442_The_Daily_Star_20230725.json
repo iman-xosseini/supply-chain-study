@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "The Daily Star",
+    "date": "2023-07-25",
+    "url": "https://www.thedailystar.net/business/economy/news/cement-makers-call-cutting-assessment-value-import-stage-3377796",
+    "body_preview": "The Bangladesh Cement Manufacturers Association (BCMA) has urged the Chattogram Custom House to cut the assessment value of three raw materials as their prices have fallen in international markets.\n\nCement producers say the production cost has increased as the assessment value of cement clinker, granulated slag and gypsum is higher than their prices in the international market.\n\nThey demanded that the assessment value of cement clinker be reduced from $60 to $50 per tonne, granulated slag from $"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "US dollar crisis impact",
+      "edge_label": "puts producers in a tight spot",
+      "evidence_quote": "the country's ongoing US dollar crisis, the complexity in opening letters of credit and the higher dollar rate have put producers in a tight spot.",
+      "scope_justification": "The article explicitly links a national 'US dollar crisis' and 'higher dollar rate' to producers' difficulties and also states the cement industry 'entirely depends on imports', matching the feature's national exchange-rate effect on import-related costs."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "puts producers in a tight spot",
+      "US dollar crisis impact"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

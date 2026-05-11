@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Myanmar News.Net",
+    "date": "2023-05-16",
+    "url": "https://www.myanmarnews.net/news/273832902/bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Taka lost value",
+      "edge_label": "depreciates sharply",
+      "evidence_quote": "Taka, the Bangladeshi currency, has lost nearly 25 per cent of its value against the dollar since Russia invaded Ukraine earlier this year",
+      "scope_justification": "The article reports a national-level ~25% depreciation of the Taka versus the US dollar since the invasion, which directly matches the feature's scope of exchange-rate volatility."
+    },
+    {
+      "feature": "production_sales_ratio",
+      "event_summary": "Yuan trade reduces exports",
+      "edge_label": "reduces export revenue",
+      "evidence_quote": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.",
+      "scope_justification": "The article explicitly states a policy shift (moving to Yuan) will 'lower export revenue'—a direct reduction in sales—which pertains to the sales side of the production-sales balance the feature measures."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "depreciates sharply",
+      "Taka lost value"
+    ],
+    [
+      "production_sales_ratio",
+      "reduces export revenue",
+      "Yuan trade reduces exports"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,79 @@
+{
+  "article": {
+    "source": "Yahoo! Finance",
+    "date": "2023-05-18",
+    "url": "https://finance.yahoo.com/news/apparel-makers-cyclone-hit-bangladesh-093930922.html",
+    "body_preview": "DHAKA (Reuters) - Apparel makers in Bangladesh are considering rare bulk exports by air to Europe and the United States, as they race to meet deadlines and avoid cancellations after a cyclone delayed shipments, caused power cuts and disrupted production.\n\nThe crunch could disrupt summer clothes supplies for retailers such as Walmart, Gap Inc, H&M, VF Corp, Zara and American Eagle Outfitters, some of Bangladesh's largest export customers.\n\nCyclone Mocha, one of the strongest storms to hit the reg"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "cyclone delays shipments",
+      "edge_label": "delays shipments",
+      "evidence_quote": "after a cyclone delayed shipments, caused power cuts and disrupted production.",
+      "scope_justification": "The article explicitly describes shipment delays caused by the cyclone, matching the Delivery feature's logistics-performance scope (shipment delays affecting exports)."
+    },
+    {
+      "feature": "Production",
+      "event_summary": "production disrupted by cyclone",
+      "edge_label": "disrupts production",
+      "evidence_quote": "after a cyclone delayed shipments, caused power cuts and disrupted production.",
+      "scope_justification": "The article states production was disrupted by the cyclone, which directly pertains to the Production feature's scope of manufactured output."
+    },
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "power cuts stress factories",
+      "edge_label": "causes power cuts",
+      "evidence_quote": "Power cuts in the last two months, first due to a scorching heatwave, and then the cyclone, have put more stress on apparel companies.",
+      "scope_justification": "The article links power cuts (an operational disruption) to stress on apparel firms, matching the Factory_Issue definition covering power outages and operational disruptions."
+    },
+    {
+      "feature": "delivery_sales_ratio",
+      "event_summary": "late delivery risks orders",
+      "edge_label": "threatens orders",
+      "evidence_quote": "if goods cannot be delivered on time buyers either seek heavy discounts or threaten to cancel orders.",
+      "scope_justification": "The article explains missed deliveries lead buyers to demand discounts or cancel orders, which directly affects order fulfillment relative to sales as defined by delivery_sales_ratio."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "delays shipments",
+      "cyclone delays shipments"
+    ],
+    [
+      "Production",
+      "disrupts production",
+      "production disrupted by cyclone"
+    ],
+    [
+      "Factory_Issue",
+      "causes power cuts",
+      "power cuts stress factories"
+    ],
+    [
+      "delivery_sales_ratio",
+      "threatens orders",
+      "late delivery risks orders"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 4
+}

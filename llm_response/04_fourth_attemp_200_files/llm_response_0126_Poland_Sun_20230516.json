@@ -1,0 +1,54 @@
+{
+  "article": {
+    "source": "Poland Sun",
+    "date": "2023-05-16",
+    "url": "https://www.polandsun.com/news/273832902/bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "government discourages imports",
+      "edge_label": "discourages imports",
+      "evidence_quote": "This has compelled the government to discourage unnecessary imports and cut spending, including limiting foreign trips by its employees.",
+      "scope_justification": "The article describes a national government policy to 'discourage unnecessary imports', which directly pertains to country-wide import volumes as defined by the feature."
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Move to Yuan",
+      "edge_label": "lowers export revenue",
+      "evidence_quote": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.",
+      "scope_justification": "The article explicitly states a policy change would 'lower export revenue' at the national level, which directly affects the country-wide difference between imports and exports."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Taka 25% depreciation",
+      "edge_label": "causes depreciation",
+      "evidence_quote": "Taka, the Bangladeshi currency, has lost nearly 25 per cent of its value against the dollar since Russia invaded Ukraine earlier this year, rocking global energy and commodities markets.",
+      "scope_justification": "The article reports a national-level exchange-rate movement ('lost nearly 25 per cent of its value against the dollar'), which matches the feature's focus on USD/BDT exchange-rate volatility."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "discourages imports",
+      "government discourages imports"
+    ],
+    [
+      "balance_of_trade",
+      "lowers export revenue",
+      "Move to Yuan"
+    ],
+    [
+      "currency_log_return",
+      "causes depreciation",
+      "Taka 25% depreciation"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 3
+}

@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-04-25",
+    "url": "https://www.laprensalatina.com/imf-team-reviews-bangladeshs-compliance-with-loan-package-conditions/",
+    "body_preview": "Dhaka, Apr 25 (EFE).- A team of the International Monetary Fund started a weeklong visit to Bangladesh on Tuesday to review the implementation strategies for reforms it had proposed while approving a $4.7 billion support loan package for the country in January.\n\nThe IMF Asia and Pacific Division head, Rahul Anand, will lead the delegation in meetings with Bangladesh Bank, the finance ministry, and National Board of Revenue officials until May 2, authorities said.\n\nMd Mesbaul Haque, executive dir"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "War in Ukraine effect",
+      "edge_label": "depreciates currency",
+      "evidence_quote": "It has led to a sharp widening of Bangladesh's current account deficit, a depreciation of its currency, the taka, and a decline in foreign exchange reserves.",
+      "scope_justification": "The article explicitly states a depreciation of Bangladesh's national currency, the taka, which matches the feature's country-level exchange rate movement scope."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "depreciates currency",
+      "War in Ukraine effect"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

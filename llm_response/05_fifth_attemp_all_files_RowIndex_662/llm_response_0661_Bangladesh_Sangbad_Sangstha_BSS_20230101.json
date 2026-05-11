@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-01",
+    "url": "https://www.bssnews.net/news/102819",
+    "body_preview": "RAJSHAHI, Jan 1, 2023 (BSS) - Around 1.65 lakh tonnes of pulses are expected to be produced in all eight districts of Rajshahi division during the current Rabi season, officials said.\n\nVarious types of pulses, including black gram, lentil, grass-pea, chickpea, pea (motorshuti), winter mung bean and pigeon-pea, are likely to be produced from around 1.24 lakh hectares of land.\n\nTarget has been set to produce 61,433 tonnes of pulses from 42,808 hectares of land in four districts of Rajshahi Agricul"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "increased lentil production",
+      "edge_label": "lessens import pressure",
+      "evidence_quote": "the yield will no doubt lessen pressure on import.",
+      "scope_justification": "The article explicitly refers to national-level imports ('The country has to import a huge quantity of pulses') and states increased domestic yield will lessen pressure on import, which directly concerns the imports component of the country's balance of trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "lessens import pressure",
+      "increased lentil production"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-07-19",
+    "url": "https://www.daily-sun.com/post/701026/Trade-bodies-for-continuing-Black-Sea-Grain-Initiative-Deal",
+    "body_preview": "DHAKA - Six trade bodies have laid emphasis on continuing the 'Black Sea Grain Initiative (BSGI) Agreement' to avert human catastrophe.\n\nThey observed that the Bangladesh businesses are concerned about the disruption of smooth supply of wheat to feed millions of people around the world due to Russia's decision to axe the Black Sea Grain Initiative (\"BSGI\") from 17 July, said a press release today.\n\nThe BSGI deal negotiated by the United Nations and Turkey allowed Ukraine to export millions of to"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "BSGI axing disrupts wheat",
+      "edge_label": "disrupts supply",
+      "evidence_quote": "disruption of smooth supply of wheat to feed millions of people around the world due to Russia's decision to axe the Black Sea Grain Initiative",
+      "scope_justification": "The article explicitly links the axing of the Black Sea Grain Initiative to a disruption in the smooth supply of wheat, which is a logistics/supply flow issue matching the Delivery definition."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "disrupts supply",
+      "BSGI axing disrupts wheat"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

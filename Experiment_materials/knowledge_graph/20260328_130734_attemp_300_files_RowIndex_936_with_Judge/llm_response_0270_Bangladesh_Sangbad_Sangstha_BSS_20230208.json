@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-08",
+    "url": "https://www.bssnews.net/agriculture-news/109558",
+    "body_preview": "RAJSHAHI, Feb 8, 2023 (BSS) - Scientists and researchers have unequivocally called for boosting mustard yield after the best uses of high yielding varieties, including BARI Sharisha-17, and modern technologies to meet the gradually mounting demand of the cash crop.\n\nEnhancing domestic production can be the crucial means of meeting the local demands through lessening the pressure on import of the edible oil.\n\nThey made the observation while addressing a farmers' field day meeting at Basantapur vi"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "boost domestic oilseed production",
+      "edge_label": "reduces import pressure",
+      "evidence_quote": "there is no way but to boost domestic production to cut the import pressure",
+      "scope_justification": "The article cites national edible-oil imports ('import edible oil worth around Taka 30,000 crore…every year') and explicitly states boosting domestic production would cut import pressure, which affects country-wide imports in the balance_of_trade.",
+      "verification": {
+        "quote_similarity": 0.987,
+        "quote_best_match": "there is no way but to boost domestic production to cut the import pressure,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact line '...there is no way but to boost domestic production to cut the import pressure' appears in the article, which explicitly states the causal link. The article uses country-level import figures (Taka 30,000 crore annually; national production vs demand), so the scope matches a national balance-of-trade implication."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-08",
+      "balance_of_trade",
+      "reduces import pressure",
+      "boost domestic oilseed production"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

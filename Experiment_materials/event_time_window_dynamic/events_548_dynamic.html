@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Time Window (Dynamic)</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  html, body { margin:0; padding:0; width:100%; height:100%;
+                overflow:hidden; background:#fdf6ec; font-family:Arial,sans-serif; }
+  #mynetwork { width:100vw; height:100vh; }
+  #controls {
+    position:fixed; top:12px; left:12px; z-index:10000;
+    background:rgba(253,246,236,0.95); padding:14px 18px; border-radius:10px;
+    border:1px solid #d4c5a9;
+    box-shadow:0 2px 12px rgba(0,0,0,0.10);
+    color:#3d3d3d; font-size:14px;
+  }
+  #controls label { font-weight:bold; margin-right:8px; }
+  #days-input {
+    width:70px; padding:6px 10px; font-size:14px; border-radius:6px;
+    border:1px solid #d4c5a9; background:#fdf6ec;
+    color:#3d3d3d; text-align:center;
+  }
+  #redraw-btn {
+    padding:6px 16px; font-size:14px; border-radius:6px; cursor:pointer;
+    border:1px solid #d4c5a9; margin-left:6px;
+    background:#a8d8ea; color:#fff; font-weight:bold;
+  }
+  #redraw-btn:hover { opacity:0.85; }
+  #status {
+    margin-top:8px; font-size:12px; color:#888888;
+  }
+  #legend {
+    position:fixed; top:12px; right:12px; z-index:9999;
+    background:rgba(253,246,236,0.95); padding:16px 20px; border-radius:10px;
+    color:#3d3d3d; font-size:13px;
+    max-height:90vh; overflow-y:auto;
+    border:1px solid #d4c5a9;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+  }
+</style>
+</head>
+<body>
+
+<div id="controls">
+  <label for="days-input">Days back:</label>
+  <input id="days-input" type="number" min="1" max="9999" value="35">
+  <button id="redraw-btn">Redraw</button>
+  <div style="margin-top:8px;">
+    <label for="show-attr" style="font-weight:bold; cursor:pointer;">
+      <input id="show-attr" type="checkbox" checked style="margin-right:6px; cursor:pointer; vertical-align:middle;">
+      Show attributes
+    </label>
+  </div>
+  <div id="status">Reference: 2023-07-19 &nbsp;|&nbsp; Window: 35 days</div>
+</div>
+
+<div id="legend"></div>
+<div id="mynetwork"></div>
+
+<script>
+// ── Embedded data ──────────────────────────────────────────────────────
+const ALL_EDGES = [{"source": "Yuan Use for Imports", "target": "balance_of_trade", "relation": "improve", "edge_type": "event", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Use for Imports: Currency Movement\""}, {"source": "balance_of_trade", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Use for Imports: Currency Movement\""}, {"source": "Yuan Use in Trade", "target": "balance_of_trade", "relation": "deteriorate", "edge_type": "event", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Use in Trade: Currency Movement\""}, {"source": "balance_of_trade", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Use in Trade: Currency Movement\""}, {"source": "Russia-Ukraine War Impact", "target": "balance_of_trade", "relation": "deteriorate", "edge_type": "event", "date": "2023-06-01", "title": "Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024", "attribute": "\"Russia-Ukraine War Impact: Global Shock\""}, {"source": "balance_of_trade", "target": "Global Shock", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-01", "title": "Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024", "attribute": "\"Russia-Ukraine War Impact: Global Shock\""}, {"source": "LDC Graduation Tariff Loss", "target": "balance_of_trade", "relation": "deteriorate", "edge_type": "event", "date": "2023-01-09", "title": "Govt focusing on signing PTAs, FTAs considering LDC graduation: Tipu | Business", "attribute": "\"LDC Graduation Tariff Loss: Trade Policy\""}, {"source": "balance_of_trade", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-09", "title": "Govt focusing on signing PTAs, FTAs considering LDC graduation: Tipu | Business", "attribute": "\"LDC Graduation Tariff Loss: Trade Policy\""}, {"source": "Yuan Trade Shift", "target": "balance_of_trade", "relation": "deteriorate", "edge_type": "event", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Trade Shift: Trade Policy\""}, {"source": "balance_of_trade", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Trade Shift: Trade Policy\""}, {"source": "Work Orders Shift to Bangladesh", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shift: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shift: Market Dynamics\""}, {"source": "High Import Growth", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-01-10", "title": "Overcoming looming economic challenges in 2023", "attribute": "\"High Import Growth: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-10", "title": "Overcoming looming economic challenges in 2023", "attribute": "\"High Import Growth: Market Dynamics\""}, {"source": "Government boosts consumer imports", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-03-21", "title": "Essential Commodities now available at stable price in Khulna | District", "attribute": "\"Government boosts consumer imports: Government Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-03-21", "title": "Essential Commodities now available at stable price in Khulna | District", "attribute": "\"Government boosts consumer imports: Government Policy\""}, {"source": "AIT Reduction at Import Stage", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-04-13", "title": "Businessmen will be happy seeing next budget: Kamal | Business", "attribute": "\"AIT Reduction at Import Stage: Government Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-04-13", "title": "Businessmen will be happy seeing next budget: Kamal | Business", "attribute": "\"AIT Reduction at Import Stage: Government Policy\""}, {"source": "Yuan Payments in Bangladesh", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Payments: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Payments: Currency Movement\""}, {"source": "Port Expansion Speeding Shipping", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-05-02", "title": "DHL Global Forwarding expands its dedicated Container Freight Station (CFS) space in Bangladesh to meet global garment export needs - HR ASIA", "attribute": "\"Port Expansion: Infrastructure\""}, {"source": "imports", "target": "Infrastructure", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-02", "title": "DHL Global Forwarding expands its dedicated Container Freight Station (CFS) space in Bangladesh to meet global garment export needs - HR ASIA", "attribute": "\"Port Expansion: Infrastructure\""}, {"source": "Huge Imports", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-03-21", "title": "Essential Commodities now available at stable price in Khulna | District", "attribute": "\"Huge Imports: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-03-21", "title": "Essential Commodities now available at stable price in Khulna | District", "attribute": "\"Huge Imports: Market Dynamics\""}, {"source": "Huge Imports", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-03-21", "title": "Essential Commodities now available at stable price in Khulna | District", "attribute": "\"Huge Imports: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-03-21", "title": "Essential Commodities now available at stable price in Khulna | District", "attribute": "\"Huge Imports: Trade Policy\""}, {"source": "Bangladesh's SPM facility", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-06-20", "title": "Commodity Tracker: 5 charts to watch this week", "attribute": "\"SPM facility: Infrastructure\""}, {"source": "imports", "target": "Infrastructure", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-20", "title": "Commodity Tracker: 5 charts to watch this week", "attribute": "\"SPM facility: Infrastructure\""}, {"source": "Dollar Crisis at Rampal Plant", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-17", "title": "Dollar crisis casts a shadow over operation of Rampal coal-fired power plant", "attribute": "\"Dollar Crisis: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-17", "title": "Dollar crisis casts a shadow over operation of Rampal coal-fired power plant", "attribute": "\"Dollar Crisis: Currency Movement\""}, {"source": "Import-induced Inflation Mitigation", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-06-01", "title": "Govt giving priority to addressing climate change impacts: Kamal | National Budget 2023-2024", "attribute": "\"Import-induced Inflation: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-01", "title": "Govt giving priority to addressing climate change impacts: Kamal | National Budget 2023-2024", "attribute": "\"Import-induced Inflation: Market Dynamics\""}, {"source": "Work Orders Shift from China", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shift: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shift: Market Dynamics\""}, {"source": "Imported Edible Gold Stock", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-05-26", "title": "Rise of inequality, drumbeat of development", "attribute": "\"Imported Edible Gold Stock: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-26", "title": "Rise of inequality, drumbeat of development", "attribute": "\"Imported Edible Gold Stock: Market Dynamics\""}, {"source": "Import Disruption", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-06-04", "title": "Global prices fall, no  impact on local market woes", "attribute": "\"Import Disruption: Global Shock\""}, {"source": "imports", "target": "Global Shock", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-04", "title": "Global prices fall, no  impact on local market woes", "attribute": "\"Import Disruption: Global Shock\""}, {"source": "FBCCI Proposed Tax Cuts", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-04-13", "title": "Businessmen will be happy seeing next budget: Kamal | Business", "attribute": "\"FBCCI Proposed Tax Cuts: Government Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-04-13", "title": "Businessmen will be happy seeing next budget: Kamal | Business", "attribute": "\"FBCCI Proposed Tax Cuts: Government Policy\""}, {"source": "Dollar Crisis", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-03-11", "title": "Bangladesh banks feel squeeze of Moody's outlook downgrade", "attribute": "\"Dollar Crisis: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-03-11", "title": "Bangladesh banks feel squeeze of Moody's outlook downgrade", "attribute": "\"Dollar Crisis: Currency Movement\""}, {"source": "Dollar Shortage", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-03-11", "title": "Bangladesh banks feel squeeze of Moody's outlook downgrade", "attribute": "\"Dollar Shortage: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-03-11", "title": "Bangladesh banks feel squeeze of Moody's outlook downgrade", "attribute": "\"Dollar Shortage: Currency Movement\""}, {"source": "Reduced LC Margin", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-01-21", "title": "DCCI President urges all to work together in facing changing economic reality | Business", "attribute": "\"Reduced LC Margin: Government Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-21", "title": "DCCI President urges all to work together in facing changing economic reality | Business", "attribute": "\"Reduced LC Margin: Government Policy\""}, {"source": "IFC Trade Finance Funding", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-02-13", "title": "IFC provides $50m to Prime Bank to support trade, forex liquidity  | Business", "attribute": "\"IFC Trade Finance Funding: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-13", "title": "IFC provides $50m to Prime Bank to support trade, forex liquidity  | Business", "attribute": "\"IFC Trade Finance Funding: Market Dynamics\""}, {"source": "Three-Year Roadmap", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-15", "title": "3-year roadmap to reduce import dependency of cooking oil: Razzaq | News", "attribute": "\"Three-Year Roadmap: Government Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-15", "title": "3-year roadmap to reduce import dependency of cooking oil: Razzaq | News", "attribute": "\"Three-Year Roadmap: Government Policy\""}, {"source": "Russia's Invasion of Ukraine", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-07", "title": "Take note of Bangla crisis, hedge bets", "attribute": "\"Russia's Invasion of Ukraine: Global Shock\""}, {"source": "imports", "target": "Global Shock", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-07", "title": "Take note of Bangla crisis, hedge bets", "attribute": "\"Russia's Invasion of Ukraine: Global Shock\""}, {"source": "Shifted Orders from China", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-18", "title": "Clothing exports from Bangladesh rise as China's share in ready-made garment market declines", "attribute": "\"Shifted Orders from China: Global Shock\""}, {"source": "imports", "target": "Global Shock", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-18", "title": "Clothing exports from Bangladesh rise as China's share in ready-made garment market declines", "attribute": "\"Shifted Orders from China: Global Shock\""}, {"source": "Sugar Import Duty Cuts", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-02-26", "title": "NBR withdraws duty on sugar import | News Flash", "attribute": "\"Sugar Import Duty Cuts: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-26", "title": "NBR withdraws duty on sugar import | News Flash", "attribute": "\"Sugar Import Duty Cuts: Trade Policy\""}, {"source": "Boost Domestic Mustard Production", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-03-03", "title": "Farmers urged to boost mustard seed production to meet demands | District", "attribute": "\"Boost Domestic Mustard Production: Industry Activity\""}, {"source": "imports", "target": "Industry Activity", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-03-03", "title": "Farmers urged to boost mustard seed production to meet demands | District", "attribute": "\"Boost Domestic Mustard Production: Industry Activity\""}, {"source": "Coal Import Assurance", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-02-15", "title": "World News | India-Bangladesh Joint Venture Power Plant to Resume Production After Month-long Halt | LatestLY", "attribute": "\"Coal Import Assurance: Industry Activity\""}, {"source": "imports", "target": "Industry Activity", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-15", "title": "World News | India-Bangladesh Joint Venture Power Plant to Resume Production After Month-long Halt | LatestLY", "attribute": "\"Coal Import Assurance: Industry Activity\""}, {"source": "Sugar Import Cost Reduction", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-27", "title": "B'desh withdraws duty on sugar import to stabilise local market - Forever NEWS", "attribute": "\"Sugar Import Cost Reduction: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-27", "title": "B'desh withdraws duty on sugar import to stabilise local market - Forever NEWS", "attribute": "\"Sugar Import Cost Reduction: Trade Policy\""}, {"source": "Extension of Import Payment Terms", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-02-19", "title": "BB committed to provide policy supports to exporters, importers: BB deputy governor | Business", "attribute": "\"Extension of Import Payment Terms: Monetary Policy\""}, {"source": "imports", "target": "Monetary Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-19", "title": "BB committed to provide policy supports to exporters, importers: BB deputy governor | Business", "attribute": "\"Extension of Import Payment Terms: Monetary Policy\""}, {"source": "Reduction of Duty on Container Import", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-06-01", "title": "Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business", "attribute": "\"Reduction of Duty: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-01", "title": "Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business", "attribute": "\"Reduction of Duty: Trade Policy\""}, {"source": "Container Duty Reduction", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-06-01", "title": "Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business", "attribute": "\"Container Duty Reduction: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-01", "title": "Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business", "attribute": "\"Container Duty Reduction: Trade Policy\""}, {"source": "Work Orders Shift From China", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shift From China: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shift From China: Market Dynamics\""}, {"source": "Duty-Free Cotton Import Request", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-01-20", "title": "Tipu seeks duty free cotton from USA  | Business", "attribute": "\"Duty-Free Cotton Import Request: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-20", "title": "Tipu seeks duty free cotton from USA  | Business", "attribute": "\"Duty-Free Cotton Import Request: Trade Policy\""}, {"source": "Sugar Import Duty Withdrawal", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-02-27", "title": "Bangladesh withdraws duty on sugar import to stabilize local market", "attribute": "\"Sugar Import Duty Withdrawal: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-27", "title": "Bangladesh withdraws duty on sugar import to stabilize local market", "attribute": "\"Sugar Import Duty Withdrawal: Trade Policy\""}, {"source": "Work Orders Shift to Bangladesh", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shift: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shift: Market Dynamics\""}, {"source": "Improved Cross-Border Logistics", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-02-06", "title": "Textile Sourcing Meet, Road show to be held in India in Feb | Business", "attribute": "\"Improved Cross-Border Logistics: Infrastructure\""}, {"source": "imports", "target": "Infrastructure", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-06", "title": "Textile Sourcing Meet, Road show to be held in India in Feb | Business", "attribute": "\"Improved Cross-Border Logistics: Infrastructure\""}, {"source": "Dollar Shortage and Import Curbs", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-23", "title": "Severe dollar crisis hobbles Bangladesh businesses", "attribute": "\"Dollar Shortage: Currency Movement\", \"Import Curbs: Government Policy\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-23", "title": "Severe dollar crisis hobbles Bangladesh businesses", "attribute": "\"Dollar Shortage: Currency Movement\", \"Import Curbs: Government Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-23", "title": "Severe dollar crisis hobbles Bangladesh businesses", "attribute": "\"Dollar Shortage: Currency Movement\", \"Import Curbs: Government Policy\""}, {"source": "Dollar Shortage", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-23", "title": "Severe dollar crisis hobbles Bangladesh businesses", "attribute": "\"Dollar Shortage: Monetary Policy\""}, {"source": "imports", "target": "Monetary Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-23", "title": "Severe dollar crisis hobbles Bangladesh businesses", "attribute": "\"Dollar Shortage: Monetary Policy\""}, {"source": "Imported Energy Shortage", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-04-20", "title": "Is renewable deployment suffering from fossil fuel lock-in?", "attribute": "\"Imported Energy Shortage: Infrastructure\""}, {"source": "imports", "target": "Infrastructure", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-04-20", "title": "Is renewable deployment suffering from fossil fuel lock-in?", "attribute": "\"Imported Energy Shortage: Infrastructure\""}, {"source": "Yuan Use in Imports", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Use in Imports: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Use in Imports: Currency Movement\""}, {"source": "Government's Permission to Import 36,830 Tons", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-07-03", "title": "1.14 lakh kilograms of green chilli imported on Sunday  | News", "attribute": "\"Government's Permission: Government Policy\", \"36,830 Tons: Trade Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-07-03", "title": "1.14 lakh kilograms of green chilli imported on Sunday  | News", "attribute": "\"Government's Permission: Government Policy\", \"36,830 Tons: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-07-03", "title": "1.14 lakh kilograms of green chilli imported on Sunday  | News", "attribute": "\"Government's Permission: Government Policy\", \"36,830 Tons: Trade Policy\""}, {"source": "War-Driven Import Costs", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-06-01", "title": "Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024", "attribute": "\"post-war global inflation: Global Shock\", \"depreciation of the country's foreign exchange rate: Currency Movement\""}, {"source": "imports", "target": "Global Shock", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-01", "title": "Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024", "attribute": "\"post-war global inflation: Global Shock\", \"depreciation of the country's foreign exchange rate: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-01", "title": "Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024", "attribute": "\"post-war global inflation: Global Shock\", \"depreciation of the country's foreign exchange rate: Currency Movement\""}, {"source": "Energy Shortage", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-01", "title": "Ensure stable energy prices for economic recovery", "attribute": "\"Energy Shortage: Infrastructure\""}, {"source": "imports", "target": "Infrastructure", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-01", "title": "Ensure stable energy prices for economic recovery", "attribute": "\"Energy Shortage: Infrastructure\""}, {"source": "Dollar Fund Support", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-02-13", "title": "Businessmen called for government's support to sustain steel industry | Business", "attribute": "\"Dollar Fund Support: Monetary Policy\""}, {"source": "imports", "target": "Monetary Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-13", "title": "Businessmen called for government's support to sustain steel industry | Business", "attribute": "\"Dollar Fund Support: Monetary Policy\""}, {"source": "Work Orders Shifted From China", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shifted From China: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Work Orders Shifted From China: Market Dynamics\""}, {"source": "DHL CFS Expansion", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-05-02", "title": "DHL Global Forwarding expands its dedicated Container Freight Station (CFS) space in Bangladesh to meet global garment export needs - SME & Entrepreneurship Magazine", "attribute": "\"DHL CFS Expansion: Industry Activity\""}, {"source": "imports", "target": "Industry Activity", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-02", "title": "DHL Global Forwarding expands its dedicated Container Freight Station (CFS) space in Bangladesh to meet global garment export needs - SME & Entrepreneurship Magazine", "attribute": "\"DHL CFS Expansion: Industry Activity\""}, {"source": "Airlifted Goods", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-05-18", "title": "Apparel makers in cyclone-hit Bangladesh consider rare, expensive airlifts for exports | MarketScreener", "attribute": "\"Airlifted Goods: Infrastructure\""}, {"source": "imports", "target": "Infrastructure", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-18", "title": "Apparel makers in cyclone-hit Bangladesh consider rare, expensive airlifts for exports | MarketScreener", "attribute": "\"Airlifted Goods: Infrastructure\""}, {"source": "Fertilizer Output Meets Demand", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-04-14", "title": "Feature: Bangladesh's first green fertilizer factory built under China's BRI nears completion", "attribute": "\"Fertilizer Output Meets Demand: Industry Activity\", \"imports: Trade Policy\""}, {"source": "imports", "target": "Industry Activity", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-04-14", "title": "Feature: Bangladesh's first green fertilizer factory built under China's BRI nears completion", "attribute": "\"Fertilizer Output Meets Demand: Industry Activity\", \"imports: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-04-14", "title": "Feature: Bangladesh's first green fertilizer factory built under China's BRI nears completion", "attribute": "\"Fertilizer Output Meets Demand: Industry Activity\", \"imports: Trade Policy\""}, {"source": "Increase Regulatory Duties on Non-Essential Imports", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-06-01", "title": "Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business", "attribute": "\"Increase Regulatory Duties: Government Policy\", \"Non-Essential Imports: Trade Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-01", "title": "Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business", "attribute": "\"Increase Regulatory Duties: Government Policy\", \"Non-Essential Imports: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-01", "title": "Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business", "attribute": "\"Increase Regulatory Duties: Government Policy\", \"Non-Essential Imports: Trade Policy\""}, {"source": "LNG Import Plans", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-02-08", "title": "Bangladesh to import LNG from spot market", "attribute": "\"LNG Import Plans: Infrastructure\""}, {"source": "imports", "target": "Infrastructure", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-08", "title": "Bangladesh to import LNG from spot market", "attribute": "\"LNG Import Plans: Infrastructure\""}, {"source": "Gold Import Duty Reduction", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-04-09", "title": "Review tax on gold industry | Daily Sun |", "attribute": "\"Gold Import Duty Reduction: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-04-09", "title": "Review tax on gold industry | Daily Sun |", "attribute": "\"Gold Import Duty Reduction: Trade Policy\""}, {"source": "Imported Coal Costs", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-01-05", "title": "Adani Godda Power Plant: Bangladesh likely to get 750MW by March", "attribute": "\"Imported Coal Costs: Global Shock\""}, {"source": "imports", "target": "Global Shock", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-05", "title": "Adani Godda Power Plant: Bangladesh likely to get 750MW by March", "attribute": "\"Imported Coal Costs: Global Shock\""}, {"source": "Foreign Currency Crisis and Taka Devaluation", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-01", "title": "DCCI for PPP to manage sustainable economic recovery | Business", "attribute": "\"Foreign Currency Crisis: Monetary Policy\", \"Taka Devaluation: Currency Movement\""}, {"source": "imports", "target": "Monetary Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-01", "title": "DCCI for PPP to manage sustainable economic recovery | Business", "attribute": "\"Foreign Currency Crisis: Monetary Policy\", \"Taka Devaluation: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-01", "title": "DCCI for PPP to manage sustainable economic recovery | Business", "attribute": "\"Foreign Currency Crisis: Monetary Policy\", \"Taka Devaluation: Currency Movement\""}, {"source": "Discouraging Non-Essential Imports", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-15", "title": "BB unveils 'cautiously accommodative' MPS     | Daily Sun |", "attribute": "\"Discouraging Non-Essential Imports: Monetary Policy\""}, {"source": "imports", "target": "Monetary Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-15", "title": "BB unveils 'cautiously accommodative' MPS     | Daily Sun |", "attribute": "\"Discouraging Non-Essential Imports: Monetary Policy\""}, {"source": "Supply Chain Easing", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-06-26", "title": "Inflation fight gets tougher: Bank for International Settlements", "attribute": "\"Supply Chain Easing: Infrastructure\""}, {"source": "imports", "target": "Infrastructure", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-26", "title": "Inflation fight gets tougher: Bank for International Settlements", "attribute": "\"Supply Chain Easing: Infrastructure\""}, {"source": "Dollar Shortage", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Dollar Shortage: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Dollar Shortage: Currency Movement\""}, {"source": "Dollar Scarcity", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-18", "title": "Bangladesh raises gas prices amid fears of a fresh spike in inflation - La Prensa Latina Media", "attribute": "\"Dollar Scarcity: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-18", "title": "Bangladesh raises gas prices amid fears of a fresh spike in inflation - La Prensa Latina Media", "attribute": "\"Dollar Scarcity: Currency Movement\""}, {"source": "Onion Import Suspension End", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-05-14", "title": "Govt may allow onion import soon: Agri Secretary  | News", "attribute": "\"Onion Import Suspension End: Government Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-14", "title": "Govt may allow onion import soon: Agri Secretary  | News", "attribute": "\"Onion Import Suspension End: Government Policy\""}, {"source": "Foreign Currency Crisis", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-02", "title": "DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023", "attribute": "\"Foreign Currency Crisis: Monetary Policy\""}, {"source": "imports", "target": "Monetary Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-02", "title": "DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023", "attribute": "\"Foreign Currency Crisis: Monetary Policy\""}, {"source": "Yuan Payments for Imports", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Payments: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Yuan Payments: Currency Movement\""}, {"source": "Duty Cut on Containers", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-06-01", "title": "Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business", "attribute": "\"Duty Cut on Containers: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-01", "title": "Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business", "attribute": "\"Duty Cut on Containers: Trade Policy\""}, {"source": "Orders Shift to Bangladesh", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Orders Shift: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-24", "title": "Bangladesh may overtake China to be EU's biggest apparel source", "attribute": "\"Orders Shift: Market Dynamics\""}, {"source": "Foreign Currency Crisis", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-01", "title": "DCCI for PPP to manage sustainable economic recovery | Business", "attribute": "\"Foreign Currency Crisis: Monetary Policy\""}, {"source": "imports", "target": "Monetary Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-01", "title": "DCCI for PPP to manage sustainable economic recovery | Business", "attribute": "\"Foreign Currency Crisis: Monetary Policy\""}, {"source": "Imported Energy Shortages", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-04-20", "title": "Is renewable deployment suffering from fossil fuel lock-in?", "attribute": "\"Imported Energy Shortages: Infrastructure\""}, {"source": "imports", "target": "Infrastructure", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-04-20", "title": "Is renewable deployment suffering from fossil fuel lock-in?", "attribute": "\"Imported Energy Shortages: Infrastructure\""}, {"source": "Import Curbs on Spending", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-23", "title": "Severe dollar crisis hobbles Bangladesh businesses", "attribute": "\"Import Curbs on Spending: Government Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-23", "title": "Severe dollar crisis hobbles Bangladesh businesses", "attribute": "\"Import Curbs on Spending: Government Policy\""}, {"source": "Currency Crisis and Taka Devaluation", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-02", "title": "DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023", "attribute": "\"Currency Crisis: Monetary Policy\", \"Taka Devaluation: Currency Movement\""}, {"source": "imports", "target": "Monetary Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-02", "title": "DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023", "attribute": "\"Currency Crisis: Monetary Policy\", \"Taka Devaluation: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-02", "title": "DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023", "attribute": "\"Currency Crisis: Monetary Policy\", \"Taka Devaluation: Currency Movement\""}, {"source": "Withdrawal of Sugar Import Duties", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-02-26", "title": "NBR withdraws duty on sugar import     | Daily Sun |", "attribute": "\"Withdrawal of Sugar Import Duties: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-26", "title": "NBR withdraws duty on sugar import     | Daily Sun |", "attribute": "\"Withdrawal of Sugar Import Duties: Trade Policy\""}, {"source": "Sugar Import Costs", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-26", "title": "B'desh withdraws duty on sugar import to stabilise local market", "attribute": "\"fresh duty waver: Trade Policy\", \"reduction measures: Government Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-26", "title": "B'desh withdraws duty on sugar import to stabilise local market", "attribute": "\"fresh duty waver: Trade Policy\", \"reduction measures: Government Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-26", "title": "B'desh withdraws duty on sugar import to stabilise local market", "attribute": "\"fresh duty waver: Trade Policy\", \"reduction measures: Government Policy\""}, {"source": "Dollar Shortage at Banks", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-23", "title": "Severe dollar crisis hobbles Bangladesh businesses - RocketNews", "attribute": "\"Dollar Shortage: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-23", "title": "Severe dollar crisis hobbles Bangladesh businesses - RocketNews", "attribute": "\"Dollar Shortage: Currency Movement\""}, {"source": "Government Permission to Import Chilli", "target": "imports", "relation": "increase", "edge_type": "event", "date": "2023-07-02", "title": "Govt allows import of 36,830 tons green chilli     | Daily Sun |", "attribute": "\"Government Permission: Government Policy\", \"Import Chilli: Trade Policy\""}, {"source": "imports", "target": "Government Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-07-02", "title": "Govt allows import of 36,830 tons green chilli     | Daily Sun |", "attribute": "\"Government Permission: Government Policy\", \"Import Chilli: Trade Policy\""}, {"source": "imports", "target": "Trade Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-07-02", "title": "Govt allows import of 36,830 tons green chilli     | Daily Sun |", "attribute": "\"Government Permission: Government Policy\", \"Import Chilli: Trade Policy\""}, {"source": "Work Orders Shift to Bangladesh", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-24", "title": "World News | Bangladesh May Overtake China to Be EU's Biggest Apparel Source | LatestLY", "attribute": "\"Work Orders Shift: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-24", "title": "World News | Bangladesh May Overtake China to Be EU's Biggest Apparel Source | LatestLY", "attribute": "\"Work Orders Shift: Market Dynamics\""}, {"source": "Foreign Exchange Reserves Decline", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-06-08", "title": "Bangladesh suffers long power cuts amid worst heatwave in decades", "attribute": "\"Foreign Exchange Reserves Decline: Monetary Policy\""}, {"source": "imports", "target": "Monetary Policy", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-06-08", "title": "Bangladesh suffers long power cuts amid worst heatwave in decades", "attribute": "\"Foreign Exchange Reserves Decline: Monetary Policy\""}, {"source": "Currency Pressure", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Currency Pressure: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-05-16", "title": "Bangladesh government should think twice before trading in Chinese currency: Report", "attribute": "\"Currency Pressure: Currency Movement\""}, {"source": "Sugar Import Costs", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-02-28", "title": "Bangladesh Withdraws Duty On Sugar Import To Stabilise Local Market", "attribute": "\"Sugar Import Costs: Market Dynamics\""}, {"source": "imports", "target": "Market Dynamics", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-02-28", "title": "Bangladesh Withdraws Duty On Sugar Import To Stabilise Local Market", "attribute": "\"Sugar Import Costs: Market Dynamics\""}, {"source": "Shortage of Greenbacks", "target": "imports", "relation": "decrease", "edge_type": "event", "date": "2023-01-20", "title": "Money or no money, crisis persists", "attribute": "\"Shortage of Greenbacks: Currency Movement\""}, {"source": "imports", "target": "Currency Movement", "relation": "has_attribute", "edge_type": "attribute", "date": "2023-01-20", "title": "Money or no money, crisis persists", "attribute": "\"Shortage of Greenbacks: Currency Movement\""}];
+const NODE_CATEGORIES = {"Yuan Use for Imports": "Currency Movement", "balance_of_trade": "Trade Policy", "Yuan Use in Trade": "Currency Movement", "Russia-Ukraine War Impact": "Global Shock", "LDC Graduation Tariff Loss": "Trade Policy", "Yuan Trade Shift": "Trade Policy", "Work Orders Shift to Bangladesh": "Market Dynamics", "imports": "Currency Movement", "High Import Growth": "Market Dynamics", "Government boosts consumer imports": "Government Policy", "AIT Reduction at Import Stage": "Government Policy", "Yuan Payments in Bangladesh": "Currency Movement", "Port Expansion Speeding Shipping": "Infrastructure", "Huge Imports": "Trade Policy", "Bangladesh's SPM facility": "Infrastructure", "Dollar Crisis at Rampal Plant": "Currency Movement", "Import-induced Inflation Mitigation": "Market Dynamics", "Work Orders Shift from China": "Market Dynamics", "Imported Edible Gold Stock": "Market Dynamics", "Import Disruption": "Global Shock", "FBCCI Proposed Tax Cuts": "Government Policy", "Dollar Crisis": "Currency Movement", "Dollar Shortage": "Currency Movement", "Reduced LC Margin": "Government Policy", "IFC Trade Finance Funding": "Market Dynamics", "Three-Year Roadmap": "Government Policy", "Russia's Invasion of Ukraine": "Global Shock", "Shifted Orders from China": "Global Shock", "Sugar Import Duty Cuts": "Trade Policy", "Boost Domestic Mustard Production": "Industry Activity", "Coal Import Assurance": "Industry Activity", "Sugar Import Cost Reduction": "Trade Policy", "Extension of Import Payment Terms": "Monetary Policy", "Reduction of Duty on Container Import": "Trade Policy", "Container Duty Reduction": "Trade Policy", "Work Orders Shift From China": "Market Dynamics", "Duty-Free Cotton Import Request": "Trade Policy", "Sugar Import Duty Withdrawal": "Trade Policy", "Improved Cross-Border Logistics": "Infrastructure", "Dollar Shortage and Import Curbs": "Currency Movement", "Imported Energy Shortage": "Infrastructure", "Yuan Use in Imports": "Currency Movement", "Government's Permission to Import 36,830 Tons": "Government Policy", "War-Driven Import Costs": "Global Shock", "Energy Shortage": "Infrastructure", "Dollar Fund Support": "Monetary Policy", "Work Orders Shifted From China": "Market Dynamics", "DHL CFS Expansion": "Industry Activity", "Airlifted Goods": "Infrastructure", "Fertilizer Output Meets Demand": "Industry Activity", "Increase Regulatory Duties on Non-Essential Imports": "Government Policy", "LNG Import Plans": "Infrastructure", "Gold Import Duty Reduction": "Trade Policy", "Imported Coal Costs": "Global Shock", "Foreign Currency Crisis and Taka Devaluation": "Monetary Policy", "Discouraging Non-Essential Imports": "Monetary Policy", "Supply Chain Easing": "Infrastructure", "Dollar Scarcity": "Currency Movement", "Onion Import Suspension End": "Government Policy", "Foreign Currency Crisis": "Monetary Policy", "Yuan Payments for Imports": "Currency Movement", "Duty Cut on Containers": "Trade Policy", "Orders Shift to Bangladesh": "Market Dynamics", "Imported Energy Shortages": "Infrastructure", "Import Curbs on Spending": "Government Policy", "Currency Crisis and Taka Devaluation": "Monetary Policy", "Withdrawal of Sugar Import Duties": "Trade Policy", "Sugar Import Costs": "Market Dynamics", "Dollar Shortage at Banks": "Currency Movement", "Government Permission to Import Chilli": "Government Policy", "Foreign Exchange Reserves Decline": "Monetary Policy", "Currency Pressure": "Currency Movement", "Shortage of Greenbacks": "Currency Movement"};
+const REF_DATE = new Date("2023-07-19T00:00:00");
+const THEME = {"bg_color": "#fdf6ec", "node_font_color": "#3d3d3d", "edge_font_color": "#555555", "node_border": "#8d8d8d", "default_edge": "#aaaaaa", "legend_bg": "rgba(253,246,236,0.95)", "legend_text": "#3d3d3d", "legend_border": "#d4c5a9", "legend_hr": "#e0d5c1", "legend_muted": "#888888", "node_colors": ["#a8d8ea", "#aa96da", "#fcbad3", "#ffffd2", "#b5eaea", "#f6c6a8", "#c3aed6", "#ffb6b9", "#fae3d9", "#bbded6", "#8ac6d1", "#e8d5b7", "#f0e6ef", "#d5ecc2", "#f7d794", "#cf6a87", "#786fa6"], "edge_relation_colors": {"decrease": "#cf6a87", "depreciate": "#e77f67", "increase": "#78e08f", "deteriorate": "#e55039", "improve": "#4a69bd", "disrupt": "#eb4d4b", "stabilize": "#b8e994"}};
+const CONFIG = {
+  nodeSize: 25,
+  nodeFontSize: 14,
+  edgeFontSize: 12,
+  showEdgeLabels: true,
+  useBackground: true,
+  edgeLabelStyle: "roundrect",
+};
+
+const NODE_PROFILES = {
+  "Event Entity": { shape:"dot", border:"#e67e22", borderWidth:3, shadowColor:"rgba(230,126,34,0.45)" },
+  "Attribute":    { shape:"diamond", border:"#8e44ad", borderWidth:2, shadowColor:"rgba(142,68,173,0.35)" },
+  "Target":       { shape:"box", border:"#2e7d32", borderWidth:3, shadowColor:"rgba(46,125,50,0.45)" },
+};
+
+let network = null;
+
+function daysBetween(d1, d2) {
+  return Math.round((d2 - d1) / (1000 * 60 * 60 * 24));
+}
+
+function hexToRgba(hex, opacity) {
+  const h = hex.replace("#","");
+  const r = parseInt(h.substring(0,2),16);
+  const g = parseInt(h.substring(2,4),16);
+  const b = parseInt(h.substring(4,6),16);
+  return "rgba("+r+","+g+","+b+","+opacity.toFixed(2)+")";
+}
+
+function timeOpacity(daysBefore, daysBack) {
+  if (daysBack === 0) return 1.0;
+  return 1.0 - 0.65 * (daysBefore / daysBack);
+}
+
+function buildGraph(daysBack, showAttributes) {
+  const startDate = new Date(REF_DATE);
+  startDate.setDate(startDate.getDate() - daysBack);
+
+  // Filter edges by time window, then optionally exclude attribute edges
+  const filtered = ALL_EDGES.filter(e => {
+    const d = new Date(e.date + "T00:00:00");
+    if (isNaN(d) || d < startDate || d > REF_DATE) return false;
+    if (!showAttributes && e.edge_type === "attribute") return false;
+    return true;
+  });
+
+  if (filtered.length === 0) {
+    document.getElementById("status").innerHTML =
+      "No events found in window. Try a larger value.";
+    if (network) { network.destroy(); network = null; }
+    document.getElementById("legend").innerHTML = "";
+    return;
+  }
+
+  // Build node/edge sets
+  const eventNodes = new Set();
+  const attrNodes = new Set();
+  const nodeCategory = {};
+  const nodeEarliestDay = {};
+  const visNodes = [];
+  const visEdges = [];
+  const addedNodes = new Set();
+
+  // Assign categories from pre-computed + attribute edges
+  Object.assign(nodeCategory, NODE_CATEGORIES);
+
+  filtered.forEach(e => {
+    const d = new Date(e.date + "T00:00:00");
+    const db = daysBetween(d, REF_DATE);
+
+    if (e.edge_type === "attribute") {
+      eventNodes.add(e.source);
+      attrNodes.add(e.target);
+      nodeCategory[e.target] = e.target;
+    } else {
+      eventNodes.add(e.source);
+    }
+
+    [e.source, e.target].forEach(n => {
+      if (!(n in nodeEarliestDay) || db < nodeEarliestDay[n])
+        nodeEarliestDay[n] = db;
+    });
+  });
+
+  // Unique categories & color map
+  const allNodes = new Set([...eventNodes, ...attrNodes]);
+  filtered.forEach(e => { allNodes.add(e.source); allNodes.add(e.target); });
+
+  const uniqueCats = [...new Set(Object.values(nodeCategory))].sort();
+  const catColor = {};
+  uniqueCats.forEach((c, i) => {
+    catColor[c] = THEME.node_colors[i % THEME.node_colors.length];
+  });
+
+  // Compute degree
+  const degree = {};
+  filtered.forEach(e => {
+    degree[e.source] = (degree[e.source]||0) + 1;
+    degree[e.target] = (degree[e.target]||0) + 1;
+  });
+
+  // Add nodes
+  allNodes.forEach(node => {
+    if (addedNodes.has(node)) return;
+    addedNodes.add(node);
+
+    const cat = nodeCategory[node] || "Other";
+    const baseColor = catColor[cat] || THEME.node_colors[THEME.node_colors.length-1];
+    const db = nodeEarliestDay[node] || 0;
+    const opacity = timeOpacity(db, daysBack);
+
+    let nodeType = "Target";
+    if (attrNodes.has(node)) nodeType = "Attribute";
+    else if (eventNodes.has(node)) nodeType = "Event Entity";
+
+    const prof = NODE_PROFILES[nodeType];
+    visNodes.push({
+      id: node, label: node, shape: prof.shape,
+      title: "<b>"+node+"</b><br>Category: "+cat+"<br>Type: "+nodeType+
+             "<br>Closest event: "+db+" day(s) before reference<br>Connections: "+(degree[node]||0),
+      color: {
+        background: hexToRgba(baseColor, opacity),
+        border: prof.border,
+        highlight: { background: baseColor, border: prof.border },
+      },
+      size: CONFIG.nodeSize,
+      font: { size: CONFIG.nodeFontSize, color: THEME.node_font_color, face: "Arial" },
+      borderWidth: prof.borderWidth,
+      borderWidthSelected: prof.borderWidth + 2,
+      shadow: { enabled:true, color:prof.shadowColor, size:10, x:0, y:0 },
+    });
+  });
+
+  // Add edges
+  let nEvent = 0, nAttr = 0;
+  filtered.forEach(e => {
+    const d = new Date(e.date + "T00:00:00");
+    const db = daysBetween(d, REF_DATE);
+    const opacity = timeOpacity(db, daysBack);
+
+    let edgeOpts;
+    if (e.edge_type === "attribute") {
+      nAttr++;
+      const eColor = hexToRgba("#8e44ad", opacity);
+      edgeOpts = {
+        from: e.source, to: e.target,
+        label: CONFIG.showEdgeLabels ? e.relation : undefined,
+        title: e.source + " -- has_attribute --> " + e.target,
+        color: { color: eColor, highlight: "#8e44ad", opacity: 0.9 },
+        arrows: "to", width: 2,
+        smooth: { type: "curvedCW", roundness: 0.15 },
+        dashes: [2, 4],
+      };
+      if (CONFIG.showEdgeLabels) {
+        edgeOpts.font = {
+          size: CONFIG.edgeFontSize,
+          color: CONFIG.useBackground ? THEME.edge_font_color : "#8e44ad",
+          face: "Arial", strokeWidth: CONFIG.useBackground ? 0 : 3,
+          strokeColor: THEME.bg_color, align: "top",
+        };
+        if (CONFIG.useBackground) edgeOpts.font.background = THEME.bg_color;
+      }
+    } else {
+      nEvent++;
+      const rel = e.relation;
+      const relColors = THEME.edge_relation_colors || {};
+      const baseEColor = relColors[rel.toLowerCase()] || THEME.default_edge;
+      const eColor = hexToRgba(baseEColor, opacity);
+      edgeOpts = {
+        from: e.source, to: e.target,
+        label: CONFIG.showEdgeLabels ? rel + "  (" + e.date + ", -" + db + "d)" : undefined,
+        title: "<b>"+e.source+" -- "+rel+" --> "+e.target+"</b><br>Date: "+e.date+
+               "<br>Days before reference: "+db+"<br>"+e.title,
+        color: { color: eColor, highlight: baseEColor, opacity: 0.9 },
+        arrows: "to", width: Math.max(1, 3 - Math.floor(2 * db / Math.max(daysBack, 1))),
+        smooth: { type: "curvedCW", roundness: 0.15 },
+        dashes: [5, 5],
+      };
+      if (CONFIG.showEdgeLabels) {
+        edgeOpts.font = {
+          size: CONFIG.edgeFontSize,
+          color: CONFIG.useBackground ? THEME.edge_font_color : baseEColor,
+          face: "Arial", strokeWidth: CONFIG.useBackground ? 0 : 3,
+          strokeColor: THEME.bg_color, align: "top",
+        };
+        if (CONFIG.useBackground) edgeOpts.font.background = THEME.bg_color;
+      }
+    }
+    visEdges.push(edgeOpts);
+  });
+
+  // ── Render ──────────────────────────────────────────────────────────
+  const container = document.getElementById("mynetwork");
+  if (network) network.destroy();
+
+  const data = {
+    nodes: new vis.DataSet(visNodes),
+    edges: new vis.DataSet(visEdges),
+  };
+  const options = {
+    physics: {
+      barnesHut: {
+        gravitationalConstant: -8000,
+        centralGravity: 0.3,
+        springLength: 200,
+        springConstant: 0.01,
+        damping: 0.09,
+      },
+    },
+  };
+  network = new vis.Network(container, data, options);
+
+  // ── Update legend ───────────────────────────────────────────────────
+  const sDate = new Date(REF_DATE);
+  sDate.setDate(sDate.getDate() - daysBack);
+  const catItems = uniqueCats.map(c =>
+    '<div style="margin:3px 0;"><span style="display:inline-block;width:14px;height:14px;'+
+    'background:'+catColor[c]+';border-radius:50%;margin-right:8px;vertical-align:middle;"></span>'+
+    '<span style="vertical-align:middle;">'+c+'</span></div>'
+  ).join("");
+
+  document.getElementById("legend").innerHTML =
+    '<div style="font-weight:bold;font-size:15px;margin-bottom:6px;">Time Window</div>'+
+    '<div style="margin:3px 0;">Reference: <b>2023-07-19</b></div>'+
+    '<div style="margin:3px 0;">From: <b>'+sDate.toISOString().slice(0,10)+'</b>  ('+daysBack+' days back)</div>'+
+    '<div style="margin:3px 0;font-size:11px;color:#888888;">Vivid = recent | Faded = older</div>'+
+    '<hr style="border-color:#e0d5c1;margin:10px 0;">'+
+    '<div style="font-weight:bold;font-size:15px;margin-bottom:10px;">Node Categories</div>'+
+    catItems+
+    '<hr style="border-color:#e0d5c1;margin:10px 0;">'+
+    '<div style="font-weight:bold;font-size:15px;margin-bottom:10px;">Node Shapes</div>'+
+    '<div style="margin:3px 0;"><span style="display:inline-block;width:14px;height:14px;border:3px solid #e67e22;border-radius:50%;margin-right:8px;vertical-align:middle;"></span><span style="vertical-align:middle;">Event Entity</span></div>'+
+    '<div style="margin:3px 0;"><span style="display:inline-block;width:12px;height:12px;border:2px solid #8e44ad;transform:rotate(45deg);margin-right:8px;vertical-align:middle;"></span><span style="vertical-align:middle;">Attribute</span></div>'+
+    '<div style="margin:3px 0;"><span style="display:inline-block;width:14px;height:14px;border:3px solid #2e7d32;margin-right:8px;vertical-align:middle;"></span><span style="vertical-align:middle;">Target Feature</span></div>'+
+    '<hr style="border-color:#e0d5c1;margin:10px 0;">'+
+    '<div style="font-weight:bold;font-size:15px;margin-bottom:10px;">Edges</div>'+
+    '<div style="margin:3px 0;">Event edges: '+nEvent+'</div>'+
+    '<div style="margin:3px 0;">Attribute edges: '+nAttr+'</div>'+
+    '<hr style="border-color:#e0d5c1;margin:10px 0;">'+
+    '<div style="font-size:11px;color:#888888;">Nodes: '+visNodes.length+' | Edges: '+visEdges.length+' | Theme: pastel</div>';
+
+  document.getElementById("status").innerHTML =
+    "Reference: 2023-07-19 &nbsp;|&nbsp; Window: " + daysBack +
+    " days &nbsp;|&nbsp; Nodes: " + visNodes.length +
+    " &nbsp;|&nbsp; Edges: " + visEdges.length;
+}
+
+// ── Helper to read current controls ─────────────────────────────────
+function redraw() {
+  const val = parseInt(document.getElementById("days-input").value, 10);
+  const showAttr = document.getElementById("show-attr").checked;
+  if (!isNaN(val) && val > 0) buildGraph(val, showAttr);
+}
+
+// ── Initial draw ────────────────────────────────────────────────────
+buildGraph(35, true);
+
+// ── Event listeners ─────────────────────────────────────────────────
+document.getElementById("redraw-btn").addEventListener("click", redraw);
+document.getElementById("days-input").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") redraw();
+});
+document.getElementById("show-attr").addEventListener("change", redraw);
+</script>
+</body>
+</html>

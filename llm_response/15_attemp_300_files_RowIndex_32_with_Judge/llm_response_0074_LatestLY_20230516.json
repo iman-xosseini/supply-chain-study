@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "LatestLY",
+    "date": "2023-05-16",
+    "url": "https://www.latestly.com/agency-news/world-news-bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report-5130517.html",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "bypass SWIFT risk",
+      "edge_label": "hinders exports",
+      "evidence_quote": "Bangladesh shouldn't attempt to bypass SWIFT either because most of its ready-made garment exports go to the USA and European nations, all utilising SWIFT for international transactions.",
+      "scope_justification": "The article explicitly links a national-level policy (bypassing SWIFT) to Bangladesh's ready-made garment exports to the USA and EU, addressing country-level export flows consistent with the 'exports' definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Bangladesh shouldn't attempt to bypass SWIFT either because most of its ready-made garment exports go to the USA and European nations, all utilising SWIFT for international transactions.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article and explicitly states that Bangladesh 'shouldn't attempt to bypass SWIFT' because most of its ready-made garment exports go to the USA and EU which 'all utilising SWIFT,' directly linking bypassing SWIFT to harm for national-level exports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-16",
+      "exports",
+      "hinders exports",
+      "bypass SWIFT risk"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

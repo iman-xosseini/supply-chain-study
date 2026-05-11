@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-21",
+    "url": "https://www.bssnews.net/news-flash/137581",
+    "body_preview": "DHAKA, July 21, 2023 (BSS) - Prime Minister Sheikh Hasina today laid emphasis on an amicable end to the Ukraine war, saying international cooperation in this time of growing instability is clearly vital to the vulnerable among the global community to build resilience against future shocks.\n\n\"The prolonging war and the imposed sanctions and counter sanctions continue to destabilise the world. Each passing day of the war take as well as destroy many lives in the conflict zone, and also in the far-"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "shocks raise import costs",
+      "edge_label": "increases import bills",
+      "evidence_quote": "These and other shocks have driven up the prices of food, energy, and other commodities the world over",
+      "scope_justification": "The article then states Bangladesh \"as an energy and food-importing country, has been suffering from rising import bills,\" which refers to country-level import costs matching the balance_of_trade scope."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases import bills",
+      "shocks raise import costs"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-21",
+    "url": "https://www.bssnews.net/business/106417",
+    "body_preview": "DHAKA, Jan 21, 2023 (BSS) - Dhaka Chamber of Commerce and Industry (DCCI) President Barrister Md Sameer Sattar today urged all concerned to work together to face the changing economic reality in the wake of the current global condition.\n\n\"I'll urge all to work together in facing the changing economic reality,\" he said.\n\nThe DCCI President said this while addressing the \"Meet the Press\" held at the DCCI in the city's Motijheel area.\n\nHe said not only Bangladesh, but also the whole of the world is"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LC margin reduction request",
+      "edge_label": "facilitates imports",
+      "evidence_quote": "they have already requested the concerned authorities to reduce the LC margin for ensuring smooth import of essential items ahead of the Holy Month of Ramadan.",
+      "scope_justification": "The article explicitly links reducing LC margins to ensuring smooth import of essential items, which directly concerns LC-driven national import volumes as defined for 'imports'.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "they have already requested the concerned authorities to reduce the LC margin for ensuring smooth import of essential items ahead of the Holy Month of Ramadan.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence nearly verbatim; it explicitly says reducing the LC margin is requested 'for ensuring smooth import of essential items,' which expresses a causal intent; and the context refers to national-level imports ahead of Ramadan, matching the implied scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-21",
+      "imports",
+      "facilitates imports",
+      "LC margin reduction request"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

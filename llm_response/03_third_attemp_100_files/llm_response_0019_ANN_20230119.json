@@ -1,0 +1,91 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-19",
+    "url": "https://asianews.network/big-hike-in-gas-prices-for-bangladeshs-power-plants-industry/",
+    "body_preview": "DHAKA - The government yesterday raised the retail price of gas by 14.5 percent to 178.9 percent for industries, power plants and commercial establishments, who together account for 78 percent of gas use in Bangladesh, as it looks to lessen its unsustainable subsidy burden amid a narrow fiscal space.\n\nThe development is set to fuel a fresh round of inflation, which declined for the fourth straight month in December last year.\n\nFrom next month, the price of gas used for power generation will be T"
+  },
+  "llm_connections": [
+    {
+      "feature": "Production",
+      "event_summary": "fuel enables full production",
+      "edge_label": "enables full operation",
+      "evidence_quote": "agreed to pay more for gas on the condition that their industries get the fuel needed to run at full steam.",
+      "scope_justification": "The article explicitly links industries' access to fuel with their ability to 'run at full steam', which matches the Production feature's factory-level output scope."
+    },
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "plants shut for gas",
+      "edge_label": "causes plant shutdowns",
+      "evidence_quote": "Yesterday, 14 remained shut for want of gas",
+      "scope_justification": "The article describes actual plant shutdowns caused by lack of gas, which is an operational disruption fitting the Factory_Issue definition."
+    },
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "pause triggered load-shedding",
+      "edge_label": "triggers load-shedding",
+      "evidence_quote": "a development that triggered load-shedding and left industries starved of fuel.",
+      "scope_justification": "The quoted text explicitly states load-shedding and industries being starved of fuel, which are operational disruptions within the Factory_Issue scope."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "FX squeeze limits imports",
+      "edge_label": "limits spot purchases",
+      "evidence_quote": "The squeeze on foreign exchange reserves means the spot purchase will not be able to meet the demands of the industries, said Mansur",
+      "scope_justification": "This statement explicitly connects foreign-exchange constraints to the inability of spot imports to meet industry demand, which concerns import/delivery performance as defined by Delivery."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "spot imports add supply",
+      "edge_label": "adds LNG supply",
+      "evidence_quote": "Spot purchase means about 300-350 mmcfd can be added, said a Petrobangla official",
+      "scope_justification": "The article explicitly states that spot imports would add a quantified volume of gas supply, directly relating to import/delivery of fuel covered by the Delivery feature."
+    }
+  ],
+  "triplets": [
+    [
+      "Production",
+      "enables full operation",
+      "fuel enables full production"
+    ],
+    [
+      "Factory_Issue",
+      "causes plant shutdowns",
+      "plants shut for gas"
+    ],
+    [
+      "Factory_Issue",
+      "triggers load-shedding",
+      "pause triggered load-shedding"
+    ],
+    [
+      "Delivery",
+      "limits spot purchases",
+      "FX squeeze limits imports"
+    ],
+    [
+      "Delivery",
+      "adds LNG supply",
+      "spot imports add supply"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 5
+}

@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-05",
+    "url": "https://www.bssnews.net/business/129269",
+    "body_preview": "DHAKA, June 5, 2023 (BSS) - Country's both the bourses, Dhaka Stock Exchange (DSE) and Chittagong Stock Exchange (CSE) - today plunged due to mainly price fall in large-cap securities.\n\nThe DSEX, the benchmark index of the top bourse in Bangladesh, lost 9.84 points, or 0.15 per cent, to 6,356.30. The DS30, the blue-chip index, decreased 0.04 per cent to 2,198 while the DSES, the shariah-compliant index, went down 0.05 per cent to 1,382.\n\nHowever, turnover, a key indicator of the market, inched u"
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "DSE and CSE plunged",
+      "edge_label": "driven by large-cap price falls",
+      "evidence_quote": "Country's both the bourses, Dhaka Stock Exchange (DSE) and Chittagong Stock Exchange (CSE) - today plunged due to mainly price fall in large-cap securities.",
+      "scope_justification": "The article explicitly links the nationwide bourses' plunge (DSE and CSE indices) to large-cap price falls, matching the feature's focus on equity market performance (DSE Index).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Country's both the bourses, Dhaka Stock Exchange (DSE) and Chittagong Stock Exchange (CSE) - today plunged due to mainly price fall in large-cap securities.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence stating the bourses 'plunged due to mainly price fall in large-cap securities,' which explicitly asserts a cause-and-effect link and refers to both national exchanges (DSE and CSE), matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-05",
+      "stock_market_close",
+      "driven by large-cap price falls",
+      "DSE and CSE plunged"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-09",
+    "url": "https://www.bssnews.net/business/104238",
+    "body_preview": "DHAKA, Jan 9, 2023 (BSS) - Commerce Minister Tipu Munshi today said that considering the graduation from the LDCs, the government is focusing on signing Preferential Trade Agreements (PTAs) and Free Trade Agreements (FTAs) with potential partners.\n\n\"But, to avail international support measures even after LDC graduation, we need to enhance our negotiation skills,\" he said.\n\nThe commerce minister said these when the newly elected Board of Directors of DCCI, led by its president Barrister Md. Samee"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "LDC graduation tariffs",
+      "edge_label": "reduces exports",
+      "evidence_quote": "after the LDC graduation, Bangladesh would lose the preferential market access and would face 8 to 16 percent export tariff as a developing country",
+      "scope_justification": "The article describes a nationwide loss of preferential market access and imposition of export tariffs on Bangladesh after LDC graduation, which directly pertains to country-level exports and thus the trade balance.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "after the LDC graduation, Bangladesh would lose the preferential market access and would face 8 to 16 percent export tariff as a developing country",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted line stating Bangladesh 'would face 8 to 16 percent export tariff' after LDC graduation and immediately links this change to 'export losses' and the need for strategies/FTAs to offset them, explicitly asserting a country-level causal effect on exports."
+      }
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Sign FTAs to offset",
+      "edge_label": "mitigates export losses",
+      "evidence_quote": "Bangladesh needs to sign FTAs with more potential countries and important economic blocs to offset the loss of preferential market access",
+      "scope_justification": "The article explicitly recommends national-level FTAs to offset loss of preferential market access, addressing export outcomes at the country scale relevant to the balance of trade.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "Bangladesh needs to sign FTAs with more potential countries and important economic blocs to offset the loss of preferential market access.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence recommending signing FTAs to 'offset the loss of preferential market access' appears in the article, and the surrounding text explicitly presents FTAs as a means to overcome post-LDC export losses at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-09",
+      "balance_of_trade",
+      "reduces exports",
+      "LDC graduation tariffs"
+    ],
+    [
+      "2023-01-09",
+      "balance_of_trade",
+      "mitigates export losses",
+      "Sign FTAs to offset"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

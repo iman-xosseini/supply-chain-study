@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-07",
+    "url": "https://www.bssnews.net/business/129745",
+    "body_preview": "DHAKA, June 7, 2023 (BSS) - Federation of Bangladesh Chambers of Commerce and Industry (FBCCI) President Md Jashim Uddin today urged the government to extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.\n\nThe FBCCI president made the call while addressing a post-budget discussion as a special guest organized by the Economic Reporters' Forum (ERF) jointly with RAPID and Asia Foundation held at the ERF auditorium at Paltan in the "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Support import-substitute industries",
+      "edge_label": "lessens exchange pressure",
+      "evidence_quote": "extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.",
+      "scope_justification": "The article explicitly ties policy support to reduced ‘import pressure on foreign exchange,’ which refers to country-level exchange-rate/foreign-exchange conditions matching the feature's exchange-rate scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence urging policy support for import-substitute industries 'to lessen import pressure on foreign exchange,' which explicitly asserts a causal link and refers to country-level foreign exchange conditions."
+      }
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Bangladesh Bank import-cut",
+      "edge_label": "aims to reduce dollar stress",
+      "evidence_quote": "the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar,",
+      "scope_justification": "The article directly discusses a policy intended to affect 'stress on the dollar,' an explicit country-level exchange-rate concern consistent with the currency_log_return definition.",
+      "verification": {
+        "quote_similarity": 0.995,
+        "quote_best_match": "the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact quote appears in the article. The sentence explicitly links the Bangladesh Bank's move to cut imports with the intended effect of reducing 'stress on the dollar' (stating it is not a solution), and the discussion is at the national/country level, matching the exchange-rate feature."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-07",
+      "currency_log_return",
+      "lessens exchange pressure",
+      "Support import-substitute industries"
+    ],
+    [
+      "2023-06-07",
+      "currency_log_return",
+      "aims to reduce dollar stress",
+      "Bangladesh Bank import-cut"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "RocketNews | Top News Stories From Around the Globe",
+    "date": "2023-02-23",
+    "url": "https://www.rocketnews.com/2023/02/severe-dollar-crisis-hobbles-bangladesh-businesses/",
+    "body_preview": "Dhaka, Bangladesh - Spice trader Mohammed Enayet Ullah has made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, some of the most essential spices used in Bangladeshi cooking, only to be refused by banks due to a shortage of dollars.Importers in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services. It is essentially a financial contract issued by an importer's ban"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka depreciated 27%",
+      "edge_label": "causes dollar shortage",
+      "evidence_quote": "there is a severe shortage of greenbacks in Bangladesh due to its dwindling foreign reserves and a sharp drop in the value of its taka currency against the dollar.",
+      "scope_justification": "The article reports a nationwide 27% fall in the taka (USD/BDT), which is an exchange-rate movement at the national level matching the currency_log_return definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "there is a severe shortage of greenbacks in Bangladesh due to its dwindling foreign reserves and a sharp drop in the value of its taka currency against the dollar.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence linking the dollar shortage to dwindling foreign reserves and a sharp drop in the taka appears in the article, the piece explicitly attributes the greenback shortage to the currency fall, and the 27% depreciation is presented at the national (Bangladesh) level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-23",
+      "currency_log_return",
+      "causes dollar shortage",
+      "taka depreciated 27%"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

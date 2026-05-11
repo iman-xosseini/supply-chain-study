@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "The Daily Star",
+    "date": "2023-03-22",
+    "url": "https://www.thedailystar.net/business/news/ctg-chamber-starts-commodity-sales-subsidised-rates-3277871",
+    "body_preview": "The Chittagong Chamber of Commerce and Industry (CCCI) started selling essential commodities at subsidised rates on the eve of the holy month of Ramadan in the port city today.\n\nCCCI President Mahbubul Alam inaugurated the sales programme in front of World Trade Centre today morning.\n\nIt is initially selling sunned and boiled rice at Tk 35 a kilogramme and sugar at Tk 60 a kg from a makeshift outlet.\n\nSales will start at 10am and continue until 1pm and a person can purchase highest 3 kg of rice "
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "global food supply hampered",
+      "edge_label": "hampered delivery",
+      "evidence_quote": "the food supply chain across the world has been hampered due to Russia-Ukraine war following the Covid-19 pandemic",
+      "scope_justification": "The article explicitly states global food supply chains were 'hampered', which directly describes logistics performance (shipment/transport disruptions) as defined by the 'Delivery' feature."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "hampered delivery",
+      "global food supply hampered"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

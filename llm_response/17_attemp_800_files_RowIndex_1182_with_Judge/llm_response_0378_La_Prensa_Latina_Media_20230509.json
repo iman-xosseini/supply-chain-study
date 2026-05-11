@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-05-09",
+    "url": "https://www.laprensalatina.com/bangladeshs-forex-reserves-hit-seven-year-low-of-29-8-billion/",
+    "body_preview": "Dhaka, May 9 (EFE).- Bangladesh's foreign exchange reserves fell below $30 billion for the first time in seven years in a concerning sign for the country's economy, economists and bankers said on Tuesday.\n\nBangladesh Bank spokesperson and executive director, Mezbaul Haque, told EFE that the country's foreign exchange reserves stood at $29.83 billion on Monday after the payment of import bills worth $1.18 billion to the Asian Clearing Union.\n\nThe last time Bangladesh's foreign exchange reserves w"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "foreign currency inflow-outflow gap",
+      "edge_label": "impacts imports",
+      "evidence_quote": "There is a big gap between the inflow and outflow of our foreign currency. It is hugely impacting imports.",
+      "scope_justification": "The article explicitly links a country-level gap in foreign currency inflows and outflows to an impact on imports, which matches the feature's focus on national import volumes.",
+      "verification": {
+        "quote_similarity": 0.859,
+        "quote_best_match": "\"There is a big gap between the inflow and outflow of our foreign currency. It is not",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact quote appears in the article where Zahid Hussain says the gap between foreign currency inflows and outflows \"is hugely impacting imports,\" explicitly linking the inflow-outflow gap as a cause of reduced imports at the country level (Bangladesh)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-09",
+      "imports",
+      "impacts imports",
+      "foreign currency inflow-outflow gap"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

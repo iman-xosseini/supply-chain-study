@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-19",
+    "url": "https://www.bssnews.net/business/111562",
+    "body_preview": "DHAKA, Feb 19, 2023 (BSS) - Bangladesh Bank Deputy Governor Ahmed Jamal today said that the Bangladesh Bank is always committed to provide policy support to the exporters and importers.\n\n\"Given the ongoing situation due to Covid-19 pandemic, Bangladesh Bank extended policy supports to international trade by the ways of (a) extending repatriation of export proceeds, (b) extension of usance periods of import payments including back to back LCs, (c) EDF loan repayment extended to 360 days, (d) refi"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Import payment terms extended",
+      "edge_label": "extends payment period",
+      "evidence_quote": "\"extension of usance periods of import payments including back to back LCs\"",
+      "scope_justification": "The article discusses import payments and back-to-back LCs at the level of trade finance policy affecting imports generally, which matches the feature’s country-wide import scope.",
+      "verification": {
+        "quote_similarity": 0.98,
+        "quote_best_match": "extension of usance periods of import payments including back to back LCs,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact phrase \"extension of usance periods of import payments including back to back LCs\" appears in the article. The text explicitly says Bangladesh Bank extended policy supports to international trade, which includes extending import payment periods, and it is described as a Bangladesh Bank policy measure at the national trade-finance level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-19",
+      "imports",
+      "extends payment period",
+      "Import payment terms extended"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

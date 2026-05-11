@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-10",
+    "url": "https://asianews.network/overcoming-looming-economic-challenges-in-2023/",
+    "body_preview": "DHAKA - In 2023, several economies globally will face recession, while three large economies - the US, the EU and China - will continue to slow down, as the International Monetary Fund (IMF) observed on the eve of the new year. In October 2022, the IMF projected global economic growth to decrease from 3.2 percent in 2022 to 2.7 percent in 2023. This has been causing difficulties across countries and affecting the living standards of low-income households.\n\nFor Bangladesh, though inflation has su"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar shortage causes fall",
+      "edge_label": "drives depreciation",
+      "evidence_quote": "The supply shortage of dollars in the market has led to a free fall of the taka against the US dollar.",
+      "scope_justification": "The article explicitly describes a country-level depreciation of the taka against the US dollar, matching the feature's scope of exchange-rate volatility (USD to BDT)."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar injections keep taka strong",
+      "edge_label": "artificially sustains strength",
+      "evidence_quote": "Policymakers have kept the taka artificially stronger against the dollar for a long time by injecting US dollars into the market.",
+      "scope_justification": "The article attributes the taka's exchange-rate level versus the US dollar to dollar injections, directly addressing USD/BDT exchange behavior consistent with the feature's scope."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "drives depreciation",
+      "dollar shortage causes fall"
+    ],
+    [
+      "currency_log_return",
+      "artificially sustains strength",
+      "dollar injections keep taka strong"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

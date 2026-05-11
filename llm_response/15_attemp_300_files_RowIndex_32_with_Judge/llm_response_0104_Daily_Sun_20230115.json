@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-01-15",
+    "url": "https://www.daily-sun.com/post/668334/BB-unveils-%e2%80%98cautiously-accommodative%e2%80%99-MPS",
+    "body_preview": "DHAKA - Bangladesh Bank (BB) today announced 'cautiously accommodative' Monetary Policy Statement (MPS) for the second half of the current fiscal year 2022-23 (H2FY23).\n\n\"BB's monetary and credit programs for H2FY23 will pursue a cautiously accommodative policy stance to contain inflationary and exchange rate pressures, support desired economic growth, ensuring the necessary flow of funds to the economy's productive and employment generating activities,\" said BB Governor Abdur Rouf Talukder whil"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "cautiously accommodative policy",
+      "edge_label": "reduces exchange volatility",
+      "evidence_quote": "pursue a cautiously accommodative policy stance to contain inflationary and exchange rate pressures",
+      "scope_justification": "The article explicitly says the central bank's nationwide monetary policy stance aims to contain 'exchange rate pressures', which matches the feature's country-level focus on exchange-rate volatility (e.g., USD to BDT).",
+      "verification": {
+        "quote_similarity": 0.995,
+        "quote_best_match": "pursue a cautiously accommodative policy stance to contain inflationary and exchange rate pressures,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact line saying BB will 'pursue a cautiously accommodative policy stance to contain ... exchange rate pressures,' which explicitly states the policy is intended to reduce/contain exchange-rate pressures and refers to the national (Bangladesh) level."
+      }
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dissuade non-essential imports",
+      "edge_label": "reduces exchange pressure",
+      "evidence_quote": "dissuade imports of non-essential commodities to reduce the exchange rate pressure, protect foreign exchange reserves and control imported inflation",
+      "scope_justification": "The article links a national policy to 'reduce the exchange rate pressure' and 'control imported inflation', directly addressing country-level exchange-rate pressure and import-related price effects in scope of the feature.",
+      "verification": {
+        "quote_similarity": 0.993,
+        "quote_best_match": "dissuade imports of non-essential commodities to reduce the exchange rate pressure, protect foreign exchange reserves and control imported inflation,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating BB will 'dissuade imports of non-essential commodities to reduce the exchange rate pressure,' which explicitly links that policy as a means to lower exchange-rate pressure; the context is national (Bangladesh), matching the feature's country-level scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-15",
+      "currency_log_return",
+      "reduces exchange volatility",
+      "cautiously accommodative policy"
+    ],
+    [
+      "2023-01-15",
+      "currency_log_return",
+      "reduces exchange pressure",
+      "dissuade non-essential imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 2
+}

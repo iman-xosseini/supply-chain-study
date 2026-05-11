@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-18",
+    "url": "https://www.bssnews.net/business/116220",
+    "body_preview": "DHAKA, March 18, 2023 (BSS) - Speakers at a conference today said that achievement of a trillion-dollar-plus economy requires all stakeholders to work together to address the issues and also to take bold steps and make necessary policy reforms.\n\nThey also came up with a number of recommendations for policy reformations in the areas like ensuring quality education and setting up of technical schools, ensuring digital education, development of IT infrastructures, setting-up of bonded warehouse, ne"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Limited L/C access",
+      "edge_label": "limits imports",
+      "evidence_quote": "Presently, the manufacturing and other essential goods importers are facing difficulty to some extent due to limited access to L/C opening.",
+      "scope_justification": "The article explicitly links limited access to Letters of Credit to difficulties faced by manufacturing and essential goods importers, directly relating to LC-driven aggregate import volumes as defined."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "limits imports",
+      "Limited L/C access"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-02",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128791",
+    "body_preview": "DHAKA, June 2, 2023 (BSS) - Bangladesh Bank Governor Abdur Rouf Talukder today ruled out any possibility of creating inflation in the country from the target of government borrowings including from bank borrowings set in the proposed budget for the next fiscal year (FY24).\n\n\"Currently, the inflation in the country is not because of the supply side, rather it is absolutely imported inflation,\" he said.\n\nThe central bank governor said this while replying to a question during the post budget press "
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "policy support extended",
+      "edge_label": "supports stock market",
+      "evidence_quote": "Asked about the measures for improving the stock market, the Governor said that some 3 to 4 major policy issues were solved over the last one year",
+      "scope_justification": "The quote explicitly refers to measures 'for improving the stock market', addressing the overall equity market performance matching the stock_market_close definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Asked about the measures for improving the stock market, the Governor said that some 3 to 4 major policy issues were solved over the last one year",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted line about measures for improving the stock market and states the central bank 'has extended necessary policy support in this regard,' which explicitly links the policy support as a measure aimed at improving the (national) stock market."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-02",
+      "stock_market_close",
+      "supports stock market",
+      "policy support extended"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

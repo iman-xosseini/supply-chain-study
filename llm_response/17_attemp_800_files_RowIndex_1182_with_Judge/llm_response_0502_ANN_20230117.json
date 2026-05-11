@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-17",
+    "url": "https://asianews.network/job-growth-in-south-asia-may-halve-this-year-ilo/",
+    "body_preview": "DHAKA - The growth of jobs in South Asia is expected to nearly halve to 1.6 per cent in 2023 from 3 per cent a year ago, according to a new International Labour Organization (ILO) report released yesterday.\n\nThis will be due to slowing economic growth impacted by the war in Ukraine, high inflation and worsened public finances, it said.\n\nThe report \"World Employment and Social Outlook: Trends 2023\" also projects that global employment growth would be only 1 per cent in 2023, less than half the le"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "high and volatile energy prices",
+      "edge_label": "exposes import vulnerability",
+      "evidence_quote": "recent high and volatile energy prices have shown how vulnerable the region was with respect to energy imports; there is a clear need to become less dependent on these imports.",
+      "scope_justification": "The article explicitly discusses 'energy imports' at the South Asia regional level, matching the feature's country/region-level focus on goods brought into the area.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "recent high and volatile energy prices have shown how vulnerable the region was with respect to energy imports; there is a clear need to become less dependent on these imports.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article and explicitly states that 'recent high and volatile energy prices have shown how vulnerable the region was with respect to energy imports,' establishing a clear cause-effect (prices exposing import vulnerability) at the South Asia regional level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-17",
+      "imports",
+      "exposes import vulnerability",
+      "high and volatile energy prices"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

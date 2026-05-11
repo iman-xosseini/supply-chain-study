@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-15",
+    "url": "https://www.bssnews.net/news/105384",
+    "body_preview": "TANGAIL, Jan 15, 2023 (BSS) - Agriculture Minister Dr Abdur Razzaq today said the government is implementing three- year roadmap to reduce import dependency of cooking oil through 50 percent production of oil.\n\n\"We are importing 90 percent cooking oil to meet domestic demand costing Taka 25 thousand crore each year,\" he said while visiting mustard crop field in Dhanbari upazila of Tangail district.\n\nAs part of the three-year roadmap, mustard cultivation has increased sharply in the country, Razz"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Cooking oil import reduction plan",
+      "edge_label": "reduces import dependency",
+      "evidence_quote": "the government is implementing three- year roadmap to reduce import dependency of cooking oil",
+      "scope_justification": "The article explicitly discusses imports at the country level by saying the government aims to reduce import dependency of cooking oil, which matches the feature’s national import-volume scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the government is implementing three- year roadmap to reduce import dependency of cooking oil",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the government is implementing a three-year roadmap to reduce import dependency of cooking oil, which matches the quoted evidence. It also places this at the national level by discussing Bangladesh's cooking oil imports and domestic demand, so the scope matches."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-15",
+      "imports",
+      "reduces import dependency",
+      "Cooking oil import reduction plan"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

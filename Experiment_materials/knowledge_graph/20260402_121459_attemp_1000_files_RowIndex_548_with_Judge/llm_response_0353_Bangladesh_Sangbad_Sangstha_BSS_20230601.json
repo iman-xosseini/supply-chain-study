@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/business/128643",
+    "body_preview": "RANGPUR, June 1, 2023 (BSS) - The proposed budget is supportive of building a Smart Bangladesh and domestic industrial development in times of crises like rampant commodity prices, inflation, slowdown in exports and remittances, dollar crisis, rising electricity, gas and fuel prices.\n\nPresident of Rangpur Chamber of Commerce and Industry (RCCI) Mostafa Sohrab Chowdhury Titu made the observation in an immediate reaction on the proposed budget for the 2023-2024 FY presented by Finance Minister AHM"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Import duties on goods",
+      "edge_label": "discourages imports",
+      "evidence_quote": "The proposed budget includes measures to increase regulatory duties to discourage import of non-essential and luxury goods",
+      "scope_justification": "This explicitly concerns import volumes at a broad, economy-wide level, matching the feature definition of goods brought into the country.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "The proposed budget includes measures to increase regulatory duties to discourage import of non-essential and luxury goods,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the proposed budget includes measures to increase regulatory duties to discourage import of non-essential and luxury goods, which directly states the causal effect. This is discussed at the general budget/national trade policy level, matching the broad imports scope."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "Container duty reduced",
+      "edge_label": "encourages import business",
+      "evidence_quote": "reduction of duty on container import to encourage import and export container business",
+      "scope_justification": "The article directly links a policy change to import activity, and the scope is general import business rather than a single firm or item.",
+      "verification": {
+        "quote_similarity": 0.994,
+        "quote_best_match": "reduction of duty on container import to encourage import and export container business.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says there is a 'reduction of duty on container import to encourage import and export container business,' which directly states the causal link. The scope is general business-level import/export container activity, matching the claimed feature."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-01",
+      "imports",
+      "discourages imports",
+      "Import duties on goods"
+    ],
+    [
+      "2023-06-01",
+      "imports",
+      "encourages import business",
+      "Container duty reduced"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

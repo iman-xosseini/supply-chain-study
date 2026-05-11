@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Poland Sun",
+    "date": "2023-05-16",
+    "url": "https://www.polandsun.com/news/273832902/bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Yuan payments affect imports",
+      "edge_label": "reduces import spending",
+      "evidence_quote": "\"Bangladesh can lessen its reliance on the dollar by using the Yuan to pay for around 10 per cent of its import expenses\"",
+      "scope_justification": "The article explicitly discusses Bangladesh's import expenses at the country-wide level, which matches the feature's definition of national imports volume.",
+      "verification": {
+        "quote_similarity": 0.988,
+        "quote_best_match": "Bangladesh can lessen its reliance on the dollar by using the Yuan to pay for around 10 per cent of its import expenses,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that Bangladesh can \"lessen its reliance on the dollar by using the Yuan to pay for around 10 per cent of its import expenses,\" which directly matches the quoted evidence. This is a country-level discussion of import expenses, and the cause-and-effect link between Yuan payments and reduced dollar reliance/import expense burden is explicitly stated."
+      }
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Yuan trade shifts external payments",
+      "edge_label": "alters trade balance pressure",
+      "evidence_quote": "\"Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.\"",
+      "scope_justification": "The statement refers to Bangladesh's aggregate export revenue and international trade, which aligns with the country-wide balance of trade concept.",
+      "verification": {
+        "quote_similarity": 0.992,
+        "quote_best_match": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states, \"Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well,\" which matches the evidence quote closely. It presents a direct cause-and-effect claim at the country level, so the scope also matches."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-16",
+      "imports",
+      "reduces import spending",
+      "Yuan payments affect imports"
+    ],
+    [
+      "2023-05-16",
+      "balance_of_trade",
+      "alters trade balance pressure",
+      "Yuan trade shifts external payments"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

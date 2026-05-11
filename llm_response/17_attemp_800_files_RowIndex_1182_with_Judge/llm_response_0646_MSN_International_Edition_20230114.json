@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "MSN International Edition",
+    "date": "2023-01-14",
+    "url": "https://www.msn.com/en-xl/asia/bangladesh/bb-set-to-announce-new-monetary-policy/ar-AA16jjFB",
+    "body_preview": "Dhaka, Jan. 13 -- Bangladesh Bank (BB) is going to announce a new monetary policy on Sunday in line with the advice of the International Monetary Fund (IMF).\n\nBangladesh requested the IMF for a loan of $4.5 billion last July, and the global lending agency agreed to give it to Bangladesh subject to conditions.\n\nBefore lending, the IMF gave several conditions for reforming Bangladesh's financial sector including setting a monetary policy for every quarter of a fiscal year.\n\nIn line with the IMF co"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "HPM injection lowers taka",
+      "edge_label": "lowers exchange rate",
+      "evidence_quote": "the central bank is bringing high power money (HPM) in the market, which will have multiple impacts, and the exchange rate of domestic currency (taka) will also fall then",
+      "scope_justification": "The article explicitly states a country-level change in the taka's exchange rate (it 'will...fall'), which matches the feature's focus on national exchange-rate movements.",
+      "verification": {
+        "quote_similarity": 0.997,
+        "quote_best_match": "the central bank is bringing high power money (HPM) in the market, which will have multiple impacts, and the exchange rate of domestic currency (taka) will also fall then.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating that the central bank 'is bringing high power money (HPM) in the market... and the exchange rate of domestic currency (taka) will also fall then,' which explicitly links HPM injection to a country-level fall in the taka's exchange rate."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-14",
+      "currency_log_return",
+      "lowers exchange rate",
+      "HPM injection lowers taka"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

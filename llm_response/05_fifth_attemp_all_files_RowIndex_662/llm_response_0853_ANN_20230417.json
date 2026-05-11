@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-04-17",
+    "url": "https://asianews.network/where-is-bangladesh-in-the-global-race-towards-renewable-energy/",
+    "body_preview": "DHAKA - The last two years have been exciting for the renewable energy sector, as the energy market turmoil stoked by recent events, like the Russia-Ukraine war, gave an impetus for an accelerated green transition.\n\nFor example, 2021 saw the largest annual capacity additions worth 175 gigawatts (GW) of solar photovoltaic power, bringing the total global solar PV capacity to 942 GW. Developing countries led this rapid transition, with China leading the race by adding the highest annual amount of "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Taka depreciation and price fluctuations",
+      "edge_label": "increases inflation and debt risk",
+      "evidence_quote": "depreciation of Taka against US dollar and price fluctuations in international energy market illustrate the risks of inflation and debt burden that a heavily import-dependent energy mix poses for Bangladesh.",
+      "scope_justification": "The article explicitly references depreciation of the Taka against the US dollar and international energy price fluctuations affecting Bangladesh's import-dependent energy mix, which matches the country-level exchange-rate volatility affecting import costs described in the feature."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "increases inflation and debt risk",
+      "Taka depreciation and price fluctuations"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

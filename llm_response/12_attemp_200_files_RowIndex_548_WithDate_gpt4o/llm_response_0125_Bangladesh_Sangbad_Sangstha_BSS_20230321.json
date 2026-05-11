@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-21",
+    "url": "https://www.bssnews.net/district/116749",
+    "body_preview": "KHULNA, March 21, 2023 (BSS)-The price of the essentials commodities has been asked to keep at tolerable level during the upcoming holy Ramadan, as sufficient food grains and essential commodities considering the holy month, are quite available in the market now, speakers at a view exchange meeting at deputy commissioner's office here today said.\n\nWith Khulna deputy commissioner (DC) Khondokar Yasir Arefin in the chair, representatives of Khulna Chamber of Commerce and Industry (KCCI), President"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "increased imports of goods",
+      "edge_label": "increases volume",
+      "evidence_quote": "The Government has taken necessary steps for increasing the imports of consumer goods to stabilize the market with sufficient supply.",
+      "scope_justification": "The article discusses the import of consumer goods at a national level, aligning with the feature definition of overall country-wide imports driven by raw material needs and LC availability."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-21",
+      "imports",
+      "increases volume",
+      "increased imports of goods"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

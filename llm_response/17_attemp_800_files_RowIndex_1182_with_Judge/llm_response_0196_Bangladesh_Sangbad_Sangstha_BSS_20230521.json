@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-21",
+    "url": "https://www.bssnews.net/news-flash/126567",
+    "body_preview": "DHAKA, May 21, 2023 (BSS)-Agriculture Minister Dr M Abdur Razzaque today said the government has a plan to import onion from India soon as the price of the commodity becomes just more than double at Taka 80 per kilogram in a month.\n\n\"The government has a plan to import onion from India as the decision will be taken shortly if the price of the essentials would not come under control at the local market\", he told the journalists while talking about onion import at his ministry office here.\n\nThe pr"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "government seeks onion import",
+      "edge_label": "seeks to increase imports",
+      "evidence_quote": "commerce ministry already has requested to the ministry of agriculture for seeking onion import permission considering the price hike",
+      "scope_justification": "The article reports the commerce ministry requesting permission to import onions, which is a direct action affecting the volume of goods brought into the country (imports).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "commerce ministry already has requested to the ministry of agriculture for seeking onion import permission considering the price hike",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence (or a very close paraphrase) stating the commerce ministry requested import permission, explicitly saying this was 'considering the price hike,' and it refers to government-level action affecting national imports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-21",
+      "imports",
+      "seeks to increase imports",
+      "government seeks onion import"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

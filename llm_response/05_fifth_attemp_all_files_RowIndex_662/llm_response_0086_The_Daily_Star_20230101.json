@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "The Daily Star",
+    "date": "2023-01-01",
+    "url": "https://www.thedailystar.net/business/economy/news/ensure-stable-energy-prices-economic-recovery-3210341",
+    "body_preview": "The Dhaka Chamber of Commerce and Industry (DCCI) today urged the government to focus on ensuring uninterrupted and affordable energy for both local and export-oriented manufacturing units to further accelerate Bangladesh's economic recovery in 2023.\n\nAlso, emphasis should be placed on improving the ease of doing business and developing an infrastructural environment that is conducive for attracting local and foreign investment, according to a press release from the trade body.\n\nIn addition, the"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka devaluation impacts imports",
+      "edge_label": "disrupts imports",
+      "evidence_quote": "devaluation of the taka against the US Dollar has challenged the country's financial sector, resulting in some negative impacts on the import of energy",
+      "scope_justification": "The article explicitly links a change in the USD–BDT exchange rate (taka devaluation) to negative impacts on imports, which matches the feature's focus on exchange-rate movements affecting imports."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "disrupts imports",
+      "taka devaluation impacts imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

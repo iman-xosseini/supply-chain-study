@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-13",
+    "url": "https://www.bssnews.net/business/110471",
+    "body_preview": "DHAKA, Feb 13, 2023 (BSS) - The businessmen of the steel and rod manufacturing sector today sought the government's support on an urgent basis to deal with the crisis surrounding the industry amid the price hike of raw materials in international market.\n\nThey said in such situation amid shortage of power and energy in the factories, the steel, rod and cement industries of the country are suffering from crisis.\n\nThey made the call and observations at the 2nd meeting of the FBCCI Standing Committe"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Raw material import support sought",
+      "edge_label": "supports raw material imports",
+      "evidence_quote": "He demanded for setting up a dollar fund for the import of raw materials",
+      "scope_justification": "The article explicitly discusses importing raw materials at a sector-wide level, which matches the imports feature’s scope of goods brought in and LC availability.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "He demanded for setting up a dollar fund for the import of raw materials",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the FBCCI chief \"demanded for setting up a dollar fund for the import of raw materials,\" which closely matches the evidence quote. This is presented at a sector-wide level and directly links the support measure to importing raw materials, satisfying both causality and scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-13",
+      "imports",
+      "supports raw material imports",
+      "Raw material import support sought"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

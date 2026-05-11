@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-04-17",
+    "url": "https://asianews.network/where-is-bangladesh-in-the-global-race-towards-renewable-energy/",
+    "body_preview": "DHAKA - The last two years have been exciting for the renewable energy sector, as the energy market turmoil stoked by recent events, like the Russia-Ukraine war, gave an impetus for an accelerated green transition.\n\nFor example, 2021 saw the largest annual capacity additions worth 175 gigawatts (GW) of solar photovoltaic power, bringing the total global solar PV capacity to 942 GW. Developing countries led this rapid transition, with China leading the race by adding the highest annual amount of "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "currency depreciation and price shocks",
+      "edge_label": "curtails fuel imports",
+      "evidence_quote": "This led to a situation where despite having a surplus installed power generation capacity, we could not supply electricity, as we were unable to buy fuel at a high price.",
+      "scope_justification": "The passage refers to inability of the country to buy fuel (in context of LNG/imported coal), which directly pertains to national-level imports volume described by the 'imports' feature.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "This led to a situation where despite having a surplus installed power generation capacity, we could not supply electricity, as we were unable to buy fuel at a high price.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears verbatim. The article explicitly links currency depreciation and international price fluctuations to Bangladesh being unable to buy (imported) fuel, and this discussion is at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-17",
+      "imports",
+      "curtails fuel imports",
+      "currency depreciation and price shocks"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

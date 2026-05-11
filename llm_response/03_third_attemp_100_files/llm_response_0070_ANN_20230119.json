@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-19",
+    "url": "https://asianews.network/big-hike-in-gas-prices-for-bangladeshs-power-plants-industry/",
+    "body_preview": "DHAKA - The government yesterday raised the retail price of gas by 14.5 percent to 178.9 percent for industries, power plants and commercial establishments, who together account for 78 percent of gas use in Bangladesh, as it looks to lessen its unsustainable subsidy burden amid a narrow fiscal space.\n\nThe development is set to fuel a fresh round of inflation, which declined for the fourth straight month in December last year.\n\nFrom next month, the price of gas used for power generation will be T"
+  },
+  "llm_connections": [
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "spot price triggers load-shedding",
+      "edge_label": "triggers load-shedding",
+      "evidence_quote": "a development that triggered load-shedding and left industries starved of fuel.",
+      "scope_justification": "The article explicitly states load-shedding and industries being starved of fuel, which are operational disruptions (power outages) covered by the Factory_Issue definition."
+    },
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "gas shortage shuts plants",
+      "edge_label": "shuts power plants",
+      "evidence_quote": "At least 29 gas-fired power plants are not getting gas to produce electricity as per their capacity of 6,001 megawatts.",
+      "scope_justification": "The article reports gas-fired power plants unable to produce electricity (shut or underproducing), an operational disruption matching the Factory_Issue definition."
+    }
+  ],
+  "triplets": [
+    [
+      "Factory_Issue",
+      "triggers load-shedding",
+      "spot price triggers load-shedding"
+    ],
+    [
+      "Factory_Issue",
+      "shuts power plants",
+      "gas shortage shuts plants"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "MSN International Edition",
+    "date": "2023-02-17",
+    "url": "https://www.msn.com/en-xl/asia/bangladesh/dollar-crisis-casts-a-shadow-over-operation-of-rampal-coal-fired-power-plant/ar-AA17z4yx",
+    "body_preview": "Dhaka, Feb. 16 -- The 1320 MW Rampal power plant has resumed its partial production, but officials still worry about its uninterrupted operation due to dollar crisis that may again disrupt the import of coal, the plant's main fuel.\n\nThe Unit-1 of the coal-fired plant resumed production from Wednesday after a month-long shutdown caused by shortage of coal.\n\nThe plant is still under a test run that started in August before being discontinued last month.\n\nA kind of concern was expressed by the offi"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Coal import delays plant operations",
+      "edge_label": "disrupts coal imports",
+      "evidence_quote": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+      "scope_justification": "This matches the imports definition because it explicitly discusses the import of coal and the LC constraint affecting that import flow.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the plant was unable to open an LC to import coal due to the dollar crisis, which directly links the crisis to disrupted coal imports. This is about the Rampal plant’s coal imports, matching the feature and scope described."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-17",
+      "imports",
+      "disrupts coal imports",
+      "Coal import delays plant operations"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

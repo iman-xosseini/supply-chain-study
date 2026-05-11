@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-06-07",
+    "url": "https://asianews.network/high-inflation-and-power-crisis-pm-hasina-asks-ministries-to-find-a-way-out/",
+    "body_preview": "DHAKA - Prime Minister Sheikh Hasina yesterday asked the ministries concerned to come up with a roadmap to tackle inflation and power crisis, the biggest sources of people's sufferings.\n\n\"Inflation can't be allowed to rise any further,\" Planning Minister MA Mannan quoted the prime minister as saying at a meeting of the Executive Committee of the National Economic Council (Ecnec).\n\nThe prime minister ordered the Trading Corporation of Bangladesh (TCB) to have larger stocks of essentials so that i"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Dollar crisis causes depreciation",
+      "edge_label": "causes depreciation",
+      "evidence_quote": "The taka has been losing its value against the dollar because of the dollar crisis.",
+      "scope_justification": "The article explicitly describes the national exchange-rate (taka vs dollar) losing value, which matches the feature's focus on exchange-rate movement affecting import costs."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "causes depreciation",
+      "Dollar crisis causes depreciation"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

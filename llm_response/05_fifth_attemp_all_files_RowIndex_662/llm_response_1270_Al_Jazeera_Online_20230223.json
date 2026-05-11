@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Al Jazeera Online",
+    "date": "2023-02-23",
+    "url": "https://www.aljazeera.com/economy/2023/2/23/severe-dollar-crisis-hobbles-bangladesh-businesses",
+    "body_preview": "Dhaka, Bangladesh - Spice trader Mohammed Enayet Ullah has made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, some of the most essential spices used in Bangladeshi cooking, only to be refused by banks due to a shortage of dollars.\n\nImporters in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services. It is essentially a financial contract issued by an importer's b"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "sharp taka depreciation",
+      "edge_label": "causes dollar shortage",
+      "evidence_quote": "But there is a severe shortage of greenbacks in Bangladesh due to its dwindling foreign reserves and a sharp drop in the value of its taka currency against the dollar.",
+      "scope_justification": "The article specifies a nationwide sharp drop in the taka (exchange-rate movement) and explicitly links that drop to a shortage of dollars, matching the feature's macro exchange-rate scope."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "causes dollar shortage",
+      "sharp taka depreciation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

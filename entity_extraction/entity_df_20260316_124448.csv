@@ -1,0 +1,6 @@
+﻿date,subject,predicate,object,extracted_entities
+2023-01-01,"The volume of goods brought in, driven by Letter of Credit (LC) availability and raw material needs.",reduces imports,foreign currency crisis and devaluation,"[{'name': 'foreign currency crisis', 'label': 'Economic Crisis'}, {'name': 'devaluation', 'label': 'Economic Policy'}]"
+2023-07-19,The difference between country-wide imports and exports.,contributed to growth,strong net exports,"[{'name': 'strong net exports', 'label': 'Macroeconomic Indicator'}]"
+2023-02-05,"The volume of goods brought in, driven by Letter of Credit (LC) availability and raw material needs.",disrupts imports,War disrupts supply chains,"[{'name': 'War', 'label': 'Conflict'}, {'name': 'supply chains', 'label': 'Supply Chain'}]"
+2023-05-14,"The volume of goods brought in, driven by Letter of Credit (LC) availability and raw material needs.",halts purchases,refuse purchases under sanctions,"[{'name': 'refuse purchases', 'label': 'Trade Restriction'}, {'name': 'sanctions', 'label': 'Legal Measure'}]"
+2023-06-07,"Volatility in the exchange rate (e.g., USD to BDT) affecting import costs.",increases import buying price,depreciation raises buying price,"[{'name': 'depreciation', 'label': 'Economic Indicator'}, {'name': 'buying price', 'label': 'Market Price'}]"

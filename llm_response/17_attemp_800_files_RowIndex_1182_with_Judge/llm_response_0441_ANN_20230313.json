@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-03-13",
+    "url": "https://asianews.network/no-policy-measures-taken-to-contain-high-inflation/",
+    "body_preview": "DHAKA - Inflation is back to a rising path following a few months of modest decline. The rise was driven by food inflation while non-food inflation remained unchanged relative to January at close to double digit level.\n\nA very significant rise in food inflation in February possibly reflects the preponed Ramadan effects on prices as mobile courts become more aggressive during Ramadan.\n\nAlso, it looks politically more palatable since Ramadan price increases have drawn a lot of flaks in recent year"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Forex-driven import compression",
+      "edge_label": "compresses imports",
+      "evidence_quote": "Import compression due to forex shortage must also have contributed to recharging the inflationary momentum.",
+      "scope_justification": "The article explicitly refers to 'Import compression' caused by a 'forex shortage', which describes aggregate import volume effects consistent with the imports feature definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Import compression due to forex shortage must also have contributed to recharging the inflationary momentum.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article text contains the exact sentence \"Import compression due to forex shortage must also have contributed...\", explicitly attributing import compression to a forex shortage; it discusses this in the national (Bangladesh) context, matching the feature's aggregate import scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-13",
+      "imports",
+      "compresses imports",
+      "Forex-driven import compression"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

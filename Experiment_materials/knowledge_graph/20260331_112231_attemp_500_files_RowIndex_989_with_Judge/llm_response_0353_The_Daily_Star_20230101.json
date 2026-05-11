@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "The Daily Star",
+    "date": "2023-01-01",
+    "url": "https://www.thedailystar.net/business/economy/news/ensure-stable-energy-prices-economic-recovery-3210341",
+    "body_preview": "The Dhaka Chamber of Commerce and Industry (DCCI) today urged the government to focus on ensuring uninterrupted and affordable energy for both local and export-oriented manufacturing units to further accelerate Bangladesh's economic recovery in 2023.\n\nAlso, emphasis should be placed on improving the ease of doing business and developing an infrastructural environment that is conducive for attracting local and foreign investment, according to a press release from the trade body.\n\nIn addition, the"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka devaluation disrupts imports",
+      "edge_label": "disrupts import supply",
+      "evidence_quote": "the ongoing foreign currency shortage and devaluation of the taka against the US Dollar has challenged the country's financial sector, resulting in some negative impacts on the import of energy",
+      "scope_justification": "The article explicitly links devaluation of the taka (exchange-rate movement) to negative impacts on imports at the national level, matching the feature's country-level exchange-rate volatility affecting imports scope.",
+      "verification": {
+        "quote_similarity": 0.997,
+        "quote_best_match": "The ongoing foreign currency shortage and devaluation of the taka against the US Dollar has challenged the country's financial sector, resulting in some negative impacts on the import of energy,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating the devaluation of the taka 'has challenged the country's financial sector, resulting in some negative impacts on the import of energy,' which explicitly asserts a causal effect at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-01",
+      "currency_log_return",
+      "disrupts import supply",
+      "taka devaluation disrupts imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

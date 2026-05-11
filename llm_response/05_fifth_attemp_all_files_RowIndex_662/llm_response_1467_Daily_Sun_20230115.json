@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-01-15",
+    "url": "https://www.daily-sun.com/post/668334/BB-unveils-%e2%80%98cautiously-accommodative%e2%80%99-MPS",
+    "body_preview": "DHAKA - Bangladesh Bank (BB) today announced 'cautiously accommodative' Monetary Policy Statement (MPS) for the second half of the current fiscal year 2022-23 (H2FY23).\n\n\"BB's monetary and credit programs for H2FY23 will pursue a cautiously accommodative policy stance to contain inflationary and exchange rate pressures, support desired economic growth, ensuring the necessary flow of funds to the economy's productive and employment generating activities,\" said BB Governor Abdur Rouf Talukder whil"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "accommodative policy stance",
+      "edge_label": "contains exchange rate pressure",
+      "evidence_quote": "BB's monetary and credit programs for H2FY23 will pursue a cautiously accommodative policy stance to contain inflationary and exchange rate pressures, support desired economic growth",
+      "scope_justification": "The article explicitly states the central bank's policy aims to 'contain ... exchange rate pressures', which refers to country-level exchange rate behavior matching the feature's scope on exchange rate volatility."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "contains exchange rate pressure",
+      "accommodative policy stance"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

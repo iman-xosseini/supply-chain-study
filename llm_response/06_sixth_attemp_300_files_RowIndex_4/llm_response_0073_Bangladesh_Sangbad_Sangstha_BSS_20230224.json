@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-24",
+    "url": "https://www.bssnews.net/news-flash/112237",
+    "body_preview": "CHATTOGRAM, Feb 24, 2023 (BSS) - The country would not face any shortage of essential commodities in the coming fasting month of Ramadan as the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.\n\nAlso the adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan, thanks to the government for easing opening letters of credit (LCs) for essential commodities to keep"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "government measures increase imports",
+      "edge_label": "increases import volume",
+      "evidence_quote": "timely measures of the government have helped increase the imports of consumer goods",
+      "scope_justification": "The quote refers to national-level imports of consumer goods driven by government measures, matching the feature's definition of country-wide import volume."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "easing LCs boosts imports",
+      "edge_label": "enables import flows",
+      "evidence_quote": "adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan, thanks to the government for easing opening letters of credit (LCs) for essential commodities",
+      "scope_justification": "The article explicitly links eased Letter of Credit (LC) policy to increased commodity imports, matching the feature's LC-driven import volume scope."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "LCs opened bring goods",
+      "edge_label": "delivers imported goods",
+      "evidence_quote": "essential products against LCs opened recently have started coming to the market",
+      "scope_justification": "This statement describes imported products arriving at market as a result of LCs opened, directly addressing country-level import flows described in the feature definition."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "increases import volume",
+      "government measures increase imports"
+    ],
+    [
+      "imports",
+      "enables import flows",
+      "easing LCs boosts imports"
+    ],
+    [
+      "imports",
+      "delivers imported goods",
+      "LCs opened bring goods"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 3
+}

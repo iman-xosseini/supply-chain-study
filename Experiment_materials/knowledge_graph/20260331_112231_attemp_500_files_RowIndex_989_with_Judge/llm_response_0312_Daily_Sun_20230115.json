@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-01-15",
+    "url": "https://www.daily-sun.com/post/668334/BB-unveils-%e2%80%98cautiously-accommodative%e2%80%99-MPS",
+    "body_preview": "DHAKA - Bangladesh Bank (BB) today announced 'cautiously accommodative' Monetary Policy Statement (MPS) for the second half of the current fiscal year 2022-23 (H2FY23).\n\n\"BB's monetary and credit programs for H2FY23 will pursue a cautiously accommodative policy stance to contain inflationary and exchange rate pressures, support desired economic growth, ensuring the necessary flow of funds to the economy's productive and employment generating activities,\" said BB Governor Abdur Rouf Talukder whil"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dissuades non-essential imports",
+      "edge_label": "reduces exchange-rate pressure",
+      "evidence_quote": "promote import-substituting economic activities and dissuade imports of non-essential commodities to reduce the exchange rate pressure",
+      "scope_justification": "The article describes a national policy action intended to reduce 'exchange rate pressure', which matches the feature's country-level focus on exchange-rate volatility.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "promote import-substituting economic activities and dissuade imports of non-essential commodities to reduce the exchange rate pressure,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence linking dissuading non-essential imports to an explicit goal: 'to reduce the exchange rate pressure.' That states a clear cause-and-effect intent by the central bank at the national level, matching the feature's country-level focus."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-15",
+      "currency_log_return",
+      "reduces exchange-rate pressure",
+      "dissuades non-essential imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

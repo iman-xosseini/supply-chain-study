@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Prothomalo",
+    "date": "2023-06-04",
+    "url": "https://en.prothomalo.com/business/local/1q4bvruzz4",
+    "body_preview": "Bangladesh Trade and Tariff Commission (BTTC), under the Ministry of Commerce, shows the price of unrefined soybean oil in Argentina was USD 847 per tonne on 31 May. The price was USD 1970 dollars exactly a year ago. The price has dropped by nearly 57 per cent.\n\nA bottle of soybean oil in the country's market went up to Tk 199 after it had been increased by Tk 12 per litre on 3 May. The price hike was caused by the withdrawal of exemption of value added tax (VAT) on soybean oil. The prices stood"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar appreciation causes inflation",
+      "edge_label": "fuels inflation",
+      "evidence_quote": "Inflation in the country is now caused by the appreciation of the dollar",
+      "scope_justification": "The article attributes country-level inflation directly to appreciation of the dollar, matching the feature's scope of exchange-rate movements affecting national cost dynamics.",
+      "verification": {
+        "quote_similarity": 0.993,
+        "quote_best_match": "Inflation in the country is now caused by the appreciation of the dollar,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence 'Inflation in the country is now caused by the appreciation of the dollar...' which explicitly attributes country-level inflation to dollar appreciation, matching the claimed causal relationship and scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-04",
+      "currency_log_return",
+      "fuels inflation",
+      "dollar appreciation causes inflation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

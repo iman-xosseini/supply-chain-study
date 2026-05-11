@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-01-31",
+    "url": "https://www.laprensalatina.com/imf-approves-4-7-billion-loan-package-for-bangladesh/",
+    "body_preview": "Dhaka, Jan 31 (EFE).- The International Monetary Fund (IMF) has approved a $4.7 billion loan package for Bangladesh amid a worrying state of the country's economy.\n\nThe approval for the 42-month borrowing package came in the IMF Executive Board meeting in Washington on Monday.\n\nBangladesh would get $3.3 billion under the Extended Credit Facility and the Extended Fund Facility arrangements.\n\nThe IMF Executive Board also approved $1.4 billion under the newly created Resilience and Sustainability F"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "War in Ukraine caused depreciation",
+      "edge_label": "causes taka depreciation",
+      "evidence_quote": "It has led to a sharp widening of Bangladesh's current account deficit, depreciation of the taka, and a decline in foreign exchange reserves.",
+      "scope_justification": "The article explicitly states 'depreciation of the taka', describing a national-level exchange-rate movement that matches the feature's focus on exchange-rate volatility.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "It has led to a sharp widening of Bangladesh's current account deficit, depreciation of the taka, and a decline in foreign exchange reserves.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating that Russia's war in Ukraine 'has led to ... depreciation of the taka,' explicitly attributing a country-level currency depreciation to the war, which matches the feature's scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-31",
+      "currency_log_return",
+      "causes taka depreciation",
+      "War in Ukraine caused depreciation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

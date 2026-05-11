@@ -1,0 +1,44 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-07",
+    "url": "https://www.bssnews.net/business/129745",
+    "body_preview": "DHAKA, June 7, 2023 (BSS) - Federation of Bangladesh Chambers of Commerce and Industry (FBCCI) President Md Jashim Uddin today urged the government to extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.\n\nThe FBCCI president made the call while addressing a post-budget discussion as a special guest organized by the Economic Reporters' Forum (ERF) jointly with RAPID and Asia Foundation held at the ERF auditorium at Paltan in the "
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "policy support for import-substitutes",
+      "edge_label": "reduces import pressure",
+      "evidence_quote": "urged the government to extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.",
+      "scope_justification": "The statement explicitly links national-level policy support for import-substitute industries to lessening import pressure, which concerns country-wide imports that form the imports component of the balance of trade."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Bangladesh Bank import cuts",
+      "edge_label": "fails to reduce dollar stress",
+      "evidence_quote": "the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar",
+      "scope_justification": "The quote explicitly discusses 'stress on the dollar' (the USD/BDT exchange rate) and links it causally to import-cutting measures, addressing exchange-rate conditions within the currency_log_return scope."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-07",
+      "balance_of_trade",
+      "reduces import pressure",
+      "policy support for import-substitutes"
+    ],
+    [
+      "2023-06-07",
+      "currency_log_return",
+      "fails to reduce dollar stress",
+      "Bangladesh Bank import cuts"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

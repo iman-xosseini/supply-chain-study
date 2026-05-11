@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-18",
+    "url": "https://www.bssnews.net/news-flash/131924",
+    "body_preview": "DHAKA, June 18, 2023 (BSS) - Unveiling a 'contractionary' monetary policy statement (MPS), Bangladesh Bank (BB) has projected domestic credit growth ceiling at 15.3 percent in the fiscal 2023-24 (FY24) accommodating 11 percent credit growth in private sector and 30 percent in public sector.\n\n\"The global economy has undergone significant challenges over the past three and a half years, including the impact of the COVID-19 pandemic that began in December 2019, followed by the Russia-Ukraine confli"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "adopt unified exchange rate",
+      "edge_label": "promotes FX stability",
+      "evidence_quote": "BB will no longer quote specific rates for buying or selling foreign exchanges, promoting stability in the foreign exchange market, he added.",
+      "scope_justification": "The article explicitly links a national policy change on the BDT–USD exchange rate quoting to promoting stability in the foreign exchange market, which matches the feature's country-level exchange-rate volatility scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "BB will no longer quote specific rates for buying or selling foreign exchanges, promoting stability in the foreign exchange market, he added.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence verbatim and explicitly states that BB will stop quoting specific buy/sell rates, 'promoting stability in the foreign exchange market,' which asserts a cause-and-effect for the national (country-level) exchange-rate regime change."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-18",
+      "currency_log_return",
+      "promotes FX stability",
+      "adopt unified exchange rate"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

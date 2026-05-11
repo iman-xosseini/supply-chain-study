@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-21",
+    "url": "https://www.bssnews.net/district/116749",
+    "body_preview": "KHULNA, March 21, 2023 (BSS)-The price of the essentials commodities has been asked to keep at tolerable level during the upcoming holy Ramadan, as sufficient food grains and essential commodities considering the holy month, are quite available in the market now, speakers at a view exchange meeting at deputy commissioner's office here today said.\n\nWith Khulna deputy commissioner (DC) Khondokar Yasir Arefin in the chair, representatives of Khulna Chamber of Commerce and Industry (KCCI), President"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Government increases imports",
+      "edge_label": "increases imports",
+      "evidence_quote": "The Government has taken necessary steps for increasing the imports of consumer goods",
+      "scope_justification": "The statement refers to government actions to increase imports of consumer goods (national-level policy), matching the feature's country-wide 'volume of goods brought in' scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The Government has taken necessary steps for increasing the imports of consumer goods",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states \"The Government has taken necessary steps for increasing the imports of consumer goods,\" which asserts government actions aimed at increasing imports (a cause-effect claim), and this is discussed at the national/consumer-goods level matching the feature's scope."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "Opened LCs bring imports",
+      "edge_label": "enables imports arrivals",
+      "evidence_quote": "essential products against LCs opened recently have already come to the market",
+      "scope_justification": "This links the opening of Letters of Credit to imported essential products arriving in the market, directly matching the feature's LC-driven imports volume scope.",
+      "verification": {
+        "quote_similarity": 0.987,
+        "quote_best_match": "essential products against LCs opened recently have already come to the market,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted line ('essential products against LCs opened recently have already come to the market') and elsewhere discusses easing LCs to increase imports; it explicitly links opening LCs to imported goods arriving in the (Khulna) market, and the scope (market/local imports) matches the claim."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-21",
+      "imports",
+      "increases imports",
+      "Government increases imports"
+    ],
+    [
+      "2023-03-21",
+      "imports",
+      "enables imports arrivals",
+      "Opened LCs bring imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

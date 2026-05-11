@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-09",
+    "url": "https://www.bssnews.net/news-flash/109790",
+    "body_preview": "DHAKA, Feb 09, 2023 (BSS) - Principal Secretary to Prime Minister Tofazzel Hossain Miah today informed that the government has already taken an initiative to formulate a logistics policy to ensure more competitiveness of Bangladeshi products in world market.\n\n\"We have to work seriously on logistics. In Bangladesh, we still don't have a logistics policy. But Prime Minister Sheikh Hasina has recently formed a committee under the leadership of the principal secretary with the participation of the p"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "pandemic restrictions cut exports",
+      "edge_label": "reduces exports",
+      "evidence_quote": "the country's export-oriented industries have reduced by 6.12 percent in 2020 due to the restriction policy during the pandemic period",
+      "scope_justification": "The article describes a country-wide (Bangladesh) reduction in export-oriented industries caused by pandemic restrictions, which directly pertains to the exports side of the national balance of trade."
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Russia-Ukraine war reduced exports",
+      "edge_label": "reduces export demand",
+      "evidence_quote": "The domino effect of the Russian-Ukraine war has contributed to instability in the region and reduced demand for exports from countries like Bangladesh,",
+      "scope_justification": "The article explicitly states reduced export demand for Bangladesh caused by the Russia-Ukraine war, which directly affects the country-level exports component of the balance of trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "reduces exports",
+      "pandemic restrictions cut exports"
+    ],
+    [
+      "balance_of_trade",
+      "reduces export demand",
+      "Russia-Ukraine war reduced exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,67 @@
+{
+  "article": {
+    "source": "english.news.cn",
+    "date": "2023-06-02",
+    "url": "https://english.news.cn/20230602/8805610bb8714e0288d8f4d873154159/c.html",
+    "body_preview": "DHAKA, June 2 (Xinhua) -- The new ISMARTU factory of Transsion Holdings formally came into operation recently in the Meghna Industrial Economic Zone, Narayanganj, on the outskirts of Dhaka, with workers diligently assembling and producing mobile phones.\n\nTranssion, a China-based smartphone manufacturer, is one of the leading Chinese smartphone makers in Bangladesh and has become a household name in the country as well as elsewhere in the region in recent years.\n\nNow, Transsion is running its sec"
+  },
+  "llm_connections": [
+    {
+      "feature": "Production",
+      "event_summary": "Factory production capacity",
+      "edge_label": "establishes production capacity",
+      "evidence_quote": "The monthly production capacity of smartphones can reach approximately 400,000 pieces, he said.",
+      "scope_justification": "The article gives a factory-level monthly production capacity (number of smartphones), which directly matches the Production feature's scope of goods manufactured."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "Factory provides smartphones",
+      "edge_label": "supplies smartphones",
+      "evidence_quote": "The factory will not only provide smartphones but also train local technical workers and promote employment.",
+      "scope_justification": "The article explicitly states the factory will provide smartphones, identifying the specific commercial item produced and supplied, matching the Product feature's scope."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "Laboratories ensure quality",
+      "edge_label": "ensures smartphone quality",
+      "evidence_quote": "the new factory has essential professional laboratories to ensure the quality of the smartphones is kept the same as Chinese standards.",
+      "scope_justification": "The article links on-site professional laboratories to maintaining the quality of the specific product (smartphones), which pertains to the Product feature's item-level scope."
+    }
+  ],
+  "triplets": [
+    [
+      "Production",
+      "establishes production capacity",
+      "Factory production capacity"
+    ],
+    [
+      "Product",
+      "supplies smartphones",
+      "Factory provides smartphones"
+    ],
+    [
+      "Product",
+      "ensures smartphone quality",
+      "Laboratories ensure quality"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 3
+}

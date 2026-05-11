@@ -1,0 +1,67 @@
+{
+  "article": {
+    "source": "Winnipeg Free Press",
+    "date": "2023-03-01",
+    "url": "https://www.winnipegfreepress.com/world/2023/03/01/argentina-wants-ukraine-war-to-end-says-foreign-minister",
+    "body_preview": "DHAKA, Bangladesh (AP) -- Argentina's Foreign Minister Santiago Cafiero said Tuesday that Russia's invasion of Ukraine must stop and has not only destabilized peace but also impacted prices in his country.\n\n\"Latin America is a zone of peace, the most densely populated zone of peace,\" Cafiero told The Associated Press in an interview. \"And we have no military developments and no military infrastructure to participate in a war that we demand should be finished and should not continue.\"\n\nHe said th"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "Fertilizer price increase",
+      "edge_label": "increases price of",
+      "evidence_quote": "resulted in the increase in food, fertilizer and energy prices",
+      "scope_justification": "The article explicitly states fertilizer prices rose, which directly concerns a specific commercial item, matching the Product feature's scope."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "Food price increase",
+      "edge_label": "increases price of",
+      "evidence_quote": "resulted in the increase in food, fertilizer and energy prices",
+      "scope_justification": "The article explicitly states food prices rose, which directly concerns a specific commercial item, matching the Product feature's scope."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "Energy price increase",
+      "edge_label": "increases price of",
+      "evidence_quote": "resulted in the increase in food, fertilizer and energy prices",
+      "scope_justification": "The article explicitly states energy prices rose, which directly concerns a specific commercial item, matching the Product feature's scope."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "increases price of",
+      "Fertilizer price increase"
+    ],
+    [
+      "Product",
+      "increases price of",
+      "Food price increase"
+    ],
+    [
+      "Product",
+      "increases price of",
+      "Energy price increase"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 3
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-07",
+    "url": "https://www.bssnews.net/business/129745",
+    "body_preview": "DHAKA, June 7, 2023 (BSS) - Federation of Bangladesh Chambers of Commerce and Industry (FBCCI) President Md Jashim Uddin today urged the government to extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.\n\nThe FBCCI president made the call while addressing a post-budget discussion as a special guest organized by the Economic Reporters' Forum (ERF) jointly with RAPID and Asia Foundation held at the ERF auditorium at Paltan in the "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "call for import substitution",
+      "edge_label": "reduces import pressure",
+      "evidence_quote": "extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.",
+      "scope_justification": "The quote explicitly describes a national policy action intended to lessen 'import pressure on foreign exchange', which refers to country-level imports and thus matches the imports feature scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that extending policy support to import-substitute industries is intended 'to lessen import pressure on foreign exchange,' and this is discussed at the national level for Bangladesh."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-07",
+      "imports",
+      "reduces import pressure",
+      "call for import substitution"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

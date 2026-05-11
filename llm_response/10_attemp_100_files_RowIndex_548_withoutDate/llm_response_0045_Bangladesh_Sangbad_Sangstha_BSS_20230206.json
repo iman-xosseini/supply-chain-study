@@ -1,0 +1,54 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-06",
+    "url": "https://www.bssnews.net/business/109295",
+    "body_preview": "DHAKA, Feb 6, 2023 (BSS) - Bangladesh Garment Manufacturers and Exporters Association (BGMEA) and SOWTEX along with Confederation of Indian Textile Industries (CITI) have planned two Textile Sourcing Meets'23 and Road Show in India from February 9 to 12.\n\nThe event will be led by BGMEA President Faruque Hassan and Vice President Shahidullah Azim along with a team of delegates from Bangladesh RMG Industries.\n\nThe BGMEA team is going for close interaction with top Indian Textile Manufacturers in a"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "India raw material support",
+      "edge_label": "adds imports",
+      "evidence_quote": "can contribute $15 billion of raw material support from India in the next 3-5 years.",
+      "scope_justification": "The article quantifies $15 billion of raw material support from India over 3–5 years, referring to country-level imported goods and thus matches the 'imports' definition."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "open land ports",
+      "edge_label": "facilitates imports",
+      "evidence_quote": "open up additional land ports and ease the congestion in Petrapole-Benapole border and better connectivity via train for smooth flow of raw materials from India to Bangladesh.",
+      "scope_justification": "This describes national-level steps to ease border congestion and improve connectivity to enable smooth flow of raw materials into Bangladesh, which matches the country-wide 'imports' scope."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "faster lead time",
+      "edge_label": "supports imports",
+      "evidence_quote": "The faster lead time and additional quality raw materials from a reliable source like India can help fulfill the demand for the buyers as well as grow the Bangladesh market",
+      "scope_justification": "The statement explicitly links improved lead times and additional raw materials from India to fulfilling buyer demand and market growth, referring to imported raw materials at the national industry level, matching 'imports'."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "adds imports",
+      "India raw material support"
+    ],
+    [
+      "imports",
+      "facilitates imports",
+      "open land ports"
+    ],
+    [
+      "imports",
+      "supports imports",
+      "faster lead time"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 3
+}

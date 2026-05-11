@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-03",
+    "url": "https://www.bssnews.net/district/113627",
+    "body_preview": "RAJSHAHI, March 3, 2023 (BSS) - Speakers at a function here stressed the need for enhanced production of mustard seed to meet the local demand along with lessening the gradually mounting pressure on import of the edible oil.\n\nThey opined that there is an immense prospect of boosting production of the oilseed, including BARI Sarisha-18 (Canola type), after the best uses of modern varieties and technologies in the region, including its vast Barind tract.\n\nUtmost emphasis should be given on expandi"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Boost domestic production",
+      "edge_label": "reduces import pressure",
+      "evidence_quote": "there is no way but to boost domestic production to cut the import pressure.",
+      "scope_justification": "The article explicitly refers to national edible oil imports and states boosting domestic production will cut import pressure, affecting the country's imports component of the balance of trade."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-03",
+      "balance_of_trade",
+      "reduces import pressure",
+      "Boost domestic production"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

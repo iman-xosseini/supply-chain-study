@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-09",
+    "url": "https://www.bssnews.net/business/104238",
+    "body_preview": "DHAKA, Jan 9, 2023 (BSS) - Commerce Minister Tipu Munshi today said that considering the graduation from the LDCs, the government is focusing on signing Preferential Trade Agreements (PTAs) and Free Trade Agreements (FTAs) with potential partners.\n\n\"But, to avail international support measures even after LDC graduation, we need to enhance our negotiation skills,\" he said.\n\nThe commerce minister said these when the newly elected Board of Directors of DCCI, led by its president Barrister Md. Samee"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "LDC graduation hurts exports",
+      "edge_label": "reduces export market access",
+      "evidence_quote": "Bangladesh would lose the preferential market access and would face 8 to 16 percent export tariff",
+      "scope_justification": "The article explicitly discusses Bangladesh’s export market access and export tariffs at the country level, which directly relates to the country-wide exports-versus-imports balance captured by balance_of_trade.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Bangladesh would lose the preferential market access and would face 8 to 16 percent export tariff",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted statement appears in the article nearly verbatim: Bangladesh would lose preferential market access and face 8 to 16 percent export tariff after LDC graduation. The article explicitly links LDC graduation to reduced market access and higher tariffs at the country level, which matches the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-09",
+      "balance_of_trade",
+      "reduces export market access",
+      "LDC graduation hurts exports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

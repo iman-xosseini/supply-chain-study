@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-18",
+    "url": "https://www.bssnews.net/news-flash/131924",
+    "body_preview": "DHAKA, June 18, 2023 (BSS) - Unveiling a 'contractionary' monetary policy statement (MPS), Bangladesh Bank (BB) has projected domestic credit growth ceiling at 15.3 percent in the fiscal 2023-24 (FY24) accommodating 11 percent credit growth in private sector and 30 percent in public sector.\n\n\"The global economy has undergone significant challenges over the past three and a half years, including the impact of the COVID-19 pandemic that began in December 2019, followed by the Russia-Ukraine confli"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "unified exchange rate regime",
+      "edge_label": "promotes exchange-rate stability",
+      "evidence_quote": "BB will no longer quote specific rates for buying or selling foreign exchanges, promoting stability in the foreign exchange market.",
+      "scope_justification": "The article explicitly ties the unified, market-driven BDT–USD exchange rate regime to 'promoting stability in the foreign exchange market', which directly addresses exchange-rate volatility (USD/BDT) at the national currency level."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "promotes exchange-rate stability",
+      "unified exchange rate regime"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

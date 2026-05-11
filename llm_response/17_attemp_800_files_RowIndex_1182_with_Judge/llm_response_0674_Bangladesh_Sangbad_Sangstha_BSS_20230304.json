@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-04",
+    "url": "https://www.bssnews.net/agriculture-news/113729",
+    "body_preview": "RAJSHAHI, March 4, 2023 (BSS) - Successful promotion of blast resistant wheat varieties has become indispensable to boost production of the cereal crop to feed the gradually rising population in the country.\n\nWheat cultivation and production will increase manifold in the region, including its vast barind tract, with the introduction of blast disease-resistant varieties of wheat.\n\nAgricultural scientists and researchers made the observation while addressing a farmers' field day meeting titled \"Bl"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "wheat shortfall increases imports",
+      "edge_label": "drives imports",
+      "evidence_quote": "Around 1,250 lakh tonnes of wheat is produced in Bangladesh while the rest needs to be imported to meet the demand.",
+      "scope_justification": "The article discusses country-level wheat production and states that the remaining national demand 'needs to be imported', directly linking a national production shortfall to imports volume.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Around 1,250 lakh tonnes of wheat is produced in Bangladesh while the rest needs to be imported to meet the demand.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted line exactly and explicitly states that the remainder beyond domestic production \"needs to be imported to meet the demand,\" which directly links a national production shortfall to increased imports at the country level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-04",
+      "imports",
+      "drives imports",
+      "wheat shortfall increases imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

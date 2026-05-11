@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-06-05",
+    "url": "https://www.daily-sun.com/post/693276/PM-sees-next-election-as-a-challenge",
+    "body_preview": "DHAKA - Awami League President and Prime Minister Sheikh Hasina today urged the party leaders and activists to take all out preparations for the next national polls saying it would be a challenge due to multifaceted conspiracies.\n\n\"The next election is a challenge because there are conspiracies from various quarters,\" she said while exchanging views with the leaders, activists of Awami League (AL) and its associates bodies at her official residence Ganabhaban.\n\nSome people raise misconceptions a"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "boost agricultural production",
+      "edge_label": "increases exports",
+      "evidence_quote": "urged all to boost up agricultural production by not keeping any piece of land uncultivated in the country, in order to meet the local demand and also export those.",
+      "scope_justification": "The article explicitly links boosting national agricultural production to the ability to export crops, which matches the country-level exports volume described in the feature definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "urged all to boost up agricultural production by not keeping any piece of land uncultivated in the country, in order to meet the local demand and also export those.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence urging increased national agricultural production “in order to meet the local demand and also export those,” which explicitly links boosting production to the ability to export at the country level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-05",
+      "exports",
+      "increases exports",
+      "boost agricultural production"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-03",
+    "url": "https://www.bssnews.net/news/134281",
+    "body_preview": "DHAKA, July 03, 2023 (BSS) - A total of 1.14 lakh kilogram of green chilli was imported in a single day through four land ports from India on Sunday following the government's permission of importing 36,830 tons to curb steep price hike of the essential kitchen item, port sources said.\n\nImport will increase today further, businessmen at land ports said.\n\nAs the price of green chilli started rising before Eid-ul-Azha, Agricultural Extension Department gave permission of importing the essential ki"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "government permission triggered imports",
+      "edge_label": "increases import volume",
+      "evidence_quote": "following the government's permission of importing 36,830 tons to curb steep price hike",
+      "scope_justification": "The article reports that after the government's permission was given, a specific quantity of green chilli was imported, which directly concerns the volume of goods brought into the country.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "following the government's permission of importing 36,830 tons to curb steep price hike",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article states that 1.14 lakh kg was imported 'following the government's permission' and notes imports began after permission was granted, indicating permission triggered imports. This is discussed at the national import level via multiple ports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-07-03",
+      "imports",
+      "increases import volume",
+      "government permission triggered imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

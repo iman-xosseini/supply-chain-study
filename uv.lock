@@ -526,6 +526,17 @@ wheels = [
 ]
 
 [[package]]
+name = "eventregistry"
+version = "9.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pytz" },
+    { name = "requests" },
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d5/71/8e2e8229d4b4ac37a8d64fa219ed9826b2ab05404f00f1a484966d4fd932/eventregistry-9.1.tar.gz", hash = "sha256:6c9e37852e5e16a02f0ba4321ef36ea7c3fd2a7dbcad35d1e9a520915b3e63d5", size = 59066, upload-time = "2023-06-23T08:39:11.206Z" }
+
+[[package]]
 name = "executing"
 version = "2.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1239,6 +1250,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "catboost" },
     { name = "causal-learn" },
+    { name = "eventregistry" },
     { name = "graphviz" },
     { name = "jupyterlab" },
     { name = "lightgbm" },
@@ -1252,6 +1264,7 @@ dependencies = [
     { name = "scikit-learn" },
     { name = "seaborn" },
     { name = "shap" },
+    { name = "ta" },
     { name = "tensorflow" },
     { name = "tigramite" },
     { name = "torch" },
@@ -1263,6 +1276,7 @@ dependencies = [
 requires-dist = [
     { name = "catboost", specifier = ">=1.2.8" },
     { name = "causal-learn", specifier = ">=0.1.4.3" },
+    { name = "eventregistry", specifier = ">=9.1" },
     { name = "graphviz", specifier = ">=0.21" },
     { name = "jupyterlab", specifier = ">=4.4.10" },
     { name = "lightgbm", specifier = ">=4.6.0" },
@@ -1276,6 +1290,7 @@ requires-dist = [
     { name = "scikit-learn", specifier = ">=1.7.2" },
     { name = "seaborn", specifier = ">=0.13.2" },
     { name = "shap", specifier = ">=0.49.1" },
+    { name = "ta", specifier = ">=0.11.0" },
     { name = "tensorflow", specifier = ">=2.20.0" },
     { name = "tigramite", specifier = ">=5.2.9.4" },
     { name = "torch", specifier = ">=2.9.1" },
@@ -3014,6 +3029,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/83/d3/803453b36afefb7c2
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl", hash = "sha256:e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5", size = 6299353, upload-time = "2025-04-27T18:04:59.103Z" },
 ]
+
+[[package]]
+name = "ta"
+version = "0.11.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "pandas" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e0/9a/37d92a6b470dc9088612c2399a68f1a9ac22872d4e1eff416818e22ab11b/ta-0.11.0.tar.gz", hash = "sha256:de86af43418420bd6b088a2ea9b95483071bf453c522a8441bc2f12bcf8493fd", size = 25308, upload-time = "2023-11-02T13:53:35.434Z" }
 
 [[package]]
 name = "tensorboard"

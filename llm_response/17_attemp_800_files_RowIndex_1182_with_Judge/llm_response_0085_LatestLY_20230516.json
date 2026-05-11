@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "LatestLY",
+    "date": "2023-05-16",
+    "url": "https://www.latestly.com/agency-news/world-news-bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report-5130517.html",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "reserve decline prompts curbs",
+      "edge_label": "discourages imports",
+      "evidence_quote": "This has compelled the government to discourage unnecessary imports and cut spending",
+      "scope_justification": "The article states a national government action to 'discourage unnecessary imports', which directly pertains to country-wide import activity (the feature's defined scope of import volumes).",
+      "verification": {
+        "quote_similarity": 0.994,
+        "quote_best_match": "This has compelled the government to discourage unnecessary imports and cut spending,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence \"This has compelled the government to discourage unnecessary imports and cut spending...\", linking falling reserves and related economic pressures directly to government actions to discourage imports, and the action is described at the national (country-wide) level."
+      }
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "move to Yuan lowers exports",
+      "edge_label": "lowers export revenue",
+      "evidence_quote": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.",
+      "scope_justification": "The article explicitly says switching to the Yuan will 'lower export revenue', which directly affects the national-level difference between imports and exports as defined by the balance_of_trade feature.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating 'Moving to the Yuan for international trade will ... lower export revenue as well,' which is an explicit causal claim about Bangladesh's national export revenue, matching the balance_of_trade scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-16",
+      "imports",
+      "discourages imports",
+      "reserve decline prompts curbs"
+    ],
+    [
+      "2023-05-16",
+      "balance_of_trade",
+      "lowers export revenue",
+      "move to Yuan lowers exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

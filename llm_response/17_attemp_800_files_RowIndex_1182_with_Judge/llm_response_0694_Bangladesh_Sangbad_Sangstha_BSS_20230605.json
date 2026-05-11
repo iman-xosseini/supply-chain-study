@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-05",
+    "url": "https://www.bssnews.net/news-flash/129302",
+    "body_preview": "DHAKA, June 5, 2023 (BSS) - Mentioning that everybody across the country is suffering due to the ongoing load shedding, State Minister for Power, Energy and Mineral Resources Nasrul Hamid today expressed optimism that the supply of electricity will be normal within the next two weeks.\n\n\"People of the country are suffering due to ongoing heat wave and load shedding, which are not enviable, but we are working on a priority basis to bring relief to public life very soon . . . Hopefully, the situati"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar exchange rise",
+      "edge_label": "hampers fuel imports",
+      "evidence_quote": "the exchange rate of the dollar rose unabatedly. This has affected the import of fuel such as gas, coal and furnace oil for power generation",
+      "scope_justification": "The article explicitly links the dollar's exchange-rate rise to effects on imports of fuels, directly matching the feature's focus on exchange-rate movements impacting imports.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "the exchange rate of the dollar rose unabatedly. This has affected the import of fuel such as gas, coal and furnace oil for power generation,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence nearly verbatim and explicitly states that the dollar's exchange-rate rise \"has affected the import of fuel such as gas, coal and furnace oil for power generation,\" attributing a causal effect at the country level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-05",
+      "currency_log_return",
+      "hampers fuel imports",
+      "dollar exchange rise"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

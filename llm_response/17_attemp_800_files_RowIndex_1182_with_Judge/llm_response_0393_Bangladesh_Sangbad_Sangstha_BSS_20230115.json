@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-15",
+    "url": "https://www.bssnews.net/news-flash/105330",
+    "body_preview": "DHAKA, Jan 15, 2023 (BSS) - Bangladesh Bank (BB) today announced 'cautiously accommodative' Monetary Policy Statement (MPS) for the second half of the current fiscal year 2022-23 (H2FY23).\n\n\"BB's monetary and credit programs for H2FY23 will pursue a cautiously accommodative policy stance to contain inflationary and exchange rate pressures, support desired economic growth, ensuring the necessary flow of funds to the economy's productive and employment generating activities,\" said BB Governor Abdu"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dissuade non-essential imports",
+      "edge_label": "reduces exchange rate pressure",
+      "evidence_quote": "dissuade imports of non-essential commodities to reduce the exchange rate pressure",
+      "scope_justification": "The article explicitly links a nationwide policy to 'dissuade imports' with an effect of reducing 'exchange rate pressure', which matches the feature's focus on national exchange-rate volatility.",
+      "verification": {
+        "quote_similarity": 0.994,
+        "quote_best_match": "dissuade imports of non-essential commodities to reduce the exchange rate pressure,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence 'dissuade imports of non-essential commodities to reduce the exchange rate pressure,' which explicitly states the policy action is intended to cause reduced exchange-rate pressure; this is discussed at the national/central-bank policy level, matching the feature's scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-15",
+      "currency_log_return",
+      "reduces exchange rate pressure",
+      "dissuade non-essential imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

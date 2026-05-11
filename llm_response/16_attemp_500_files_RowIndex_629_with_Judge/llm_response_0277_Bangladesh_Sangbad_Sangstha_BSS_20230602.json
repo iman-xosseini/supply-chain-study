@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-02",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128791",
+    "body_preview": "DHAKA, June 2, 2023 (BSS) - Bangladesh Bank Governor Abdur Rouf Talukder today ruled out any possibility of creating inflation in the country from the target of government borrowings including from bank borrowings set in the proposed budget for the next fiscal year (FY24).\n\n\"Currently, the inflation in the country is not because of the supply side, rather it is absolutely imported inflation,\" he said.\n\nThe central bank governor said this while replying to a question during the post budget press "
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "policy issues solved",
+      "edge_label": "supports market performance",
+      "evidence_quote": "Asked about the measures for improving the stock market, the Governor said that some 3 to 4 major policy issues were solved over the last one year",
+      "scope_justification": "The article explicitly discusses actions taken to improve 'the stock market' at the market-wide level, matching the feature's aggregate equity-market performance scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Asked about the measures for improving the stock market, the Governor said that some 3 to 4 major policy issues were solved over the last one year",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted line about 'some 3 to 4 major policy issues were solved' in response to a question on measures for improving the stock market; the governor presents those solved issues and the central bank's policy support as measures intended to improve/support the market, and the discussion refers to the stock market at the market-wide level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-02",
+      "stock_market_close",
+      "supports market performance",
+      "policy issues solved"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

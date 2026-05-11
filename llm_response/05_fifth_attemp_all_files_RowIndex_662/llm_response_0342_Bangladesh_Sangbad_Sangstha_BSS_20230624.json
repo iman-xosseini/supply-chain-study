@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-24",
+    "url": "https://www.bssnews.net/business/133047",
+    "body_preview": "KHULNA, June 24, 2023 (BSS)-Mayor of Khulna City Corporation (KCC)\n\nTalukder Abdul Khaleque today said the government has taken various steps to\n\nincrease the shrimp production, especially 'vannamei', a new species of white leg shrimp, to enhance the export to earn huge foreign currency.\n\n\"Shrimp is one of the main foreign currency earning sectors side by side garments,\n\nits cultivator including the businessmen should come forward to increase its production,\" he said this while inaugurating a se"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "increase shrimp production",
+      "edge_label": "increases exports",
+      "evidence_quote": "the government has taken various steps to increase the shrimp production, especially 'vannamei', a new species of white leg shrimp, to enhance the export to earn huge foreign currency",
+      "scope_justification": "The article explicitly ties government-led increases in shrimp production to enhanced exports and country-level foreign currency earnings, directly addressing country-wide exports which are part of the balance of trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases exports",
+      "increase shrimp production"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

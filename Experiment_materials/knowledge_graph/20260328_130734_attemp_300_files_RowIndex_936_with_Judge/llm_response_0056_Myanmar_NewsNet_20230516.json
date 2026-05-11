@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Myanmar News.Net",
+    "date": "2023-05-16",
+    "url": "https://www.myanmarnews.net/news/273832902/bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Taka depreciation since invasion",
+      "edge_label": "drives depreciation",
+      "evidence_quote": "Taka, the Bangladeshi currency, has lost nearly 25 per cent of its value against the dollar since Russia invaded Ukraine earlier this year, rocking global energy and commodities markets.",
+      "scope_justification": "The article describes a country-level change in the Taka versus the dollar (USD/BDT), which matches the exchange-rate volatility scope of currency_log_return.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Taka, the Bangladeshi currency, has lost nearly 25 per cent of its value against the dollar since Russia invaded Ukraine earlier this year, rocking global energy and commodities markets.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article linking the Taka's ~25% loss 'since Russia invaded Ukraine,' adding that the invasion rocked global energy and commodities markets; this explicitly ties the invasion (and its market effects) to the currency depreciation at the country level."
+      }
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Yuan use lowers exports",
+      "edge_label": "reduces export revenue",
+      "evidence_quote": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.",
+      "scope_justification": "The article explicitly states a reduction in national export revenue, which pertains to the exports component of the country-wide balance_of_trade definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence asserting that moving to the Yuan 'will ... lower export revenue,' which explicitly states a causal effect of Yuan use on national export revenue; the discussion is at the country level, matching the balance-of-trade scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-16",
+      "currency_log_return",
+      "drives depreciation",
+      "Taka depreciation since invasion"
+    ],
+    [
+      "2023-05-16",
+      "balance_of_trade",
+      "reduces export revenue",
+      "Yuan use lowers exports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

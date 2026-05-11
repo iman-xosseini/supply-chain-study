@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-30",
+    "url": "https://www.bssnews.net/news-flash/128128",
+    "body_preview": "DHAKA, May 30, 2023 (BSS) - Finance Minister AHM Mustafa Kamal will place a national budget of over Taka 7.61 lakh crore for the next fiscal year (FY24) at the Jatiya Sangsad on June 1 (Thursday) with a major focus on containing inflation, generating jobs, efforts towards building a 'Smart Bangladesh' and addressing the challenges of the fourth industrial revolution (4IR).\n\nThe possible budget size of Taka 7,61,785 crore would mainly aim at taming inflation alongside the higher GDP growth trajec"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Depreciation of Taka",
+      "edge_label": "increases price pressure",
+      "evidence_quote": "soften the blows of high prices of commodities in the international market and the depreciation of Taka.",
+      "scope_justification": "The article explicitly links depreciation of the Taka (a national exchange-rate movement) with higher international commodity price impacts, matching the feature's country-level exchange-rate effect on import costs.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "soften the blows of high prices of commodities in the international market and the depreciation of Taka.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence 'The allocations are being raised to soften the blows of high prices of commodities in the international market and the depreciation of Taka.' appears in the article and explicitly treats depreciation of the Taka as a source of adverse price effects that the budget aims to mitigate; the reference is to the national currency, matching the country-level scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-30",
+      "currency_log_return",
+      "increases price pressure",
+      "Depreciation of Taka"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-10",
+    "url": "https://www.bssnews.net/agriculture-news/109941",
+    "body_preview": "RANGPUR, Feb 10, 2023 (BSS) - Braving recent cold waves, farmers have already completed transplantation of Boro rice seedlings on 72 percent of the targeted land area in Rangpur agriculture region.\n\nOfficials of the Department of Agricultural Extension (DAE) said tender plants of Boro rice are growing well across the region where transplantation of seedlings continues in full swing during the current Rabi season.\n\nThe DAE and other agri-related organizations are providing latest technologies to "
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "ensuring fertilizer supply",
+      "edge_label": "ensures smooth supply",
+      "evidence_quote": "are ensuring smooth supply of fertilizers and electricity to farmers",
+      "scope_justification": "The article explicitly describes organizations 'ensuring smooth supply of fertilizers', which directly refers to regional logistics/supply performance consistent with the Delivery feature's scope."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "ensures smooth supply",
+      "ensuring fertilizer supply"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

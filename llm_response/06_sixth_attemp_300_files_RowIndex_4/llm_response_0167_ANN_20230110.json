@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-10",
+    "url": "https://asianews.network/overcoming-looming-economic-challenges-in-2023/",
+    "body_preview": "DHAKA - In 2023, several economies globally will face recession, while three large economies - the US, the EU and China - will continue to slow down, as the International Monetary Fund (IMF) observed on the eve of the new year. In October 2022, the IMF projected global economic growth to decrease from 3.2 percent in 2022 to 2.7 percent in 2023. This has been causing difficulties across countries and affecting the living standards of low-income households.\n\nFor Bangladesh, though inflation has su"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar shortage causes depreciation",
+      "edge_label": "drives depreciation",
+      "evidence_quote": "The supply shortage of dollars in the market has led to a free fall of the taka against the US dollar.",
+      "scope_justification": "The quote explicitly describes a national exchange-rate movement (taka vs US dollar), which matches the feature's scope of exchange-rate volatility."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "injection keeps taka strong",
+      "edge_label": "artificially strengthens",
+      "evidence_quote": "Policymakers have kept the taka artificially stronger against the dollar for a long time by injecting US dollars into the market.",
+      "scope_justification": "This statement explicitly attributes a policy action to national exchange-rate strength, directly addressing volatility/level of the country-level currency as defined."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "drives depreciation",
+      "dollar shortage causes depreciation"
+    ],
+    [
+      "currency_log_return",
+      "artificially strengthens",
+      "injection keeps taka strong"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 2
+}

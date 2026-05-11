@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-24",
+    "url": "https://www.bssnews.net/news-flash/112237",
+    "body_preview": "CHATTOGRAM, Feb 24, 2023 (BSS) - The country would not face any shortage of essential commodities in the coming fasting month of Ramadan as the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.\n\nAlso the adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan, thanks to the government for easing opening letters of credit (LCs) for essential commodities to keep"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "timely government measures increased imports",
+      "edge_label": "boosts imports",
+      "evidence_quote": "the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.",
+      "scope_justification": "The article explicitly attributes a country-level increase in imports of consumer goods to government measures, matching the feature's focus on overall import volume."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "easing LCs enabled imports",
+      "edge_label": "enables imports",
+      "evidence_quote": "adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan, thanks to the government for easing opening letters of credit (LCs) for essential commodities",
+      "scope_justification": "The article links the government's easing of letters of credit to increased commodity imports, directly addressing import volume driven by LC availability as defined."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "boosts imports",
+      "timely government measures increased imports"
+    ],
+    [
+      "imports",
+      "enables imports",
+      "easing LCs enabled imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 2
+}

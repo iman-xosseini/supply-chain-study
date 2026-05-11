@@ -1,0 +1,67 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-02",
+    "url": "https://www.bssnews.net/agriculture-news/123391",
+    "body_preview": "RAJSHAHI, May 2, 2023 (BSS) - Dragon has brought diversifications in the fruit farming system as many people are seen cultivating the crop commercially in the region, including its vast Barind tract.\n\nFarming of the high-value cash crop has opened up fortunes of many of the farmers as it's being judged as lucrative compared to other ones for the last couple of years.\n\nCommercial farming of dragon fruit, a cactus species fruit, originally from Central America, South America, and nowadays common i"
+  },
+  "llm_connections": [
+    {
+      "feature": "Group",
+      "event_summary": "Dragon diversifies farming",
+      "edge_label": "diversifies sector",
+      "evidence_quote": "Dragon has brought diversifications in the fruit farming system as many people are seen cultivating the crop commercially in the region",
+      "scope_justification": "The quote directly describes an effect on the fruit farming system (an industry sector), matching the 'Group' feature's scope as a broad industry segment."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "Dragon increases incomes",
+      "edge_label": "increases farmer income",
+      "evidence_quote": "Farming of the high-value cash crop has opened up fortunes of many of the farmers as it's being judged as lucrative compared to other ones",
+      "scope_justification": "This statement links the specific commercial item (dragon fruit) to increased farmer fortunes, matching the 'Product' feature which concerns the specific item being sold."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "Climate boosts popularity",
+      "edge_label": "increases popularity",
+      "evidence_quote": "commercial farming of dragon fruit has started gaining popularity in the Barind area after the best uses of its suitable climate condition and topography",
+      "scope_justification": "The sentence attributes increased popularity of the specific product (dragon fruit) to use of local climate/topography, which is directly about the product's market uptake."
+    }
+  ],
+  "triplets": [
+    [
+      "Group",
+      "diversifies sector",
+      "Dragon diversifies farming"
+    ],
+    [
+      "Product",
+      "increases farmer income",
+      "Dragon increases incomes"
+    ],
+    [
+      "Product",
+      "increases popularity",
+      "Climate boosts popularity"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 3
+}

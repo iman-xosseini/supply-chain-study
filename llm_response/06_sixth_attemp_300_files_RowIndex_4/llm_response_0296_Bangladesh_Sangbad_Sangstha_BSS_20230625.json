@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-25",
+    "url": "https://www.bssnews.net/business/133200",
+    "body_preview": "DHAKA, June 25, 2023 (BSS) - Stocks today witnessed upward trend as major indices of both Dhaka and Chittagong Stock Exchanges were found rising with higher activities of some large-cap securities.\n\nThe DSEX, the benchmark index of the Dhaka Stock Exchange (DSE), inched up 6.46 points, or 0.1 per cent, to close at 6,325. The DS30, the blue-chip index, increased 0.1 per cent to 2,189 while the DSES, the Shariah-compliant index, went up 0.1 per cent to 1,374.\n\nOf the securities, 87 advanced, 93 de"
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "Major indices rose",
+      "edge_label": "rose due to large-cap activity",
+      "evidence_quote": "Stocks today witnessed upward trend as major indices of both Dhaka and Chittagong Stock Exchanges were found rising with higher activities of some large-cap securities.",
+      "scope_justification": "The article explicitly attributes rising DSE and CSE indices to higher large-cap activity, which directly describes aggregate equity market performance as defined by the feature."
+    }
+  ],
+  "triplets": [
+    [
+      "stock_market_close",
+      "rose due to large-cap activity",
+      "Major indices rose"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

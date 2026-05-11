@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-24",
+    "url": "https://www.bssnews.net/news-flash/112342",
+    "body_preview": "DHAKA, Feb 24, 2023 (BSS) - Prime Minister Sheikh Hasina today called upon the Canadian entrepreneurs to invest in Bangladesh, particularly in agro-processing sector.\n\nShe made the call when visiting Canadian Minister of International Development Harjit S Sajjan paid a courtesy call on her at the latter's official residence Ganabhaban here.\n\nPrime Minister's Speech writer Md Nazrul Islam told BSS after the meeting.\n\nSheikh Hasina said Bangladesh is currently setting up 100 special economic zones"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "agro-processing development push",
+      "edge_label": "increases exports",
+      "evidence_quote": "her government puts emphasis on the development of agro-processing industry to export processed foods alongside meeting the local demand.",
+      "scope_justification": "The article links national-level government development of agro-processing with exporting processed foods, which directly concerns country-wide exports used to compute the balance of trade.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "her government puts emphasis on the development of agro-processing industry to export processed foods alongside meeting the local demand.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating the government emphasizes agro-processing 'to export processed foods alongside meeting the local demand,' which explicitly links the development push to exporting (a country-level outcome relevant to balance of trade)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-24",
+      "balance_of_trade",
+      "increases exports",
+      "agro-processing development push"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

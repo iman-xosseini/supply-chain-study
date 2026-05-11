@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-02",
+    "url": "https://www.bssnews.net/news-flash/108626",
+    "body_preview": "DHAKA, Jan 28, 2023 (BSS) - Newly formed National Logistic Development and Coordination Committee at its first meeting decided to work on formulating a National Logistic Development Policy within a year.\n\nPrime Minister's Principal Secretary and National Logistic Development and Coordination Committee Chairman M Tofazzel Hossain Miah presided over the meeting at the Prime Minister's Office (PMO) here this afternoon.\n\nTop officials of different government and private offices and export and import"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "reduced logistics costs",
+      "edge_label": "boosts exports",
+      "evidence_quote": "Bangladesh's exports will be boosted by manifold if the logistics cost could be reduced.",
+      "scope_justification": "The article explicitly refers to 'Bangladesh's exports' at the national level; exports are the country-wide export component relevant to the balance_of_trade definition."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "boosts exports",
+      "reduced logistics costs"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

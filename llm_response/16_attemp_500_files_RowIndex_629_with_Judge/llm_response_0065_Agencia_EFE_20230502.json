@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Agencia EFE",
+    "date": "2023-05-02",
+    "url": "https://efe.com/en/latest-news/2023-05-02/world-bank-gives-bangladesh-2-25-billion-development-loan/",
+    "body_preview": "Dhaka, May 2 (EFE).- The World Bank has agreed to provide Bangladesh a $2.25-billion loan for its five development projects on regional trade and connectivity, disaster preparedness, and environmental management.\n\nBangladesh's Economic Relations Division secretary and World Bank country director signed the agreements in Washington with Bangladesh Prime Minister Sheikh Hasina present on Monday.\n\nHasina is in Washington celebrating Bangladesh's 50-year partnership with the World Bank.\n\nUnder the a"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "War-induced currency depreciation",
+      "edge_label": "led to depreciation",
+      "evidence_quote": "The IMF said the Russia-Ukraine war had interrupted Bangladesh's robust economic recovery from the Covid-19 pandemic. It has led to a sharp widening of the current account deficit, depreciation",
+      "scope_justification": "The article directly attributes depreciation of the Bangladeshi taka (a country-level exchange-rate movement) to the Russia-Ukraine war, matching the feature's national exchange-rate scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The IMF said the Russia-Ukraine war had interrupted Bangladesh's robust economic recovery from the Covid-19 pandemic. It has led to a sharp widening of the current account deficit, depreciation",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted lines attributing the Russia-Ukraine war to a sharp widening of the current account deficit and depreciation of the Bangladeshi taka. The text explicitly links the war (via 'It has led to...') as the cause, and the depreciation is described at the national currency level, matching the feature's scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-02",
+      "currency_log_return",
+      "led to depreciation",
+      "War-induced currency depreciation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

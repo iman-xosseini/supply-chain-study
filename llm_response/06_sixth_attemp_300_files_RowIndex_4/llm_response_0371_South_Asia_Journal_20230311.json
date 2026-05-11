@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "South Asia Journal",
+    "date": "2023-03-11",
+    "url": "http://southasiajournal.net/bangladesh-banks-feel-squeeze-of-moodys-outlook-downgrade/",
+    "body_preview": "DHAKA -- Bangladesh's banking sector is girding for a rougher ride after Moody's, one of the big three global rating agencies, downgraded its outlook for the sector from \"stable\" to \"negative.\"\n\nEconomists and financial analysts say last week's downgrade is a major blow for an economy hobbled by a weakened currency, high inflation and declining foreign reserves amid the global shock waves from the Ukraine war. They warn that cross-border financial transactions will become more difficult and cost"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Moody's sector downgrade",
+      "edge_label": "hinders cross-border transactions",
+      "evidence_quote": "Now that the whole banking system is being formally certified as riskier, it will significantly hinder our cross-border transactions",
+      "scope_justification": "The article links the downgrade to hindered cross-border transactions and cites Bangladesh Bank data on a nationwide 14% slump in new letters of credit and banks' inability to settle import bills, which matches the country-wide imports scope driven by LC availability."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "hinders cross-border transactions",
+      "Moody's sector downgrade"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

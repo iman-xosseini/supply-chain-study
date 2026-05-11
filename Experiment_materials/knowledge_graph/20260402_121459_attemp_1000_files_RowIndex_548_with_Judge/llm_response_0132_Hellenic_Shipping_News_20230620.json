@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Hellenic Shipping News",
+    "date": "2023-06-20",
+    "url": "https://www.hellenicshippingnews.com/commodity-tracker-5-charts-to-watch-this-week-77/",
+    "body_preview": "1. Bangladesh's first ever single-point mooring system to allow higher Saudi, UAE crude imports\n\nWhat's happening? Bangladesh has installed its first single-point mooring system in the Bay of Bengal. Prior to the SPM installation, Bangladesh Petroleum Corp. had to use multiple small vessels to unload imported crude and oil products from large tankers anchored in deep-sea areas and move them to the state-run refiner's Chattogram storage tanks. The process used to take up to seven days to complete"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "SPM boosts crude imports",
+      "edge_label": "increases import capacity",
+      "evidence_quote": "Bangladesh is poised to increase Middle Eastern crude imports and diesel trades.",
+      "scope_justification": "The article explicitly discusses Bangladesh’s import volumes of crude oil and diesel, which matches the feature’s country-wide imports scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Bangladesh is poised to increase Middle Eastern crude imports and diesel trades.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says Bangladesh is \"poised to increase Middle Eastern crude imports and diesel trades\" because the new SPM facility will bolster efficiency, and that BPC made additional imports in expectation that the facility would speed offloading. This is country-level discussion of Bangladesh’s imports, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-20",
+      "imports",
+      "increases import capacity",
+      "SPM boosts crude imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

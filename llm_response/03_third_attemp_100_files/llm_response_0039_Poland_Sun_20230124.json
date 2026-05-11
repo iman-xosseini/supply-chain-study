@@ -1,0 +1,115 @@
+{
+  "article": {
+    "source": "Poland Sun",
+    "date": "2023-01-24",
+    "url": "https://www.polandsun.com/news/273425360/bangladesh-may-overtake-china-to-be-eu-biggest-apparel-source",
+    "body_preview": "Dhaka [Bangladesh], January 24 (ANI): As China witnessing a decrease in its share of trade due to economic slowdown due to Covid implications, Bangladesh may overtake it as the source of most of the European Union's (EU) apparel, reported The Daily Star.\n\nAccording to Ahsan H Mansur, Executive Director of the Policy Research Institute, primarily it will be for the shortage of skilled labour (China's demography as its population is decreasing) and secondly for Bangladesh producing high-end value-"
+  },
+  "llm_connections": [
+    {
+      "feature": "production_sales_ratio",
+      "event_summary": "Capacity growth enables orders",
+      "edge_label": "enables meeting demand",
+      "evidence_quote": "Over the last four and a half decades, the capacity of Bangladesh's garment industry has also grown a lot, enabling it to cater to any quantity of work orders.",
+      "scope_justification": "The article describes sector-wide capacity growth in Bangladesh's garment industry that enables it to meet work orders, which directly pertains to the balance between production (supply) and demand at the industry level."
+    },
+    {
+      "feature": "Group",
+      "event_summary": "China shifts production base",
+      "edge_label": "shifts orders away",
+      "evidence_quote": "This is resulting in work orders being shifted from China to other Asian countries like Bangladesh, Vietnam, Thailand, Cambodia, India and Pakistan.",
+      "scope_justification": "The sentence describes cross-country shifts of apparel work orders within the apparel industry, which concerns the broad industry sector (Group) distribution of orders."
+    },
+    {
+      "feature": "Group",
+      "event_summary": "US-China tariff war",
+      "edge_label": "diverts sourcing",
+      "evidence_quote": "another reason for work orders being diverted from China to Bangladesh is the recent tariff war between the US and China",
+      "scope_justification": "The article explicitly links tariff tensions to diversion of apparel work orders between sourcing countries, which affects industry-level sourcing patterns within the apparel sector (Group)."
+    },
+    {
+      "feature": "Group",
+      "event_summary": "Factory remediation improves image",
+      "edge_label": "increases orders",
+      "evidence_quote": "This ultimately brightened the image of the country and the sector itself for which international retailers and brands are coming up with increasing volumes of work orders.",
+      "scope_justification": "The article connects remediation-driven safety improvements to increased volumes of work orders for the sector, directly impacting the apparel industry as a whole (Group)."
+    },
+    {
+      "feature": "Group",
+      "event_summary": "China losing apparel share",
+      "edge_label": "reduces market share",
+      "evidence_quote": "China has been losing its global apparel market share over the last couple of years mainly because of a shortage of skilled workforce",
+      "scope_justification": "The article attributes China's decline in apparel market share to specific causes, which describes a change in industry-level market share within the apparel sector (Group)."
+    },
+    {
+      "feature": "Sub-Group",
+      "event_summary": "Shift to high-end garments",
+      "edge_label": "shifts production mix",
+      "evidence_quote": "Bangladesh is also shifting to its production base to high-end value-added garment items from basic items, reported The Daily Star.",
+      "scope_justification": "The statement describes a change in the industry's niche from basic to high-end value-added garments, matching the Sub-Group definition as a specific niche within the sector."
+    },
+    {
+      "feature": "Sub-Group",
+      "event_summary": "Man-made fibres growth",
+      "edge_label": "increases market share",
+      "evidence_quote": "The local manufacturers are grabbing a bigger market share of garment items made from man-made fibres to obtain better prices and more work orders from international retailers and brands.",
+      "scope_justification": "The article explicitly states local manufacturers are increasing their market share in garments made from man-made fibres, which is a niche-level (Sub-Group) change in the industry."
+    }
+  ],
+  "triplets": [
+    [
+      "production_sales_ratio",
+      "enables meeting demand",
+      "Capacity growth enables orders"
+    ],
+    [
+      "Group",
+      "shifts orders away",
+      "China shifts production base"
+    ],
+    [
+      "Group",
+      "diverts sourcing",
+      "US-China tariff war"
+    ],
+    [
+      "Group",
+      "increases orders",
+      "Factory remediation improves image"
+    ],
+    [
+      "Group",
+      "reduces market share",
+      "China losing apparel share"
+    ],
+    [
+      "Sub-Group",
+      "shifts production mix",
+      "Shift to high-end garments"
+    ],
+    [
+      "Sub-Group",
+      "increases market share",
+      "Man-made fibres growth"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 7
+}

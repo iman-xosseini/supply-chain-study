@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-26",
+    "url": "https://www.bssnews.net/business/107405",
+    "body_preview": "DHAKA, Jan 26, 2023 (BSS) - Bangladesh Garment Manufacturers and Exporters Association (BGMEA) President Faruque Hassan today called upon the globally renowned fashion company PVH to increase their sourcing of high-value garments from Bangladesh.\n\nHe also requested PVH to forge long-term partnership with their Bangladeshi suppliers in developing their capacity in manufacturing more diversified apparels and also in making production process more sustainable.\n\nHe made the comments during a meeting"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "capacity upgrades enable exports",
+      "edge_label": "enables catering to demand",
+      "evidence_quote": "making headway in developing its capacity and accordingly upgrading its technologies and machinery, the country will be catering to the demand of global buyers for diversified garment items.",
+      "scope_justification": "The article explicitly says Bangladesh's capacity and technology upgrades will cause it to 'be catering to the demand of global buyers', which refers to supplying international buyers (exports volume).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "making headway in developing its capacity and accordingly upgrading its technologies and machinery, the country will be catering to the demand of global buyers for diversified garment items.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article and explicitly links Bangladesh's capacity and technology upgrades to its ability to 'cater to the demand of global buyers,' which is a country-level claim about supplying international buyers (exports)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-26",
+      "exports",
+      "enables catering to demand",
+      "capacity upgrades enable exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

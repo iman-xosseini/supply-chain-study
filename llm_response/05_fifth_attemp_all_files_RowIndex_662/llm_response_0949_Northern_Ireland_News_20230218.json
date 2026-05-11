@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "Northern Ireland News",
+    "date": "2023-02-18",
+    "url": "https://www.northernirelandnews.com/news/273539310/clothing-exports-from-bangladesh-rise-as-china-share-in-ready-made-garment-market-declines",
+    "body_preview": "Dhaka [Bangladesh], February 18 (ANI): Bangladesh is ready to topple China as the top clothing exporter to the EU amid Beijing's decreasing share in the ready-made garment (RMG) market, reported Nikkei Asia.\n\nNotably, in the wake of the conflict in Ukraine and other global geopolitical tensions, the supply chains are shifting and driving up orders to the densely populated South Asian nation.\n\n\"A lot of work orders were shifted to Bangladesh from China because of the recent trade war between Chin"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Supply-chain shifts increase orders",
+      "edge_label": "drives orders",
+      "evidence_quote": "supply chains are shifting and driving up orders to the densely populated South Asian nation.",
+      "scope_justification": "The article explicitly states supply-chain shifts are driving up orders to Bangladesh (country-level exports/orders), which directly pertains to the exports component of balance_of_trade."
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Trade war shifts orders",
+      "edge_label": "shifts orders",
+      "evidence_quote": "A lot of work orders were shifted to Bangladesh from China because of the recent trade war between China and the US,",
+      "scope_justification": "The article explicitly says work orders were shifted to Bangladesh (national-level production/orders), reflecting changes in country-level exports relevant to balance_of_trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "drives orders",
+      "Supply-chain shifts increase orders"
+    ],
+    [
+      "balance_of_trade",
+      "shifts orders",
+      "Trade war shifts orders"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

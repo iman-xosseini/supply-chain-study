@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Malay Mail",
+    "date": "2023-06-05",
+    "url": "https://www.malaymail.com/news/money/2023/06/05/cash-strapped-bangladesh-shuts-power-plant-as-heatwave-hits/72714",
+    "body_preview": "DHAKA, June 5 -- Cash-strapped Bangladesh shut its biggest power plant today because it was unable to afford the coal to fuel it, as a sweltering heatwave creates surging electricity demand.\n\nThe 1,320-megawatt government-run Payra Power Plant in southern Bangladesh had already slashed production last month due to fuel shortages, but it was forced to go a step further today, manager Shah Abdul Mawla told AFP.\n\n\"Due to the coal shortage, the plant came to a complete shutdown at 12.15pm today,\" Ma"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka depreciation raised costs",
+      "edge_label": "drives up import costs",
+      "evidence_quote": "The Bangladeshi taka depreciated about 25 per cent against the US dollar last year, driving up the cost of fuel imports and power utilities.",
+      "scope_justification": "The article explicitly states a 25% depreciation of the taka 'driving up the cost of fuel imports', which matches the feature's scope of exchange-rate movement affecting import costs."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "drives up import costs",
+      "taka depreciation raised costs"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

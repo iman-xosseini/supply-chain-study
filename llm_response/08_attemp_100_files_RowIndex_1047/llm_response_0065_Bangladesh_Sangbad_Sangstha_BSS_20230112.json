@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-12",
+    "url": "https://www.bssnews.net/business/104885",
+    "body_preview": "DHAKA, Jan 12, 2023 (BSS) - Bangladesh is significantly prone to many of the\n\nrecessionary risks if appropriate steps are not taken to diversify the export\n\nproducts and basket and increase remittances through the formal channels\n\nalthough the country may not go into recession.\n\nThe International Chamber of Commerce-Bangladesh (ICCB) in its latest\n\neditorial today also highlighted the importance of taking appropriate\n\nmeasures to streamline public sector expenditures, rationalise mega\n\ninfrastru"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Recession spurs devaluation",
+      "edge_label": "forces currency devaluation",
+      "evidence_quote": "will spur capital outflows from the developing countries forcing them to devalue their currencies",
+      "scope_justification": "The article explicitly states developing countries will 'devalue their currencies', which refers to country-level exchange rate movements matching the feature's focus on exchange-rate volatility."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-12",
+      "currency_log_return",
+      "forces currency devaluation",
+      "Recession spurs devaluation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

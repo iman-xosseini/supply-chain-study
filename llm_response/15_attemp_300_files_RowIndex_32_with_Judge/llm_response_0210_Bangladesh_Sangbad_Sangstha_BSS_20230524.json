@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-24",
+    "url": "https://www.bssnews.net/business/127221",
+    "body_preview": "DHAKA, May 24, 2023 (BSS) - Speakers at a conference today laid emphasis on exploring the vast untapped potential in SAARC region.\n\nThey observed that the SAARC has low intra-regional trade of five percent which means there is still vast untapped potential.\n\nIt is more important than ever we must recognize the significance of using our regional strengths and working together towards a common vision in a rapidly changing world, they opined.\n\nThey made the observation at the conference on 'Harness"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "Simplifying customs procedures",
+      "edge_label": "facilitates exports",
+      "evidence_quote": "Cross-border investments, simplifying customs procedures, and developing efficient logistics networks within SAARC can facilitate trade.",
+      "scope_justification": "The article explicitly links these measures to facilitating trade 'within SAARC', which refers to international (intra-regional) goods flows and thus matches the exports definition.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "\"Cross-border investments, simplifying customs procedures, and developing efficient logistics networks within SAARC can facilitate trade.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence stating that 'simplifying customs procedures ... within SAARC can facilitate trade,' which explicitly asserts a causal link. The statement refers to trade within SAARC (intra-regional cross-border flows), matching the exports-level scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-24",
+      "exports",
+      "facilitates exports",
+      "Simplifying customs procedures"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

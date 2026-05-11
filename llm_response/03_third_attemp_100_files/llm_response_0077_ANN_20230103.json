@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-03",
+    "url": "https://asianews.network/2022-the-year-the-rich-won-and-the-public-lost/",
+    "body_preview": "DHAKA - The year 2022 brought with it some big challenges for the majority of people in Bangladesh. The cost of living increased, and prices of oil, gas and electricity went up. Each price increase was like an attack on the public, and led to the widespread rise in the price of all sorts of goods.\n\nThe war in Ukraine has definitely had an impact on energy prices. Ever since the conflict began in February, the government has pointed to it as the reason behind much of what has happened, and has us"
+  },
+  "llm_connections": [
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "return of load-shedding",
+      "edge_label": "causes power outages",
+      "evidence_quote": "Coupled with rising oil prices, this led to the return of load-shedding in Bangladesh,",
+      "scope_justification": "The article explicitly attributes the nationwide 'return of load-shedding' (power outages) to energy shortages and price rises, which matches the Factory_Issue definition covering power outages."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka depreciation increasing imports",
+      "edge_label": "raises import costs",
+      "evidence_quote": "The impact of this can be seen in the export sector, where business owners saw a lot of profit, but on the other hand, import costs have gone up significantly.",
+      "scope_justification": "The article links the fall in the taka's value to higher import costs at the national level, matching the feature's scope of exchange-rate volatility affecting import costs."
+    }
+  ],
+  "triplets": [
+    [
+      "Factory_Issue",
+      "causes power outages",
+      "return of load-shedding"
+    ],
+    [
+      "currency_log_return",
+      "raises import costs",
+      "taka depreciation increasing imports"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

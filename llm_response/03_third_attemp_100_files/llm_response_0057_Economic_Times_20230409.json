@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Economic Times",
+    "date": "2023-04-09",
+    "url": "https://economictimes.indiatimes.com/opinion/et-commentary/stitching-it-the-bangladesh-way/articleshow/99362268.cms",
+    "body_preview": "Bangladesh's ready-made garments (RMG) sector has contributed hugely to the country's transformation since the Multi-Fibre Arrangement (MFA), which set quotas on garment exports from newly industrialised Asian countries into the US, enabled a race to capture apparel share trades. China's loss of share in garments is likely to accelerate, and India is being encouraged to target at least $100bn of the $500bn global RMG trade. The initiative could catalyse investment and employment if employment-li"
+  },
+  "llm_connections": [
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "Rana Plaza accident aftermath",
+      "edge_label": "prompted safety improvements",
+      "evidence_quote": "Safety and compliance standards have improved substantially since the Rana Plaza accident",
+      "scope_justification": "The article links the Rana Plaza accident to industry-wide improvements in safety and compliance, which directly relates to operational disruptions and safety risks encompassed by 'Factory_Issue'."
+    }
+  ],
+  "triplets": [
+    [
+      "Factory_Issue",
+      "prompted safety improvements",
+      "Rana Plaza accident aftermath"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

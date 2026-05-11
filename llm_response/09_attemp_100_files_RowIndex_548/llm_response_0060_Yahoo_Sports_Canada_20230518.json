@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Yahoo Sports Canada",
+    "date": "2023-05-18",
+    "url": "https://ca.sports.yahoo.com/news/apparel-makers-cyclone-hit-bangladesh-093524890.html",
+    "body_preview": "DHAKA, May 18 (Reuters) - Apparel makers in Bangladesh are considering rare bulk exports by air to Europe and the United States, as they race to meet deadlines and avoid cancellations after a cyclone delayed shipments, caused power cuts and disrupted production.\n\nThe crunch could disrupt summer clothes supplies for retailers such as Walmart, Gap Inc, H&M , VF Corp, Zara and American Eagle Outfitters , some of Bangladesh's largest export customers.\n\nCyclone Mocha, one of the strongest storms to h"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "exports falling",
+      "edge_label": "reduces exports",
+      "evidence_quote": "has already been hit by weakening global demand, with exports falling in both March and April.",
+      "scope_justification": "The article explicitly reports country-level exports falling ('exports falling in both March and April'), which matches the exports component of the country's balance_of_trade definition."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-18",
+      "balance_of_trade",
+      "reduces exports",
+      "exports falling"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

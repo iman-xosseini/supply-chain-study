@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "MSN International Edition",
+    "date": "2023-02-17",
+    "url": "https://www.msn.com/en-xl/asia/bangladesh/dollar-crisis-casts-a-shadow-over-operation-of-rampal-coal-fired-power-plant/ar-AA17z4yx",
+    "body_preview": "Dhaka, Feb. 16 -- The 1320 MW Rampal power plant has resumed its partial production, but officials still worry about its uninterrupted operation due to dollar crisis that may again disrupt the import of coal, the plant's main fuel.\n\nThe Unit-1 of the coal-fired plant resumed production from Wednesday after a month-long shutdown caused by shortage of coal.\n\nThe plant is still under a test run that started in August before being discontinued last month.\n\nA kind of concern was expressed by the offi"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LC blocked coal imports",
+      "edge_label": "prevents coal imports",
+      "evidence_quote": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+      "scope_justification": "The article explicitly ties Letter of Credit availability to the plant's ability to import coal, matching the feature's focus on imports driven by LC availability and raw material needs.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating authorities \"were unable to open any letter of credit (LC) to import coal due to the dollar crisis,\" which explicitly links LC availability to prevention of coal imports and refers specifically to the Rampal power plant's imports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-17",
+      "imports",
+      "prevents coal imports",
+      "LC blocked coal imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,13 @@
+# Candidate-level summary
+outcome,count,ratio
+CONFIRMED,1,1.0
+
+# Article-level summary
+metric,value
+articles_processed,50
+articles_with_candidate_links,1
+articles_with_confirmed_links,1
+raw_candidate_links,1
+confirmed_links,1
+rejected_quote_check,0
+rejected_llm_judge,0

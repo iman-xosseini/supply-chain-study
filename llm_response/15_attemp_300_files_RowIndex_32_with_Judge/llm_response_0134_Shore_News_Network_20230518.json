@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Shore News Network",
+    "date": "2023-05-18",
+    "url": "https://www.shorenewsnetwork.com/2023/05/18/apparel-makers-in-cyclone-hit/",
+    "body_preview": "DHAKA (Reuters) - Apparel makers in Bangladesh are considering rare bulk exports by air to Europe and the United States, as they race to meet deadlines and avoid cancellations after a cyclone delayed shipments, caused power cuts and disrupted production.\n\nThe crunch could disrupt summer clothes supplies for retailers such as Walmart, Gap Inc, H&M, VF Corp, Zara and American Eagle Outfitters, some of Bangladesh's largest export customers.\n\nCyclone Mocha, one of the strongest storms to hit the reg"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "weakening global demand",
+      "edge_label": "reduces exports",
+      "evidence_quote": "Bangladesh, the world's second-largest garment exporter, has already been hit by weakening global demand, with exports falling in both March and April.",
+      "scope_justification": "The sentence explicitly links weakening global demand to Bangladesh's exports falling, matching the feature's country-level focus on volume of goods sent internationally driven by global demand.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Bangladesh, the world's second-largest garment exporter, has already been hit by weakening global demand, with exports falling in both March and April.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence verbatim and states Bangladesh \"has already been hit by weakening global demand, with exports falling...\", explicitly linking weakening global demand as the cause of country-level export declines."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-18",
+      "exports",
+      "reduces exports",
+      "weakening global demand"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

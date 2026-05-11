@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Asia News.it",
+    "date": "2023-06-06",
+    "url": "https://www.asianews.it/news-en/Power-outages-threaten-lives-and-production-58532.html",
+    "body_preview": "Dhaka (AsiaNews) - Bangladesh is facing an energy crisis. Power cuts can last eight to 10 hours every day.\n\nWith the price of fuel to run generators rising and disruptions in energy supply in both cities and agricultural areas, doing business is a daily challenge.\n\nFor people like Bablu Ratno, a Catholic printer, outages mean higher costs and delays in delivering products to customers.\n\nPower losses are the top issue. The Rural Electrification Board (REB), the agency that supplies most of the co"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "Power outages disrupt manufacturing",
+      "edge_label": "cuts exports",
+      "evidence_quote": "disruptions in production will cut into exports, cause loss of foreign customers",
+      "scope_justification": "The article explicitly states that production disruptions 'will cut into exports', directly addressing the country's export volumes (goods sent internationally).",
+      "verification": {
+        "quote_similarity": 0.994,
+        "quote_best_match": "disruptions in production will cut into exports, cause loss of foreign customers,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence 'Industry officials fear that disruptions in production will cut into exports, cause loss of foreign customers,' which explicitly states a cause-effect link between production disruptions (from power outages) and reduced exports at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-06",
+      "exports",
+      "cuts exports",
+      "Power outages disrupt manufacturing"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

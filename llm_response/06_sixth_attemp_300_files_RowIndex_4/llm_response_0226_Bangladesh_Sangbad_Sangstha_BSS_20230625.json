@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-25",
+    "url": "https://www.bssnews.net/news/133156",
+    "body_preview": "RANGPUR, June 25, 2023 (BSS) - A record number of locally-reared sacrificial animals has flooded local markets in Rangpur division as sale has already got momentum when only three days are left before the Eid-ul-Azha festivity.\n\nTalking to BSS at different cattle markets, cattle farm owners and farmers said they reared local animals despite an increase of fodder price with a hope of getting better prices of sacrificial animals.\n\nCattle traders said sale of sacrificial animals might increase furt"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Surplus animals reduce imports",
+      "edge_label": "reduces import need",
+      "evidence_quote": "It proves that we do not need to import animals any more to meet local demand for ensuring fair price of locally reared cattle-heads",
+      "scope_justification": "The article explicitly states that the surplus of sacrificial animals in Rangpur removes the need to import animals to meet local demand, which directly pertains to import volumes of animals."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "reduces import need",
+      "Surplus animals reduce imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

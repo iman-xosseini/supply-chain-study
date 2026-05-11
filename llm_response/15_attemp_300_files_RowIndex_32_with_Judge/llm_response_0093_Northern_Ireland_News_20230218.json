@@ -1,0 +1,75 @@
+{
+  "article": {
+    "source": "Northern Ireland News",
+    "date": "2023-02-18",
+    "url": "https://www.northernirelandnews.com/news/273539310/clothing-exports-from-bangladesh-rise-as-china-share-in-ready-made-garment-market-declines",
+    "body_preview": "Dhaka [Bangladesh], February 18 (ANI): Bangladesh is ready to topple China as the top clothing exporter to the EU amid Beijing's decreasing share in the ready-made garment (RMG) market, reported Nikkei Asia.\n\nNotably, in the wake of the conflict in Ukraine and other global geopolitical tensions, the supply chains are shifting and driving up orders to the densely populated South Asian nation.\n\n\"A lot of work orders were shifted to Bangladesh from China because of the recent trade war between Chin"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "Supply chains drive orders",
+      "edge_label": "drives up orders",
+      "evidence_quote": "supply chains are shifting and driving up orders to the densely populated South Asian nation.",
+      "scope_justification": "The article explicitly links global supply-chain shifts to increased orders for Bangladesh's garment sector, which corresponds to country-level international shipments (exports) to the EU.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "supply chains are shifting and driving up orders to the densely populated South Asian nation.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact phrase about shifting supply chains 'driving up orders to the densely populated South Asian nation' appears in the article, the text explicitly states that supply-chain shifts are causing increased orders (and provides supporting causal statements), and the discussion is at the country/export level (Bangladesh and its EU export figures)."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Trade war shifts orders",
+      "edge_label": "shifts work orders",
+      "evidence_quote": "A lot of work orders were shifted to Bangladesh from China because of the recent trade war between China and the US,",
+      "scope_justification": "The article states work orders were moved to Bangladesh due to the US-China trade war, describing a national-level shift in production orders that increases Bangladesh's international export activity.",
+      "verification": {
+        "quote_similarity": 0.991,
+        "quote_best_match": "\"A lot of work orders were shifted to Bangladesh from China because of the recent trade war between China and the US,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted line verbatim attributing shifted work orders to the US-China trade war, and elsewhere explicitly links mounting US–China tensions to brands moving orders to Bangladesh; this is presented at the national/industry level (Bangladesh's exports to the EU)."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Shift to high-end garments",
+      "edge_label": "increases export share",
+      "evidence_quote": "Bangladesh is shifting its production base to high-end, value-added garment items from basic products, which are also helping the country to increase its share in the EU market",
+      "scope_justification": "The article explicitly ties Bangladesh's move to higher-value garment production to an increased share in the EU market, addressing national-level export volumes and market share.",
+      "verification": {
+        "quote_similarity": 0.997,
+        "quote_best_match": "\"Bangladesh is shifting its production base to high-end, value-added garment items from basic products, which are also helping the country to increase its share in the EU market",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating Bangladesh is shifting to high-end, value-added garments 'which are also helping the country to increase its share in the EU market,' explicitly asserting a causal link at the national (country) level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-18",
+      "exports",
+      "drives up orders",
+      "Supply chains drive orders"
+    ],
+    [
+      "2023-02-18",
+      "exports",
+      "shifts work orders",
+      "Trade war shifts orders"
+    ],
+    [
+      "2023-02-18",
+      "exports",
+      "increases export share",
+      "Shift to high-end garments"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 3
+}

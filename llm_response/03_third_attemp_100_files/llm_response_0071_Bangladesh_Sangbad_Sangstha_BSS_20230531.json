@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-31",
+    "url": "https://www.bssnews.net/district/128320",
+    "body_preview": "HABIGANJ, May 31, 2023 (BSS) - World No Tobacco Day-2023 was observed in the district in a befitting manner highlighting the health and other risks associated with tobacco consumption and advocating for effective policies to reduce tobacco consumption.\n\nThis year's theme of the day is \"Grow Food, Not Tobacco\".\n\nThe aim of this theme is to raise awareness about alternative crop production and marketing opportunities for tobacco farmers and encourage them to grow sustainable, nutritious crops.\n\nOn"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "Theme encourages crop shift",
+      "edge_label": "encourages alternative production",
+      "evidence_quote": "The aim of this theme is to raise awareness about alternative crop production and marketing opportunities for tobacco farmers and encourage them to grow sustainable, nutritious crops.",
+      "scope_justification": "The sentence explicitly says the theme aims to encourage tobacco farmers to grow different crops, which directly concerns the specific commercial items (products) those farmers would produce."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "encourages alternative production",
+      "Theme encourages crop shift"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

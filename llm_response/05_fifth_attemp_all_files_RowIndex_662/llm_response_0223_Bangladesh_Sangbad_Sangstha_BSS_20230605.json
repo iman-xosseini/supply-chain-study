@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-05",
+    "url": "https://www.bssnews.net/business/129269",
+    "body_preview": "DHAKA, June 5, 2023 (BSS) - Country's both the bourses, Dhaka Stock Exchange (DSE) and Chittagong Stock Exchange (CSE) - today plunged due to mainly price fall in large-cap securities.\n\nThe DSEX, the benchmark index of the top bourse in Bangladesh, lost 9.84 points, or 0.15 per cent, to 6,356.30. The DS30, the blue-chip index, decreased 0.04 per cent to 2,198 while the DSES, the shariah-compliant index, went down 0.05 per cent to 1,382.\n\nHowever, turnover, a key indicator of the market, inched u"
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "Bourses plunged today",
+      "edge_label": "caused market decline",
+      "evidence_quote": "plunged due to mainly price fall in large-cap securities",
+      "scope_justification": "The article explicitly states that the DSE and CSE (national equity markets) plunged because of large-cap price falls, matching the feature's aggregate equity market performance scope."
+    }
+  ],
+  "triplets": [
+    [
+      "stock_market_close",
+      "caused market decline",
+      "Bourses plunged today"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "The Daily Star",
+    "date": "2023-01-02",
+    "url": "https://www.thedailystar.net/news/bangladesh/news/cmch-limps-due-manpower-shortage-3211406",
+    "body_preview": "Although Chattogram Medical College Hospital (CMCH), the lone tertiary-level hospital in greater Chattogram region, has stepped into its 66th year, it is still afflicted with a lack of workforce and logistics.\n\nOnly 343 doctors are currently employed at the 2,200-bed hospital. According to CMCH sources, the establishment gradually increased total beds, from 500 to the current number, over the decades, but the number of doctors remained the same.\n\nThe hospital had 437 nursing staffers five years "
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "lack of logistics",
+      "edge_label": "impairs logistics performance",
+      "evidence_quote": "it is still afflicted with a lack of workforce and logistics.",
+      "scope_justification": "The quote explicitly states the hospital suffers from a lack of logistics, which directly pertains to logistics performance as defined by the Delivery feature (logistics performance)."
+    },
+    {
+      "feature": "inventory_proxy",
+      "event_summary": "hospital drug unavailability",
+      "edge_label": "reflects low inventory",
+      "evidence_quote": "many drugs remain unavailable, and patients often buy from pharmacies outside",
+      "scope_justification": "The article's statement that many medicines are unavailable at the hospital pharmacy directly describes a stockout condition, matching the inventory_proxy definition of inventory levels (low inventory/stockouts)."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "impairs logistics performance",
+      "lack of logistics"
+    ],
+    [
+      "inventory_proxy",
+      "reflects low inventory",
+      "hospital drug unavailability"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

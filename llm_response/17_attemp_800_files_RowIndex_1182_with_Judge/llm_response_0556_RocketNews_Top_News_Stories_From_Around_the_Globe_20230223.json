@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "RocketNews | Top News Stories From Around the Globe",
+    "date": "2023-02-23",
+    "url": "https://www.rocketnews.com/2023/02/severe-dollar-crisis-hobbles-bangladesh-businesses/",
+    "body_preview": "Dhaka, Bangladesh - Spice trader Mohammed Enayet Ullah has made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, some of the most essential spices used in Bangladeshi cooking, only to be refused by banks due to a shortage of dollars.Importers in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services. It is essentially a financial contract issued by an importer's ban"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LCs required for imports",
+      "edge_label": "enable imports",
+      "evidence_quote": "Importers in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services.",
+      "scope_justification": "The article states at the national level that importers in Bangladesh must open letters of credit to buy foreign goods, matching the feature's country-wide imports scope driven by LC availability.",
+      "verification": {
+        "quote_similarity": 0.971,
+        "quote_best_match": "dollars.Importers in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence verbatim that importers in Bangladesh must open letters of credit to buy foreign goods and services, which explicitly links LCs as a required mechanism enabling imports; the statement is made at the national (Bangladesh) level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-23",
+      "imports",
+      "enable imports",
+      "LCs required for imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

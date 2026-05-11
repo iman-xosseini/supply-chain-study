@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "The Financial Express",
+    "date": "2023-01-02",
+    "url": "https://thefinancialexpress.com.bd/trade/dcci-pushes-to-ensure-smooth-energy-supply-improve-ease-of-doing-business-in-2023-1672628067",
+    "body_preview": "Dhaka Chamber of Commerce and Industry (DCCI) called on the government to provide uninterrupted supply of energy to the local and export-oriented manufacturing industries and improve ease of doing business for attaining sustainable development through public-private partnership (PPP).\n\nMentioning the global economic downturn due to the Covid-19 pandemic and subsequent Russia-Ukraine war that have hindered Bangladesh's progressive growth, the trade body also recommended accelerating the country's"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Currency crisis hurts imports",
+      "edge_label": "disrupts import flow",
+      "evidence_quote": "resulting in some negative impact on the import of energy, industrial raw materials and supply chain for local export-oriented industries.",
+      "scope_justification": "The article explicitly discusses import activity at the country level, mentioning imports of energy and industrial raw materials, which matches the feature's country-wide imports scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "resulting in some negative impact on the import of energy, industrial raw materials and supply chain for local export-oriented industries.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted text appears almost verbatim in the article: the foreign currency crisis and Taka devaluation are said to have 'resulting in some negative impact on the import of energy, industrial raw materials and supply chain for local export-oriented industries.' This explicitly states a cause-and-effect relationship at the country/economy level, matching the claimed import scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-02",
+      "imports",
+      "disrupts import flow",
+      "Currency crisis hurts imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

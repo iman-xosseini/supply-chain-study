@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-08-08",
+    "url": "https://asianews.network/why-meat-prices-are-rising-despite-surplus-production/",
+    "body_preview": "DHAKA - While the Department of Livestock Services (DLS) estimates a surplus of meat production in the country, prices of all - be it chicken meat, mutton or beef -- have risen, raising questions about the authenticity of production and demand estimates.\n\nData from the DLS showed that meat production in Bangladesh stood at 87.10 lakh tonnes in fiscal year (FY) 2022-23 against a demand of 76.08 lakh tonnes, meaning there was a surplus of 11 lakh tonnes.\n\nDespite the surplus, consumers in Dhaka ci"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "urge easing meat imports",
+      "edge_label": "increases import volumes",
+      "evidence_quote": "urged the government for easing meat imports to increase supply of animal protein in the market",
+      "scope_justification": "The article discusses a national-level call to ease meat imports in Bangladesh to increase market supply, which directly pertains to country-wide import volumes of meat."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "increases import volumes",
+      "urge easing meat imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

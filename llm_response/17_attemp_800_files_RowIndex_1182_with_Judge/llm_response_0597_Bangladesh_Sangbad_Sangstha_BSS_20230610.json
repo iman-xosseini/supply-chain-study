@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-10",
+    "url": "https://www.bssnews.net/news-flash/130304",
+    "body_preview": "DHAKA, June 10, 2023 (BSS) - The 1320-megawatt Rampal power plant in Bagerhat has got supply of 26,620 tonnes of coal today, easing the power production from the plant.\n\nThe unloading and transporting activities are going on from Harbaria of Mongla port.\n\nThe coal-loaded ship left Indonesia for Mongla port on May 21, said Bangladesh India Friendship Power Company (P) Ltd deputy general manager Anwarul Azim.\n\nTalking to BSS, he said the plant has no crisis of coal as it now has a stock of 64,000 "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LC opened for coal import",
+      "edge_label": "enables imports",
+      "evidence_quote": "A letter of credit (LC) has already been opened for importing another 48,000 tonnes of coal, which will soon arrive at Mongla port",
+      "scope_justification": "The article explicitly ties Letter of Credit availability to the planned import of 48,000 tonnes of coal, matching the feature's focus on import volumes driven by LC availability.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "A letter of credit (LC) has already been opened for importing another 48,000 tonnes of coal, which will soon arrive at Mongla port,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence 'A letter of credit (LC) has already been opened for importing another 48,000 tonnes of coal, which will soon arrive at Mongla port,' which explicitly links opening the LC to enabling the import of that coal for the plant (company/plant-level scope)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-10",
+      "imports",
+      "enables imports",
+      "LC opened for coal import"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

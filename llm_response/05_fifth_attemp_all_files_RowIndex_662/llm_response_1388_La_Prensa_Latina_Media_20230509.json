@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-05-09",
+    "url": "https://www.laprensalatina.com/bangladeshs-forex-reserves-hit-seven-year-low-of-29-8-billion/",
+    "body_preview": "Dhaka, May 9 (EFE).- Bangladesh's foreign exchange reserves fell below $30 billion for the first time in seven years in a concerning sign for the country's economy, economists and bankers said on Tuesday.\n\nBangladesh Bank spokesperson and executive director, Mezbaul Haque, told EFE that the country's foreign exchange reserves stood at $29.83 billion on Monday after the payment of import bills worth $1.18 billion to the Asian Clearing Union.\n\nThe last time Bangladesh's foreign exchange reserves w"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "decline in FX reserves",
+      "edge_label": "reduces imports",
+      "evidence_quote": "It is hugely impacting imports. If imports continue to remain low, it will ultimately affect growth and reduce the earning opportunity for people",
+      "scope_justification": "The balance_of_trade is the country-wide difference between imports and exports, and the article explicitly states that the fall in foreign exchange reserves is impacting national-level imports."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "reduces imports",
+      "decline in FX reserves"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

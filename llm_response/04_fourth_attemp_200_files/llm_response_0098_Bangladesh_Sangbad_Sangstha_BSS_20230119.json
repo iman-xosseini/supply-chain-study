@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-19",
+    "url": "https://www.bssnews.net/business/106117",
+    "body_preview": "DHAKA, Jan 19, 2023 (BSS) - In response to the declared Monetary Policy for\n\nH2 (January-June 2023) by the Bangladesh Bank, President of Dhaka Chamber of\n\nCommerce and Industry (DCCI) Barrister Md Sameer Sattar said that this MPS\n\nwill help both the private and financial sector to turn around.\n\nHe observed that the MPS is primarily aimed at curbing inflation and to\n\nstabilize the foreign exchange reserve.\n\nThe public sector credit growth has been set by the Government at 37.7\n\npercent for Jan-Ju"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "relaxation of L/C margin",
+      "edge_label": "encourages imports",
+      "evidence_quote": "suggested relaxation of L/C margin for essential commodities and industrial materials for catering local and export-oriented industries.",
+      "scope_justification": "The article explicitly links relaxing L/C margins (an LC availability/terms change) to catering local and export-oriented industries, which matches the feature's LC-driven, country-level import scope."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "encourages imports",
+      "relaxation of L/C margin"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

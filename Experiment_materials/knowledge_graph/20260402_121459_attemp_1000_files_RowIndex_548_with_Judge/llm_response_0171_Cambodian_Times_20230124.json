@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Cambodian Times",
+    "date": "2023-01-24",
+    "url": "https://www.cambodiantimes.com/news/273425360/bangladesh-may-overtake-china-to-be-eu-biggest-apparel-source",
+    "body_preview": "Dhaka [Bangladesh], January 24 (ANI): As China witnessing a decrease in its share of trade due to economic slowdown due to Covid implications, Bangladesh may overtake it as the source of most of the European Union's (EU) apparel, reported The Daily Star.\n\nAccording to Ahsan H Mansur, Executive Director of the Policy Research Institute, primarily it will be for the shortage of skilled labour (China's demography as its population is decreasing) and secondly for Bangladesh producing high-end value-"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Work orders shift from China",
+      "edge_label": "diverts sourcing orders",
+      "evidence_quote": "\"This is resulting in work orders being shifted from China to other Asian countries like Bangladesh\"",
+      "scope_justification": "The article discusses shifted manufacturing work orders affecting Bangladesh’s sourcing and production inputs at a trade level, which aligns with the imports concept of goods brought in for raw material needs only if explicitly tied to goods inflow; however, it does not explicitly state country-wide import volumes, so this is a cautious match.",
+      "verification": {
+        "quote_similarity": 0.985,
+        "quote_best_match": "This is resulting in work orders being shifted from China to other Asian countries like Bangladesh,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says, \"This is resulting in work orders being shifted from China to other Asian countries like Bangladesh,\" which closely matches the quoted evidence. It directly presents a cause-and-effect relationship at the industry/country sourcing level, so the scope also matches."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-24",
+      "imports",
+      "diverts sourcing orders",
+      "Work orders shift from China"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

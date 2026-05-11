@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-01-31",
+    "url": "https://www.laprensalatina.com/imf-approves-4-7-billion-loan-package-for-bangladesh/",
+    "body_preview": "Dhaka, Jan 31 (EFE).- The International Monetary Fund (IMF) has approved a $4.7 billion loan package for Bangladesh amid a worrying state of the country's economy.\n\nThe approval for the 42-month borrowing package came in the IMF Executive Board meeting in Washington on Monday.\n\nBangladesh would get $3.3 billion under the Extended Credit Facility and the Extended Fund Facility arrangements.\n\nThe IMF Executive Board also approved $1.4 billion under the newly created Resilience and Sustainability F"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Ukraine war interruption",
+      "edge_label": "leads to depreciation",
+      "evidence_quote": "It has led to a sharp widening of Bangladesh's current account deficit, depreciation of the taka, and a decline in foreign exchange reserves.",
+      "scope_justification": "The article explicitly states a country-level 'depreciation of the taka', which matches the feature's focus on national exchange-rate movements (USD to BDT) described in the definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "It has led to a sharp widening of Bangladesh's current account deficit, depreciation of the taka, and a decline in foreign exchange reserves.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states ‘‘It has led to ... depreciation of the taka’’ immediately after noting the interruption caused by Russia's war in Ukraine, directly asserting a causal link at the country (taka) level, which matches the feature's scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-31",
+      "currency_log_return",
+      "leads to depreciation",
+      "Ukraine war interruption"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

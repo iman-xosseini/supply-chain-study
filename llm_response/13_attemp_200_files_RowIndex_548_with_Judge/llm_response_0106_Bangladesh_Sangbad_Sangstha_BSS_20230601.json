@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128532",
+    "body_preview": "DHAKA, June 1, 2023 (BSS) - Finance Minister AHM Mustafa Kamal today said the\n\ngovernment is giving priority to addressing climate-change impacts to ensure\n\nlong-term sustainable development.\n\n\"We need to maintain a robust rate of economic growth and thriving\n\ninfrastructure, energy, power and information-technology sectors along with\n\nan uninterrupted supply chain to build a developed and smart Bangladesh,\" he\n\nsaid.\n\nThe minister said this while placing over Taka 7.61 lakh crore proposed\n\nnati"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "mitigating import-induced inflation",
+      "edge_label": "induces inflation",
+      "evidence_quote": "to mitigate the impact of import-induced inflation.",
+      "scope_justification": "The article explicitly attributes inflation to imports using the phrase 'import-induced inflation,' which refers to imports generally (not a single company or commodity) matching the feature's country-level scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "to mitigate the impact of import-induced inflation.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article includes the exact phrase 'to mitigate the impact of import-induced inflation,' explicitly attributing inflation to imports at a national level in Bangladesh."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-01",
+      "imports",
+      "induces inflation",
+      "mitigating import-induced inflation"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

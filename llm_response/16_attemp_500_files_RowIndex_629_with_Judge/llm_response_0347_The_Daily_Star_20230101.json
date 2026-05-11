@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "The Daily Star",
+    "date": "2023-01-01",
+    "url": "https://www.thedailystar.net/business/economy/news/ensure-stable-energy-prices-economic-recovery-3210341",
+    "body_preview": "The Dhaka Chamber of Commerce and Industry (DCCI) today urged the government to focus on ensuring uninterrupted and affordable energy for both local and export-oriented manufacturing units to further accelerate Bangladesh's economic recovery in 2023.\n\nAlso, emphasis should be placed on improving the ease of doing business and developing an infrastructural environment that is conducive for attracting local and foreign investment, according to a press release from the trade body.\n\nIn addition, the"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka devaluation and shortage",
+      "edge_label": "reduces import capacity",
+      "evidence_quote": "devaluation of the taka against the US Dollar has challenged the country's financial sector, resulting in some negative impacts on the import of energy",
+      "scope_justification": "The article explicitly links country-level devaluation of the taka and foreign currency shortage to negative impacts on imports, matching the feature's focus on exchange-rate effects on import costs.",
+      "verification": {
+        "quote_similarity": 0.997,
+        "quote_best_match": "devaluation of the taka against the US Dollar has challenged the country's financial sector, resulting in some negative impacts on the import of energy,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that the foreign currency shortage and devaluation of the taka 'has challenged the country's financial sector, resulting in some negative impacts on the import of energy, industrial raw materials and supply chain,' which directly links country-level devaluation/shortage to reduced import capacity."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-01",
+      "currency_log_return",
+      "reduces import capacity",
+      "taka devaluation and shortage"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

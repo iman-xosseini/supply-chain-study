@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "MSN International Edition",
+    "date": "2023-01-14",
+    "url": "https://www.msn.com/en-xl/asia/bangladesh/bb-set-to-announce-new-monetary-policy/ar-AA16jjFB",
+    "body_preview": "Dhaka, Jan. 13 -- Bangladesh Bank (BB) is going to announce a new monetary policy on Sunday in line with the advice of the International Monetary Fund (IMF).\n\nBangladesh requested the IMF for a loan of $4.5 billion last July, and the global lending agency agreed to give it to Bangladesh subject to conditions.\n\nBefore lending, the IMF gave several conditions for reforming Bangladesh's financial sector including setting a monetary policy for every quarter of a fiscal year.\n\nIn line with the IMF co"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "HPM injection lowers taka",
+      "edge_label": "lowers exchange rate",
+      "evidence_quote": "Mansur said that the central bank is bringing high power money (HPM) in the market, which will have multiple impacts, and the exchange rate of domestic currency (taka) will also fall then.",
+      "scope_justification": "The article explicitly states a country-level effect: introducing high powered money will cause the taka's exchange rate to fall, which directly pertains to national exchange-rate movements described by this feature."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "lowers exchange rate",
+      "HPM injection lowers taka"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

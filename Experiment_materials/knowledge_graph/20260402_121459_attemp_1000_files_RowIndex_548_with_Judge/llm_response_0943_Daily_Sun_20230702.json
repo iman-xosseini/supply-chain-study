@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-07-02",
+    "url": "https://www.daily-sun.com/post/697784/Govt-allows-import-of-36830-tons-green-chilli",
+    "body_preview": "DHAKA - A total of 93 tons of green chilli has already been imported following the government's permission of importing 36,830 tons to curb steep price hike of the essential kitchen item.\n\n\"After giving permission, 93 tons of imported green chilli have already come in the country . . . more chilli will be reaching tonight,\" said a press release of the agricultural ministry today.\n\nMoreover, over 1.38 lakh tons of onion have already come in the country against the government's permission to impor"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Government allows chilli imports",
+      "edge_label": "permits import surge",
+      "evidence_quote": "following the government's permission of importing 36,830 tons to curb steep price hike",
+      "scope_justification": "The article explicitly discusses the volume of goods brought into the country through import permission, which matches the imports feature’s country-wide scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "following the government's permission of importing 36,830 tons to curb steep price hike",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says 93 tons of green chilli have been imported \"following the government's permission\" to import 36,830 tons, which directly links the permission to the import activity. The discussion is at the national level, referring to imports coming \"in the country,\" so the scope matches."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-07-02",
+      "imports",
+      "permits import surge",
+      "Government allows chilli imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

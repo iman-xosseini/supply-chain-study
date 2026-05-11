@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "DT News",
+    "date": "2023-01-31",
+    "url": "https://www.newsofbahrain.com/world/87779.html",
+    "body_preview": "Agencies | Dhaka\n\nThe Daily Tribune - www.newsofbahrain.com\n\nThe International Monetary Fund (IMF) has signed off on a $4.7 billion support loan package for Bangladesh to help it cope with soaring energy and food costs that have sparked huge protests.\n\nBangladesh and other South Asian countries dependent on fossil fuel imports were hit hard by sharp cost-of-living increases following Russia's attack of Ukraine.\n\nNationwide blackouts of up to 13 hours a day hit the electricity grid last year and "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "currency depreciation increases costs",
+      "edge_label": "drives up costs",
+      "evidence_quote": "The local currency has depreciated around 25 per cent against the US dollar since last May, driving up costs for petrol distributors and power utilities",
+      "scope_justification": "The article explicitly links a large depreciation of the national currency to higher costs for petrol distributors (and utilities) and notes dependence on fossil fuel imports, matching the feature's focus on exchange-rate movements affecting import-related costs."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "drives up costs",
+      "currency depreciation increases costs"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

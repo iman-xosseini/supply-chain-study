@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "MSN International Edition",
+    "date": "2023-02-17",
+    "url": "https://www.msn.com/en-xl/asia/bangladesh/dollar-crisis-casts-a-shadow-over-operation-of-rampal-coal-fired-power-plant/ar-AA17z4yx",
+    "body_preview": "Dhaka, Feb. 16 -- The 1320 MW Rampal power plant has resumed its partial production, but officials still worry about its uninterrupted operation due to dollar crisis that may again disrupt the import of coal, the plant's main fuel.\n\nThe Unit-1 of the coal-fired plant resumed production from Wednesday after a month-long shutdown caused by shortage of coal.\n\nThe plant is still under a test run that started in August before being discontinued last month.\n\nA kind of concern was expressed by the offi"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar crisis disrupts imports",
+      "edge_label": "prevents LC opening",
+      "evidence_quote": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+      "scope_justification": "The article explicitly links a 'dollar crisis' (an exchange/foreign-currency problem) to inability to open LCs and thus disruption of coal imports, matching the feature's focus on exchange-related impacts on imports."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "prevents LC opening",
+      "dollar crisis disrupts imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-14",
+    "url": "https://www.bssnews.net/business/115503",
+    "body_preview": "DHAKA, March 14, 2023 (BSS) - Metropolitan Chamber of Commerce and Industry (MCCI) has underscored the need for taking quick and decisive measures to rebound the country's economy.\n\nAt its quarterly review, MCCI observed that Bangladesh's robust economic recovery from the COVID-19 pandemic has been interrupted by the war in Russia-Ukraine, resultant supply-chain disruptions, global oil-and food-price spikes, slowdown in external demand, weak remittance inflow, rise in inflation, negative current"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "Russia-Ukraine war impact",
+      "edge_label": "disrupts delivery",
+      "evidence_quote": "interrupted by the war in Russia-Ukraine, resultant supply-chain disruptions",
+      "scope_justification": "The article explicitly links the Russia-Ukraine war to 'supply-chain disruptions', which directly describes logistics performance (shipment and supply-chain issues) as defined by Delivery."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "disrupts delivery",
+      "Russia-Ukraine war impact"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

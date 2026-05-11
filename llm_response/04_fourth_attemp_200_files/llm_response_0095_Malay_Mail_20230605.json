@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "Malay Mail",
+    "date": "2023-06-05",
+    "url": "https://www.malaymail.com/news/money/2023/06/05/cash-strapped-bangladesh-shuts-power-plant-as-heatwave-hits/72714",
+    "body_preview": "DHAKA, June 5 -- Cash-strapped Bangladesh shut its biggest power plant today because it was unable to afford the coal to fuel it, as a sweltering heatwave creates surging electricity demand.\n\nThe 1,320-megawatt government-run Payra Power Plant in southern Bangladesh had already slashed production last month due to fuel shortages, but it was forced to go a step further today, manager Shah Abdul Mawla told AFP.\n\n\"Due to the coal shortage, the plant came to a complete shutdown at 12.15pm today,\" Ma"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka depreciation raises costs",
+      "edge_label": "raises import costs",
+      "evidence_quote": "The Bangladeshi taka depreciated about 25 per cent against the US dollar last year, driving up the cost of fuel imports and power utilities.",
+      "scope_justification": "The article explicitly links a large exchange-rate depreciation to higher fuel import costs, which matches the feature's scope of exchange-rate movements affecting import costs."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "LC hinders fuel supply",
+      "edge_label": "limits fuel provision",
+      "evidence_quote": "\"We can't provide coal, gas and fuel sufficiently,\" he told reporters, blaming \"economic factors\" including securing letters of credit.",
+      "scope_justification": "The article states that difficulties securing letters of credit are causing insufficient provision of coal, gas and fuel at the national level, matching the feature's focus on LC availability driving volumes of goods brought in."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "raises import costs",
+      "taka depreciation raises costs"
+    ],
+    [
+      "imports",
+      "limits fuel provision",
+      "LC hinders fuel supply"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

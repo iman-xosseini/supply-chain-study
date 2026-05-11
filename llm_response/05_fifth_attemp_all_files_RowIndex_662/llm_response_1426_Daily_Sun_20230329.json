@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-03-29",
+    "url": "https://www.daily-sun.com/post/681785/Globalizing-the-local-of-Bangladesh:-Specialist-English-language-blog-%E2%80%98The-Confluence%E2%80%99-launched",
+    "body_preview": "Dhaka- \"Since the [US] Fed Rate hikes were initiated in March 2022, the Bangladeshi Taka has lost nearly 25% of value against the US dollar, and foreign exchange reserves plummeted as import costs and debt-servicing became more expensive,\" writes Dr. Saim Amir Faisal, founder and CEO of a developmental social entrepreneurial organization called Citizens Programme for Human Development (CPHD).\n\n\"The Pakistani Rupee has lost nearly 45% of value against the US dollar, the economy is on the verge of"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Fed hikes devalue Taka",
+      "edge_label": "causes currency depreciation",
+      "evidence_quote": "Since the [US] Fed Rate hikes were initiated in March 2022, the Bangladeshi Taka has lost nearly 25% of value against the US dollar",
+      "scope_justification": "The article explicitly links US Fed rate hikes to a nearly 25% fall in the Bangladesh Taka versus the US dollar and also mentions import costs rising, matching the feature's exchange-rate and import-cost scope."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "causes currency depreciation",
+      "Fed hikes devalue Taka"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-24",
+    "url": "https://www.bssnews.net/news-flash/112237",
+    "body_preview": "CHATTOGRAM, Feb 24, 2023 (BSS) - The country would not face any shortage of essential commodities in the coming fasting month of Ramadan as the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.\n\nAlso the adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan, thanks to the government for easing opening letters of credit (LCs) for essential commodities to keep"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Government measures increased imports",
+      "edge_label": "increases imports",
+      "evidence_quote": "timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.",
+      "scope_justification": "The article explicitly attributes higher country-level imports of consumer goods to government measures (including LC easing), matching the feature's focus on import volumes driven by LC availability.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that government measures helped increase imports of consumer goods, and the provided quote appears verbatim. The discussion is at the country level, matching the scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-24",
+      "imports",
+      "increases imports",
+      "Government measures increased imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

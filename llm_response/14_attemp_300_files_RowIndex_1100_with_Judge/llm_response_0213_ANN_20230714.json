@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-07-14",
+    "url": "https://asianews.network/potential-indian-rice-export-ban-domestic-market-may-not-be-affected/",
+    "body_preview": "DHAKA - It is unlikely for Bangladesh to face any immediate problem if India bans rice exports thanks to ample food stocks in public storages and good harvests in immediate past two crop seasons, said food ministry officials and a rice importer yesterday.\n\nThe reaction comes as India, the world's biggest rice shipper, is considering banning exports of most varieties, Reuters reported citing Bloomberg News yesterday.\n\nThe government is discussing a plan to ban exports of all non-Basmati rice, the"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "62% import tariff",
+      "edge_label": "discourages imports",
+      "evidence_quote": "At this rate, none will import rice as imported rice will not be competitive at this tariff",
+      "scope_justification": "The article explicitly states importers (national actors) will stop importing rice because of the 62% tariff, which directly affects Bangladesh's aggregate import volumes.",
+      "verification": {
+        "quote_similarity": 0.995,
+        "quote_best_match": "At this rate, none will import rice as imported rice will not be competitive at this tariff,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article includes the exact quote linking a 62% import tariff to the lack of imports, explicitly stating that at this rate none will import rice because it won’t be competitive. This is presented in a national context about Bangladesh’s rice imports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-07-14",
+      "imports",
+      "discourages imports",
+      "62% import tariff"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

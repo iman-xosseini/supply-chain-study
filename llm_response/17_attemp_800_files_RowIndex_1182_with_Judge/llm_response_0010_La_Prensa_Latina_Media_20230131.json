@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-01-31",
+    "url": "https://www.laprensalatina.com/imf-approves-4-7-billion-loan-package-for-bangladesh/",
+    "body_preview": "Dhaka, Jan 31 (EFE).- The International Monetary Fund (IMF) has approved a $4.7 billion loan package for Bangladesh amid a worrying state of the country's economy.\n\nThe approval for the 42-month borrowing package came in the IMF Executive Board meeting in Washington on Monday.\n\nBangladesh would get $3.3 billion under the Extended Credit Facility and the Extended Fund Facility arrangements.\n\nThe IMF Executive Board also approved $1.4 billion under the newly created Resilience and Sustainability F"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Russia's war in Ukraine",
+      "edge_label": "caused depreciation",
+      "evidence_quote": "It has led to a sharp widening of Bangladesh's current account deficit, depreciation of the taka, and a decline in foreign exchange reserves.",
+      "scope_justification": "The article explicitly states a country-level 'depreciation of the taka', which is an exchange-rate movement matching the currency_log_return definition of national exchange-rate volatility.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "It has led to a sharp widening of Bangladesh's current account deficit, depreciation of the taka, and a decline in foreign exchange reserves.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence 'It has led to a sharp widening of Bangladesh's current account deficit, depreciation of the taka, and a decline in foreign exchange reserves,' which explicitly states Russia's war in Ukraine caused depreciation of the taka, a country-level exchange-rate movement matching the feature."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-31",
+      "currency_log_return",
+      "caused depreciation",
+      "Russia's war in Ukraine"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

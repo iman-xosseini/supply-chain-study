@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-23",
+    "url": "https://www.bssnews.net/business/117198",
+    "body_preview": "DHAKA, March 23, 2023 (BSS) - The businessmen today said that there is sufficient stock of essentials like edible oil, onion, sugar in the Holy Month of Ramadan beginning tomorrow while the supply side also remains normal.\n\nDespite this, if any unholy businessman tries to make excessive profit through increasing price abnormally, the Federation of Bangladesh Chambers of Commerce and Industry (FBCCI) would cooperate with the government to take necessary action against the wrongdoers.\n\nThe busines"
+  },
+  "llm_connections": [
+    {
+      "feature": "inventory_proxy",
+      "event_summary": "high essential stocks",
+      "edge_label": "reduces shortage risk",
+      "evidence_quote": "while the stock of edible oil is also higher than the demand. There is no apprehension",
+      "scope_justification": "The article states aggregated stock levels for essentials (e.g., edible oil higher than demand), which matches the feature's focus on overall unsold stock/warehouse levels."
+    }
+  ],
+  "triplets": [
+    [
+      "inventory_proxy",
+      "reduces shortage risk",
+      "high essential stocks"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

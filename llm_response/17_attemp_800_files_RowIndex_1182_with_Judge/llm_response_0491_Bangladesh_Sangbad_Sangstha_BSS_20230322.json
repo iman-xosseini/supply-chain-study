@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-22",
+    "url": "https://www.bssnews.net/news/116959",
+    "body_preview": "DHAKA, March 22, 2023 (BSS) - Noted local and international agricultural scientists have encouraged the growers of the country to use balanced fertilizer for crop production as its use would increase crop output by 8-14 percent that will save over Taka 20,000 crore yearly.\n\nThe recommendations came at the time when the government was continuously providing Taka 8,000 crore subsidies annually for fertilizer import in the past while the amount of subsidy now stands at Taka 30,000 crore amid commod"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Raise DAP imports",
+      "edge_label": "raises import volume",
+      "evidence_quote": "the government has decided to raise import of Di-ammonium phosphate (DAP)",
+      "scope_justification": "The article explicitly reports a government decision to raise imports of DAP, which is a direct change in the volume of goods brought into the country and thus matches the 'imports' feature scope.",
+      "verification": {
+        "quote_similarity": 0.986,
+        "quote_best_match": "\"the government has decided to raise import of Di-ammonium phosphate (DAP),",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article directly quotes the agriculture secretary saying \"the government has decided to raise import of Di-ammonium phosphate (DAP)\", which explicitly states the government will increase DAP imports (a causal action increasing import volume) and is described at the national/government level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-22",
+      "imports",
+      "raises import volume",
+      "Raise DAP imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

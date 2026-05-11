@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-08",
+    "url": "https://www.bssnews.net/news-flash/109647",
+    "body_preview": "DHAKA, Feb 8, 2023 (BSS) - Prime Minister Sheikh Hasina today told the Jatiya Sangsad (JS) that the process of importing LNG from spot market has already been started to meet the demand of gas for power generation during the ongoing irrigation season, upcoming holy month of Ramadan and summer.\n\nThe Leader of the House said this while responding to a tabled question from Jatiya Party lawmaker Fakhrul Imam.\n\nShe said that in 2008, the daily gas production capacity was 1,744 million cubic feet whil"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Spot-market LNG imports started",
+      "edge_label": "initiates imports",
+      "evidence_quote": "the increased demand must be met by importing LNG at a high price from the spot market",
+      "scope_justification": "The article explicitly says Bangladesh is importing LNG from the spot market to meet national gas demand, which describes a country-level import action matching the 'imports' definition."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-08",
+      "imports",
+      "initiates imports",
+      "Spot-market LNG imports started"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

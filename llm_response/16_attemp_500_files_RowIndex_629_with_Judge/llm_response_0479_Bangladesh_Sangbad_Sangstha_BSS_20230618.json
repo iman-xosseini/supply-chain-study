@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-18",
+    "url": "https://www.bssnews.net/business/131959",
+    "body_preview": "DHAKA, June 18, 2023 (BSS) - In response to the declared Monetary Policy for the first half of the fiscal year 2023-24 (July-December 2023) by the Bangladesh Bank, President of Dhaka Chamber of Commerce and Industry (DCCI) Barrister Md Sameer Sattar said that a contractionary MPS will help to revive the financial and private sectors.\n\n\"The MPS primarily aims to curb inflation by reducing the aggregate demand in the economy, continuing supply-side interventions and a stable and favourable busines"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Unified exchange rate stabilizes",
+      "edge_label": "reduces exchange volatility",
+      "evidence_quote": "a unified exchange rate will stabilize the market.",
+      "scope_justification": "The article explicitly links a national 'unified exchange rate' to market stabilization, which addresses country-level exchange-rate volatility matching the feature's scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "a unified exchange rate will stabilize the market.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states 'a unified exchange rate will stabilize the market,' asserting a causal effect, and it refers to the national FX market in Bangladesh, matching the country-level scope of the feature."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-18",
+      "currency_log_return",
+      "reduces exchange volatility",
+      "Unified exchange rate stabilizes"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

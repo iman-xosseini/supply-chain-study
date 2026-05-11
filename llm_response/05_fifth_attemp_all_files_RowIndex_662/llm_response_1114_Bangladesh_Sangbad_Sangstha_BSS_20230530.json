@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-30",
+    "url": "https://www.bssnews.net/news-flash/128128",
+    "body_preview": "DHAKA, May 30, 2023 (BSS) - Finance Minister AHM Mustafa Kamal will place a national budget of over Taka 7.61 lakh crore for the next fiscal year (FY24) at the Jatiya Sangsad on June 1 (Thursday) with a major focus on containing inflation, generating jobs, efforts towards building a 'Smart Bangladesh' and addressing the challenges of the fourth industrial revolution (4IR).\n\nThe possible budget size of Taka 7,61,785 crore would mainly aim at taming inflation alongside the higher GDP growth trajec"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Depreciation of Taka",
+      "edge_label": "increases costs",
+      "evidence_quote": "The allocations are being raised to soften the blows of high prices of commodities in the international market and the depreciation of Taka.",
+      "scope_justification": "The article explicitly links a national-level depreciation of the Taka to increased pressure on commodity prices, matching the feature's focus on exchange-rate effects at the country level."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "increases costs",
+      "Depreciation of Taka"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

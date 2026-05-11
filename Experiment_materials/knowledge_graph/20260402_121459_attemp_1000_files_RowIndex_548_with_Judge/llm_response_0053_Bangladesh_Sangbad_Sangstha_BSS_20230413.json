@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-04-13",
+    "url": "https://www.bssnews.net/business/120673",
+    "body_preview": "DHAKA, April 13, 2023 (BSS) - Finance Minister AHM Mustafa Kamal today said that the businessmen of the country would become happy to see the national budget for the next fiscal year (FY24).\n\n\"There is nothing to be afraid of seeing the next budget. You won't be looser,\" he told the business community.\n\nThe finance minister said this while addressing as the chief guest at the 43rd Consultative Committee meeting of the NBR and FBCCI centering the next budget held at a city hotel.\n\nOrganized joint"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "AIT cuts at import stage",
+      "edge_label": "reduces import cost",
+      "evidence_quote": "reducing Advance Income Tax (AIT) in phases at import stage at 3 percent from 5 percent to reduce the cost in industrial production and in trade and commerce",
+      "scope_justification": "The article explicitly discusses import-stage taxation affecting the import process broadly, which matches the feature’s country-wide imports scope.",
+      "verification": {
+        "quote_similarity": 0.997,
+        "quote_best_match": "reducing Advance Income Tax (AIT) in phases at import stage at 3 percent from 5 percent to reduce the cost in industrial production and in trade and commerce.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says FBCCI proposed \"reducing Advance Income Tax (AIT) in phases at import stage at 3 percent from 5 percent to reduce the cost in industrial production and in trade and commerce,\" which directly states the intended causal effect. The discussion is about national budget recommendations affecting country-wide trade/import policy, so the scope matches the claimed imports feature."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-13",
+      "imports",
+      "reduces import cost",
+      "AIT cuts at import stage"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

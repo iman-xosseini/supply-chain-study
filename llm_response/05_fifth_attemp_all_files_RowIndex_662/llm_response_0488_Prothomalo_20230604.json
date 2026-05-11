@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Prothomalo",
+    "date": "2023-06-04",
+    "url": "https://en.prothomalo.com/business/local/1q4bvruzz4",
+    "body_preview": "Bangladesh Trade and Tariff Commission (BTTC), under the Ministry of Commerce, shows the price of unrefined soybean oil in Argentina was USD 847 per tonne on 31 May. The price was USD 1970 dollars exactly a year ago. The price has dropped by nearly 57 per cent.\n\nA bottle of soybean oil in the country's market went up to Tk 199 after it had been increased by Tk 12 per litre on 3 May. The price hike was caused by the withdrawal of exemption of value added tax (VAT) on soybean oil. The prices stood"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Dollar appreciation fuels inflation",
+      "edge_label": "fuels inflation",
+      "evidence_quote": "As the government has failed to control the price of the dollar, it has fuelled inflation by raising the prices of gas, electricity and fuel.",
+      "scope_justification": "The article attributes nationwide dollar appreciation and a spike in the dollar price to higher domestic prices and import disruptions, matching the feature's country-level exchange-rate impact on import-related costs."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "fuels inflation",
+      "Dollar appreciation fuels inflation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

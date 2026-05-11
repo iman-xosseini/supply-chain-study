@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-04-20",
+    "url": "https://asianews.network/is-renewable-deployment-suffering-from-fossil-fuel-lock-in/",
+    "body_preview": "DHAKA - While the peak electricity supply reached 15,604MW in Bangladesh at the beginning of summer, many areas, mostly outside Dhaka, have been facing long hours of load-shedding and disruption of economic activities. The reason behind the current crisis is not the lower installed capacity, but the inability to buy imported energy to run the existing power plants and interrupted services due to technical inefficiency. It is tragic to see that while people are suffering from the crisis, over 40 "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "US dollar crisis limits imports",
+      "edge_label": "reduces ability to pay for imports",
+      "evidence_quote": "whether Bangladesh will be able to pay for the imported energy to fulfil its demand amid the US dollar crisis",
+      "scope_justification": "The article explicitly links a national 'US dollar crisis' to Bangladesh's ability to pay for imported energy, matching the country-level exchange-rate impact on import costs described by the feature.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "whether Bangladesh will be able to pay for the imported energy to fulfil its demand amid the US dollar crisis",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence: '...whether Bangladesh will be able to pay for the imported energy to fulfil its demand amid the US dollar crisis...,' which explicitly links a national US dollar crisis to reduced ability to pay for imported energy at the country level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-20",
+      "currency_log_return",
+      "reduces ability to pay for imports",
+      "US dollar crisis limits imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "http://www.uniindia.com/fadnavis-orders-probe-into-mumbai-pub-fire/states/news/1090400.html",
+    "date": "2023-07-19",
+    "url": "http://www.uniindia.com/~/adb-raises-bangladesh-s-economic-growth-forecast/World/news/3013493.html",
+    "body_preview": "Dhaka, July 19 (UNI) The Asian Development Bank (ADB) Wednesday said the Bangladeshi economy is forecast to grow faster than initially expected in 2023, following better export performance.\n\nADB in its Asian Development Outlook (ADO) for July 2023 says the Bangladeshi economy will grow at least 6 percent in 2023-2024, up from the bank's April forecast of 5.3 percent.\n\nFor the current 2023-2024 fiscal, the Manila-based lender has kept the forecast for the growth of Bangladesh's economy unchanged "
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "imports fell more sharply",
+      "edge_label": "strengthens trade balance",
+      "evidence_quote": "reflects strong net exports as imports fell more sharply than expected and export growth slowed less than expected",
+      "scope_justification": "The article attributes 'strong net exports' to nationwide movements in imports and export growth, which corresponds to the national-level difference between imports and exports described by 'balance_of_trade'.",
+      "verification": {
+        "quote_similarity": 0.991,
+        "quote_best_match": "reflects strong net exports as imports fell more sharply than expected and export growth slowed less than expected,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence attributing the higher growth estimate to \"strong net exports as imports fell more sharply than expected and export growth slowed less than expected,\" which explicitly links the drop in imports to stronger net exports (national-level balance of trade)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-07-19",
+      "balance_of_trade",
+      "strengthens trade balance",
+      "imports fell more sharply"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

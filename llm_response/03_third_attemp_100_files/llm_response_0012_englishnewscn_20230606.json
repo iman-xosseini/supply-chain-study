@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "english.news.cn",
+    "date": "2023-06-06",
+    "url": "https://english.news.cn/asiapacific/20230606/75d6c0d569b34f8d9ee1957fe0fb8a44/c.html",
+    "body_preview": "DHAKA, June 6 (Xinhua) -- Inflation in Bangladesh jumped to 9.94 percent in May, the highest in the past decade, mainly driven by higher food prices, the Bangladesh Bureau of Statistics (BBS) reported Monday.\n\nData showed that food inflation increased to 9.24 percent in May from 8.84 percent in the previous month.\n\nAlso, non-food items inflation increased to 9.96 percent in May from 9.72 percent in April, the data showed.\n\nThe country's previous high inflation in recent times was recorded in Aug"
+  },
+  "llm_connections": [
+    {
+      "feature": "Group",
+      "event_summary": "Food-driven inflation rise",
+      "edge_label": "increases inflation",
+      "evidence_quote": "Inflation in Bangladesh jumped to 9.94 percent in May, mainly driven by higher food prices.",
+      "scope_justification": "The article attributes nationwide inflation to higher food prices, which corresponds to the 'Group' scope of a broad industry sector (the food sector)."
+    },
+    {
+      "feature": "production_sales_ratio",
+      "event_summary": "Supply shortage raises prices",
+      "edge_label": "worsens imbalance",
+      "evidence_quote": "In recent months, prices of many essentials in Bangladesh have been seen rising in the short term on a supply shortage.",
+      "scope_justification": "The article explicitly describes a national-level supply shortage (an imbalance between supply and demand), matching the feature's focus on the supply-production versus sales balance."
+    }
+  ],
+  "triplets": [
+    [
+      "Group",
+      "increases inflation",
+      "Food-driven inflation rise"
+    ],
+    [
+      "production_sales_ratio",
+      "worsens imbalance",
+      "Supply shortage raises prices"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

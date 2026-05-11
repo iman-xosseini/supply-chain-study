@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "South Asia Journal",
+    "date": "2023-03-11",
+    "url": "http://southasiajournal.net/bangladesh-banks-feel-squeeze-of-moodys-outlook-downgrade/",
+    "body_preview": "DHAKA -- Bangladesh's banking sector is girding for a rougher ride after Moody's, one of the big three global rating agencies, downgraded its outlook for the sector from \"stable\" to \"negative.\"\n\nEconomists and financial analysts say last week's downgrade is a major blow for an economy hobbled by a weakened currency, high inflation and declining foreign reserves amid the global shock waves from the Ukraine war. They warn that cross-border financial transactions will become more difficult and cost"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Moody's downgrade hinders transactions",
+      "edge_label": "makes financing costlier",
+      "evidence_quote": "cross-border financial transactions will become more difficult and costly for the import-dependent South Asian nation",
+      "scope_justification": "The article explicitly links Moody's downgrade to harder, costlier cross-border financial transactions for an 'import-dependent' Bangladesh, matching the feature's national-level focus on imports driven by cross-border financing.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "cross-border financial transactions will become more difficult and costly for the import-dependent South Asian nation.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating cross-border transactions will become \"more difficult and costly for the import-dependent South Asian nation,\" and multiple passages (including expert quotes) explicitly link Moody's downgrade to increased financing costs and impeded cross-border transactions at the national level for Bangladesh."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "dollar crisis stalls LCs",
+      "edge_label": "reduces LC availability",
+      "evidence_quote": "But even before the outlook darkened, the dollar crisis was stalling new credit arrangements and payments on previous ones.",
+      "scope_justification": "The article states at the national level that a 'dollar crisis' stalled new credit arrangements (including letters of credit) and payments, directly relating to LC-driven import financing as defined for the imports feature.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "But even before the outlook darkened, the dollar crisis was stalling new credit arrangements and payments on previous ones.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article. The text explicitly links the 'dollar crisis' to stalling new credit arrangements and declines in letters of credit and payments (banks 'do not have enough dollars to settle import bills'), and this is discussed at the national (Bangladesh, import-dependent) level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-11",
+      "imports",
+      "makes financing costlier",
+      "Moody's downgrade hinders transactions"
+    ],
+    [
+      "2023-03-11",
+      "imports",
+      "reduces LC availability",
+      "dollar crisis stalls LCs"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

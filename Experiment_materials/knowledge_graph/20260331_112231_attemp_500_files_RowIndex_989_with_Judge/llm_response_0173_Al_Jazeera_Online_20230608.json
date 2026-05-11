@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Al Jazeera Online",
+    "date": "2023-06-08",
+    "url": "https://www.aljazeera.com/news/2023/6/8/bangladesh-suffers-long-power-cuts-amid-worst-heatwave-in-decades",
+    "body_preview": "Dhaka, Bangladesh - Abdur Rahman nearly fainted while pulling his rickshaw under the scorching sun in Bangladesh's capital city. \"It is not possible to continue doing this in such weather,\" he told Al Jazeera.\n\nFor the last few weeks, the slum in Dhaka where Rahman lives has hardly had any electricity at night.\n\n\"After a hard, laborious day, I used to get some sleep. Now my sleeps are disrupted without a fan. I wake up many times, drenched in sweat,\" he said.\n\nA crippling power crisis has added "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka depreciation impacts imports",
+      "edge_label": "impairs fuel imports",
+      "evidence_quote": "unable to import fuel due to a decline in foreign exchange reserves and the depreciating value of the Bangladeshi taka",
+      "scope_justification": "The article explicitly links the national-level depreciation of the Bangladeshi taka and falling forex reserves to the country's inability to import fuel, matching the feature's focus on exchange-rate-driven import effects.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "unable to import fuel due to a decline in foreign exchange reserves and the depreciating value of the Bangladeshi taka",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating the government is \"unable to import fuel due to a decline in foreign exchange reserves and the depreciating value of the Bangladeshi taka,\" which explicitly links taka depreciation (and falling forex reserves) as the cause of impaired fuel imports at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-08",
+      "currency_log_return",
+      "impairs fuel imports",
+      "taka depreciation impacts imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-30",
+    "url": "https://www.bssnews.net/business/128189",
+    "body_preview": "DHAKA, May 30, 2023 (BSS) - A delegation from Cotton USA met with Bangladesh\n\nGarment Manufacturers and Exporters Association (BGMEA) President Faruque\n\nHassan today to discuss potential collaboration on creating trade\n\nopportunities that would be beneficial for both sides.\n\nThe team included William R. Bettendorf, Director, Supply Chain Marketing and\n\nSouth Asia; Stephanie Thiers-Ratcliffe, Director, European Brands and\n\nRetailers; and Ali Arsalan, Bangladesh Consultant, Cotton USA.\n\nBGMEA Dire"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "lifting fumigation rule",
+      "edge_label": "enhances mutual trade",
+      "evidence_quote": "the lifting of the rule of mandatory fumigation of US cotton by Bangladesh has created a huge opportunity for both the USA and Bangladesh to enhance mutual trade.",
+      "scope_justification": "The quote refers to bilateral, country-level trade between Bangladesh and the USA, which pertains to imports and exports at the national level as described in the balance_of_trade definition."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "enhances mutual trade",
+      "lifting fumigation rule"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

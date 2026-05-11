@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Reuters",
+    "date": "2023-05-18",
+    "url": "https://www.reuters.com/business/retail-consumer/apparel-makers-cyclone-hit-bangladesh-consider-rare-expensive-airlifts-exports-2023-05-18/",
+    "body_preview": "DHAKA, May 18 (Reuters) - Apparel makers in Bangladesh are considering rare bulk exports by air to Europe and the United States, as they race to meet deadlines and avoid cancellations after a cyclone delayed shipments, caused power cuts and disrupted production.\n\nThe crunch could disrupt summer clothes supplies for retailers such as Walmart (WMT.N), Gap Inc (GPS.N), H&M (HMb.ST), VF Corp (VFC.N), Zara and American Eagle Outfitters (AEO.N), some of Bangladesh's largest export customers.\n\nCyclone "
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "weakening global demand",
+      "edge_label": "reduces exports",
+      "evidence_quote": "has already been hit by weakening global demand, with exports falling in both March and April.",
+      "scope_justification": "The article reports country-wide exports fell in March and April due to weakening global demand; national exports are the export component of the balance of trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "reduces exports",
+      "weakening global demand"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

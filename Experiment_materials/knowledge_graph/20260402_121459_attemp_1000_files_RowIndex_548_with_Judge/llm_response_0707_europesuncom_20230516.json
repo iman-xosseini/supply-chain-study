@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "europesun.com",
+    "date": "2023-05-16",
+    "url": "https://www.europesun.com/news/273832902/bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Yuan use lowers export revenue",
+      "edge_label": "worsens trade position",
+      "evidence_quote": "\"Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.\"",
+      "scope_justification": "Export revenue is part of country-wide external trade performance, so this claim addresses the national balance of trade scope rather than a localized or single-product effect.",
+      "verification": {
+        "quote_similarity": 0.992,
+        "quote_best_match": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says, \"Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well,\" which directly matches the quoted evidence. This is a country-level discussion about Bangladesh’s foreign trade and currency use, so the scope aligns with the claimed balance-of-trade effect."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-16",
+      "balance_of_trade",
+      "worsens trade position",
+      "Yuan use lowers export revenue"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "RocketNews | Top News Stories From Around the Globe",
+    "date": "2023-02-23",
+    "url": "https://www.rocketnews.com/2023/02/severe-dollar-crisis-hobbles-bangladesh-businesses/",
+    "body_preview": "Dhaka, Bangladesh - Spice trader Mohammed Enayet Ullah has made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, some of the most essential spices used in Bangladeshi cooking, only to be refused by banks due to a shortage of dollars.Importers in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services. It is essentially a financial contract issued by an importer's ban"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "dollar shortage halts imports",
+      "edge_label": "blocks imports",
+      "evidence_quote": "only to be refused by banks due to a shortage of dollars.",
+      "scope_justification": "The article describes that importers in Bangladesh need letters of credit to buy foreign goods and were refused L/Cs because of a dollar shortage, which directly affects country-level imports (the imports side of the trade balance)."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "blocks imports",
+      "dollar shortage halts imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

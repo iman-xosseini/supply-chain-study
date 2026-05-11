@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Winnipeg Free Press",
+    "date": "2023-05-12",
+    "url": "https://www.winnipegfreepress.com/world/2023/05/12/representatives-from-25-indian-ocean-nations-discuss-security-economic-growth-and-cooperation",
+    "body_preview": "DHAKA, Bangladesh (AP) -- Representatives from 25 Indian Ocean nations discussed regional economic growth, cooperation and security at the Indian Ocean Conference in Bangladesh on Friday as the Indo-Pacific grows in importance amid changes in the world order.\n\nGovernment officials and experts discussed the Russia-Ukraine war prominently in several sessions, reflecting concerns about how countries in the region would align themselves in the new complex order stemming from the war.\n\n\"The Indian Oc"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "War causes supply disruptions",
+      "edge_label": "disrupts delivery",
+      "evidence_quote": "Countries in the region have had to cope with rising inflation and supply chain disruptions as well as questions of security alignments as a result of the war.",
+      "scope_justification": "The article explicitly attributes regional 'supply chain disruptions' to the Russia-Ukraine war, which matches the Delivery feature's scope of logistics performance (shipment/transport disruptions) at a regional level."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "disrupts delivery",
+      "War causes supply disruptions"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

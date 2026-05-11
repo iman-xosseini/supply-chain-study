@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Forever NEWS",
+    "date": "2023-02-27",
+    "url": "https://www.forevernews.in/politics/bdesh-withdraws-duty-on-sugar-import-to-stabilise-local-market-759453",
+    "body_preview": "Dhaka, Feb 27 (IANS) Bangladesh's National Board of Revenue (NBR) withdrew import duty on both raw and refined sugar in order to enable consumers to get the sweetener at reduced rates.\n\nIn a notification, NBR withdrew a 3,000 taka (about $28) specific duty on the import of raw sugar and 6,000 taka duty on refined sugar per tonne with immediate effect.\n\nApart from this, the NBR reduced the regulatory duty on the import of sugar to 25 per cent from 30 per cent.\n\nThe reduced import benefit, which r"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Sugar import costs reduced",
+      "edge_label": "reduces import cost",
+      "evidence_quote": "\"The overall import cost of raw and refined sugar is expected to decline by 6,500 takas and 9,000 takas per tonne respectively\"",
+      "scope_justification": "The article discusses the import cost of sugar imports at a national policy level, which matches the feature’s country-wide imports scope only as an explicit import-related cost effect.",
+      "verification": {
+        "quote_similarity": 0.992,
+        "quote_best_match": "The overall import cost of raw and refined sugar is expected to decline by 6,500 takas and 9,000 takas per tonne respectively",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears in the article nearly verbatim: it says the overall import cost of raw and refined sugar is expected to decline by specified amounts. The article explicitly links this decline to the fresh duty waiver and reduction measures, and it discusses a national import policy affecting country-level sugar imports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-27",
+      "imports",
+      "reduces import cost",
+      "Sugar import costs reduced"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

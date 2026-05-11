@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-21",
+    "url": "https://www.bssnews.net/business/106417",
+    "body_preview": "DHAKA, Jan 21, 2023 (BSS) - Dhaka Chamber of Commerce and Industry (DCCI) President Barrister Md Sameer Sattar today urged all concerned to work together to face the changing economic reality in the wake of the current global condition.\n\n\"I'll urge all to work together in facing the changing economic reality,\" he said.\n\nThe DCCI President said this while addressing the \"Meet the Press\" held at the DCCI in the city's Motijheel area.\n\nHe said not only Bangladesh, but also the whole of the world is"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Reduce LC margin for imports",
+      "edge_label": "eases import financing",
+      "evidence_quote": "they have already requested the concerned authorities to reduce the LC margin for ensuring smooth import of essential items ahead of the Holy Month of Ramadan.",
+      "scope_justification": "The article explicitly discusses imports at the country-wide level by referring to ensuring smooth import of essential items through LC margin reduction.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "they have already requested the concerned authorities to reduce the LC margin for ensuring smooth import of essential items ahead of the Holy Month of Ramadan.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted statement appears almost verbatim in the article: they requested authorities to reduce the LC margin for ensuring smooth import of essential items. This explicitly links reducing LC margin to facilitating imports, and the discussion is at the national/import policy level rather than a single-firm level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-21",
+      "imports",
+      "eases import financing",
+      "Reduce LC margin for imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

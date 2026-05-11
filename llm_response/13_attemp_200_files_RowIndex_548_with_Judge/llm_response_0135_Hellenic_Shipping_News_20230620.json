@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Hellenic Shipping News",
+    "date": "2023-06-20",
+    "url": "https://www.hellenicshippingnews.com/commodity-tracker-5-charts-to-watch-this-week-77/",
+    "body_preview": "1. Bangladesh's first ever single-point mooring system to allow higher Saudi, UAE crude imports\n\nWhat's happening? Bangladesh has installed its first single-point mooring system in the Bay of Bengal. Prior to the SPM installation, Bangladesh Petroleum Corp. had to use multiple small vessels to unload imported crude and oil products from large tankers anchored in deep-sea areas and move them to the state-run refiner's Chattogram storage tanks. The process used to take up to seven days to complete"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "SPM to increase imports",
+      "edge_label": "enables higher imports",
+      "evidence_quote": "With the new facility set to bolster logistical capacity and efficiency, Bangladesh is poised to increase Middle Eastern crude imports and diesel trades.",
+      "scope_justification": "The article explicitly states Bangladesh (country-level) will increase Middle Eastern crude and diesel imports, which refers to national import volumes matching the 'imports' feature scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "With the new facility set to bolster logistical capacity and efficiency, Bangladesh is poised to increase Middle Eastern crude imports and diesel trades.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article states verbatim that with the new SPM facility, Bangladesh is poised to increase Middle Eastern crude imports and diesel trades, and notes BPC made additional imports due to expected speed-ups, explicitly linking the facility to higher national imports."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "BPC made additional imports",
+      "edge_label": "prompted extra imports",
+      "evidence_quote": "BPC said it has already made additional Arab Light crude imports this month on expectations that the SPM facility would speed up the offloading and discharging process from late-June.",
+      "scope_justification": "The article reports that state-run BPC increased its Arab Light crude imports, a direct change in Bangladesh's import volume consistent with the 'imports' feature definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "BPC said it has already made additional Arab Light crude imports this month on expectations that the SPM facility would speed up the offloading and discharging process from late-June.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact quoted sentence appears in the article and explicitly links BPC’s additional Arab Light crude imports to expectations that the new SPM will speed up offloading. The discussion is at the company level (BPC), matching the event’s scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-20",
+      "imports",
+      "enables higher imports",
+      "SPM to increase imports"
+    ],
+    [
+      "2023-06-20",
+      "imports",
+      "prompted extra imports",
+      "BPC made additional imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

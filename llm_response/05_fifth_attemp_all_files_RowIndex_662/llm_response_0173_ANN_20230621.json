@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-06-21",
+    "url": "https://asianews.network/bangladesh-can-be-the-next-outsourcing-destination-pwc/",
+    "body_preview": "DHAKA - Bangladesh has immense potential to become the next outsourcing destination riding on a higher proportion of the working age population and the government's initiatives aimed at attracting investments, a new study said.\n\nPwC Bangladesh, in its flagship report \"Destination Bangladesh\", an analysis of the country as an investment destination, said the country is striving to enhance its exports on all fronts of production.\n\nPlanning Minister MA Mannan launched the report at an event at the "
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "expected sovereign rating change",
+      "edge_label": "lowers equity risk premiums",
+      "evidence_quote": "Besides, the sovereign rating is also expected to lower risk premiums while making investments in debt and equity-based instruments,",
+      "scope_justification": "The article explicitly links sovereign rating changes to lower risk premiums for investments in equity-based instruments, which directly concerns aggregate investor conditions in the equity market as defined."
+    }
+  ],
+  "triplets": [
+    [
+      "stock_market_close",
+      "lowers equity risk premiums",
+      "expected sovereign rating change"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,44 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-02",
+    "url": "https://www.bssnews.net/news-flash/134116",
+    "body_preview": "DHAKA, July 02, 2023 (BSS) - A total of 93 tons of green chilli has already been imported following the government's permission of importing 36,830 tons to curb steep price hike of the essential kitchen item.\n\n\"After giving permission, 93 tons of imported green chilli have already come in the country . . . more chilli will be reaching tonight,\" said a press release of the agricultural ministry today.\n\nAfter the Eid-ul-Azha, the import of green chilli has resumed since 5pm today, around 55 tons o"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "green chilli import resumption",
+      "edge_label": "permits imports",
+      "evidence_quote": "After giving permission, 93 tons of imported green chilli have already come in the country",
+      "scope_justification": "The article reports a national volume of green chilli that 'have ... come in the country', matching the feature's country-wide imports scope."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "onion import arrivals",
+      "edge_label": "permits imports",
+      "evidence_quote": "Moreover, over 1.38 lakh tons of onion have already come in the country against the government's permission to import 9.18 lakh tons",
+      "scope_justification": "The article specifies nationwide tonnage of onions 'have ... come in the country', which corresponds to the feature's definition of country-wide import volumes."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-07-02",
+      "imports",
+      "permits imports",
+      "green chilli import resumption"
+    ],
+    [
+      "2023-07-02",
+      "imports",
+      "permits imports",
+      "onion import arrivals"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-07",
+    "url": "https://www.bssnews.net/business/129745",
+    "body_preview": "DHAKA, June 7, 2023 (BSS) - Federation of Bangladesh Chambers of Commerce and Industry (FBCCI) President Md Jashim Uddin today urged the government to extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.\n\nThe FBCCI president made the call while addressing a post-budget discussion as a special guest organized by the Economic Reporters' Forum (ERF) jointly with RAPID and Asia Foundation held at the ERF auditorium at Paltan in the "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "call for import-substitution",
+      "edge_label": "reduces import pressure",
+      "evidence_quote": "extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.",
+      "scope_justification": "The quote explicitly refers to national policy for 'import-substitute industries in the country' aimed at lessening 'import pressure on foreign exchange', addressing imports at the country-wide level.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence urging policy support for 'import-substitute industries in the country to lessen import pressure on foreign exchange,' which explicitly asserts a causal link at the national level between promoting import substitution and reducing import pressure on foreign exchange."
+      }
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Bangladesh Bank import cut",
+      "edge_label": "does not reduce exchange stress",
+      "evidence_quote": "the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar",
+      "scope_justification": "The sentence directly discusses 'stress on the dollar' (exchange-rate pressure) in relation to a nationwide import-cutting move, matching the feature's national exchange-rate volatility scope.",
+      "verification": {
+        "quote_similarity": 0.99,
+        "quote_best_match": "the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article attributing to the FBCCI president that 'the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar,' which explicitly states a causal judgment (the import-cutting move will not reduce exchange-rate stress) and refers to the national-level 'stress on the dollar.'"
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-07",
+      "imports",
+      "reduces import pressure",
+      "call for import-substitution"
+    ],
+    [
+      "2023-06-07",
+      "currency_log_return",
+      "does not reduce exchange stress",
+      "Bangladesh Bank import cut"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

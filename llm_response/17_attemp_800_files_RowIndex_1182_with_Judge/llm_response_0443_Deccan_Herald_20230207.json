@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Deccan Herald",
+    "date": "2023-02-07",
+    "url": "https://www.deccanherald.com/opinion/second-edit/take-note-of-bangla-crisis-hedge-bets-1188965.html",
+    "body_preview": "Bangladesh is roiled in multiple crises. Its economy is in deep trouble. Foreign exchange reserves have fallen below $33 billion. The pandemic not only shrank foreign remittances to Bangladesh but also weakened global demand for its exports. The situation worsened with Russia's invasion of Ukraine, which raised the cost of imports, forcing Bangladesh's Awami League (AL) government to cut imports.\n\nThis has led to a shortage of essential commodities. The country is battling inflation, too. Meanwh"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "war forced import cuts",
+      "edge_label": "reduces import volume",
+      "evidence_quote": "which raised the cost of imports, forcing Bangladesh's Awami League (AL) government to cut imports.",
+      "scope_justification": "The article explicitly states the national government 'cut imports', which directly describes a reduction in country-wide import volume matching the feature's scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "which raised the cost of imports, forcing Bangladesh's Awami League (AL) government to cut imports.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence stating that Russia's invasion raised import costs, \"forcing Bangladesh's Awami League (AL) government to cut imports,\" which explicitly links the war to a government-ordered reduction in imports at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-07",
+      "imports",
+      "reduces import volume",
+      "war forced import cuts"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

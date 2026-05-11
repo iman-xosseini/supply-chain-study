@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Mirror",
+    "date": "2023-02-05",
+    "url": "https://www.dailymirror.lk/opinion/Energy-companies-should-share-their-profits-with-badly-affected-countries-Bangladeshi-Foreign-Minister-Dr-A-K-Abdul-Momen/231-253586",
+    "body_preview": "Bangladeshi Foreign Minister Dr. A. K. Abdul Momen who was in Sri Lanka in view of the 75th Independence Day celebrations speaks to Daily Mirror on the current status of bilateral ties, way forward and secret behind success of Bangladesh which transformed itself from being a country of food deficit to one of the fastest growing economies in the world.\n\nQ In what ways have bilateral ties evolved during the last few years?\n\nI should say our bilateral relations are very good. It is getting more and"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "War disrupts supply chains",
+      "edge_label": "disrupts imports",
+      "evidence_quote": "The war and sanctions have disrupted supply chains as well as financial transaction mechanisms.",
+      "scope_justification": "The article explicitly links the war and sanctions to disrupted supply chains and financial transaction mechanisms and states Bangladesh's imports of food items (e.g., edible oil from Ukraine) have been disrupted, which matches the country-level concept of import volumes driven by supply and transaction mechanisms.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The war and sanctions have disrupted supply chains as well as financial transaction mechanisms.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article states the war and sanctions disrupted supply chains and financial transactions, and specifically adds that Bangladesh’s purchases of food items (e.g., edible oil from Ukraine) have been disrupted. This explicitly connects the war-induced disruptions to country-level imports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-05",
+      "imports",
+      "disrupts imports",
+      "War disrupts supply chains"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

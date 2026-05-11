@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-25",
+    "url": "https://www.bssnews.net/news/107141",
+    "body_preview": "DHAKA, Jan 25, 2023 (BSS) - The International Customs Day will be observed in the country tomorrow as elsewhere in the world with the theme \"Nurturing the next generation: promoting a culture of knowledge-sharing and professional pride in Customs\".\n\nMarking the day, the National Board of Revenue (NBR) will organize a seminar at 11.30am tomorrow at a hotel in the city.\n\nFinance Minister AHM Mustafa Kamal will attend the seminar with Senior Secretary of Internal Resources Davison (IRD) and NBR Cha"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Customs expands foreign trade",
+      "edge_label": "expands imports",
+      "evidence_quote": "Bangladesh customs has significant contributions to improve the living standard of people by expanding foreign trade and investment",
+      "scope_justification": "The article attributes national-level expansion of 'foreign trade and investment' to Bangladesh Customs, which matches the imports feature's country-wide trade scope (export-import)."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "expands imports",
+      "Customs expands foreign trade"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

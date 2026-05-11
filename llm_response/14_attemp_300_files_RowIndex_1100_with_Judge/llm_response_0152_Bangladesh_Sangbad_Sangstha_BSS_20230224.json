@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-24",
+    "url": "https://www.bssnews.net/news-flash/112237",
+    "body_preview": "CHATTOGRAM, Feb 24, 2023 (BSS) - The country would not face any shortage of essential commodities in the coming fasting month of Ramadan as the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.\n\nAlso the adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan, thanks to the government for easing opening letters of credit (LCs) for essential commodities to keep"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "government measures increased imports",
+      "edge_label": "increases imports",
+      "evidence_quote": "timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.",
+      "scope_justification": "The article explicitly describes country-level imports of consumer goods and states government measures increased those imports, matching the feature's aggregate 'volume of goods brought in' scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article states that government’s timely measures “have helped increase the imports of consumer goods,” explicitly linking the measures to higher imports at a country level. This directly supports the claimed causal relationship."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-24",
+      "imports",
+      "increases imports",
+      "government measures increased imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

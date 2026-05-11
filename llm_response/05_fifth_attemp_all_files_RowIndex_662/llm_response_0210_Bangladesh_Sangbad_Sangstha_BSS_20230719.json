@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-19",
+    "url": "https://www.bssnews.net/news/137135",
+    "body_preview": "DHAKA, July 19, 2023 (BSS) - The Asian Development Bank (ADB) said the current gross domestic product (GDP) growth rate in Bangladesh is estimated higher than forecast for fiscal year 2023 as it kept the country's growth forecast unchanged at 6.5 percent for fiscal 2024.\n\n\"The current growth rate in Bangladesh is estimated higher than forecast for fiscal year 2023,\" ADB said in its April report.\n\nThe economic recovery was supported by robust domestic demand and declining fuel and food prices, ac"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "imports fell, exports slowed less",
+      "edge_label": "improves balance_of_trade",
+      "evidence_quote": "imports fell more sharply than expected and export growth slowed less than expected.",
+      "scope_justification": "The article discusses country-level imports and export growth for Bangladesh, matching the balance_of_trade definition as the difference between nationwide imports and exports."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "improves balance_of_trade",
+      "imports fell, exports slowed less"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

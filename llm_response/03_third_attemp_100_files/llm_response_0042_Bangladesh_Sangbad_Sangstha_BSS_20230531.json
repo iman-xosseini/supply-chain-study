@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-31",
+    "url": "https://www.bssnews.net/district/128289",
+    "body_preview": "RAJSHAHI, May 31, 2023 (BSS)- Integrated efforts of all government and non-\n\ngovernment entities concerned can be the crucial means of strengthening the\n\nanti-tobacco campaign for protecting many people from various non\n\ncommunicable diseases from both active and passive smoking.\n\nUtmost emphasis should be given on highlighting health and other risks\n\nassociated with tobacco use apart from advocating for effective policy to cut\n\ntobacco consumption.\n\nAdministrative officials and law enforcers ca"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "ban on cigarette sales",
+      "edge_label": "restricts sale",
+      "evidence_quote": "As per the law, the selling of cigarettes to those below 18 has been banned.",
+      "scope_justification": "The article explicitly describes a legal ban on selling cigarettes, which directly concerns the specific commercial item being sold (cigarettes), matching the 'Product' feature scope."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "restricts sale",
+      "ban on cigarette sales"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

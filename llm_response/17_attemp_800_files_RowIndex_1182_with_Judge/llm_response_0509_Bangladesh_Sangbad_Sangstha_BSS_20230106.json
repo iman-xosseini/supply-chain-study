@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-06",
+    "url": "https://www.bssnews.net/news/103741",
+    "body_preview": "DHAKA, Jan 6, 2022 (BSS) - Prime Minister Sheikh Hasina addressed the nation this evening on completion of the fourth year of her government.\n\nThe full text of her televised address is as follows:\n\nBismillahir Rahmanir Rahim\n\nDear Countrymen,\n\nAssalamu Alaikum.\n\nOn the occasion of the fourth anniversary of the formation of the government after being elected by the people in the 11th National Parliamentary Elections, I extend my sincere greetings and congratulations to the countrymen and the expa"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Set up LNG terminals",
+      "edge_label": "enables imports",
+      "evidence_quote": "In addition to increasing our own gas production, we have set up LNG terminals to import LNG to meet its growing demand.",
+      "scope_justification": "The article explicitly describes a national-level action to import LNG, which directly concerns the country's volume of goods brought in (imports) rather than a single company or region.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "In addition to increasing our own gas production, we have set up LNG terminals to import LNG to meet its growing demand.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence stating the government 'have set up LNG terminals to import LNG to meet its growing demand,' which explicitly expresses the terminals were established for the purpose of importing LNG, and the wording refers to national-level action by the government."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-06",
+      "imports",
+      "enables imports",
+      "Set up LNG terminals"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

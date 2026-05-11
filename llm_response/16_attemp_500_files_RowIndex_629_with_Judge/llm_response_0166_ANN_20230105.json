@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-05",
+    "url": "https://asianews.network/adani-godda-power-plant-bangladesh-likely-to-get-750mw-by-march/",
+    "body_preview": "DHAKA - Bangladesh will start getting electricity from India's Adani Godda Power Plant in March, said Nasrul Hamid, the state minister for power, energy and mineral resources.\n\nAccording to the Power Purchase Agreement (PPA) signed between Bangladesh Power Development Board and Adani Power (Jharkhand) Ltd on the import of 1,600MW electricity, the first unit of the power plant was supposed to be in operation on January 5 last year.\n\nBut commercial operations of the plant were delayed and the date"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "exchange rate sets cost",
+      "edge_label": "affects import costs",
+      "evidence_quote": "At the current exchange rate, the cost of a unit (kWh) of electricity would be Tk 17",
+      "scope_justification": "The article explicitly links the current exchange rate to the per-unit electricity cost for imported-coal-generated power, matching the feature's focus on exchange-rate effects on import-related costs.",
+      "verification": {
+        "quote_similarity": 0.994,
+        "quote_best_match": "At the current exchange rate, the cost of a unit (kWh) of electricity would be Tk 17,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence \"At the current exchange rate, the cost of a unit (kWh) of electricity would be Tk 17,\" explicitly linking the exchange rate to the per-unit electricity cost for the imported power; the discussion concerns Bangladesh's imported electricity costs, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-05",
+      "currency_log_return",
+      "affects import costs",
+      "exchange rate sets cost"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

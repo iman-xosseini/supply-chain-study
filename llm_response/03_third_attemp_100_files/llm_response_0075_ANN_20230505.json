@@ -1,0 +1,67 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-05-05",
+    "url": "https://asianews.network/no-let-up-in-price-hike-in-bangladesh/",
+    "body_preview": "DHAKA - When people are already struggling to cope with high prices of daily essentials, a fresh hike in the prices of soybean oil, sugar, onions, and potatoes has dealt them a further blow.\n\nThis will only force them to dig deeper into their pockets at a time when inflation is close to double digits.\n\nCrude soybean oil refiners on Wednesday raised the price of one-litre bottled soybean oil by Tk 12 to Tk 199 while the price of loose soybean oil was increased by Tk 9 to Tk 176 a litre. A consume"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "soybean oil price hike",
+      "edge_label": "raises product price",
+      "evidence_quote": "Bangladesh Vegetable Oil Refiners' and Vanaspati Manufacturers' Association hiked the prices after consulting with the commerce ministry and the Bangladesh Trade and Tariff Commission.",
+      "scope_justification": "The article explicitly describes a price hike by the vegetable oil refiners for soybean oil (a specific product), matching the 'Product' scope of a specific commercial item."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "VAT cut on edible oil",
+      "edge_label": "triggers VAT reduction",
+      "evidence_quote": "the VAT on edible oil was reduced to 5 percent from 15 last year in the face of soaring prices of the cooking oil",
+      "scope_justification": "The statement links soaring cooking-oil prices to a VAT reduction applied to edible oil, which concerns the specific product (edible/ cooking oil) described by the 'Product' feature."
+    },
+    {
+      "feature": "inventory_proxy",
+      "event_summary": "sugar supply shortage",
+      "edge_label": "creates stock shortage",
+      "evidence_quote": "suppliers at the wholesale market told him that there has been a shortage in supply for about a month",
+      "scope_justification": "The article reports suppliers and wholesale markets experiencing a month-long shortage, directly describing low available stock at supply/warehouse level, matching 'inventory_proxy' scope."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "raises product price",
+      "soybean oil price hike"
+    ],
+    [
+      "Product",
+      "triggers VAT reduction",
+      "VAT cut on edible oil"
+    ],
+    [
+      "inventory_proxy",
+      "creates stock shortage",
+      "sugar supply shortage"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 3
+}

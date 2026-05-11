@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-06-24",
+    "url": "https://www.daily-sun.com/post/696793/No-shortage-of-sacrificial-animals-in-Rajshahi-cattle-markets",
+    "body_preview": "RAJSHAHI - With only four days left for the holy Eid-ul-Azha, cattle markets in Rajshahi are not facing any shortage of sacrificial animals as the supply of locally-reared cattle is quite enough to meet the demand.\n\nAs the Eid-ul-Azha is round the corner, sales in markets of sacrificial animals everywhere in the region are gearing up.\n\nWhile visiting different cattle markets, this reporter saw buyers' utmost interest to purchase local animals instead of artificially fattened ones for health conc"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Boost in native cattle production",
+      "edge_label": "lessens imports",
+      "evidence_quote": "largely native cattle production has been lessening the dependence on animal imports from the neighbouring country.",
+      "scope_justification": "The article explicitly states native cattle production is reducing dependence on animal imports into the country, which directly refers to the volume of goods brought in (imports).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "largely native cattle production has been lessening the dependence on animal imports from the neighbouring country.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the line 'largely native cattle production has been lessening the dependence on animal imports from the neighbouring country,' which explicitly states a causal link (increased native production -> reduced dependence on imports) at the national/neighbouring-country level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-24",
+      "imports",
+      "lessens imports",
+      "Boost in native cattle production"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

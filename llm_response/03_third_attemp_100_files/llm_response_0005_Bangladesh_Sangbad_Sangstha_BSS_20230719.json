@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-19",
+    "url": "https://www.bssnews.net/business/137170",
+    "body_preview": "DHAKA, July 19, 2023 (BSS) - Two companies, with a total investment of around US$42 million, signed land allotment agreements with Bangladesh Economic Zones Authority (BEZA) to build factories in the Bangabandhu Sheikh Mujib Shilpa Nagar (BSMSN) for manufacturing ceramics and textile chemicals.\n\nThe companies are X Ceramics Limited ?and Dysin Advanced Materials Limited. They will set up their factories on 30 acres of land.\n\nBEZA Executive Member (Investment Development) Md Mozibor Rahman, Managi"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "land allotment enables manufacturing",
+      "edge_label": "enables manufacturing",
+      "evidence_quote": "signed land allotment agreements with Bangladesh Economic Zones Authority (BEZA) to build factories in the Bangabandhu Sheikh Mujib Shilpa Nagar (BSMSN) for manufacturing ceramics and textile chemicals.",
+      "scope_justification": "The article explicitly names the items to be produced—'ceramics and textile chemicals'—which directly matches the Product feature's scope of specific commercial items."
+    },
+    {
+      "feature": "Production",
+      "event_summary": "allotment enabled production",
+      "edge_label": "enables production",
+      "evidence_quote": "Those to whom we have allotted space have built their factory buildings. Many companies have gone into production.",
+      "scope_justification": "The article reports that firms have 'gone into production', directly describing commencement of manufacturing activity, which matches the Production feature's scope of factory manufacturing activity."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "enables manufacturing",
+      "land allotment enables manufacturing"
+    ],
+    [
+      "Production",
+      "enables production",
+      "allotment enabled production"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

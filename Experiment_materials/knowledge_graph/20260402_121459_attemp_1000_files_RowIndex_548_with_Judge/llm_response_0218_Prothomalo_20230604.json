@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Prothomalo",
+    "date": "2023-06-04",
+    "url": "https://en.prothomalo.com/business/local/1q4bvruzz4",
+    "body_preview": "Bangladesh Trade and Tariff Commission (BTTC), under the Ministry of Commerce, shows the price of unrefined soybean oil in Argentina was USD 847 per tonne on 31 May. The price was USD 1970 dollars exactly a year ago. The price has dropped by nearly 57 per cent.\n\nA bottle of soybean oil in the country's market went up to Tk 199 after it had been increased by Tk 12 per litre on 3 May. The price hike was caused by the withdrawal of exemption of value added tax (VAT) on soybean oil. The prices stood"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Import disruption raises inflation",
+      "edge_label": "disrupts imports",
+      "evidence_quote": "Inflation in the country is now caused by the appreciation of the dollar, disruption of imports due to the crisis",
+      "scope_justification": "The article explicitly refers to imports in the country as a broad, country-level flow of goods, which matches the imports feature definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Inflation in the country is now caused by the appreciation of the dollar, disruption of imports due to the crisis",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted text appears almost verbatim in the article: 'Inflation in the country is now caused by the appreciation of the dollar, disruption of imports due to the crisis and rising production costs in local level.' This explicitly states a causal relationship between import disruption and inflation at the country level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-04",
+      "imports",
+      "disrupts imports",
+      "Import disruption raises inflation"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

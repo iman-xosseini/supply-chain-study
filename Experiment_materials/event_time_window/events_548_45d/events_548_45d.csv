@@ -1,0 +1,15 @@
+,source,relation,target,edge_type,weight,date,title,attribute,days_before
+0,imports,has_attribute,Government Policy,attribute,,2023-07-03,1.14 lakh kilograms of green chilli imported on Sunday  | News,"""Government's Permission: Government Policy"", ""36,830 Tons: Trade Policy""",16
+1,imports,has_attribute,Trade Policy,attribute,,2023-07-03,1.14 lakh kilograms of green chilli imported on Sunday  | News,"""Government's Permission: Government Policy"", ""36,830 Tons: Trade Policy""",16
+2,"Government's Permission to Import 36,830 Tons",increase,imports,event,,2023-07-03,1.14 lakh kilograms of green chilli imported on Sunday  | News,"""Government's Permission: Government Policy"", ""36,830 Tons: Trade Policy""",16
+3,Government Permission to Import Chilli,increase,imports,event,,2023-07-02,"Govt allows import of 36,830 tons green chilli     | Daily Sun |","""Government Permission: Government Policy"", ""Import Chilli: Trade Policy""",17
+4,imports,has_attribute,Government Policy,attribute,,2023-07-02,"Govt allows import of 36,830 tons green chilli     | Daily Sun |","""Government Permission: Government Policy"", ""Import Chilli: Trade Policy""",17
+5,imports,has_attribute,Trade Policy,attribute,,2023-07-02,"Govt allows import of 36,830 tons green chilli     | Daily Sun |","""Government Permission: Government Policy"", ""Import Chilli: Trade Policy""",17
+6,imports,has_attribute,Infrastructure,attribute,,2023-06-26,Inflation fight gets tougher: Bank for International Settlements,"""Supply Chain Easing: Infrastructure""",23
+7,Supply Chain Easing,increase,imports,event,,2023-06-26,Inflation fight gets tougher: Bank for International Settlements,"""Supply Chain Easing: Infrastructure""",23
+8,Bangladesh's SPM facility,increase,imports,event,,2023-06-20,Commodity Tracker: 5 charts to watch this week,"""SPM facility: Infrastructure""",29
+9,imports,has_attribute,Infrastructure,attribute,,2023-06-20,Commodity Tracker: 5 charts to watch this week,"""SPM facility: Infrastructure""",29
+10,Foreign Exchange Reserves Decline,decrease,imports,event,,2023-06-08,Bangladesh suffers long power cuts amid worst heatwave in decades,"""Foreign Exchange Reserves Decline: Monetary Policy""",41
+11,imports,has_attribute,Monetary Policy,attribute,,2023-06-08,Bangladesh suffers long power cuts amid worst heatwave in decades,"""Foreign Exchange Reserves Decline: Monetary Policy""",41
+12,Import Disruption,decrease,imports,event,,2023-06-04,"Global prices fall, no  impact on local market woes","""Import Disruption: Global Shock""",45
+13,imports,has_attribute,Global Shock,attribute,,2023-06-04,"Global prices fall, no  impact on local market woes","""Import Disruption: Global Shock""",45

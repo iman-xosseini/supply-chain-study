@@ -1,0 +1,44 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128488",
+    "body_preview": "DHAKA, June 01, 2023 (BSS) - Finance Minister AHM Mustafa Kamal today said the government will focus on sustaining the economic recovery by successfully implementing the ongoing stimulus packages.\n\n\"We have completely overcome the effects of the pandemic. Therefore, in this budget, our aim will be to sustain the economic recovery by successfully implementing the ongoing stimulus packages,\" he said.\n\nThe minister said this while placing over Taka 7.61 lakh crore national budget for FY23-24 at the"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Russia-Ukraine war impact",
+      "edge_label": "affects exchange rates",
+      "evidence_quote": "the Russia-Ukraine war situation has had the biggest impact on inflation, government spending, balance of payments, foreign exchange reserves and exchange rates.",
+      "scope_justification": "The article explicitly states the Russia-Ukraine war affected 'exchange rates' at a national/global level, which matches the feature's focus on country exchange-rate behavior."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "depreciation of exchange rate",
+      "edge_label": "depreciation raises import costs",
+      "evidence_quote": "the increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate",
+      "scope_justification": "The article links depreciation of 'the country's foreign exchange rate' to higher import costs, directly matching the feature's scope relating exchange-rate movement to import costs."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-01",
+      "currency_log_return",
+      "affects exchange rates",
+      "Russia-Ukraine war impact"
+    ],
+    [
+      "2023-06-01",
+      "currency_log_return",
+      "depreciation raises import costs",
+      "depreciation of exchange rate"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

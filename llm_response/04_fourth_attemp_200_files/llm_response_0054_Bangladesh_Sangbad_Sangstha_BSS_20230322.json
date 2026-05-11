@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-22",
+    "url": "https://www.bssnews.net/news/116959",
+    "body_preview": "DHAKA, March 22, 2023 (BSS) - Noted local and international agricultural scientists have encouraged the growers of the country to use balanced fertilizer for crop production as its use would increase crop output by 8-14 percent that will save over Taka 20,000 crore yearly.\n\nThe recommendations came at the time when the government was continuously providing Taka 8,000 crore subsidies annually for fertilizer import in the past while the amount of subsidy now stands at Taka 30,000 crore amid commod"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "raise DAP import",
+      "edge_label": "increases import volume",
+      "evidence_quote": "the government has decided to raise import of Di-ammonium phosphate (DAP)",
+      "scope_justification": "The article reports a national government decision to increase imports of DAP, which directly affects the volume of goods brought into the country (imports) at the national level."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "increases import volume",
+      "raise DAP import"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

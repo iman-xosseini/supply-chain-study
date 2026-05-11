@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-21",
+    "url": "https://www.bssnews.net/district/137538",
+    "body_preview": "RAJSHAHI, July 21, 2023 (BSS)- Women entrepreneurs have to come forward to build smart Bangladesh envisioned by Prime Minister Sheikh Hasina for transforming the country into a developed by 2041.\n\nBangladesh's economic development will flourish besides attaining the cherished goal of building smart Bangladesh through generation of new more entrepreneurs along with their vibrant activities.\n\nThe observation came at the closing and certificate-giving ceremony of a daylong training workshop titled "
+  },
+  "llm_connections": [
+    {
+      "feature": "Group",
+      "event_summary": "ensure business-friendly atmosphere",
+      "edge_label": "encourages revitalisation",
+      "evidence_quote": "ensuring a business-friendly atmosphere is very important to encourage local entrepreneurs for revitalising the sector.",
+      "scope_justification": "The article explicitly refers to 'the industrial sector including the small and medium enterprises', matching the 'Group' feature's scope as a broad industry sector."
+    },
+    {
+      "feature": "Group",
+      "event_summary": "expansion of investment needed",
+      "edge_label": "bolsters economic condition",
+      "evidence_quote": "more expansion of investment to this sector is needed for bolstering the economic condition of both urban and rural areas",
+      "scope_justification": "The statement discusses investment in 'this sector' (handlooms/cottage goods and the industrial sector), which aligns with 'Group' as a broad industry sector."
+    }
+  ],
+  "triplets": [
+    [
+      "Group",
+      "encourages revitalisation",
+      "ensure business-friendly atmosphere"
+    ],
+    [
+      "Group",
+      "bolsters economic condition",
+      "expansion of investment needed"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

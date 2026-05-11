@@ -1,0 +1,44 @@
+{
+  "article": {
+    "source": "Kenya Star",
+    "date": "2023-05-16",
+    "url": "https://www.kenyastar.com/news/273832902/bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "reserves decline prompts curbs",
+      "edge_label": "discourages imports",
+      "evidence_quote": "This has compelled the government to discourage unnecessary imports and cut spending, including limiting foreign trips by its employees.",
+      "scope_justification": "The article describes a government-wide policy to discourage unnecessary imports for Bangladesh, which directly pertains to the national volume of goods imported as defined."
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "move to Yuan reduces exports",
+      "edge_label": "reduces export revenue",
+      "evidence_quote": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well.",
+      "scope_justification": "The article explicitly states a national-level reduction in Bangladesh's export revenue from switching to the Yuan, which affects the country-wide trade balance (imports versus exports)."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-16",
+      "imports",
+      "discourages imports",
+      "reserves decline prompts curbs"
+    ],
+    [
+      "2023-05-16",
+      "balance_of_trade",
+      "reduces export revenue",
+      "move to Yuan reduces exports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

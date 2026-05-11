@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-18",
+    "url": "https://www.bssnews.net/business/131959",
+    "body_preview": "DHAKA, June 18, 2023 (BSS) - In response to the declared Monetary Policy for the first half of the fiscal year 2023-24 (July-December 2023) by the Bangladesh Bank, President of Dhaka Chamber of Commerce and Industry (DCCI) Barrister Md Sameer Sattar said that a contractionary MPS will help to revive the financial and private sectors.\n\n\"The MPS primarily aims to curb inflation by reducing the aggregate demand in the economy, continuing supply-side interventions and a stable and favourable busines"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "unified exchange rate",
+      "edge_label": "stabilizes exchange rate",
+      "evidence_quote": "a unified exchange rate will stabilize the market.",
+      "scope_justification": "The article refers to national exchange rate stability (a unified exchange rate), which directly concerns country-level exchange-rate volatility captured by currency_log_return."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "ERQ cut and EDF hike",
+      "edge_label": "mitigates foreign exchange challenges",
+      "evidence_quote": "Reduction of ERQ encashment limit to 50 percent and increase of interest of EDF to 4.5 percent are necessary moves to mitigate the foreign exchange challenges",
+      "scope_justification": "The article describes national policy changes intended to mitigate foreign-exchange challenges, which pertains to country-level exchange-rate volatility represented by currency_log_return."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "stabilizes exchange rate",
+      "unified exchange rate"
+    ],
+    [
+      "currency_log_return",
+      "mitigates foreign exchange challenges",
+      "ERQ cut and EDF hike"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

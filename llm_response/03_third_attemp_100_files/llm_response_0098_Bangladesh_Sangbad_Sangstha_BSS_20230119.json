@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-19",
+    "url": "https://www.bssnews.net/business/106117",
+    "body_preview": "DHAKA, Jan 19, 2023 (BSS) - In response to the declared Monetary Policy for\n\nH2 (January-June 2023) by the Bangladesh Bank, President of Dhaka Chamber of\n\nCommerce and Industry (DCCI) Barrister Md Sameer Sattar said that this MPS\n\nwill help both the private and financial sector to turn around.\n\nHe observed that the MPS is primarily aimed at curbing inflation and to\n\nstabilize the foreign exchange reserve.\n\nThe public sector credit growth has been set by the Government at 37.7\n\npercent for Jan-Ju"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "move to market-based regime",
+      "edge_label": "aims to stabilize exchange",
+      "evidence_quote": "the Bangladesh Bank hopes to gradually move towards a market-based, flexible and unified exchange rate regime",
+      "scope_justification": "The article explicitly discusses a national-level change to the exchange rate regime framed under 'exchange rate stability', which matches the feature's scope of exchange-rate volatility."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "aims to stabilize exchange",
+      "move to market-based regime"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

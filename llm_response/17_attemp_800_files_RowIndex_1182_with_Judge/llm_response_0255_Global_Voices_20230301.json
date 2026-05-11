@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Global Voices",
+    "date": "2023-03-01",
+    "url": "https://globalvoices.org/2023/02/28/bangladesh-reassesses-its-belt-and-road-initiative-strategy-with-china-as-the-us-offers-a-new-alternative/",
+    "body_preview": "Bangladesh ranked 54 in the China Index. Screenshot from the China Index 2022 website. Fair use.\n\nIn 2015, Bangladesh became part of the Chinese global infrastructure development strategy known as the Belt and Road Initiative (BRI), mainly via one of its special projects known as the Bangladesh, China, India and Myanmar Economic Corridor (BCIM). Eight years later, much of the initial enthusiasm seems to have vanished as a result of several factors, including the impact of the pandemic, Beijing's"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "dwindling foreign reserves",
+      "edge_label": "makes importing difficult",
+      "evidence_quote": "its dwindling foreign reserves are making it difficult to import the goods necessary to keep its economy rolling.",
+      "scope_justification": "The article links national foreign reserve depletion to difficulty importing goods for the economy, which directly concerns the country's aggregate volume of imports as defined.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "its dwindling foreign reserves are making it difficult to import the goods necessary to keep its economy rolling.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating that Bangladesh's dwindling foreign reserves 'are making it difficult to import the goods necessary to keep its economy rolling,' which explicitly asserts a causal link at the national (country) level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-01",
+      "imports",
+      "makes importing difficult",
+      "dwindling foreign reserves"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

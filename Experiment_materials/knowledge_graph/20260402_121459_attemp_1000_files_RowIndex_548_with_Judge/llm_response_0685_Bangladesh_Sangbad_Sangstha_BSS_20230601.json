@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/business/128643",
+    "body_preview": "RANGPUR, June 1, 2023 (BSS) - The proposed budget is supportive of building a Smart Bangladesh and domestic industrial development in times of crises like rampant commodity prices, inflation, slowdown in exports and remittances, dollar crisis, rising electricity, gas and fuel prices.\n\nPresident of Rangpur Chamber of Commerce and Industry (RCCI) Mostafa Sohrab Chowdhury Titu made the observation in an immediate reaction on the proposed budget for the 2023-2024 FY presented by Finance Minister AHM"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Duty changes affect trade",
+      "edge_label": "discourages non-essential imports",
+      "evidence_quote": "increase regulatory duties to discourage import of non-essential and luxury goods",
+      "scope_justification": "This explicitly concerns import policy at the economy-wide level, matching the feature’s definition of the volume of goods brought into the country.",
+      "verification": {
+        "quote_similarity": 0.994,
+        "quote_best_match": "increase regulatory duties to discourage import of non-essential and luxury goods,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the proposed budget includes measures to 'increase regulatory duties to discourage import of non-essential and luxury goods,' which directly states the causal effect on imports. This is discussed at the national policy level, matching the economy-wide scope of the claim."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-01",
+      "imports",
+      "discourages non-essential imports",
+      "Duty changes affect trade"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-26",
+    "url": "https://www.bssnews.net/news-flash/112613",
+    "body_preview": "DHAKA, Feb 26, 2023 (BSS) - National Board of Revenue (NBR) has withdrawn import duty on both raw and refined sugar so that consumers can get the sweetener at reduced rates.\n\nThe customs authority withdrew Taka 3,000 specific duty on import of raw and Taka 6,000 on refined sugar per ton with immediate effect, said a notification issued today.\n\nAt the same time, the NBR also reduced regulatory duty on import of sugar to 25 per cent from 30 per cent, according to the notification.\n\nThe reduced imp"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Sugar import duties cut",
+      "edge_label": "reduces import cost",
+      "evidence_quote": "“The customs authority withdrew Taka 3,000 specific duty on import of raw and Taka 6,000 on refined sugar per ton”",
+      "scope_justification": "The article explicitly discusses import duties on sugar imports, which directly affects the volume of goods brought in through imports at the commodity-import level.",
+      "verification": {
+        "quote_similarity": 0.991,
+        "quote_best_match": "The customs authority withdrew Taka 3,000 specific duty on import of raw and Taka 6,000 on refined sugar per ton",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted language appears directly in the article, and the text explicitly states that the duty reduction is intended to let consumers get sugar at reduced rates, with expected import cost declines given as a result. The discussion is at the national import-policy level, matching the feature scope of imports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-26",
+      "imports",
+      "reduces import cost",
+      "Sugar import duties cut"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

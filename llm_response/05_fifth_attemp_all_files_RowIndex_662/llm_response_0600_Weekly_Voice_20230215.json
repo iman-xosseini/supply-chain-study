@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Weekly Voice",
+    "date": "2023-02-15",
+    "url": "https://weeklyvoice.com/indo-bangla-joint-venture-rampal-plant-to-resume-power-production-from-wednesday/",
+    "body_preview": "Dhaka, Feb 15 (VOICE) Rampal power plant, a joint venture of Indian state-owned NTPC and Bangladesh Power Development Board (BPDB), will resume its operations from Wednesday.\n\nUnit-1 of the plant, having 660 MW capacity, was forced to shut down on January 14 due to shortage of coal. The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.\n\nAfter a lot of persuasion at the policy level, LC-opening was allowed for importing coal and "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Dollar crisis prevented LCs",
+      "edge_label": "prevented LC opening",
+      "evidence_quote": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+      "scope_justification": "The article explicitly ties a 'dollar crisis' (a currency-related issue) to an inability to open import letters of credit, directly describing an exchange-rate related disruption to import activity consistent with the feature's scope."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "prevented LC opening",
+      "Dollar crisis prevented LCs"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

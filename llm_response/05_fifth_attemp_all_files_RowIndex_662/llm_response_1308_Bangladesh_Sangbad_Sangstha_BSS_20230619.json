@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-19",
+    "url": "https://www.bssnews.net/business/132106",
+    "body_preview": "DHAKA, June 19, 2023 (BSS) - Stock markets today closed the session of the week with an upward trend since investors found positive gestures in the new monetary policy statement of the Bangladesh Bank (BB).\n\nThe central bank on Sunday announced its monetary policy statement (MPS) for the first half of the fiscal 2023-24 adopting a contractionary monetary policy stance to contain inflation.\n\nThe central bank has removed the interest rate cap of 6 percent-9 percent and replaced it with a market-dr"
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "positive monetary policy reaction",
+      "edge_label": "boosts stock market",
+      "evidence_quote": "stock markets today closed the session of the week with an upward trend since investors found positive gestures in the new monetary policy statement of the Bangladesh Bank (BB).",
+      "scope_justification": "The article explicitly attributes an upward trend in stock markets to the central bank's monetary policy statement, directly matching the equity market performance scope (DSE index level)."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "single exchange rate regime",
+      "edge_label": "fosters exchange stability",
+      "evidence_quote": "BB will discontinue quoting specific rates for buying or selling foreign exchange, fostering stability in the foreign exchange market.",
+      "scope_justification": "The article discusses the exchange rate between the taka and USD being market-determined and states this policy will foster stability, directly addressing exchange-rate (USD-BDT) volatility."
+    }
+  ],
+  "triplets": [
+    [
+      "stock_market_close",
+      "boosts stock market",
+      "positive monetary policy reaction"
+    ],
+    [
+      "currency_log_return",
+      "fosters exchange stability",
+      "single exchange rate regime"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

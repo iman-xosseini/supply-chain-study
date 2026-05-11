@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "Deccan Herald",
+    "date": "2023-02-07",
+    "url": "https://www.deccanherald.com/opinion/second-edit/take-note-of-bangla-crisis-hedge-bets-1188965.html",
+    "body_preview": "Bangladesh is roiled in multiple crises. Its economy is in deep trouble. Foreign exchange reserves have fallen below $33 billion. The pandemic not only shrank foreign remittances to Bangladesh but also weakened global demand for its exports. The situation worsened with Russia's invasion of Ukraine, which raised the cost of imports, forcing Bangladesh's Awami League (AL) government to cut imports.\n\nThis has led to a shortage of essential commodities. The country is battling inflation, too. Meanwh"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Pandemic weakened exports",
+      "edge_label": "weakens exports",
+      "evidence_quote": "The pandemic not only shrank foreign remittances to Bangladesh but also weakened global demand for its exports.",
+      "scope_justification": "The article explicitly states the pandemic 'weakened global demand for its exports', which refers to Bangladesh's exports at the country level, matching the balance_of_trade scope."
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Invasion raised import costs",
+      "edge_label": "forces import cuts",
+      "evidence_quote": "Russia's invasion of Ukraine, which raised the cost of imports, forcing Bangladesh's Awami League (AL) government to cut imports.",
+      "scope_justification": "The article says the invasion 'raised the cost of imports, forcing ... government to cut imports', describing national-level import reductions consistent with balance_of_trade scope."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "weakens exports",
+      "Pandemic weakened exports"
+    ],
+    [
+      "balance_of_trade",
+      "forces import cuts",
+      "Invasion raised import costs"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

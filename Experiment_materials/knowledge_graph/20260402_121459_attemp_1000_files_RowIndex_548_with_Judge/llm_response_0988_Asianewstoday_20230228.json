@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Asianewstoday",
+    "date": "2023-02-28",
+    "url": "https://asianewstoday.com/bangladesh-withdraws-duty-on-sugar-import-to-stabilise-local-market/",
+    "body_preview": "DHAKA, Feb 27 (NNN-BSS) - Bangladesh's National Board of Revenue (NBR), yesterday withdrew import duty on both raw and refined sugar, in order to enable consumers to get the sweetener at reduced rates.\n\nIn a notification, NBR withdrew a 3,000 taka (about 28 U.S. dollars) specific duty on the import of raw sugar, and 6,000 taka duty on refined sugar per tonne, with immediate effect.\n\nApart from this, the NBR reduced the regulatory duty on the import of sugar to 25 percent from 30 percent.\n\nThe re"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Sugar import costs fall",
+      "edge_label": "reduces import costs",
+      "evidence_quote": "The overall import cost of raw and refined sugar is expected to decline by 6,500 takas and 9,000 takas per tonne respectively",
+      "scope_justification": "The article discusses import costs for raw and refined sugar imports at the national level, which directly fits the feature’s scope of goods brought into the country.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "The overall import cost of raw and refined sugar is expected to decline by 6,500 takas and 9,000 takas per tonne respectively,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that the overall import cost of raw and refined sugar is expected to decline by 6,500 takas and 9,000 takas per tonne respectively following the duty waiver and reduction measures. This is at the national import level, matching the scope of the claimed feature."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-28",
+      "imports",
+      "reduces import costs",
+      "Sugar import costs fall"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

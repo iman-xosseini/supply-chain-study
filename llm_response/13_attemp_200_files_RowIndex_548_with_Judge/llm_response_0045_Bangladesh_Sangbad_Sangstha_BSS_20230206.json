@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-06",
+    "url": "https://www.bssnews.net/business/109295",
+    "body_preview": "DHAKA, Feb 6, 2023 (BSS) - Bangladesh Garment Manufacturers and Exporters Association (BGMEA) and SOWTEX along with Confederation of Indian Textile Industries (CITI) have planned two Textile Sourcing Meets'23 and Road Show in India from February 9 to 12.\n\nThe event will be led by BGMEA President Faruque Hassan and Vice President Shahidullah Azim along with a team of delegates from Bangladesh RMG Industries.\n\nThe BGMEA team is going for close interaction with top Indian Textile Manufacturers in a"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "India raw-material support",
+      "edge_label": "adds raw-material imports",
+      "evidence_quote": "can contribute $15 billion of raw material support from India in the next 3-5 years.",
+      "scope_justification": "The article explicitly quantifies $15 billion of raw-material support from India over 3–5 years, which is a country-level import value of raw materials matching the 'imports' feature scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "can contribute $15 billion of raw material support from India in the next 3-5 years.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article states that the initiative \"can contribute $15 billion of raw material support from India in the next 3-5 years,\" which directly implies additional inflow of raw materials from India to Bangladesh (i.e., imports) at a country level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-06",
+      "imports",
+      "adds raw-material imports",
+      "India raw-material support"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

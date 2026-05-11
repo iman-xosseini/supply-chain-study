@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-22",
+    "url": "https://www.bssnews.net/business/126830",
+    "body_preview": "DHAKA, May 22, 2023 (BSS) - The United States (US) today hailed Bangladesh's decision as Bangladesh Government has relaxed the mandatory on-arrival fumigation requirements of US cotton.\n\nEffective on May 16, 2023, US cotton can arrive in Bangladesh without fumigation at the port of entry, a media release issued by the US embassy said here.\n\nIn this connection US Ambassador in Dhaka Peter Haas said, \"Working together with Bangladesh to solve this issue is a great example of how our two countries "
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "fumigation requirement relaxed",
+      "edge_label": "increases foreign exchange earnings",
+      "evidence_quote": "Bangladesh needs high-quality US cotton to fuel its growth and increase foreign exchange earnings",
+      "scope_justification": "The article explicitly states the change will 'increase foreign exchange earnings', which directly pertains to national export earnings and thus the country-level balance_of_trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases foreign exchange earnings",
+      "fumigation requirement relaxed"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

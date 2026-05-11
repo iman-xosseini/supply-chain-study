@@ -1,0 +1,75 @@
+{
+  "article": {
+    "source": "Kenya Star",
+    "date": "2023-01-24",
+    "url": "https://www.kenyastar.com/news/273425360/bangladesh-may-overtake-china-to-be-eu-biggest-apparel-source",
+    "body_preview": "Dhaka [Bangladesh], January 24 (ANI): As China witnessing a decrease in its share of trade due to economic slowdown due to Covid implications, Bangladesh may overtake it as the source of most of the European Union's (EU) apparel, reported The Daily Star.\n\nAccording to Ahsan H Mansur, Executive Director of the Policy Research Institute, primarily it will be for the shortage of skilled labour (China's demography as its population is decreasing) and secondly for Bangladesh producing high-end value-"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "Work orders shifted from China",
+      "edge_label": "shifts orders to Bangladesh",
+      "evidence_quote": "This is resulting in work orders being shifted from China to other Asian countries like Bangladesh, Vietnam, Thailand, Cambodia, India and Pakistan.",
+      "scope_justification": "The article explicitly says work orders are being shifted to Bangladesh, which refers to orders for international apparel production and thus affects the volume of goods Bangladesh sends abroad (exports).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "This is resulting in work orders being shifted from China to other Asian countries like Bangladesh, Vietnam, Thailand, Cambodia, India and Pakistan.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence stating work orders are being shifted from China to countries including Bangladesh. It explicitly links China's production/worker shifts to orders moving to Bangladesh and discusses country-level export impacts (e.g., increased apparel shipments from Bangladesh to the EU)."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Tariff war diverts orders",
+      "edge_label": "diverts orders to Bangladesh",
+      "evidence_quote": "another reason for work orders being diverted from China to Bangladesh is the recent tariff war between the US and China",
+      "scope_justification": "The article attributes diversion of work orders to a tariff war, an explicit cause that increases the international production orders directed to Bangladesh, matching exports' scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "another reason for work orders being diverted from China to Bangladesh is the recent tariff war between the US and China",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence attributing diversion of work orders from China to Bangladesh to the recent US–China tariff war. This is an explicit cause-and-effect claim at the country level, matching the exports scope."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Remediation boosts orders",
+      "edge_label": "increases export orders",
+      "evidence_quote": "This ultimately brightened the image of the country and the sector itself for which international retailers and brands are coming up with increasing volumes of work orders.",
+      "scope_justification": "The article links remediation and improved image to 'increasing volumes of work orders' from international retailers, which directly corresponds to higher volumes of goods sent internationally (exports).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "This ultimately brightened the image of the country and the sector itself for which international retailers and brands are coming up with increasing volumes of work orders.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article. The article explicitly links remediation (via Accord and Alliance) to a brighter image which 'international retailers and brands' respond to by placing 'increasing volumes of work orders' — an explicit cause-and-effect at the country/sector level that corresponds to higher export volumes."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-24",
+      "exports",
+      "shifts orders to Bangladesh",
+      "Work orders shifted from China"
+    ],
+    [
+      "2023-01-24",
+      "exports",
+      "diverts orders to Bangladesh",
+      "Tariff war diverts orders"
+    ],
+    [
+      "2023-01-24",
+      "exports",
+      "increases export orders",
+      "Remediation boosts orders"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 3
+}

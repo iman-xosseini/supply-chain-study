@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-31",
+    "url": "https://www.bssnews.net/news-flash/108249",
+    "body_preview": "DHAKA, Jan 31, 2023 (BSS) - Commerce Minister Tipu Munshi today said that the 27th edition of the Dhaka International Trade Fair (DITF) 2023 drew export orders worth around Taka 300 crore while it also witnessed trading of goods around Taka 100 crore.\n\nTipu also informed that the visitors in the fair were increased by 37 percent from the last year as some 35 lakh people visited the month-long fair.\n\nThe Commerce Minister said these while addressing the closing ceremony of the DITF 2023 as the sp"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "DITF 2023 trade fair",
+      "edge_label": "boosts exports",
+      "evidence_quote": "such kind of international trade fair plays an important role in boosting exports,",
+      "scope_justification": "The article explicitly states that international trade fairs 'play an important role in boosting exports' and also cites national export earnings, matching the country-level 'exports' scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "such kind of international trade fair plays an important role in boosting exports,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence \"such kind of international trade fair plays an important role in boosting exports,\" spoken about the DITF context, which explicitly asserts a causal link between (international) trade fairs and boosting exports; the piece also references national export earnings, matching the country-level scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-31",
+      "exports",
+      "boosts exports",
+      "DITF 2023 trade fair"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

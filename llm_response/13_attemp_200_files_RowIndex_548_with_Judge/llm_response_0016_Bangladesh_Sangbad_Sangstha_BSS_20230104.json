@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-04",
+    "url": "https://www.bssnews.net/news-flash/103425",
+    "body_preview": "DHAKA, Jan 4, 2023 (BSS) - Prime Minister Sheikh Hasina today called upon the expatriate Bangladeshis to send remittance through the banking channels instead of hundi and make investments in Bangladesh.\n\n\"I request you all (expatriates) - please don't send remittances through hundi and take steps to send those directly to the banks,\" she said as expatriate Awami League leaders from various countries, including the USA and the UK, met her at her office here.\n\nUrging the expatriate leaders to make"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "War causes import problems",
+      "edge_label": "causes import problems",
+      "evidence_quote": "So, we're purchasing food from anywhere in the world, spending whatever money is required. We're facing some problems because of the Russia-Ukraine war.",
+      "scope_justification": "The article explicitly describes the country's purchase of food 'from anywhere in the world' and states the Russia-Ukraine war is causing problems for those purchases, matching the country-wide imports scope.",
+      "verification": {
+        "quote_similarity": 0.997,
+        "quote_best_match": "\"So, we're purchasing food from anywhere in the world, spending whatever money is required. We're facing some problems because of the Russia-Ukraine war.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears verbatim. The article attributes “some problems” explicitly to the Russia-Ukraine war immediately after stating the government is purchasing food worldwide, strongly implying war-related difficulties with those imports. The discussion is at the national level of Bangladesh’s food procurement/imports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-04",
+      "imports",
+      "causes import problems",
+      "War causes import problems"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

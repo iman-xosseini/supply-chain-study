@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "europesun.com",
+    "date": "2023-02-18",
+    "url": "https://www.europesun.com/news/273539310/clothing-exports-from-bangladesh-rise-as-china-share-in-ready-made-garment-market-declines",
+    "body_preview": "Dhaka [Bangladesh], February 18 (ANI): Bangladesh is ready to topple China as the top clothing exporter to the EU amid Beijing's decreasing share in the ready-made garment (RMG) market, reported Nikkei Asia.\n\nNotably, in the wake of the conflict in Ukraine and other global geopolitical tensions, the supply chains are shifting and driving up orders to the densely populated South Asian nation.\n\n\"A lot of work orders were shifted to Bangladesh from China because of the recent trade war between Chin"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Shifted orders from China",
+      "edge_label": "redirects sourcing orders",
+      "evidence_quote": "“A lot of work orders were shifted to Bangladesh from China because of the recent trade war between China and the US,”",
+      "scope_justification": "The article describes a change in the volume of work orders flowing into Bangladesh, which matches the imports scope of goods brought in at a national trade-flow level.",
+      "verification": {
+        "quote_similarity": 0.983,
+        "quote_best_match": "\"A lot of work orders were shifted to Bangladesh from China because of the recent trade war between China and the US,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears verbatim in the article. It explicitly says work orders were shifted to Bangladesh from China because of the recent trade war between China and the US, which states a causal relationship. The discussion is at the country/trade-flow level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-18",
+      "imports",
+      "redirects sourcing orders",
+      "Shifted orders from China"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

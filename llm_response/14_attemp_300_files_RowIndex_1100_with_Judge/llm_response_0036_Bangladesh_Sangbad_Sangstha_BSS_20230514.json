@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-14",
+    "url": "https://www.bssnews.net/news/pm/125186",
+    "body_preview": "DHAKA, May 13, 2023 (BSS) - Prime Minister Sheikh Hasina today called upon the engineers, key-force of the country's development, to uphold Bangladesh's existing development spree.\n\n\"The trend of development of Bangladesh has to be continued and it's my only expectation to you (engineers). . . InshAllah, none could stop the development journey of Bangladesh,\" she said while addressing the inaugural ceremony of the 60th convention of the Institution of Engineers, Bangladesh (IEB) as the chief gue"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "refuse purchases under sanctions",
+      "edge_label": "halts purchases",
+      "evidence_quote": "Prime Minister Sheikh Hasina said Bangladesh will not purchase anything from any country if it imposes sanctions.",
+      "scope_justification": "The quote states a national policy that Bangladesh 'will not purchase anything from any country' imposing sanctions, which directly pertains to the country-wide volume of goods brought in (imports).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Prime Minister Sheikh Hasina said Bangladesh will not purchase anything from any country if it imposes sanctions.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact quote appears and explicitly states that if a country imposes sanctions, Bangladesh will not purchase anything from it, implying halted imports from those countries at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-14",
+      "imports",
+      "halts purchases",
+      "refuse purchases under sanctions"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

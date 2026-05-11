@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-04-11",
+    "url": "https://www.bssnews.net/agriculture-news/120206",
+    "body_preview": "RAJSHAHI, April 11, 2023 (BSS) - Most of the farming fields of Boro paddy with golden hue have become eye-catching at present predicting satisfactory yield everywhere in the region, including its vast Barind tract, during the current season.\n\nFarmers are passing busy times in nursing the crops at the final stage of Boro farming as they are very much hopeful about getting cherished yield like the previous couple of seasons.\n\nAccording to the sources concerned, farmers have cultivated Boro paddy o"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "Aman price raises cultivation",
+      "edge_label": "increases cultivation",
+      "evidence_quote": "farmers have cultivated Boro paddy on more land compared to the previous season because they are delighted with the selling price of transplanted Aman paddy at present.",
+      "scope_justification": "The article explicitly links higher selling prices of Aman paddy to farmers expanding area under Boro paddy, directly affecting the specific commercial product (paddy)."
+    },
+    {
+      "feature": "Production",
+      "event_summary": "expanded acreage boosts production",
+      "edge_label": "increases production",
+      "evidence_quote": "the enthusiastic farmers have brought 8.26 lakh hectares of land generating scopes of additional rice production",
+      "scope_justification": "The article provides regional rice production targets and states that increased cultivated area generated additional rice production, matching the feature's focus on production volume of goods."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "increases cultivation",
+      "Aman price raises cultivation"
+    ],
+    [
+      "Production",
+      "increases production",
+      "expanded acreage boosts production"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

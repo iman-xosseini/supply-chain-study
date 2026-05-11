@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-24",
+    "url": "https://www.bssnews.net/news-flash/112237",
+    "body_preview": "CHATTOGRAM, Feb 24, 2023 (BSS) - The country would not face any shortage of essential commodities in the coming fasting month of Ramadan as the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.\n\nAlso the adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan, thanks to the government for easing opening letters of credit (LCs) for essential commodities to keep"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "government measures increased imports",
+      "edge_label": "increases imports",
+      "evidence_quote": "timely measures of the government have helped increase the imports of consumer goods significantly",
+      "scope_justification": "The article explicitly states at the national level that government measures increased imports of consumer goods, matching the feature's country-wide imports volume scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "timely measures of the government have helped increase the imports of consumer goods significantly",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact phrase about government measures helping to increase imports appears in the article's opening sentence, which explicitly states a causal link. The statement refers to 'the country' and national supply, so the scope matches a country-level effect."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "LC openings resume imports",
+      "edge_label": "enables imports",
+      "evidence_quote": "essential products against LCs opened recently have started coming to the market",
+      "scope_justification": "The article directly links Letters of Credit being opened to goods arriving in the market, matching the feature's focus on imports driven by LC availability.",
+      "verification": {
+        "quote_similarity": 0.988,
+        "quote_best_match": "essential products against LCs opened recently have started coming to the market,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article and the text explicitly attributes increased imports/arrival of goods to easing/opening of LCs (government easing LCs -> goods have started coming), and this is discussed at the market/country import level consistent with the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-24",
+      "imports",
+      "increases imports",
+      "government measures increased imports"
+    ],
+    [
+      "2023-02-24",
+      "imports",
+      "enables imports",
+      "LC openings resume imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

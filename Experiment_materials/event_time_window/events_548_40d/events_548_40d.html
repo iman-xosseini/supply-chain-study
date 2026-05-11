@@ -1,0 +1,414 @@
+<html>
+    <head>
+    <style>
+      html, body { margin:0; padding:0; width:100%; height:100%;
+                    overflow:hidden; background:#fdf6ec; }
+      #mynetwork { width:100vw !important; height:100vh !important;
+                    border:none !important; margin:0 !important;
+                    padding:0 !important; }
+    </style>
+    
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 100%;
+                 background-color: #fdf6ec;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"borderWidth": 3, "borderWidthSelected": 5, "color": {"background": "rgba(170,150,218,0.53)", "border": "#e67e22", "highlight": {"background": "#aa96da", "border": "#e67e22"}}, "font": {"color": "#3d3d3d"}, "id": "Bangladesh\u0027s SPM facility", "label": "Bangladesh\u0027s SPM facility", "shadow": {"color": "rgba(230,126,34,0.45)", "enabled": true, "size": 10, "x": 0, "y": 0}, "shape": "dot", "size": 25, "title": "\u003cb\u003eBangladesh\u0027s SPM facility\u003c/b\u003e\u003cbr\u003eCategory: Infrastructure\u003cbr\u003eType: Event Entity\u003cbr\u003eClosest event: 29 day(s) before reference\u003cbr\u003eConnections: 1"}, {"borderWidth": 3, "borderWidthSelected": 5, "color": {"background": "rgba(120,111,166,0.74)", "border": "#e67e22", "highlight": {"background": "#786fa6", "border": "#e67e22"}}, "font": {"color": "#3d3d3d"}, "id": "imports", "label": "imports", "shadow": {"color": "rgba(230,126,34,0.45)", "enabled": true, "size": 10, "x": 0, "y": 0}, "shape": "dot", "size": 25, "title": "\u003cb\u003eimports\u003c/b\u003e\u003cbr\u003eCategory: Other\u003cbr\u003eType: Event Entity\u003cbr\u003eClosest event: 16 day(s) before reference\u003cbr\u003eConnections: 7"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": {"background": "rgba(170,150,218,0.63)", "border": "#8e44ad", "highlight": {"background": "#aa96da", "border": "#8e44ad"}}, "font": {"color": "#3d3d3d"}, "id": "Infrastructure", "label": "Infrastructure", "shadow": {"color": "rgba(142,68,173,0.35)", "enabled": true, "size": 10, "x": 0, "y": 0}, "shape": "diamond", "size": 25, "title": "\u003cb\u003eInfrastructure\u003c/b\u003e\u003cbr\u003eCategory: Infrastructure\u003cbr\u003eType: Attribute\u003cbr\u003eClosest event: 23 day(s) before reference\u003cbr\u003eConnections: 1"}, {"borderWidth": 3, "borderWidthSelected": 5, "color": {"background": "rgba(168,216,234,0.74)", "border": "#e67e22", "highlight": {"background": "#a8d8ea", "border": "#e67e22"}}, "font": {"color": "#3d3d3d"}, "id": "Government\u0027s Permission to Import 36,830 Tons", "label": "Government\u0027s Permission to Import 36,830 Tons", "shadow": {"color": "rgba(230,126,34,0.45)", "enabled": true, "size": 10, "x": 0, "y": 0}, "shape": "dot", "size": 25, "title": "\u003cb\u003eGovernment\u0027s Permission to Import 36,830 Tons\u003c/b\u003e\u003cbr\u003eCategory: Government Policy\u003cbr\u003eType: Event Entity\u003cbr\u003eClosest event: 16 day(s) before reference\u003cbr\u003eConnections: 1"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": {"background": "rgba(168,216,234,0.74)", "border": "#8e44ad", "highlight": {"background": "#a8d8ea", "border": "#8e44ad"}}, "font": {"color": "#3d3d3d"}, "id": "Government Policy", "label": "Government Policy", "shadow": {"color": "rgba(142,68,173,0.35)", "enabled": true, "size": 10, "x": 0, "y": 0}, "shape": "diamond", "size": 25, "title": "\u003cb\u003eGovernment Policy\u003c/b\u003e\u003cbr\u003eCategory: Government Policy\u003cbr\u003eType: Attribute\u003cbr\u003eClosest event: 16 day(s) before reference\u003cbr\u003eConnections: 1"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": {"background": "rgba(252,186,211,0.74)", "border": "#8e44ad", "highlight": {"background": "#fcbad3", "border": "#8e44ad"}}, "font": {"color": "#3d3d3d"}, "id": "Trade Policy", "label": "Trade Policy", "shadow": {"color": "rgba(142,68,173,0.35)", "enabled": true, "size": 10, "x": 0, "y": 0}, "shape": "diamond", "size": 25, "title": "\u003cb\u003eTrade Policy\u003c/b\u003e\u003cbr\u003eCategory: Trade Policy\u003cbr\u003eType: Attribute\u003cbr\u003eClosest event: 16 day(s) before reference\u003cbr\u003eConnections: 1"}, {"borderWidth": 3, "borderWidthSelected": 5, "color": {"background": "rgba(170,150,218,0.63)", "border": "#e67e22", "highlight": {"background": "#aa96da", "border": "#e67e22"}}, "font": {"color": "#3d3d3d"}, "id": "Supply Chain Easing", "label": "Supply Chain Easing", "shadow": {"color": "rgba(230,126,34,0.45)", "enabled": true, "size": 10, "x": 0, "y": 0}, "shape": "dot", "size": 25, "title": "\u003cb\u003eSupply Chain Easing\u003c/b\u003e\u003cbr\u003eCategory: Infrastructure\u003cbr\u003eType: Event Entity\u003cbr\u003eClosest event: 23 day(s) before reference\u003cbr\u003eConnections: 1"}, {"borderWidth": 3, "borderWidthSelected": 5, "color": {"background": "rgba(168,216,234,0.72)", "border": "#e67e22", "highlight": {"background": "#a8d8ea", "border": "#e67e22"}}, "font": {"color": "#3d3d3d"}, "id": "Government Permission to Import Chilli", "label": "Government Permission to Import Chilli", "shadow": {"color": "rgba(230,126,34,0.45)", "enabled": true, "size": 10, "x": 0, "y": 0}, "shape": "dot", "size": 25, "title": "\u003cb\u003eGovernment Permission to Import Chilli\u003c/b\u003e\u003cbr\u003eCategory: Government Policy\u003cbr\u003eType: Event Entity\u003cbr\u003eClosest event: 17 day(s) before reference\u003cbr\u003eConnections: 1"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": {"color": "rgba(120,224,143,0.53)", "highlight": "#78e08f", "opacity": 0.9}, "dashes": [5, 5], "font": {"align": "top", "background": "#fdf6ec", "color": "#555555", "face": "Arial", "size": 12, "strokeColor": "#fdf6ec", "strokeWidth": 0}, "from": "Bangladesh\u0027s SPM facility", "label": "increase  (2023-06-20, -29d)", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "\u003cb\u003eBangladesh\u0027s SPM facility -- increase --\u003e imports\u003c/b\u003e\u003cbr\u003eDate: 2023-06-20\u003cbr\u003eDays before reference: 29\u003cbr\u003eCommodity Tracker: 5 charts to watch this week", "to": "imports", "width": 2}, {"arrows": "to", "color": {"color": "rgba(142,68,173,0.63)", "highlight": "#8e44ad", "opacity": 0.9}, "dashes": [2, 4], "font": {"align": "top", "background": "#fdf6ec", "color": "#555555", "face": "Arial", "size": 12, "strokeColor": "#fdf6ec", "strokeWidth": 0}, "from": "imports", "label": "has_attribute", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "imports  -- has_attribute --\u003e  Infrastructure", "to": "Infrastructure", "width": 2}, {"arrows": "to", "color": {"color": "rgba(142,68,173,0.72)", "highlight": "#8e44ad", "opacity": 0.9}, "dashes": [2, 4], "font": {"align": "top", "background": "#fdf6ec", "color": "#555555", "face": "Arial", "size": 12, "strokeColor": "#fdf6ec", "strokeWidth": 0}, "from": "imports", "label": "has_attribute", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "imports  -- has_attribute --\u003e  Government Policy", "to": "Government Policy", "width": 2}, {"arrows": "to", "color": {"color": "rgba(142,68,173,0.72)", "highlight": "#8e44ad", "opacity": 0.9}, "dashes": [2, 4], "font": {"align": "top", "background": "#fdf6ec", "color": "#555555", "face": "Arial", "size": 12, "strokeColor": "#fdf6ec", "strokeWidth": 0}, "from": "imports", "label": "has_attribute", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "imports  -- has_attribute --\u003e  Trade Policy", "to": "Trade Policy", "width": 2}, {"arrows": "to", "color": {"color": "rgba(120,224,143,0.74)", "highlight": "#78e08f", "opacity": 0.9}, "dashes": [5, 5], "font": {"align": "top", "background": "#fdf6ec", "color": "#555555", "face": "Arial", "size": 12, "strokeColor": "#fdf6ec", "strokeWidth": 0}, "from": "Government\u0027s Permission to Import 36,830 Tons", "label": "increase  (2023-07-03, -16d)", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "\u003cb\u003eGovernment\u0027s Permission to Import 36,830 Tons -- increase --\u003e imports\u003c/b\u003e\u003cbr\u003eDate: 2023-07-03\u003cbr\u003eDays before reference: 16\u003cbr\u003e1.14 lakh kilograms of green chilli imported on Sunday  | News", "to": "imports", "width": 3}, {"arrows": "to", "color": {"color": "rgba(120,224,143,0.63)", "highlight": "#78e08f", "opacity": 0.9}, "dashes": [5, 5], "font": {"align": "top", "background": "#fdf6ec", "color": "#555555", "face": "Arial", "size": 12, "strokeColor": "#fdf6ec", "strokeWidth": 0}, "from": "Supply Chain Easing", "label": "increase  (2023-06-26, -23d)", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "\u003cb\u003eSupply Chain Easing -- increase --\u003e imports\u003c/b\u003e\u003cbr\u003eDate: 2023-06-26\u003cbr\u003eDays before reference: 23\u003cbr\u003eInflation fight gets tougher: Bank for International Settlements", "to": "imports", "width": 2}, {"arrows": "to", "color": {"color": "rgba(120,224,143,0.72)", "highlight": "#78e08f", "opacity": 0.9}, "dashes": [5, 5], "font": {"align": "top", "background": "#fdf6ec", "color": "#555555", "face": "Arial", "size": 12, "strokeColor": "#fdf6ec", "strokeWidth": 0}, "from": "Government Permission to Import Chilli", "label": "increase  (2023-07-02, -17d)", "smooth": {"roundness": 0.15, "type": "curvedCW"}, "title": "\u003cb\u003eGovernment Permission to Import Chilli -- increase --\u003e imports\u003c/b\u003e\u003cbr\u003eDate: 2023-07-02\u003cbr\u003eDays before reference: 17\u003cbr\u003eGovt allows import of 36,830 tons green chilli     | Daily Sun |", "to": "imports", "width": 3}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -8000,
+            "springConstant": 0.01,
+            "springLength": 200
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+    <div id="legend" style="position:fixed;top:12px;right:12px;
+      background:rgba(253,246,236,0.95);padding:16px 20px;border-radius:10px;
+      color:#3d3d3d;font-family:Arial,sans-serif;font-size:13px;
+      max-height:90vh;overflow-y:auto;z-index:9999;
+      border:1px solid #d4c5a9;
+      box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+      <div style="font-weight:bold;font-size:15px;margin-bottom:6px;">
+        Time Window</div>
+      <div style="margin:3px 0;">
+        Reference: <b>2023-07-19</b></div>
+      <div style="margin:3px 0;">
+        From: <b>2023-06-09</b>  (40 days back)</div>
+      <div style="margin:3px 0;font-size:11px;color:#888888;">
+        Vivid = recent &nbsp;|&nbsp; Faded = older</div>
+      <hr style="border-color:#e0d5c1;margin:10px 0;">
+      <div style="font-weight:bold;font-size:15px;margin-bottom:10px;">
+        Node Categories</div>
+      <div style="margin:3px 0;"><span style="display:inline-block;width:14px;height:14px;background:#a8d8ea;border-radius:50%;margin-right:8px;vertical-align:middle;"></span><span style="vertical-align:middle;">Government Policy</span></div><div style="margin:3px 0;"><span style="display:inline-block;width:14px;height:14px;background:#aa96da;border-radius:50%;margin-right:8px;vertical-align:middle;"></span><span style="vertical-align:middle;">Infrastructure</span></div><div style="margin:3px 0;"><span style="display:inline-block;width:14px;height:14px;background:#fcbad3;border-radius:50%;margin-right:8px;vertical-align:middle;"></span><span style="vertical-align:middle;">Trade Policy</span></div>
+      <hr style="border-color:#e0d5c1;margin:10px 0;">
+      <div style="font-weight:bold;font-size:15px;margin-bottom:10px;">
+        Node Shapes</div>
+      <div style="margin:3px 0;">
+        <span style="display:inline-block;width:14px;height:14px;
+        border:3px solid #e67e22;border-radius:50%;margin-right:8px;
+        vertical-align:middle;"></span>
+        <span style="vertical-align:middle;">Event Entity</span></div>
+      <div style="margin:3px 0;">
+        <span style="display:inline-block;width:12px;height:12px;
+        border:2px solid #8e44ad;transform:rotate(45deg);margin-right:8px;
+        vertical-align:middle;"></span>
+        <span style="vertical-align:middle;">Attribute</span></div>
+      <div style="margin:3px 0;">
+        <span style="display:inline-block;width:14px;height:14px;
+        border:3px solid #2e7d32;margin-right:8px;
+        vertical-align:middle;"></span>
+        <span style="vertical-align:middle;">Target Feature</span></div>
+      <hr style="border-color:#e0d5c1;margin:10px 0;">
+      <div style="font-weight:bold;font-size:15px;margin-bottom:10px;">
+        Edges</div>
+      <div style="margin:3px 0;">Event edges: 4</div>
+      <div style="margin:3px 0;">Attribute edges: 3</div>
+      <hr style="border-color:#e0d5c1;margin:10px 0;">
+      <div style="font-size:11px;color:#888888;">
+        Nodes: 8 &nbsp;|&nbsp; Edges: 7
+        &nbsp;|&nbsp; Theme: pastel
+      </div>
+    </div>
+    
+</body>
+</html>

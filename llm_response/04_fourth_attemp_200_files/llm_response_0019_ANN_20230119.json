@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-19",
+    "url": "https://asianews.network/big-hike-in-gas-prices-for-bangladeshs-power-plants-industry/",
+    "body_preview": "DHAKA - The government yesterday raised the retail price of gas by 14.5 percent to 178.9 percent for industries, power plants and commercial establishments, who together account for 78 percent of gas use in Bangladesh, as it looks to lessen its unsustainable subsidy burden amid a narrow fiscal space.\n\nThe development is set to fuel a fresh round of inflation, which declined for the fourth straight month in December last year.\n\nFrom next month, the price of gas used for power generation will be T"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "decision to import LNG",
+      "edge_label": "triggers imports",
+      "evidence_quote": "The ministry considered the stakeholders' demand and decided to import LNG from the spot market to provide them with the requisite supply of gas.",
+      "scope_justification": "This is a government-level decision to import LNG from the spot market to meet industries' raw material needs, which directly pertains to the country's volume of goods brought in."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "FX squeeze limits spot-imports",
+      "edge_label": "limits imports",
+      "evidence_quote": "The squeeze on foreign exchange reserves means the spot purchase will not be able to meet the demands of the industries, said Mansur.",
+      "scope_justification": "The statement links national foreign exchange reserve constraints to the country's ability to make spot LNG purchases, affecting national import capacity."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "triggers imports",
+      "decision to import LNG"
+    ],
+    [
+      "imports",
+      "limits imports",
+      "FX squeeze limits spot-imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

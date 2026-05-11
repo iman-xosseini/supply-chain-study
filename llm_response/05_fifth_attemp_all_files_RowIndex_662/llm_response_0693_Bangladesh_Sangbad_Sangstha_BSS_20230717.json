@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-17",
+    "url": "https://www.bssnews.net/business/136832",
+    "body_preview": "RANGPUR, July 17, 2023 (BSS) - FBCCI Senior Vice-president Mostafa Azad\n\nChowdhury Babu today called for making the highly prospective jewelry\n\nindustry export-oriented to revive its past glory and earn foreign exchequer.\n\nHe made the call at a post-rally discussion organised by Rangpur district\n\nunit of Bangladesh Jeweler's Association (BAJUS) to celebrate its 58th\n\nfounding anniversary as the chief guest.\n\nPresident of Rangpur district unit of BAJUS Md Enamul Haque Sohel presided\n\nover the dis"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "gold refinery exports",
+      "edge_label": "increases export earnings",
+      "evidence_quote": "produce refined gold to meet the local demand and export abroad to earn a huge exchequer,",
+      "scope_justification": "The article explicitly says the refinery will use imported ores and export refined gold abroad, directly discussing country-level imports and exports matching the balance_of_trade scope."
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Gold Bank enables exports",
+      "edge_label": "facilitates exports abroad",
+      "evidence_quote": "the process of establishing Gold Bank is progressing fast for development and enriching the thriving jewelry industry to export gold ornaments and gold bars abroad in a very short time",
+      "scope_justification": "The article states the Gold Bank is being established to enable exports of gold ornaments and bars abroad, which pertains to national exports as defined by balance_of_trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases export earnings",
+      "gold refinery exports"
+    ],
+    [
+      "balance_of_trade",
+      "facilitates exports abroad",
+      "Gold Bank enables exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

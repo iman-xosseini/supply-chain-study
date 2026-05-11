@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-18",
+    "url": "https://www.bssnews.net/news/131933",
+    "body_preview": "DHAKA, June 18, 2023 (BSS) - Fisheries and Livestock Minister SM Rezaul Karim today said 55,000 poor families have benefited from the Integrated Livestock Development Project in the country's coastal char areas.\n\n\"Ensuring nutrition for and improving the lifestyle of the poor people living in the coastal areas was one of the goals of the Integrated Livestock Development Project. The project has shown a good success in ensuring nutrition and improving living standards of poor families,\" he said.\n"
+  },
+  "llm_connections": [
+    {
+      "feature": "Production",
+      "event_summary": "Increased eggs and meat production",
+      "edge_label": "increases production",
+      "evidence_quote": "the project has played a role in increasing the production of eggs and meat by establishing small farms of chickens, ducks and sheep",
+      "scope_justification": "The article explicitly states the project caused an increase in the volume of produced goods (eggs and meat), which matches the 'Production' feature's focus on produced goods volume."
+    }
+  ],
+  "triplets": [
+    [
+      "Production",
+      "increases production",
+      "Increased eggs and meat production"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

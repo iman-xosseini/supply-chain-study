@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Caribbean News Global",
+    "date": "2023-03-22",
+    "url": "https://www.caribbeannewsglobal.com/canada-approves-increased-shipments-of-potash-to-bangladesh/",
+    "body_preview": "CANADA / BANGLADESH - Mary Ng, minister of international trade, export promotion, small business and economic development, announced a contract between the Canadian Commercial Corporation (CCC), Saskatchewan-based Canpotex, one of the world's largest suppliers of potash, and the government of Bangladesh. Under the agreement, Canada will increase the amount of Canadian potash supplied to Bangladesh in 2023.\n\nIn a press release Friday, Global Affairs Canada, said:\n\n\"The Canadian potash will suppor"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "Canada increases potash supply",
+      "edge_label": "increases export volume",
+      "evidence_quote": "Under the agreement, Canada will increase the amount of Canadian potash supplied to Bangladesh in 2023.",
+      "scope_justification": "The article explicitly states Canada will increase the amount of potash supplied to Bangladesh, which directly describes a change in the volume of goods sent internationally (exports).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Under the agreement, Canada will increase the amount of Canadian potash supplied to Bangladesh in 2023.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence, \"Under the agreement, Canada will increase the amount of Canadian potash supplied to Bangladesh in 2023.\" That statement explicitly commits Canada to supplying more potash to Bangladesh (i.e., increasing export volume), and it addresses country-level exports from Canada to Bangladesh."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-22",
+      "exports",
+      "increases export volume",
+      "Canada increases potash supply"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

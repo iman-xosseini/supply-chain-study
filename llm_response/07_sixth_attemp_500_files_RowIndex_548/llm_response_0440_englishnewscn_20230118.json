@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "english.news.cn",
+    "date": "2023-01-18",
+    "url": "https://english.news.cn/asiapacific/20230118/b2ceef6e27ed4a6a9b2dc4539ab889f7/c.html",
+    "body_preview": "DHAKA, Jan. 18 (Xinhua) -- The COVID-19 pandemic has caused an economic shock to industries and businesses worldwide and the Bangladeshi shoe-making industry was also dealt a serious blow.\n\nPanda Shoes Industry Ltd. was no exception.\n\nThousands of households in the Gazipur district on the outskirts of the Bangladeshi capital Dhaka have become better off after the Chinese-invested shoe-making factory opened there in 2012.\n\nThe factory overcame many difficulties, including those related to the pan"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Pandemic reduced goods flow",
+      "edge_label": "disrupts imports",
+      "evidence_quote": "the poor flow of people and goods caused by the pandemic",
+      "scope_justification": "The article explicitly attributes a reduced flow of goods affecting business in Bangladesh, which matches the imports feature's scope of country-level goods brought into the country."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-18",
+      "imports",
+      "disrupts imports",
+      "Pandemic reduced goods flow"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

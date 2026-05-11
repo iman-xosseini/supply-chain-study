@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Social News XYZ",
+    "date": "2023-02-26",
+    "url": "https://www.socialnews.xyz/2023/02/26/bdesh-withdraws-duty-on-sugar-import-to-stabilise-local-market/",
+    "body_preview": "Dhaka, Feb 27 (SocialNews.XYZ) Bangladesh's National Board of Revenue (NBR) withdrew import duty on both raw and refined sugar in order to enable consumers to get the sweetener at reduced rates.\n\nIn a notification, NBR withdrew a 3,000 taka (about $28) specific duty on the import of raw sugar and 6,000 taka duty on refined sugar per tonne with immediate effect.\n\nApart from this, the NBR reduced the regulatory duty on the import of sugar to 25 per cent from 30 per cent.\n\nThe reduced import benefi"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Sugar import costs fall",
+      "edge_label": "reduces import cost",
+      "evidence_quote": "“The overall import cost of raw and refined sugar is expected to decline by 6,500 takas and 9,000 takas per tonne respectively”",
+      "scope_justification": "The article discusses the import cost of sugar imports at the national import level, which matches the feature’s scope of goods brought in through imports.",
+      "verification": {
+        "quote_similarity": 0.992,
+        "quote_best_match": "The overall import cost of raw and refined sugar is expected to decline by 6,500 takas and 9,000 takas per tonne respectively",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears in the article almost exactly: the NBR says the overall import cost of raw and refined sugar is expected to decline by specific amounts. The article explicitly links this decline to the 'fresh duty waver and reduction measures,' and it is discussing national-level sugar imports, matching the scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-26",
+      "imports",
+      "reduces import cost",
+      "Sugar import costs fall"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "LatestLY",
+    "date": "2023-05-16",
+    "url": "https://www.latestly.com/agency-news/world-news-bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report-5130517.html",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "reserves fall curbs imports",
+      "edge_label": "discourages imports",
+      "evidence_quote": "This has compelled the government to discourage unnecessary imports and cut spending,",
+      "scope_justification": "The article states a national government policy—discouraging unnecessary imports—which directly pertains to country-wide import volumes as defined by the 'imports' feature.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "This has compelled the government to discourage unnecessary imports and cut spending,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article states, “This has compelled the government to discourage unnecessary imports and cut spending,” immediately after detailing the sharp fall in foreign exchange reserves. This explicitly links the reserve decline to a national policy to curb imports, matching the country-level scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-16",
+      "imports",
+      "discourages imports",
+      "reserves fall curbs imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

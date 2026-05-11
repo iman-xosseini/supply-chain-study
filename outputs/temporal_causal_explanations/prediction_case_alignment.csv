@@ -1,0 +1,11 @@
+prediction_case_id,prediction_date,feature_name,canonical_feature_entity,feature_value,feature_importance,shap_relevance,causal_supported,causal_path,causal_strength,causal_distance,causal_lag,fact_id,event_instance_id,event_instance_label,article_key,article_title,article_url,relation_canonical,provenance_confidence,temporal_relevance,alignment_score,score_shap,score_causal,score_temporal,score_provenance
+CASE_20230809_1100,2023-08-09,Delivery,Delivery,0.0,-0.02861223922262052,0.45367190720836054,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.45367190720836054,0.0,0.0,0.0
+CASE_20230809_1100,2023-08-09,Factory_Issue,Factory_Issue,0.0,-0.002933511994654428,0.0465133809024398,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.0465133809024398,0.0,0.0,0.0
+CASE_20230809_1100,2023-08-09,Production,Production,0.0,-0.004689725254134299,0.07435966768529834,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.07435966768529834,0.0,0.0,0.0
+CASE_20230809_1100,2023-08-09,Sales_lag_2,Sales_lag_2,0.0,-0.002107052793007228,0.033409152347522654,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.033409152347522654,0.0,0.0,0.0
+CASE_20230809_1100,2023-08-09,Sales_lag_28,Sales_lag_28,0.0,-0.001672675215546377,0.026521718530059867,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.026521718530059867,0.0,0.0,0.0
+CASE_20230809_1100,2023-08-09,Sales_lag_7,Sales_lag_7,0.0,-0.0013404068376204295,0.021253314769492996,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.021253314769492996,0.0,0.0,0.0
+CASE_20230809_1100,2023-08-09,delivery_sales_ratio,delivery_sales_ratio,0.0,0.016123501086673743,0.25565211558431145,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.25565211558431145,0.0,0.0,0.0
+CASE_20230809_1100,2023-08-09,factory_issue_rate,factory_issue_rate,0.0,-0.001518546771751575,0.024077878168339298,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.024077878168339298,0.0,0.0,0.0
+CASE_20230809_1100,2023-08-09,inventory_proxy,inventory_proxy,0.6318052921071109,-0.0021530393105879957,0.03413830853045586,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.03413830853045586,0.0,0.0,0.0
+CASE_20230809_1100,2023-08-09,production_sales_ratio,production_sales_ratio,0.0,0.0019174323983065502,0.03040255627371911,False,[],0.0,,0,,,,,,,,0.0,0.0,0.0,0.03040255627371911,0.0,0.0,0.0

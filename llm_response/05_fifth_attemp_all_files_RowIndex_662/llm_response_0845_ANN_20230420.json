@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-04-20",
+    "url": "https://asianews.network/is-renewable-deployment-suffering-from-fossil-fuel-lock-in/",
+    "body_preview": "DHAKA - While the peak electricity supply reached 15,604MW in Bangladesh at the beginning of summer, many areas, mostly outside Dhaka, have been facing long hours of load-shedding and disruption of economic activities. The reason behind the current crisis is not the lower installed capacity, but the inability to buy imported energy to run the existing power plants and interrupted services due to technical inefficiency. It is tragic to see that while people are suffering from the crisis, over 40 "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "US dollar crisis reduces imports",
+      "edge_label": "reduces ability to pay for imports",
+      "evidence_quote": "whether Bangladesh will be able to pay for the imported energy to fulfil its demand amid the US dollar crisis coupled with high international prices and dwindling foreign exchange reserves.",
+      "scope_justification": "The article explicitly links a national-level 'US dollar crisis' and dwindling foreign exchange reserves to Bangladesh's ability to pay for imported energy, matching the feature's country-wide import-cost scope tied to exchange-rate conditions."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "reduces ability to pay for imports",
+      "US dollar crisis reduces imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,75 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-30",
+    "url": "https://www.bssnews.net/business/118337",
+    "body_preview": "DHAKA, March 30, 2023 (BSS) - The export of apparel items from Bangladesh to the European Union (EU) increased by 35.69 percent in 2022 compared to 2021.\n\nThe import of apparels by EU from the world grew by 20.97 percent during this time. The EU imported $22.89 billion worth of clothing from Bangladesh in 2022, as per the statistics of Eurostat.\n\nWith 22.20 percent share of the EU's total RMG import, Bangladesh remains the 2nd largest apparel import source for the EU.\n\nTalking to BSS, Director o"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "post-COVID purchase surge",
+      "edge_label": "boosts imports",
+      "evidence_quote": "The main reason behind this was that the first six months were the post COVID-19 period for which the buyers purchased many RMG items.",
+      "scope_justification": "The article links buyer purchasing behavior during the post-COVID period to a higher apparel export trend to the EU, which corresponds to the EU's aggregate apparel imports (volume of goods brought in).",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "\"The main reason behind this was that the first six months were the post COVID-19 period for which the buyers purchased many RMG items.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article attributing the strong Jan–Jun export trend to post-COVID buyer purchases, which explicitly states a cause-and-effect link; the statement refers to Bangladesh's exports to the EU, matching the imports feature at the country-to-EU scope."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "China lockdown boost",
+      "edge_label": "boosts imports",
+      "evidence_quote": "we did well since there was lockdown in China",
+      "scope_justification": "The statement attributes stronger apparel shipments to the EU market to the China lockdown, affecting aggregate apparel flows (EU import volumes) discussed in the article.",
+      "verification": {
+        "quote_similarity": 0.978,
+        "quote_best_match": "we did well since there was lockdown in China,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quote “we did well since there was lockdown in China,” and in context the BGMEA director explicitly attributes stronger Bangladeshi shipments to the EU market (aggregate import flows) to the China lockdown, matching the claimed causal link and scope."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "war and inflation shock",
+      "edge_label": "reduces imports",
+      "evidence_quote": "the impact of the Russia-Ukraine war was huge while the inflation also increased in the EU market leading to low demand for apparel items",
+      "scope_justification": "The article states that the Russia-Ukraine war and higher EU inflation caused low demand in the EU market, which pertains to aggregate apparel import volumes into the EU.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "the impact of the Russia-Ukraine war was huge while the inflation also increased in the EU market leading to low demand for apparel items.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating that the Russia-Ukraine war and rising EU inflation led to low demand for apparel items and 'put an impact on our exports,' which explicitly makes a causal link affecting apparel exports to the EU (i.e., EU apparel imports)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-30",
+      "imports",
+      "boosts imports",
+      "post-COVID purchase surge"
+    ],
+    [
+      "2023-03-30",
+      "imports",
+      "boosts imports",
+      "China lockdown boost"
+    ],
+    [
+      "2023-03-30",
+      "imports",
+      "reduces imports",
+      "war and inflation shock"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 3
+}

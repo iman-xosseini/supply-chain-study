@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Daily Mirror",
+    "date": "2023-02-05",
+    "url": "https://www.dailymirror.lk/opinion/Energy-companies-should-share-their-profits-with-badly-affected-countries-Bangladeshi-Foreign-Minister-Dr-A-K-Abdul-Momen/231-253586",
+    "body_preview": "Bangladeshi Foreign Minister Dr. A. K. Abdul Momen who was in Sri Lanka in view of the 75th Independence Day celebrations speaks to Daily Mirror on the current status of bilateral ties, way forward and secret behind success of Bangladesh which transformed itself from being a country of food deficit to one of the fastest growing economies in the world.\n\nQ In what ways have bilateral ties evolved during the last few years?\n\nI should say our bilateral relations are very good. It is getting more and"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Improved shipping and air connectivity",
+      "edge_label": "increases imported products",
+      "evidence_quote": "If you have any difficulty in the market, you can get more products through a shipping line. That will reduce your inflation.",
+      "scope_justification": "The article explicitly states that improved shipping lines allow getting 'more products' into the market, which directly refers to country-level volumes of goods brought in (imports)."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "increases imported products",
+      "Improved shipping and air connectivity"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

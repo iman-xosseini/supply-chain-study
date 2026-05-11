@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-19",
+    "url": "https://www.bssnews.net/business/132106",
+    "body_preview": "DHAKA, June 19, 2023 (BSS) - Stock markets today closed the session of the week with an upward trend since investors found positive gestures in the new monetary policy statement of the Bangladesh Bank (BB).\n\nThe central bank on Sunday announced its monetary policy statement (MPS) for the first half of the fiscal 2023-24 adopting a contractionary monetary policy stance to contain inflation.\n\nThe central bank has removed the interest rate cap of 6 percent-9 percent and replaced it with a market-dr"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "unified exchange rate regime",
+      "edge_label": "fosters stability",
+      "evidence_quote": "BB will discontinue quoting specific rates for buying or selling foreign exchange, fostering stability in the foreign exchange market.",
+      "scope_justification": "The article describes a national-level central bank policy explicitly said to 'foster stability in the foreign exchange market,' which directly pertains to exchange-rate volatility as defined by currency_log_return."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "fosters stability",
+      "unified exchange rate regime"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

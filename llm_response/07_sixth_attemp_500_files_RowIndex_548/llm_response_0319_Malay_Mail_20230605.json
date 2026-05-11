@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Malay Mail",
+    "date": "2023-06-05",
+    "url": "https://www.malaymail.com/news/money/2023/06/05/cash-strapped-bangladesh-shuts-power-plant-as-heatwave-hits/72714",
+    "body_preview": "DHAKA, June 5 -- Cash-strapped Bangladesh shut its biggest power plant today because it was unable to afford the coal to fuel it, as a sweltering heatwave creates surging electricity demand.\n\nThe 1,320-megawatt government-run Payra Power Plant in southern Bangladesh had already slashed production last month due to fuel shortages, but it was forced to go a step further today, manager Shah Abdul Mawla told AFP.\n\n\"Due to the coal shortage, the plant came to a complete shutdown at 12.15pm today,\" Ma"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LC restricts fuel imports",
+      "edge_label": "restricts imports",
+      "evidence_quote": "\"We can't provide coal, gas and fuel sufficiently,\" he told reporters, blaming \"economic factors\" including securing letters of credit.",
+      "scope_justification": "The minister explicitly blamed difficulty securing letters of credit for insufficient provision of coal, gas and fuel, which directly pertains to the volume and availability of imported fuels as defined by 'imports'."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-05",
+      "imports",
+      "restricts imports",
+      "LC restricts fuel imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

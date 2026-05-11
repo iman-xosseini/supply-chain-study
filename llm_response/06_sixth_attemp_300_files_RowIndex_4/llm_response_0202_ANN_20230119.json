@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-19",
+    "url": "https://asianews.network/big-hike-in-gas-prices-for-bangladeshs-power-plants-industry/",
+    "body_preview": "DHAKA - The government yesterday raised the retail price of gas by 14.5 percent to 178.9 percent for industries, power plants and commercial establishments, who together account for 78 percent of gas use in Bangladesh, as it looks to lessen its unsustainable subsidy burden amid a narrow fiscal space.\n\nThe development is set to fuel a fresh round of inflation, which declined for the fourth straight month in December last year.\n\nFrom next month, the price of gas used for power generation will be T"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "foreign exchange squeeze",
+      "edge_label": "limits spot LNG imports",
+      "evidence_quote": "The squeeze on foreign exchange reserves means the spot purchase will not be able to meet the demands of the industries, said Mansur, also the chairman of Brac Bank.",
+      "scope_justification": "The article explicitly states at the national level that constrained foreign exchange reserves will reduce the country's ability to make spot LNG purchases, directly affecting import volumes."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "limits spot LNG imports",
+      "foreign exchange squeeze"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

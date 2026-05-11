@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-12",
+    "url": "https://www.bssnews.net/business/104885",
+    "body_preview": "DHAKA, Jan 12, 2023 (BSS) - Bangladesh is significantly prone to many of the\n\nrecessionary risks if appropriate steps are not taken to diversify the export\n\nproducts and basket and increase remittances through the formal channels\n\nalthough the country may not go into recession.\n\nThe International Chamber of Commerce-Bangladesh (ICCB) in its latest\n\neditorial today also highlighted the importance of taking appropriate\n\nmeasures to streamline public sector expenditures, rationalise mega\n\ninfrastru"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "recession spurs devaluation",
+      "edge_label": "forces devaluation",
+      "evidence_quote": "will spur capital outflows from the developing countries forcing them to devalue their currencies",
+      "scope_justification": "The article explicitly states developing countries will be 'forced to devalue their currencies', which describes country-level exchange-rate movements matching the feature's exchange-rate volatility scope.",
+      "verification": {
+        "quote_similarity": 0.995,
+        "quote_best_match": "will spur capital outflows from the developing countries forcing them to devalue their currencies,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence 'The likely recession in the developed world will spur capital outflows from the developing countries forcing them to devalue their currencies...' which explicitly links a (likely) recession to capital outflows that force country-level currency devaluations, matching the exchange-rate (currency) scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-12",
+      "currency_log_return",
+      "forces devaluation",
+      "recession spurs devaluation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

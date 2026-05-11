@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Prothomalo",
+    "date": "2023-06-04",
+    "url": "https://en.prothomalo.com/business/local/1q4bvruzz4",
+    "body_preview": "Bangladesh Trade and Tariff Commission (BTTC), under the Ministry of Commerce, shows the price of unrefined soybean oil in Argentina was USD 847 per tonne on 31 May. The price was USD 1970 dollars exactly a year ago. The price has dropped by nearly 57 per cent.\n\nA bottle of soybean oil in the country's market went up to Tk 199 after it had been increased by Tk 12 per litre on 3 May. The price hike was caused by the withdrawal of exemption of value added tax (VAT) on soybean oil. The prices stood"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "imports disrupted by crisis",
+      "edge_label": "disrupts flow",
+      "evidence_quote": "disruption of imports due to the crisis",
+      "scope_justification": "The article explicitly states imports were disrupted at the national level ('disruption of imports'), which matches the feature's focus on the country's volume of goods brought in."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "disrupts flow",
+      "imports disrupted by crisis"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

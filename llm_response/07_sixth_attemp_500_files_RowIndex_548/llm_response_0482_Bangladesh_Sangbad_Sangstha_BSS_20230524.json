@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-24",
+    "url": "https://www.bssnews.net/news/127152",
+    "body_preview": "DHAKA, May 24, 2023 (BSS) - Three renowned economists of the country have prioritized taming inflation, strengthening the social safety nets and maintaining economic recovery from the COVID-19 pandemic as the main principles for delivering the national budget for the next fiscal year (FY24).\n\nThey said that the issue of strengthening social safety nets demands higher priority for maintaining smooth livelihood of the commoners at a time when the global economy is finding it hard to continue econo"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "lowering inflation trend",
+      "edge_label": "hampers imports",
+      "evidence_quote": "The imports are being hampered due to the lowering trend of inflation for which there are dissimilarities between demand and supply.",
+      "scope_justification": "The article explicitly states that 'imports are being hampered', which refers to the country-level volume of goods brought in, matching the imports feature scope."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-24",
+      "imports",
+      "hampers imports",
+      "lowering inflation trend"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

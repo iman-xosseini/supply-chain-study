@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-22",
+    "url": "https://www.bssnews.net/business/116984",
+    "body_preview": "DHAKA, March 22, 2023 (BSS) - Salman F Rahman, MP, Private Industry and Investment Adviser of the Prime Minister, said today that the government is on the right track to maintain macroeconomic stability in the country given the way it has been reacting to the various challenges owing to global conditions.\n\n\"It's true that the country's macroeconomic situation is facing a lot of challenges.\" But, the way we're reacting, we can say that we're on the right track,\" he said while addressing a pre-bud"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Central bank import controls",
+      "edge_label": "reduced import bills",
+      "evidence_quote": "controlling imports, especially the luxurious items for which the import bills came down at $5 billion in December.",
+      "scope_justification": "The article links central bank controls to a country-level decline in import bills (aggregate import value), which matches the 'imports' feature's national import volume/value scope."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "reduced import bills",
+      "Central bank import controls"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

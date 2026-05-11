@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-04-04",
+    "url": "https://www.bssnews.net/business/119143",
+    "body_preview": "DHAKA, April 4, 2023 (BSS) - Private consumption, private investment and growth in industry are expected to rise in Bangladesh in the coming days while accelerating key reforms would help the country sustain higher growth, said Asian Development Bank (ADB) country director for Bangladesh Edimon Ginting.\n\n\"The contribution from private consumption is expected to be buoyed by higher remittances as more workers go abroad for jobs. Private investment is expected to rise as consumer and investor conf"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "slow global growth reduces exports",
+      "edge_label": "reduces export expansion",
+      "evidence_quote": "weaker export expansion due to slow global growth following the Russian invasion of Ukraine.",
+      "scope_justification": "The article explicitly attributes weaker export expansion to slow global growth at the national level, matching the feature's focus on country-level export volumes.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "weaker export expansion due to slow global growth following the Russian invasion of Ukraine.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence \"weaker export expansion due to slow global growth following the Russian invasion of Ukraine,\" which explicitly links slow global growth as the cause of weaker export expansion for Bangladesh at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-04",
+      "exports",
+      "reduces export expansion",
+      "slow global growth reduces exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-25",
+    "url": "https://www.bssnews.net/news-flash/133188",
+    "body_preview": "DHAKA, June 25, 2023 (BSS) - The government has increased the price of rawhides of sacrificial animals (cows) by 6 percent this year as the per square feet rawhides (rubbed with salt) of cows in Dhaka has been fixed at Taka 50-55 which was Taka 47 to 52 last year.\n\nThe price of per square feet rawhides (with salt) of cows outside of Dhaka has been fixed at Taka 45-48 which was Taka 40-44 last year.\n\nThe tannery traders would have to buy such rawhides with the fresh fixed price.\n\nOn the other han"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "government permits rawhide exports",
+      "edge_label": "permits exports",
+      "evidence_quote": "if the unholy traders try to manipulate the price of rawhides, then the government would give permission for export of rawhides.",
+      "scope_justification": "The article describes a national government policy to allow exporting rawhides abroad, which directly concerns country-level exports (the exports side of the balance of trade)."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "permits exports",
+      "government permits rawhide exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

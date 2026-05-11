@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-19",
+    "url": "https://www.bssnews.net/business/111546",
+    "body_preview": "DHAKA, Feb 19, 2023 (BSS) - Bangladesh Investment Development Authority\n\n(BIDA) executive chairman Lokman Hossain Miah today said that they were\n\nworking to make the One Stop Service (OSS) 100 per cent operational within\n\nthree to four months to provide prompt services to the investors.\n\n\"Recently, in a meeting I apprised Prime Minister Sheikh Hasina about the\n\nlimitations over providing quick services to the investors. Prime minister\n\nasked me to ensure services to the investors like the same i"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "improving logistics influences investment",
+      "edge_label": "influences investor decisions",
+      "evidence_quote": "improving logistics facilities and human capital, as these were the key factors that influence investors' decision",
+      "scope_justification": "The article explicitly links national-level 'improving logistics facilities' to investors' decisions, matching the 'Delivery' feature's focus on logistics performance at the country/sector level."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "influences investor decisions",
+      "improving logistics influences investment"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

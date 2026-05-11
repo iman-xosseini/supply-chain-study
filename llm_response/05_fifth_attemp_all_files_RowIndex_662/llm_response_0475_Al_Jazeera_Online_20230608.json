@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Al Jazeera Online",
+    "date": "2023-06-08",
+    "url": "https://www.aljazeera.com/news/2023/6/8/bangladesh-suffers-long-power-cuts-amid-worst-heatwave-in-decades",
+    "body_preview": "Dhaka, Bangladesh - Abdur Rahman nearly fainted while pulling his rickshaw under the scorching sun in Bangladesh's capital city. \"It is not possible to continue doing this in such weather,\" he told Al Jazeera.\n\nFor the last few weeks, the slum in Dhaka where Rahman lives has hardly had any electricity at night.\n\n\"After a hard, laborious day, I used to get some sleep. Now my sleeps are disrupted without a fan. I wake up many times, drenched in sweat,\" he said.\n\nA crippling power crisis has added "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka depreciation restricts imports",
+      "edge_label": "prevents fuel imports",
+      "evidence_quote": "unable to import fuel due to a decline in foreign exchange reserves and the depreciating value of the Bangladeshi taka",
+      "scope_justification": "The article explicitly links the Bangladeshi taka's depreciation to the government's inability to import fuel, which is a country-level exchange-rate effect on imports matching the feature's scope."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "prevents fuel imports",
+      "taka depreciation restricts imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "RocketNews | Top News Stories From Around the Globe",
+    "date": "2023-02-23",
+    "url": "https://www.rocketnews.com/2023/02/severe-dollar-crisis-hobbles-bangladesh-businesses/",
+    "body_preview": "Dhaka, Bangladesh - Spice trader Mohammed Enayet Ullah has made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, some of the most essential spices used in Bangladeshi cooking, only to be refused by banks due to a shortage of dollars.Importers in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services. It is essentially a financial contract issued by an importer's ban"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LC refusals curb imports",
+      "edge_label": "blocks import financing",
+      "evidence_quote": "only to be refused by banks due to a shortage of dollars",
+      "scope_justification": "The article discusses importers being unable to open letters of credit for foreign goods and services, which directly concerns import availability at the country-wide import-financing level in the feature definition.",
+      "verification": {
+        "quote_similarity": 0.923,
+        "quote_best_match": "only to be refused by banks due to a shortage of",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted wording appears in the article almost verbatim: Enayet Ullah’s attempts were 'refused by banks due to a shortage of dollars.' The text explicitly links the dollar shortage to banks refusing letters of credit, which blocks import financing, and it discusses this as a Bangladesh-wide import-financing problem rather than a single isolated case."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-23",
+      "imports",
+      "blocks import financing",
+      "LC refusals curb imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

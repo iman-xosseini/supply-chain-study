@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-07",
+    "url": "https://www.bssnews.net/business/129745",
+    "body_preview": "DHAKA, June 7, 2023 (BSS) - Federation of Bangladesh Chambers of Commerce and Industry (FBCCI) President Md Jashim Uddin today urged the government to extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.\n\nThe FBCCI president made the call while addressing a post-budget discussion as a special guest organized by the Economic Reporters' Forum (ERF) jointly with RAPID and Asia Foundation held at the ERF auditorium at Paltan in the "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "cutting imports measure",
+      "edge_label": "aims to reduce dollar stress",
+      "evidence_quote": "So, the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar,",
+      "scope_justification": "The article explicitly links cutting imports with reducing 'stress on the dollar', which refers to exchange-rate pressure within the scope of currency_log_return.",
+      "verification": {
+        "quote_similarity": 0.99,
+        "quote_best_match": "\"So, the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article: 'So, the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar,' which explicitly links the import-cutting measure to an intended effect on 'stress on the dollar' (exchange-rate pressure). The discussion concerns the national currency/dollar exchange rate, so the scope matches."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "support import-substitution",
+      "edge_label": "lessens import pressure",
+      "evidence_quote": "extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.",
+      "scope_justification": "The article explicitly states policy support for import-substitute industries is intended to 'lessen import pressure', addressing aggregate import pressure consistent with the imports feature.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article directly quotes the FBCCI president urging policy support 'towards import-substitute industries in the country to lessen import pressure on foreign exchange,' which explicitly asserts a causal link (support → lessen import pressure) at the national/import-aggregate level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-07",
+      "currency_log_return",
+      "aims to reduce dollar stress",
+      "cutting imports measure"
+    ],
+    [
+      "2023-06-07",
+      "imports",
+      "lessens import pressure",
+      "support import-substitution"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

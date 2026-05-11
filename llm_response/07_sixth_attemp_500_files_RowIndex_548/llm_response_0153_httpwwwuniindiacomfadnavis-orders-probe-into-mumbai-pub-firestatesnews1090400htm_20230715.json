@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "http://www.uniindia.com/fadnavis-orders-probe-into-mumbai-pub-fire/states/news/1090400.html",
+    "date": "2023-07-15",
+    "url": "http://www.uniindia.com/news/world/adani-flies-to-dhaka-to-thank-pm-sheikh-hasina/3011053.html",
+    "body_preview": "Dhaka, July 15 (UNI) Gautam Adani, founder and chairman of Adani Group, met prime minister Sheikh Hasina in Dhaka on Saturday.\n\nHe came to Dhaka in a brief visit to thank the prime minister for full load commencement and handover of the 1600mw coal-fired Godda power plant in the Indian state of Jharkhand.\n\nAccording to reliable sources at Power Division and Adani Group, Gautam Adani landed in Dhaka by his personal aircraft at 10:00am on Saturday. He paid a courtesy call on prime minister Sheikh "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "BPDB 25-year purchase",
+      "edge_label": "establishes long-term purchase",
+      "evidence_quote": "Under the PPA, the BPDB will purchase electricity from the Godda power plant, owned by Adani Group's subsidiary Adani Power, for 25 years.",
+      "scope_justification": "The article explicitly states Bangladesh's national power agency (BPDB) will buy electricity from the Godda plant in India for 25 years, describing a country-level cross-border purchase that matches the imports feature's national volume scope."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-07-15",
+      "imports",
+      "establishes long-term purchase",
+      "BPDB 25-year purchase"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

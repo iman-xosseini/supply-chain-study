@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "The Financial Express",
+    "date": "2023-02-04",
+    "url": "https://thefinancialexpress.com.bd/editorial/record-hike-in-lpg-price-1675524222",
+    "body_preview": "Bangladesh Energy Regulatory Commission (BERC) has just hiked the price of liquefied petroleum gas (LPG) by 21.59 per cent. This is the highest jump in LPG price in a single go, in the history of LPG price increase in Bangladesh. So, from February's end, consumers will be forking out Tk1,498 per 12kg cylinders, an increase of Tk266 per cylinder. Of course, BERC has its rationale for increase of price, but that is not the point here. At a time when prices of all fuels, starting from octane, petro"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "foreign-exchange fluctuations",
+      "edge_label": "increases import cost",
+      "evidence_quote": "is the result of Saudi Aramco contract price (CP) of February, factoring in the fluctuations in foreign-exchange rates",
+      "scope_justification": "The article explicitly ties fluctuations in foreign-exchange rates to the adjusted domestic cooking-fuel price (an import-related cost), which matches the feature's focus on exchange-rate volatility affecting import costs."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-04",
+      "currency_log_return",
+      "increases import cost",
+      "foreign-exchange fluctuations"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

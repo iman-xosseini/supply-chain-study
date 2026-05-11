@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Weekly Voice",
+    "date": "2023-02-15",
+    "url": "https://weeklyvoice.com/indo-bangla-joint-venture-rampal-plant-to-resume-power-production-from-wednesday/",
+    "body_preview": "Dhaka, Feb 15 (VOICE) Rampal power plant, a joint venture of Indian state-owned NTPC and Bangladesh Power Development Board (BPDB), will resume its operations from Wednesday.\n\nUnit-1 of the plant, having 660 MW capacity, was forced to shut down on January 14 due to shortage of coal. The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.\n\nAfter a lot of persuasion at the policy level, LC-opening was allowed for importing coal and "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LC allowed -> import",
+      "edge_label": "enables import",
+      "evidence_quote": "LC-opening was allowed for importing coal and the supplier sent a consignment of 30,000 metric tonnes",
+      "scope_justification": "The article explicitly links LC-opening to a coal consignment being sent, matching the feature's focus on imports driven by LC availability.",
+      "verification": {
+        "quote_similarity": 0.995,
+        "quote_best_match": "LC-opening was allowed for importing coal and the supplier sent a consignment of 30,000 metric tonnes,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article states that LC-opening was allowed for importing coal and then a 30,000 MT consignment was sent, explicitly linking LC approval to the import. This is discussed at the plant/company level, matching the claimed relationship's scope on imports enabled by LC availability."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "dollar crisis blocked LC",
+      "edge_label": "prevents LC opening",
+      "evidence_quote": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+      "scope_justification": "The article directly states the dollar crisis caused inability to open LCs to import coal, matching the feature's scope tying LC availability to import volume.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that due to the dollar crisis, the power plant authorities were unable to open LCs to import coal. This directly links the dollar crisis to preventing LC opening for imports at the plant level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-15",
+      "imports",
+      "enables import",
+      "LC allowed -> import"
+    ],
+    [
+      "2023-02-15",
+      "imports",
+      "prevents LC opening",
+      "dollar crisis blocked LC"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

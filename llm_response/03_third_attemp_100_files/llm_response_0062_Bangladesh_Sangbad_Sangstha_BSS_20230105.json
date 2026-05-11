@@ -1,0 +1,67 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-05",
+    "url": "https://www.bssnews.net/agriculture-news/103517",
+    "body_preview": "RANGPUR, Jan 5, 2023 (BSS) - Farmers have already exceeded the fixed potato farming target by 4.27 percent as sowing of potato seeds continues in Rangpur agriculture region where an all-time record production of the winter crop is expected this season.\n\nMeanwhile, early varieties of potato have already appeared in local markets with lucrative prices making farmers happy across the region.\n\nOfficials of the Department of Agricultural Extension (DAE) said an all-time record target of producing 23,"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "Assistance increases potato interest",
+      "edge_label": "increases cultivation interest",
+      "evidence_quote": "Farmers are showing more interest in farming potatoes both in the mainland and char areas after getting special assistance from the government",
+      "scope_justification": "The article explicitly links government assistance to increased interest in cultivating potatoes, affecting the specific commercial item 'potato' described in the Product definition."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "Technology improves potato yield",
+      "edge_label": "improves yield",
+      "evidence_quote": "providing latest technologies to farmers in properly nursing their potato fields to get better yield",
+      "scope_justification": "The article states that providing technologies leads to better yields for potato fields, directly impacting the potato product described in the Product definition."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "Seed provision enables success",
+      "edge_label": "enables program success",
+      "evidence_quote": "provided quality potato seeds and assistance to farmers to make the potato farming program a success",
+      "scope_justification": "The text links provision of quality potato seeds and assistance to the success of the potato farming program, which pertains to the specific commercial item 'potato' in the Product definition."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "increases cultivation interest",
+      "Assistance increases potato interest"
+    ],
+    [
+      "Product",
+      "improves yield",
+      "Technology improves potato yield"
+    ],
+    [
+      "Product",
+      "enables program success",
+      "Seed provision enables success"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 3
+}

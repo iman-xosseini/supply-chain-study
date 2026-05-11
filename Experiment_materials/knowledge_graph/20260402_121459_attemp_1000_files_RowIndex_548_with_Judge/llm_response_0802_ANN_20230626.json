@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-06-26",
+    "url": "https://asianews.network/inflation-fight-gets-tougher-bank-for-international-settlements/",
+    "body_preview": "DHAKA - Inflation has started to subside from multi-decade highs almost everywhere, but the work of central banks is far from done, the Bank for International Settlements (BIS) said in its flagship economic report.\n\n\"Despite the most intensive monetary policy tightening in recent memory, the last leg of the journey to restore price stability will be the hardest,\" said the world's central bank umbrella body in a press release yesterday.\n\nAccording to the BIS's Annual Economic Report 2023, the gai"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Supply chains easing lowers inflation",
+      "edge_label": "eases supply chain pressure",
+      "evidence_quote": "the gains made so far in the fight against inflation owe much to supply chains easing",
+      "scope_justification": "The article discusses broad supply chains at an economy-wide level, which matches the feature’s focus on country-wide goods flow rather than a single firm or commodity.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the gains made so far in the fight against inflation owe much to supply chains easing",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted phrase appears in the article almost verbatim: the gains in the fight against inflation 'owe much to supply chains easing.' The text explicitly links easing supply chains to lower inflation gains at an economy-wide level, so the causal relationship and scope both match."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-26",
+      "imports",
+      "eases supply chain pressure",
+      "Supply chains easing lowers inflation"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

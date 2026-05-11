@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "SME & Entrepreneurship Magazine",
+    "date": "2023-05-02",
+    "url": "https://sme.asia/dhl-global-forwarding-expands-its-dedicated-container-freight-station-cfs-space-in-bangladesh-to-meet-global-garment-export-needs/",
+    "body_preview": "DHAKA, BANGLADESH - Media OutReach - 2 May 2023 - DHL Global Forwarding, the freight specialist arm of Deutsche Post DHL Group, invested over 2 million EUR to expand its dedicated Container Freight Station (CFS) space in Bangladesh to cater to the nation's ever-growing readymade garments (RMG) industry. CFSs are a scarcity in Bangladesh, with less than 20 CFSs countrywide. These facilities help pick up goods from multiple suppliers and consolidate them into a single container before shipping to "
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "Strong RMG sector growth",
+      "edge_label": "drives exports growth",
+      "evidence_quote": "its exports continue to enjoy steady growth due to its strong RMG sector",
+      "scope_justification": "The article explicitly attributes Bangladesh's nationwide export growth to the RMG sector, matching the feature's country-level definition of exports.",
+      "verification": {
+        "quote_similarity": 0.993,
+        "quote_best_match": "its exports continue to enjoy steady growth due to its strong RMG sector,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence saying Bangladesh's exports \"continue to enjoy steady growth due to its strong RMG sector,\" which explicitly attributes country-level export growth to the RMG sector, matching the claimed causal relationship and scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-02",
+      "exports",
+      "drives exports growth",
+      "Strong RMG sector growth"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

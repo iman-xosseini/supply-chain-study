@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-02-26",
+    "url": "https://www.daily-sun.com/post/676235/NBR-withdraws-duty-on-sugar-import",
+    "body_preview": "DHAKA - National Board of Revenue (NBR) has withdrawn import duty on both raw and refined sugar so that consumers can get the sweetener at reduced rates.\n\nThe customs authority withdrew Taka 3,000 specific duty on import of raw and Taka 6,000 on refined sugar per ton with immediate effect, said a notification issued today.\n\nThe reduced import benefit, which comes following a proposal from the Commerce Ministry to bring down the prices of sugar from its current record level of up to Taka 120 per "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Sugar import duties withdrawn",
+      "edge_label": "reduces import cost",
+      "evidence_quote": "The customs authority withdrew Taka 3,000 specific duty on import of raw and Taka 6,000 on refined sugar per ton",
+      "scope_justification": "The article explicitly discusses import duties on sugar imports, which is a direct import-related cost change at the goods-import level described by the feature.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The customs authority withdrew Taka 3,000 specific duty on import of raw and Taka 6,000 on refined sugar per ton",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the customs authority withdrew specific duties on raw and refined sugar imports, matching the quoted evidence. It also directly states that after this reduction, the overall import cost of raw and refined sugar is expected to decline, and the discussion is at the national import-policy level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-26",
+      "imports",
+      "reduces import cost",
+      "Sugar import duties withdrawn"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

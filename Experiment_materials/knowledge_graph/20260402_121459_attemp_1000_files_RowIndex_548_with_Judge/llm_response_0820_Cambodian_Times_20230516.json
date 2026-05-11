@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Cambodian Times",
+    "date": "2023-05-16",
+    "url": "https://www.cambodiantimes.com/news/273832902/bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Dollar shortage curbs imports",
+      "edge_label": "discourages unnecessary imports",
+      "evidence_quote": "This has compelled the government to discourage unnecessary imports and cut spending",
+      "scope_justification": "The article explicitly refers to Bangladesh's government actions affecting country-wide imports, which matches the feature's definition of aggregate goods brought into the country.",
+      "verification": {
+        "quote_similarity": 0.994,
+        "quote_best_match": "This has compelled the government to discourage unnecessary imports and cut spending,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says, \"This has compelled the government to discourage unnecessary imports and cut spending,\" directly linking the decline in reserves/foreign exchange pressure to import restrictions. The discussion is about Bangladesh’s government and country-wide import policy, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-16",
+      "imports",
+      "discourages unnecessary imports",
+      "Dollar shortage curbs imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

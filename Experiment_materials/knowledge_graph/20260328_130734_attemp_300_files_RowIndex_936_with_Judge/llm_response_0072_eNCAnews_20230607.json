@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "eNCAnews",
+    "date": "2023-06-07",
+    "url": "https://www.enca.com/life/bangladesh-shuts-schools-cuts-power-longest-heatwave-decades",
+    "body_preview": "DHAKA - Bangladesh has shut thousands of schools as it struggles through its lengthiest heatwave in half a century, with widespread power cuts only compounding locals' misery.\n\nTemperatures in the South Asian nation's capital of Dhaka have surged to around 40 degrees Celsius (104 degrees Fahrenheit), with the poor bearing the brunt of the blazing sun.\n\n\"We have never seen such a prolonged heatwave since Bangladesh's independence in 1971,\" said Bazlur Rashid, a senior official at the Bangladesh M"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka depreciation increased costs",
+      "edge_label": "drives up import costs",
+      "evidence_quote": "The Bangladeshi taka depreciated about 25 percent against the US dollar last year, driving up the cost of fuel imports and power utilities.",
+      "scope_justification": "The article explicitly describes a country-level depreciation of the Bangladeshi taka against the US dollar increasing the cost of fuel imports, matching the feature's exchange-rate volatility affecting import costs scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The Bangladeshi taka depreciated about 25 percent against the US dollar last year, driving up the cost of fuel imports and power utilities.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence 'The Bangladeshi taka depreciated about 25 percent against the US dollar last year, driving up the cost of fuel imports and power utilities,' which explicitly states a causal link and refers to the national currency (country-level)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-07",
+      "currency_log_return",
+      "drives up import costs",
+      "taka depreciation increased costs"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

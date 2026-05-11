@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Prothomalo",
+    "date": "2023-05-21",
+    "url": "https://en.prothomalo.com/business/local/sycr1wg79y",
+    "body_preview": "Bangladesh's economy is still in dire straits. Foreign exchange reserves have been declining with the persisting high rate of the US dollar. Inflation pressure remains steep. Amid this, the growth in export and remittance inflow brought some respite to the government. At the same time, the cost of imports fell. This has reduced the existing current account deficit by one-fourth. However, the country's current account deficit was the highest in the last 51 years in the fiscal 2021-22.\n\nAmid the g"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Import costs exceed exports",
+      "edge_label": "necessitates remittance funding",
+      "evidence_quote": "The import costs here are much higher than the export revenue. As a result, the trade deficit has to be met mainly with remittance.",
+      "scope_justification": "The article describes a country-level trade deficit caused by national import costs exceeding export revenue, matching the feature's country-wide imports-versus-exports scope."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "necessitates remittance funding",
+      "Import costs exceed exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

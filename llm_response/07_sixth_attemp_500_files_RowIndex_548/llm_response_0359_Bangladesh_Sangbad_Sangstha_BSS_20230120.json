@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-20",
+    "url": "https://www.bssnews.net/business/106297",
+    "body_preview": "DHAKA, Jan 20, 2023 (BSS) - Commerce Minister Tipu Munshi today sought duty\n\nfree benefits from the United States of America (USA) in importing cotton.\n\n\"Bangladesh is the second largest exporter of Ready-made Garments (RMG) in\n\nthe world. About 82 percent of Bangladesh's total exports come from RMG. The\n\nUSA is a major cotton producer. Every year, Bangladesh imports a huge amount\n\nof cotton from different countries for use in garment factories. If the USA\n\ngrants Bangladesh duty-free trade faci"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "low domestic cotton production",
+      "edge_label": "necessitates imports",
+      "evidence_quote": "Bangladesh has to import the remaining huge amount of cotton from different countries.",
+      "scope_justification": "The article states national-level cotton production is only 1.6% of demand and therefore 'has to import the remaining huge amount', describing country-wide raw-material-driven imports."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-20",
+      "imports",
+      "necessitates imports",
+      "low domestic cotton production"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

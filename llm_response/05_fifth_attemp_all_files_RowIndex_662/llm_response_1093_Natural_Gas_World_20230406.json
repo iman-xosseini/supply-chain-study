@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Natural Gas World",
+    "date": "2023-04-06",
+    "url": "https://www.naturalgasworld.com/bangladeshs-energy-plan-faces-gas-dilemma-as-fuel-crisis-bites-104564",
+    "body_preview": "DHAKA, April 6 (Thomson Reuters Foundation) - Jobayer Ahmed's textile business on the outskirts of Dhaka is going through a rough patch with the energy crisis in Bangladesh.\n\nProduction costs at Shah Fatehullah Textile Mills Limited - which employs about 2,200 workers - have risen by 40% in the last two years, Ahmed said, mainly due to the gas price for the company's in-house power plant having nearly doubled in recent months.\n\nDespite this, \"we are still not getting an uninterrupted gas supply,"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Solar reduces fuel imports",
+      "edge_label": "reduces fuel import costs",
+      "evidence_quote": "Alam said Bangladesh could save about $1.1 billion on fuel import costs annually by installing 2,000 MW of solar power and replacing diesel-run irrigation with solar-powered systems.",
+      "scope_justification": "The article states a national-level annual saving on fuel import costs from deploying solar, which directly affects the country's imports component of the balance of trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "reduces fuel import costs",
+      "Solar reduces fuel imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

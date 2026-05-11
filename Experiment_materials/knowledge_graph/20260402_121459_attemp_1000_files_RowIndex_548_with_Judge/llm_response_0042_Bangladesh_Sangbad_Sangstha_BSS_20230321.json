@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-21",
+    "url": "https://www.bssnews.net/district/116749",
+    "body_preview": "KHULNA, March 21, 2023 (BSS)-The price of the essentials commodities has been asked to keep at tolerable level during the upcoming holy Ramadan, as sufficient food grains and essential commodities considering the holy month, are quite available in the market now, speakers at a view exchange meeting at deputy commissioner's office here today said.\n\nWith Khulna deputy commissioner (DC) Khondokar Yasir Arefin in the chair, representatives of Khulna Chamber of Commerce and Industry (KCCI), President"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Government boosts consumer imports",
+      "edge_label": "increases imports",
+      "evidence_quote": "The Government has taken necessary steps for increasing the imports of consumer goods to stabilize the market",
+      "scope_justification": "The article explicitly discusses the volume of consumer goods brought into the country, which matches the imports feature’s country-wide goods import scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The Government has taken necessary steps for increasing the imports of consumer goods to stabilize the market",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears in the article almost verbatim: the government took steps for increasing imports of consumer goods to stabilize the market. The text explicitly links increased imports with the aim of stabilizing the market and keeping prices at a tolerable level, and it is discussed at a broad government/market level rather than a single-company scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-21",
+      "imports",
+      "increases imports",
+      "Government boosts consumer imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

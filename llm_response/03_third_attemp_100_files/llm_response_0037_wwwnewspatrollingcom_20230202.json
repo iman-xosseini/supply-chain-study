@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "www.newspatrolling.com",
+    "date": "2023-02-02",
+    "url": "https://newspatrolling.com/shopup-secures-usd-30-million-debt-financing-to-fuel-expansion-and-strengthen-supply-chain-operations/",
+    "body_preview": "DHAKA, BANGLADESH -\n\nMedia OutReach - 2 February 2023 - ShopUp, the largest full-stack B2B commerce platform in Bangladesh, announces a major milestone in securing $30 million in debt financing. The funds will be used to drive expansion efforts and strengthen the company's supply chain operations, benefiting small businesses and consumers across the country.\n\nThe $30 million financing round was comprised of $20 million from Lendable, the global provider of debt to fintech companies in emerging m"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "debt financing strengthens logistics",
+      "edge_label": "strengthens delivery",
+      "evidence_quote": "The funds will be used to drive expansion efforts and strengthen the company's supply chain operations, benefiting small businesses and consumers across the country.",
+      "scope_justification": "The article explicitly states the financing will 'strengthen the company's supply chain operations' and mentions last-mile logistics, which directly pertains to national logistics performance and delivery."
+    },
+    {
+      "feature": "delivery_sales_ratio",
+      "event_summary": "creates seamless distribution network",
+      "edge_label": "creates seamless distribution",
+      "evidence_quote": "The new debt facilities will help us reach our goal of creating a seamless distribution network for food and essentials that serves 80 million people in Bangladesh,",
+      "scope_justification": "Creating a seamless distribution network for food and essentials addresses order-fulfillment capability at national scale, matching the feature's focus on efficiency of order fulfillment relative to sales volume."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "strengthens delivery",
+      "debt financing strengthens logistics"
+    ],
+    [
+      "delivery_sales_ratio",
+      "creates seamless distribution",
+      "creates seamless distribution network"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

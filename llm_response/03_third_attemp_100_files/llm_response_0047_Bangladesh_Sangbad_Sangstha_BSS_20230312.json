@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-12",
+    "url": "https://www.bssnews.net/business/115204",
+    "body_preview": "DHAKA, March 12, 2023 (BSS) - Building on the success made so far, Bangladesh's apparel industry was preparing for the next level of growth by reinventing business strategy and aligning with the global trend, said Faruque Hassan, President of BGMEA.\n\n\"Potential is high for Bangladesh's RMG industry to accelerate growth and make the momentum sustainable though we have challenges on the way,\" he said.\n\nThe RMG industry of Bangladesh has already exhibited a unique strength and resilience in improvi"
+  },
+  "llm_connections": [
+    {
+      "feature": "Group",
+      "event_summary": "Focus on key areas",
+      "edge_label": "sustains growth",
+      "evidence_quote": "had been focusing on in order to sustain the growth momentum and take it to the next level.",
+      "scope_justification": "The quote explicitly links actions by the ready-made garment industry (the broad industry sector) to sustaining its growth momentum, matching the 'Group' sector-level scope."
+    },
+    {
+      "feature": "Sub-Group",
+      "event_summary": "GSP rules prompt investment",
+      "edge_label": "drives investment",
+      "evidence_quote": "we will have to meet double transformation rules of origin in the EU. So we need to make more investment in the backward linkage industry",
+      "scope_justification": "The sentence explicitly ties EU rule changes to the need for investment in the backward linkage textile industry, which is a specific niche (sub-group) within the sector."
+    }
+  ],
+  "triplets": [
+    [
+      "Group",
+      "sustains growth",
+      "Focus on key areas"
+    ],
+    [
+      "Sub-Group",
+      "drives investment",
+      "GSP rules prompt investment"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

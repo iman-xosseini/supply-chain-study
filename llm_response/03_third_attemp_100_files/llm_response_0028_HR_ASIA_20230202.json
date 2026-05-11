@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "HR ASIA",
+    "date": "2023-02-02",
+    "url": "https://hr.asia/media-outreach/shopup-secures-usd-30-million-debt-financing-to-fuel-expansion-and-strengthen-supply-chain-operations/",
+    "body_preview": "DHAKA, BANGLADESH - Media OutReach - 2 February 2023 - ShopUp, the largest full-stack B2B commerce platform in Bangladesh, announces a major milestone in securing $30 million in debt financing. The funds will be used to drive expansion efforts and strengthen the company's supply chain operations, benefiting small businesses and consumers across the country.\n\nThe $30 million financing round was comprised of $20 million from Lendable, the global provider of debt to fintech companies in emerging ma"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "Secures $30M financing",
+      "edge_label": "strengthens supply chain operations",
+      "evidence_quote": "The funds will be used to drive expansion efforts and strengthen the company's supply chain operations, benefiting small businesses and consumers across the country.",
+      "scope_justification": "The article explicitly states the funds will strengthen ShopUp's supply chain operations and last-mile logistics, which directly pertains to logistics performance described by the Delivery feature."
+    },
+    {
+      "feature": "inventory_proxy",
+      "event_summary": "Implements seamless distribution",
+      "edge_label": "reduces food waste",
+      "evidence_quote": "The funds will also help address the significant food waste issue in Bangladesh, with over 30% of production going to waste, by implementing a seamless distribution system",
+      "scope_justification": "The article links the funds to implementing a nationwide distribution system to address over 30% of production going to waste, matching inventory_proxy's scope of unsold or wasted stock."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "strengthens supply chain operations",
+      "Secures $30M financing"
+    ],
+    [
+      "inventory_proxy",
+      "reduces food waste",
+      "Implements seamless distribution"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

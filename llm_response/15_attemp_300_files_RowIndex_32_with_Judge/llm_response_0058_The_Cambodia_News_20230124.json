@@ -1,0 +1,132 @@
+{
+  "article": {
+    "source": "The Cambodia News",
+    "date": "2023-01-24",
+    "url": "https://www.thecambodianews.net/news/273425360/bangladesh-may-overtake-china-to-be-eu-biggest-apparel-source",
+    "body_preview": "Dhaka [Bangladesh], January 24 (ANI): As China witnessing a decrease in its share of trade due to economic slowdown due to Covid implications, Bangladesh may overtake it as the source of most of the European Union's (EU) apparel, reported The Daily Star.\n\nAccording to Ahsan H Mansur, Executive Director of the Policy Research Institute, primarily it will be for the shortage of skilled labour (China's demography as its population is decreasing) and secondly for Bangladesh producing high-end value-"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "China share decline",
+      "edge_label": "increases Bangladesh exports",
+      "evidence_quote": "As China witnessing a decrease in its share of trade due to economic slowdown due to Covid implications, Bangladesh may overtake it",
+      "scope_justification": "The quote links China's falling trade share to Bangladesh potentially overtaking China as the EU apparel source, which describes country-level export volumes to the EU.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "As China witnessing a decrease in its share of trade due to economic slowdown due to Covid implications, Bangladesh may overtake it",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears at the start of the article. The article explicitly links China's decline in trade share (for reasons like COVID-related slowdown and workforce shortages) to work orders shifting to countries including Bangladesh and to Bangladesh potentially overtaking China as the EU's apparel source, which is a country-level export outcome."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Work orders shift",
+      "edge_label": "shifts orders to Bangladesh",
+      "evidence_quote": "This is resulting in work orders being shifted from China to other Asian countries like Bangladesh, Vietnam, Thailand, Cambodia, India and Pakistan.",
+      "scope_justification": "The sentence explicitly states that work orders are being shifted from China to Bangladesh (country-level), directly affecting international export flows.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "This is resulting in work orders being shifted from China to other Asian countries like Bangladesh, Vietnam, Thailand, Cambodia, India and Pakistan.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article and explicitly states that Chinese industrial shifts are resulting in work orders being shifted from China to other countries including Bangladesh, which is a country-level claim about export-related orders."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Tariff war diversion",
+      "edge_label": "diverts orders to Bangladesh",
+      "evidence_quote": "another reason for work orders being diverted from China to Bangladesh is the recent tariff war between the US and China",
+      "scope_justification": "The quote explicitly ties the US–China tariff war to diversion of work orders to Bangladesh, describing country-to-country shifts in export sourcing.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "another reason for work orders being diverted from China to Bangladesh is the recent tariff war between the US and China",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence attributing diversion of work orders from China to Bangladesh to the recent US–China tariff war, which explicitly states a cause-and-effect link at the country-to-country (export sourcing) level."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Factory remediation impact",
+      "edge_label": "increases international orders",
+      "evidence_quote": "This ultimately brightened the image of the country and the sector itself for which international retailers and brands are coming up with increasing volumes of work orders.",
+      "scope_justification": "The sentence states that remediation brightened Bangladesh's image and caused international retailers to place increasing volumes of work orders, i.e., higher country-level exports.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "This ultimately brightened the image of the country and the sector itself for which international retailers and brands are coming up with increasing volumes of work orders.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence nearly verbatim and explicitly links factory remediation (via Accord and Alliance) to a brighter national/sector image, which it states caused international retailers and brands to place increasing volumes of work orders—a country-level export effect."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Move to man-made fibres",
+      "edge_label": "generates better prices and orders",
+      "evidence_quote": "local manufacturers are grabbing a bigger market share of garment items made from man-made fibres to obtain better prices and more work orders from international retailers and brands.",
+      "scope_justification": "The quote explicitly says producers' shift to man-made-fibre garments is yielding better prices and more work orders from international buyers, affecting export volumes.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "local manufacturers are grabbing a bigger market share of garment items made from man-made fibres to obtain better prices and more work orders from international retailers and brands.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating local manufacturers are increasing production of man-made-fibre garments 'to obtain better prices and more work orders,' which explicitly links the shift to man-made fibres with higher prices and more orders at the national (Bangladesh) exporter level."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Industry capacity growth",
+      "edge_label": "enables large export orders",
+      "evidence_quote": "the capacity of Bangladesh's garment industry has also grown a lot, enabling it to cater to any quantity of work orders.",
+      "scope_justification": "This statement ties national industry capacity growth to the ability to handle large work orders, directly relating to country-level export volume capability.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the capacity of Bangladesh's garment industry has also grown a lot, enabling it to cater to any quantity of work orders.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence (or a near-identical phrasing) stating that Bangladesh's garment industry capacity 'has also grown a lot, enabling it to cater to any quantity of work orders,' which explicitly asserts a causal link at the national industry level between capacity growth and ability to handle large work orders (i.e., export volumes)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-24",
+      "exports",
+      "increases Bangladesh exports",
+      "China share decline"
+    ],
+    [
+      "2023-01-24",
+      "exports",
+      "shifts orders to Bangladesh",
+      "Work orders shift"
+    ],
+    [
+      "2023-01-24",
+      "exports",
+      "diverts orders to Bangladesh",
+      "Tariff war diversion"
+    ],
+    [
+      "2023-01-24",
+      "exports",
+      "increases international orders",
+      "Factory remediation impact"
+    ],
+    [
+      "2023-01-24",
+      "exports",
+      "generates better prices and orders",
+      "Move to man-made fibres"
+    ],
+    [
+      "2023-01-24",
+      "exports",
+      "enables large export orders",
+      "Industry capacity growth"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 6
+}

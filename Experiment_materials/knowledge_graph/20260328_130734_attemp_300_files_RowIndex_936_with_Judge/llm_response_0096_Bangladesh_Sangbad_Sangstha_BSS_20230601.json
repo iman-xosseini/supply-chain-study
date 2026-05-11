@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128488",
+    "body_preview": "DHAKA, June 01, 2023 (BSS) - Finance Minister AHM Mustafa Kamal today said the government will focus on sustaining the economic recovery by successfully implementing the ongoing stimulus packages.\n\n\"We have completely overcome the effects of the pandemic. Therefore, in this budget, our aim will be to sustain the economic recovery by successfully implementing the ongoing stimulus packages,\" he said.\n\nThe minister said this while placing over Taka 7.61 lakh crore national budget for FY23-24 at the"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Russia-Ukraine war impact",
+      "edge_label": "impacts exchange rates",
+      "evidence_quote": "He said the Russia-Ukraine war situation has had the biggest impact on inflation, government spending, balance of payments, foreign exchange reserves and exchange rates.",
+      "scope_justification": "The article explicitly states the Russia-Ukraine war affected 'exchange rates' at the country/economy level, which matches the feature's focus on national exchange-rate movements.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "He said the Russia-Ukraine war situation has had the biggest impact on inflation, government spending, balance of payments, foreign exchange reserves and exchange rates.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence claiming the Russia-Ukraine war 'has had the biggest impact on ... exchange rates' appears in the article, which explicitly attributes an effect on exchange rates to the war, and the article refers to national exchange-rate impacts (e.g., 'the country's foreign exchange rate'), matching the feature's scope."
+      }
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "FX rate depreciation",
+      "edge_label": "raises import costs",
+      "evidence_quote": "the increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate",
+      "scope_justification": "The article links depreciation of 'the country's foreign exchange rate' to higher import costs, matching the feature's scope of exchange-rate movements affecting import costs.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the line stating that the increase in import costs was due to post-war global inflation and 'the depreciation of the country's foreign exchange rate,' which explicitly attributes higher import costs to FX depreciation and refers to the country's exchange rate (national scope)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-01",
+      "currency_log_return",
+      "impacts exchange rates",
+      "Russia-Ukraine war impact"
+    ],
+    [
+      "2023-06-01",
+      "currency_log_return",
+      "raises import costs",
+      "FX rate depreciation"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

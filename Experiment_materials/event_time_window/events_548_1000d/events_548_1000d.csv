@@ -1,0 +1,166 @@
+,source,relation,target,edge_type,weight,date,title,attribute,days_before
+0,imports,has_attribute,Trade Policy,attribute,,2023-07-03,1.14 lakh kilograms of green chilli imported on Sunday  | News,"""Government's Permission: Government Policy"", ""36,830 Tons: Trade Policy""",16
+1,"Government's Permission to Import 36,830 Tons",increase,imports,event,,2023-07-03,1.14 lakh kilograms of green chilli imported on Sunday  | News,"""Government's Permission: Government Policy"", ""36,830 Tons: Trade Policy""",16
+2,imports,has_attribute,Government Policy,attribute,,2023-07-03,1.14 lakh kilograms of green chilli imported on Sunday  | News,"""Government's Permission: Government Policy"", ""36,830 Tons: Trade Policy""",16
+3,imports,has_attribute,Trade Policy,attribute,,2023-07-02,"Govt allows import of 36,830 tons green chilli     | Daily Sun |","""Government Permission: Government Policy"", ""Import Chilli: Trade Policy""",17
+4,Government Permission to Import Chilli,increase,imports,event,,2023-07-02,"Govt allows import of 36,830 tons green chilli     | Daily Sun |","""Government Permission: Government Policy"", ""Import Chilli: Trade Policy""",17
+5,imports,has_attribute,Government Policy,attribute,,2023-07-02,"Govt allows import of 36,830 tons green chilli     | Daily Sun |","""Government Permission: Government Policy"", ""Import Chilli: Trade Policy""",17
+6,imports,has_attribute,Infrastructure,attribute,,2023-06-26,Inflation fight gets tougher: Bank for International Settlements,"""Supply Chain Easing: Infrastructure""",23
+7,Supply Chain Easing,increase,imports,event,,2023-06-26,Inflation fight gets tougher: Bank for International Settlements,"""Supply Chain Easing: Infrastructure""",23
+8,Bangladesh's SPM facility,increase,imports,event,,2023-06-20,Commodity Tracker: 5 charts to watch this week,"""SPM facility: Infrastructure""",29
+9,imports,has_attribute,Infrastructure,attribute,,2023-06-20,Commodity Tracker: 5 charts to watch this week,"""SPM facility: Infrastructure""",29
+10,Foreign Exchange Reserves Decline,decrease,imports,event,,2023-06-08,Bangladesh suffers long power cuts amid worst heatwave in decades,"""Foreign Exchange Reserves Decline: Monetary Policy""",41
+11,imports,has_attribute,Monetary Policy,attribute,,2023-06-08,Bangladesh suffers long power cuts amid worst heatwave in decades,"""Foreign Exchange Reserves Decline: Monetary Policy""",41
+12,imports,has_attribute,Global Shock,attribute,,2023-06-04,"Global prices fall, no  impact on local market woes","""Import Disruption: Global Shock""",45
+13,Import Disruption,decrease,imports,event,,2023-06-04,"Global prices fall, no  impact on local market woes","""Import Disruption: Global Shock""",45
+14,imports,has_attribute,Trade Policy,attribute,,2023-06-01,Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business,"""Reduction of Duty: Trade Policy""",48
+15,Reduction of Duty on Container Import,decrease,imports,event,,2023-06-01,Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business,"""Reduction of Duty: Trade Policy""",48
+16,imports,has_attribute,Government Policy,attribute,,2023-06-01,Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business,"""Increase Regulatory Duties: Government Policy"", ""Non-Essential Imports: Trade Policy""",48
+17,imports,has_attribute,Trade Policy,attribute,,2023-06-01,Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business,"""Container Duty Reduction: Trade Policy""",48
+18,Increase Regulatory Duties on Non-Essential Imports,decrease,imports,event,,2023-06-01,Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business,"""Increase Regulatory Duties: Government Policy"", ""Non-Essential Imports: Trade Policy""",48
+19,imports,has_attribute,Trade Policy,attribute,,2023-06-01,Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business,"""Increase Regulatory Duties: Government Policy"", ""Non-Essential Imports: Trade Policy""",48
+20,imports,has_attribute,Global Shock,attribute,,2023-06-01,Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024,"""post-war global inflation: Global Shock"", ""depreciation of the country's foreign exchange rate: Currency Movement""",48
+21,Container Duty Reduction,decrease,imports,event,,2023-06-01,Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business,"""Container Duty Reduction: Trade Policy""",48
+22,imports,has_attribute,Currency Movement,attribute,,2023-06-01,Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024,"""post-war global inflation: Global Shock"", ""depreciation of the country's foreign exchange rate: Currency Movement""",48
+23,Russia-Ukraine War Impact,deteriorate,balance_of_trade,event,,2023-06-01,Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024,"""Russia-Ukraine War Impact: Global Shock""",48
+24,Import-induced Inflation Mitigation,increase,imports,event,,2023-06-01,Govt giving priority to addressing climate change impacts: Kamal | National Budget 2023-2024,"""Import-induced Inflation: Market Dynamics""",48
+25,Duty Cut on Containers,increase,imports,event,,2023-06-01,Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business,"""Duty Cut on Containers: Trade Policy""",48
+26,imports,has_attribute,Trade Policy,attribute,,2023-06-01,Proposed budget favorable to build Smart Bangladesh: Rangpur Chamber | Business,"""Duty Cut on Containers: Trade Policy""",48
+27,War-Driven Import Costs,decrease,imports,event,,2023-06-01,Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024,"""post-war global inflation: Global Shock"", ""depreciation of the country's foreign exchange rate: Currency Movement""",48
+28,balance_of_trade,has_attribute,Global Shock,attribute,,2023-06-01,Govt aims to sustain economic recovery: Kamal  | National Budget 2023-2024,"""Russia-Ukraine War Impact: Global Shock""",48
+29,imports,has_attribute,Market Dynamics,attribute,,2023-06-01,Govt giving priority to addressing climate change impacts: Kamal | National Budget 2023-2024,"""Import-induced Inflation: Market Dynamics""",48
+30,imports,has_attribute,Market Dynamics,attribute,,2023-05-26,"Rise of inequality, drumbeat of development","""Imported Edible Gold Stock: Market Dynamics""",54
+31,Imported Edible Gold Stock,decrease,imports,event,,2023-05-26,"Rise of inequality, drumbeat of development","""Imported Edible Gold Stock: Market Dynamics""",54
+32,Airlifted Goods,decrease,imports,event,,2023-05-18,"Apparel makers in cyclone-hit Bangladesh consider rare, expensive airlifts for exports | MarketScreener","""Airlifted Goods: Infrastructure""",62
+33,imports,has_attribute,Infrastructure,attribute,,2023-05-18,"Apparel makers in cyclone-hit Bangladesh consider rare, expensive airlifts for exports | MarketScreener","""Airlifted Goods: Infrastructure""",62
+34,balance_of_trade,has_attribute,Trade Policy,attribute,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Trade Shift: Trade Policy""",64
+35,Dollar Shortage,decrease,imports,event,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Dollar Shortage: Currency Movement""",64
+36,imports,has_attribute,Currency Movement,attribute,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Use in Imports: Currency Movement""",64
+37,Yuan Use in Imports,increase,imports,event,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Use in Imports: Currency Movement""",64
+38,balance_of_trade,has_attribute,Currency Movement,attribute,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Use for Imports: Currency Movement""",64
+39,Currency Pressure,decrease,imports,event,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Currency Pressure: Currency Movement""",64
+40,imports,has_attribute,Currency Movement,attribute,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Payments: Currency Movement""",64
+41,Yuan Trade Shift,deteriorate,balance_of_trade,event,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Trade Shift: Trade Policy""",64
+42,imports,has_attribute,Currency Movement,attribute,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Dollar Shortage: Currency Movement""",64
+43,Yuan Payments in Bangladesh,increase,imports,event,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Payments: Currency Movement""",64
+44,balance_of_trade,has_attribute,Currency Movement,attribute,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Use in Trade: Currency Movement""",64
+45,Yuan Use in Trade,deteriorate,balance_of_trade,event,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Use in Trade: Currency Movement""",64
+46,Yuan Use for Imports,improve,balance_of_trade,event,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Use for Imports: Currency Movement""",64
+47,imports,has_attribute,Currency Movement,attribute,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Payments: Currency Movement""",64
+48,Yuan Payments for Imports,decrease,imports,event,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Yuan Payments: Currency Movement""",64
+49,imports,has_attribute,Currency Movement,attribute,,2023-05-16,Bangladesh government should think twice before trading in Chinese currency: Report,"""Currency Pressure: Currency Movement""",64
+50,imports,has_attribute,Government Policy,attribute,,2023-05-14,Govt may allow onion import soon: Agri Secretary  | News,"""Onion Import Suspension End: Government Policy""",66
+51,Onion Import Suspension End,increase,imports,event,,2023-05-14,Govt may allow onion import soon: Agri Secretary  | News,"""Onion Import Suspension End: Government Policy""",66
+52,imports,has_attribute,Industry Activity,attribute,,2023-05-02,DHL Global Forwarding expands its dedicated Container Freight Station (CFS) space in Bangladesh to meet global garment export needs - SME & Entrepreneurship Magazine,"""DHL CFS Expansion: Industry Activity""",78
+53,DHL CFS Expansion,increase,imports,event,,2023-05-02,DHL Global Forwarding expands its dedicated Container Freight Station (CFS) space in Bangladesh to meet global garment export needs - SME & Entrepreneurship Magazine,"""DHL CFS Expansion: Industry Activity""",78
+54,Port Expansion Speeding Shipping,increase,imports,event,,2023-05-02,DHL Global Forwarding expands its dedicated Container Freight Station (CFS) space in Bangladesh to meet global garment export needs - HR ASIA,"""Port Expansion: Infrastructure""",78
+55,imports,has_attribute,Infrastructure,attribute,,2023-05-02,DHL Global Forwarding expands its dedicated Container Freight Station (CFS) space in Bangladesh to meet global garment export needs - HR ASIA,"""Port Expansion: Infrastructure""",78
+56,Imported Energy Shortages,decrease,imports,event,,2023-04-20,Is renewable deployment suffering from fossil fuel lock-in?,"""Imported Energy Shortages: Infrastructure""",90
+57,imports,has_attribute,Infrastructure,attribute,,2023-04-20,Is renewable deployment suffering from fossil fuel lock-in?,"""Imported Energy Shortage: Infrastructure""",90
+58,Imported Energy Shortage,decrease,imports,event,,2023-04-20,Is renewable deployment suffering from fossil fuel lock-in?,"""Imported Energy Shortage: Infrastructure""",90
+59,imports,has_attribute,Infrastructure,attribute,,2023-04-20,Is renewable deployment suffering from fossil fuel lock-in?,"""Imported Energy Shortages: Infrastructure""",90
+60,imports,has_attribute,Industry Activity,attribute,,2023-04-14,Feature: Bangladesh's first green fertilizer factory built under China's BRI nears completion,"""Fertilizer Output Meets Demand: Industry Activity"", ""imports: Trade Policy""",96
+61,Fertilizer Output Meets Demand,decrease,imports,event,,2023-04-14,Feature: Bangladesh's first green fertilizer factory built under China's BRI nears completion,"""Fertilizer Output Meets Demand: Industry Activity"", ""imports: Trade Policy""",96
+62,imports,has_attribute,Trade Policy,attribute,,2023-04-14,Feature: Bangladesh's first green fertilizer factory built under China's BRI nears completion,"""Fertilizer Output Meets Demand: Industry Activity"", ""imports: Trade Policy""",96
+63,imports,has_attribute,Government Policy,attribute,,2023-04-13,Businessmen will be happy seeing next budget: Kamal | Business,"""AIT Reduction at Import Stage: Government Policy""",97
+64,imports,has_attribute,Government Policy,attribute,,2023-04-13,Businessmen will be happy seeing next budget: Kamal | Business,"""FBCCI Proposed Tax Cuts: Government Policy""",97
+65,FBCCI Proposed Tax Cuts,increase,imports,event,,2023-04-13,Businessmen will be happy seeing next budget: Kamal | Business,"""FBCCI Proposed Tax Cuts: Government Policy""",97
+66,AIT Reduction at Import Stage,decrease,imports,event,,2023-04-13,Businessmen will be happy seeing next budget: Kamal | Business,"""AIT Reduction at Import Stage: Government Policy""",97
+67,imports,has_attribute,Trade Policy,attribute,,2023-04-09,Review tax on gold industry | Daily Sun |,"""Gold Import Duty Reduction: Trade Policy""",101
+68,Gold Import Duty Reduction,increase,imports,event,,2023-04-09,Review tax on gold industry | Daily Sun |,"""Gold Import Duty Reduction: Trade Policy""",101
+69,Huge Imports,increase,imports,event,,2023-03-21,Essential Commodities now available at stable price in Khulna | District,"""Huge Imports: Trade Policy""",120
+70,imports,has_attribute,Market Dynamics,attribute,,2023-03-21,Essential Commodities now available at stable price in Khulna | District,"""Huge Imports: Market Dynamics""",120
+71,imports,has_attribute,Trade Policy,attribute,,2023-03-21,Essential Commodities now available at stable price in Khulna | District,"""Huge Imports: Trade Policy""",120
+72,imports,has_attribute,Government Policy,attribute,,2023-03-21,Essential Commodities now available at stable price in Khulna | District,"""Government boosts consumer imports: Government Policy""",120
+73,Government boosts consumer imports,increase,imports,event,,2023-03-21,Essential Commodities now available at stable price in Khulna | District,"""Government boosts consumer imports: Government Policy""",120
+74,Huge Imports,increase,imports,event,,2023-03-21,Essential Commodities now available at stable price in Khulna | District,"""Huge Imports: Market Dynamics""",120
+75,Dollar Crisis,decrease,imports,event,,2023-03-11,Bangladesh banks feel squeeze of Moody's outlook downgrade,"""Dollar Crisis: Currency Movement""",130
+76,imports,has_attribute,Currency Movement,attribute,,2023-03-11,Bangladesh banks feel squeeze of Moody's outlook downgrade,"""Dollar Shortage: Currency Movement""",130
+77,Dollar Shortage,decrease,imports,event,,2023-03-11,Bangladesh banks feel squeeze of Moody's outlook downgrade,"""Dollar Shortage: Currency Movement""",130
+78,imports,has_attribute,Currency Movement,attribute,,2023-03-11,Bangladesh banks feel squeeze of Moody's outlook downgrade,"""Dollar Crisis: Currency Movement""",130
+79,imports,has_attribute,Industry Activity,attribute,,2023-03-03,Farmers urged to boost mustard seed production to meet demands | District,"""Boost Domestic Mustard Production: Industry Activity""",138
+80,Boost Domestic Mustard Production,decrease,imports,event,,2023-03-03,Farmers urged to boost mustard seed production to meet demands | District,"""Boost Domestic Mustard Production: Industry Activity""",138
+81,Sugar Import Costs,decrease,imports,event,,2023-02-28,Bangladesh Withdraws Duty On Sugar Import To Stabilise Local Market,"""Sugar Import Costs: Market Dynamics""",141
+82,imports,has_attribute,Market Dynamics,attribute,,2023-02-28,Bangladesh Withdraws Duty On Sugar Import To Stabilise Local Market,"""Sugar Import Costs: Market Dynamics""",141
+83,Sugar Import Duty Withdrawal,increase,imports,event,,2023-02-27,Bangladesh withdraws duty on sugar import to stabilize local market,"""Sugar Import Duty Withdrawal: Trade Policy""",142
+84,Sugar Import Cost Reduction,decrease,imports,event,,2023-02-27,B'desh withdraws duty on sugar import to stabilise local market - Forever NEWS,"""Sugar Import Cost Reduction: Trade Policy""",142
+85,imports,has_attribute,Trade Policy,attribute,,2023-02-27,Bangladesh withdraws duty on sugar import to stabilize local market,"""Sugar Import Duty Withdrawal: Trade Policy""",142
+86,imports,has_attribute,Trade Policy,attribute,,2023-02-27,B'desh withdraws duty on sugar import to stabilise local market - Forever NEWS,"""Sugar Import Cost Reduction: Trade Policy""",142
+87,imports,has_attribute,Trade Policy,attribute,,2023-02-26,NBR withdraws duty on sugar import     | Daily Sun |,"""Withdrawal of Sugar Import Duties: Trade Policy""",143
+88,Sugar Import Duty Cuts,increase,imports,event,,2023-02-26,NBR withdraws duty on sugar import | News Flash,"""Sugar Import Duty Cuts: Trade Policy""",143
+89,imports,has_attribute,Trade Policy,attribute,,2023-02-26,NBR withdraws duty on sugar import | News Flash,"""Sugar Import Duty Cuts: Trade Policy""",143
+90,Withdrawal of Sugar Import Duties,increase,imports,event,,2023-02-26,NBR withdraws duty on sugar import     | Daily Sun |,"""Withdrawal of Sugar Import Duties: Trade Policy""",143
+91,imports,has_attribute,Government Policy,attribute,,2023-02-26,B'desh withdraws duty on sugar import to stabilise local market,"""fresh duty waver: Trade Policy"", ""reduction measures: Government Policy""",143
+92,imports,has_attribute,Trade Policy,attribute,,2023-02-26,B'desh withdraws duty on sugar import to stabilise local market,"""fresh duty waver: Trade Policy"", ""reduction measures: Government Policy""",143
+93,Sugar Import Costs,decrease,imports,event,,2023-02-26,B'desh withdraws duty on sugar import to stabilise local market,"""fresh duty waver: Trade Policy"", ""reduction measures: Government Policy""",143
+94,imports,has_attribute,Currency Movement,attribute,,2023-02-23,Severe dollar crisis hobbles Bangladesh businesses,"""Dollar Shortage: Currency Movement"", ""Import Curbs: Government Policy""",146
+95,Dollar Shortage,decrease,imports,event,,2023-02-23,Severe dollar crisis hobbles Bangladesh businesses,"""Dollar Shortage: Monetary Policy""",146
+96,Dollar Shortage at Banks,decrease,imports,event,,2023-02-23,Severe dollar crisis hobbles Bangladesh businesses - RocketNews,"""Dollar Shortage: Currency Movement""",146
+97,imports,has_attribute,Government Policy,attribute,,2023-02-23,Severe dollar crisis hobbles Bangladesh businesses,"""Import Curbs on Spending: Government Policy""",146
+98,Import Curbs on Spending,decrease,imports,event,,2023-02-23,Severe dollar crisis hobbles Bangladesh businesses,"""Import Curbs on Spending: Government Policy""",146
+99,imports,has_attribute,Currency Movement,attribute,,2023-02-23,Severe dollar crisis hobbles Bangladesh businesses - RocketNews,"""Dollar Shortage: Currency Movement""",146
+100,imports,has_attribute,Government Policy,attribute,,2023-02-23,Severe dollar crisis hobbles Bangladesh businesses,"""Dollar Shortage: Currency Movement"", ""Import Curbs: Government Policy""",146
+101,imports,has_attribute,Monetary Policy,attribute,,2023-02-23,Severe dollar crisis hobbles Bangladesh businesses,"""Dollar Shortage: Monetary Policy""",146
+102,Dollar Shortage and Import Curbs,decrease,imports,event,,2023-02-23,Severe dollar crisis hobbles Bangladesh businesses,"""Dollar Shortage: Currency Movement"", ""Import Curbs: Government Policy""",146
+103,imports,has_attribute,Monetary Policy,attribute,,2023-02-19,"BB committed to provide policy supports to exporters, importers: BB deputy governor | Business","""Extension of Import Payment Terms: Monetary Policy""",150
+104,Extension of Import Payment Terms,increase,imports,event,,2023-02-19,"BB committed to provide policy supports to exporters, importers: BB deputy governor | Business","""Extension of Import Payment Terms: Monetary Policy""",150
+105,imports,has_attribute,Global Shock,attribute,,2023-02-18,Clothing exports from Bangladesh rise as China's share in ready-made garment market declines,"""Shifted Orders from China: Global Shock""",151
+106,Shifted Orders from China,decrease,imports,event,,2023-02-18,Clothing exports from Bangladesh rise as China's share in ready-made garment market declines,"""Shifted Orders from China: Global Shock""",151
+107,Dollar Crisis at Rampal Plant,decrease,imports,event,,2023-02-17,Dollar crisis casts a shadow over operation of Rampal coal-fired power plant,"""Dollar Crisis: Currency Movement""",152
+108,imports,has_attribute,Currency Movement,attribute,,2023-02-17,Dollar crisis casts a shadow over operation of Rampal coal-fired power plant,"""Dollar Crisis: Currency Movement""",152
+109,imports,has_attribute,Industry Activity,attribute,,2023-02-15,World News | India-Bangladesh Joint Venture Power Plant to Resume Production After Month-long Halt | LatestLY,"""Coal Import Assurance: Industry Activity""",154
+110,Coal Import Assurance,increase,imports,event,,2023-02-15,World News | India-Bangladesh Joint Venture Power Plant to Resume Production After Month-long Halt | LatestLY,"""Coal Import Assurance: Industry Activity""",154
+111,imports,has_attribute,Monetary Policy,attribute,,2023-02-13,Businessmen called for government's support to sustain steel industry | Business,"""Dollar Fund Support: Monetary Policy""",156
+112,Dollar Fund Support,increase,imports,event,,2023-02-13,Businessmen called for government's support to sustain steel industry | Business,"""Dollar Fund Support: Monetary Policy""",156
+113,IFC Trade Finance Funding,increase,imports,event,,2023-02-13,"IFC provides $50m to Prime Bank to support trade, forex liquidity  | Business","""IFC Trade Finance Funding: Market Dynamics""",156
+114,imports,has_attribute,Market Dynamics,attribute,,2023-02-13,"IFC provides $50m to Prime Bank to support trade, forex liquidity  | Business","""IFC Trade Finance Funding: Market Dynamics""",156
+115,LNG Import Plans,increase,imports,event,,2023-02-08,Bangladesh to import LNG from spot market,"""LNG Import Plans: Infrastructure""",161
+116,imports,has_attribute,Infrastructure,attribute,,2023-02-08,Bangladesh to import LNG from spot market,"""LNG Import Plans: Infrastructure""",161
+117,imports,has_attribute,Global Shock,attribute,,2023-02-07,"Take note of Bangla crisis, hedge bets","""Russia's Invasion of Ukraine: Global Shock""",162
+118,Russia's Invasion of Ukraine,decrease,imports,event,,2023-02-07,"Take note of Bangla crisis, hedge bets","""Russia's Invasion of Ukraine: Global Shock""",162
+119,Improved Cross-Border Logistics,increase,imports,event,,2023-02-06,"Textile Sourcing Meet, Road show to be held in India in Feb | Business","""Improved Cross-Border Logistics: Infrastructure""",163
+120,imports,has_attribute,Infrastructure,attribute,,2023-02-06,"Textile Sourcing Meet, Road show to be held in India in Feb | Business","""Improved Cross-Border Logistics: Infrastructure""",163
+121,Work Orders Shifted From China,decrease,imports,event,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shifted From China: Market Dynamics""",176
+122,imports,has_attribute,Market Dynamics,attribute,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shifted From China: Market Dynamics""",176
+123,imports,has_attribute,Market Dynamics,attribute,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shift: Market Dynamics""",176
+124,imports,has_attribute,Market Dynamics,attribute,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shift: Market Dynamics""",176
+125,Work Orders Shift to Bangladesh,decrease,imports,event,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shift: Market Dynamics""",176
+126,imports,has_attribute,Market Dynamics,attribute,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shift From China: Market Dynamics""",176
+127,Work Orders Shift From China,decrease,imports,event,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shift From China: Market Dynamics""",176
+128,imports,has_attribute,Market Dynamics,attribute,,2023-01-24,World News | Bangladesh May Overtake China to Be EU's Biggest Apparel Source | LatestLY,"""Work Orders Shift: Market Dynamics""",176
+129,Work Orders Shift to Bangladesh,decrease,imports,event,,2023-01-24,World News | Bangladesh May Overtake China to Be EU's Biggest Apparel Source | LatestLY,"""Work Orders Shift: Market Dynamics""",176
+130,Orders Shift to Bangladesh,decrease,imports,event,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Orders Shift: Market Dynamics""",176
+131,imports,has_attribute,Market Dynamics,attribute,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Orders Shift: Market Dynamics""",176
+132,Work Orders Shift from China,decrease,imports,event,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shift: Market Dynamics""",176
+133,Work Orders Shift to Bangladesh,decrease,imports,event,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shift: Market Dynamics""",176
+134,imports,has_attribute,Market Dynamics,attribute,,2023-01-24,Bangladesh may overtake China to be EU's biggest apparel source,"""Work Orders Shift: Market Dynamics""",176
+135,Reduced LC Margin,increase,imports,event,,2023-01-21,DCCI President urges all to work together in facing changing economic reality | Business,"""Reduced LC Margin: Government Policy""",179
+136,imports,has_attribute,Government Policy,attribute,,2023-01-21,DCCI President urges all to work together in facing changing economic reality | Business,"""Reduced LC Margin: Government Policy""",179
+137,Shortage of Greenbacks,decrease,imports,event,,2023-01-20,"Money or no money, crisis persists","""Shortage of Greenbacks: Currency Movement""",180
+138,Duty-Free Cotton Import Request,increase,imports,event,,2023-01-20,Tipu seeks duty free cotton from USA  | Business,"""Duty-Free Cotton Import Request: Trade Policy""",180
+139,imports,has_attribute,Trade Policy,attribute,,2023-01-20,Tipu seeks duty free cotton from USA  | Business,"""Duty-Free Cotton Import Request: Trade Policy""",180
+140,imports,has_attribute,Currency Movement,attribute,,2023-01-20,"Money or no money, crisis persists","""Shortage of Greenbacks: Currency Movement""",180
+141,imports,has_attribute,Currency Movement,attribute,,2023-01-18,Bangladesh raises gas prices amid fears of a fresh spike in inflation - La Prensa Latina Media,"""Dollar Scarcity: Currency Movement""",182
+142,Dollar Scarcity,decrease,imports,event,,2023-01-18,Bangladesh raises gas prices amid fears of a fresh spike in inflation - La Prensa Latina Media,"""Dollar Scarcity: Currency Movement""",182
+143,imports,has_attribute,Government Policy,attribute,,2023-01-15,3-year roadmap to reduce import dependency of cooking oil: Razzaq | News,"""Three-Year Roadmap: Government Policy""",185
+144,imports,has_attribute,Monetary Policy,attribute,,2023-01-15,BB unveils 'cautiously accommodative' MPS     | Daily Sun |,"""Discouraging Non-Essential Imports: Monetary Policy""",185
+145,Discouraging Non-Essential Imports,decrease,imports,event,,2023-01-15,BB unveils 'cautiously accommodative' MPS     | Daily Sun |,"""Discouraging Non-Essential Imports: Monetary Policy""",185
+146,Three-Year Roadmap,decrease,imports,event,,2023-01-15,3-year roadmap to reduce import dependency of cooking oil: Razzaq | News,"""Three-Year Roadmap: Government Policy""",185
+147,imports,has_attribute,Market Dynamics,attribute,,2023-01-10,Overcoming looming economic challenges in 2023,"""High Import Growth: Market Dynamics""",190
+148,High Import Growth,increase,imports,event,,2023-01-10,Overcoming looming economic challenges in 2023,"""High Import Growth: Market Dynamics""",190
+149,balance_of_trade,has_attribute,Trade Policy,attribute,,2023-01-09,"Govt focusing on signing PTAs, FTAs considering LDC graduation: Tipu | Business","""LDC Graduation Tariff Loss: Trade Policy""",191
+150,LDC Graduation Tariff Loss,deteriorate,balance_of_trade,event,,2023-01-09,"Govt focusing on signing PTAs, FTAs considering LDC graduation: Tipu | Business","""LDC Graduation Tariff Loss: Trade Policy""",191
+151,Imported Coal Costs,increase,imports,event,,2023-01-05,Adani Godda Power Plant: Bangladesh likely to get 750MW by March,"""Imported Coal Costs: Global Shock""",195
+152,imports,has_attribute,Global Shock,attribute,,2023-01-05,Adani Godda Power Plant: Bangladesh likely to get 750MW by March,"""Imported Coal Costs: Global Shock""",195
+153,Currency Crisis and Taka Devaluation,decrease,imports,event,,2023-01-02,"DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023","""Currency Crisis: Monetary Policy"", ""Taka Devaluation: Currency Movement""",198
+154,imports,has_attribute,Currency Movement,attribute,,2023-01-02,"DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023","""Currency Crisis: Monetary Policy"", ""Taka Devaluation: Currency Movement""",198
+155,imports,has_attribute,Monetary Policy,attribute,,2023-01-02,"DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023","""Foreign Currency Crisis: Monetary Policy""",198
+156,Foreign Currency Crisis,decrease,imports,event,,2023-01-02,"DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023","""Foreign Currency Crisis: Monetary Policy""",198
+157,imports,has_attribute,Monetary Policy,attribute,,2023-01-02,"DCCI pushes to ensure smooth energy supply, improve ease of doing business in 2023","""Currency Crisis: Monetary Policy"", ""Taka Devaluation: Currency Movement""",198
+158,Energy Shortage,decrease,imports,event,,2023-01-01,Ensure stable energy prices for economic recovery,"""Energy Shortage: Infrastructure""",199
+159,imports,has_attribute,Infrastructure,attribute,,2023-01-01,Ensure stable energy prices for economic recovery,"""Energy Shortage: Infrastructure""",199
+160,imports,has_attribute,Currency Movement,attribute,,2023-01-01,DCCI for PPP to manage sustainable economic recovery | Business,"""Foreign Currency Crisis: Monetary Policy"", ""Taka Devaluation: Currency Movement""",199
+161,Foreign Currency Crisis and Taka Devaluation,decrease,imports,event,,2023-01-01,DCCI for PPP to manage sustainable economic recovery | Business,"""Foreign Currency Crisis: Monetary Policy"", ""Taka Devaluation: Currency Movement""",199
+162,imports,has_attribute,Monetary Policy,attribute,,2023-01-01,DCCI for PPP to manage sustainable economic recovery | Business,"""Foreign Currency Crisis: Monetary Policy"", ""Taka Devaluation: Currency Movement""",199
+163,imports,has_attribute,Monetary Policy,attribute,,2023-01-01,DCCI for PPP to manage sustainable economic recovery | Business,"""Foreign Currency Crisis: Monetary Policy""",199
+164,Foreign Currency Crisis,decrease,imports,event,,2023-01-01,DCCI for PPP to manage sustainable economic recovery | Business,"""Foreign Currency Crisis: Monetary Policy""",199

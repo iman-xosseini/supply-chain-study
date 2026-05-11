@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-04-14",
+    "url": "https://asianews.network/besides-forex-reserves-nature-needs-replenishing-too/",
+    "body_preview": "DHAKA - The recent foreign exchange reserve crisis in Bangladesh has the best of experts worried. Besides maintaining the financial stability of the country, forex reserves also ensure that the country has enough moolah to import food in case of a sudden crisis - including climate-related ones, to which Bangladesh is quite prone - and buy emergency medical supplies or arrange for fuel, as seen in recent times. But what does a country do to fight an unpredictable climate crisis? What other ways d"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "foreign exchange reserve crisis",
+      "edge_label": "threatens import capacity",
+      "evidence_quote": "forex reserves also ensure that the country has enough moolah to import food in case of a sudden crisis",
+      "scope_justification": "The article discusses national foreign exchange reserves ensuring the country's ability to import food and emergency supplies, which matches the country-wide 'imports' scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "forex reserves also ensure that the country has enough moolah to import food in case of a sudden crisis",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that forex reserves 'ensure that the country has enough moolah to import food...and buy emergency medical supplies,' and it frames a 'foreign exchange reserve crisis' as worrying — together this strongly implies that a reserves crisis would threaten the country's import capacity at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-14",
+      "imports",
+      "threatens import capacity",
+      "foreign exchange reserve crisis"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

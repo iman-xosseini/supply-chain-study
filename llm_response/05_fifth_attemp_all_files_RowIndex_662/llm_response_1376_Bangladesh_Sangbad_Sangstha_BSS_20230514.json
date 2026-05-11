@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-14",
+    "url": "https://www.bssnews.net/business/125393",
+    "body_preview": "DHAKA, May 14, 2023 (BSS) - The country's renowned economist and executive director of Policy Research Institute (PRI), Dr Ahsan H Mansur, today said strong political commitment and fundamental reforms of the National Board of Revenue (NBR) could improve the tax-GDP ratio in Bangladesh.\n\nDr Mansur said this while addressing the PRI-CDRM pre-budget discussion held today at the PRI Conference Room in the capital.\n\nHe said over Taka 3 lakh crore of budgetary expenditure went for loans' interest pay"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "BB spent reserves",
+      "edge_label": "controls exchange rate",
+      "evidence_quote": "over the last 9 months, the Bangladesh Bank (BB) spent around $12 billion from reserves, despite cutting imports by around 33 percent. \"This is happening to control the exchange rate.\"",
+      "scope_justification": "The quote explicitly links a national central-bank action (reserve spending) to controlling the exchange rate, which matches the country-level exchange-rate volatility described by 'currency_log_return'."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "controls exchange rate",
+      "BB spent reserves"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

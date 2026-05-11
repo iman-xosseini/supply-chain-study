@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "LatestLY",
+    "date": "2023-05-16",
+    "url": "https://www.latestly.com/agency-news/world-news-bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report-5130517.html",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Taka depreciation after invasion",
+      "edge_label": "causes currency depreciation",
+      "evidence_quote": "Taka, the Bangladeshi currency, has lost nearly 25 per cent of its value against the dollar since Russia invaded Ukraine earlier this year",
+      "scope_justification": "The article describes a national-level loss in the value of the Taka versus the dollar, which is an exchange-rate movement matching the feature's country-level currency volatility scope."
+    },
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Moving to Yuan lowers exports",
+      "edge_label": "reduces export revenue",
+      "evidence_quote": "Moving to the Yuan for international trade will hurt Bangladesh's remittances from abroad and lower export revenue as well",
+      "scope_justification": "The article explicitly states a policy change would lower Bangladesh's export revenue, directly affecting the country-wide exports component of the trade balance."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "causes currency depreciation",
+      "Taka depreciation after invasion"
+    ],
+    [
+      "balance_of_trade",
+      "reduces export revenue",
+      "Moving to Yuan lowers exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

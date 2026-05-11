@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "english.news.cn",
+    "date": "2023-02-08",
+    "url": "https://english.news.cn/asiapacific/20230208/c156ad1f7b2340d68e4f5f7427968ea2/c.html",
+    "body_preview": "DHAKA, Feb. 8 (Xinhua) -- Bangladeshi Prime Minister Sheikh Hasina said on Wednesday that the South Asian country will import liquefied natural gas (LNG) from spot market to meet the demand of gas for power generation.\n\n\"The process of importing LNG from the spot market has already been adopted to meet the demand of gas,\" she said, while responding to a question from a lawmaker in the parliament.\n\nHasina said that in 2008 the daily gas production capacity in Bangladesh was 1,744 million cubic fe"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Government plans LNG imports",
+      "edge_label": "imports LNG to meet demand",
+      "evidence_quote": "the South Asian country will import liquefied natural gas (LNG) from spot market to meet the demand of gas for power generation",
+      "scope_justification": "The article explicitly discusses country-level importing of LNG, which fits the imports definition as goods brought into the country.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "the South Asian country will import liquefied natural gas (LNG) from spot market to meet the demand of gas for power generation.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted statement appears verbatim in the article. The article explicitly says Bangladesh will import LNG from the spot market to meet the demand for gas for power generation, which states a direct cause-and-effect relationship. The scope is country-level, matching the claimed imports feature."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-08",
+      "imports",
+      "imports LNG to meet demand",
+      "Government plans LNG imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

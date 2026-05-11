@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-01",
+    "url": "https://www.bssnews.net/news/top-news/133807",
+    "body_preview": "DHAKA, June 30, 2023 (BSS) - Awami League (AL) General Secretary and Road Transport and Bridges Minister Obaidul Quader today said BNP's politics of revenge has crossed the limit of all political norms.\n\nIn response to the statement of BNP leaders that 'This Eid did not bring joy to the common people', Quader said: \"BNP's politics of avenge has crossed all limits of political norms. Such unrealistic statement (of BNP leaders) is nothing but an expression of their inner jealousy (Ontor-Jala).\"\n\nT"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "record bridge vehicle crossings",
+      "edge_label": "increases vehicle crossings",
+      "evidence_quote": "this year a record number of vehicles crossed over the Padma Bridge and Bangabandhu Setu as huge people left Dhaka city",
+      "scope_justification": "The article reports a national-level increase in vehicle movement across major bridges, which is directly about transport/logistics flow and thus matches the Delivery feature's scope of logistics performance."
+    },
+    {
+      "feature": "inventory_proxy",
+      "event_summary": "strengthened market monitoring",
+      "edge_label": "maintains food-supply",
+      "evidence_quote": "the government has strengthened the market monitoring system to maintain stable food-supply and keep food-prices affordable",
+      "scope_justification": "The statement describes a government action aimed at maintaining stable food-supply nationwide, which pertains to aggregate availability/stock levels captured by the inventory_proxy definition."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "increases vehicle crossings",
+      "record bridge vehicle crossings"
+    ],
+    [
+      "inventory_proxy",
+      "maintains food-supply",
+      "strengthened market monitoring"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

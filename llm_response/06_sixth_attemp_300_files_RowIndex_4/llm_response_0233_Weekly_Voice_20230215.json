@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Weekly Voice",
+    "date": "2023-02-15",
+    "url": "https://weeklyvoice.com/indo-bangla-joint-venture-rampal-plant-to-resume-power-production-from-wednesday/",
+    "body_preview": "Dhaka, Feb 15 (VOICE) Rampal power plant, a joint venture of Indian state-owned NTPC and Bangladesh Power Development Board (BPDB), will resume its operations from Wednesday.\n\nUnit-1 of the plant, having 660 MW capacity, was forced to shut down on January 14 due to shortage of coal. The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.\n\nAfter a lot of persuasion at the policy level, LC-opening was allowed for importing coal and "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LC allowed coal import",
+      "edge_label": "enables imports",
+      "evidence_quote": "LC-opening was allowed for importing coal and the supplier sent a consignment of 30,000 metric tonnes",
+      "scope_justification": "The article directly links Letter of Credit opening to the arrival of a 30,000 MT coal consignment, matching the feature's focus on import volumes driven by LC availability."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "enables imports",
+      "LC allowed coal import"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

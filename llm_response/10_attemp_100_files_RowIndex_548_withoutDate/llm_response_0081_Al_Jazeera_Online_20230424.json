@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Al Jazeera Online",
+    "date": "2023-04-24",
+    "url": "https://www.aljazeera.com/news/2023/4/24/ten-years-of-rana-plaza-how-safe-is-bangladesh-garment-industry",
+    "body_preview": "Dhaka, Bangladesh - It has been 10 years but the trauma of gasping for breath under debris for more than 10 hours still haunts Rehnuma Akter.\n\nOn the fateful day of April 24, 2013, Akter went to work at a garment factory in Bangladesh's Savar city outside capital Dhaka that produced readymade clothes for a British fashion brand.\n\nAn hour after her shift started, Rana Plaza, the nine-storey building that housed her garment factory along with four others, collapsed into a heap of bricks, machines "
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "safety reforms increase exports",
+      "edge_label": "increases exports",
+      "evidence_quote": "The RMG sector witnessed a massive growth as we have brought an ethical and safe manufacturing revolution in the past few years.",
+      "scope_justification": "The article explicitly ties safety-driven reforms to national RMG growth, and cites country-level export growth (from $19bn to $34bn), so the effect pertains to national exports component of balance_of_trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases exports",
+      "safety reforms increase exports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

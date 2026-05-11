@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Social News XYZ",
+    "date": "2023-02-15",
+    "url": "https://www.socialnews.xyz/2023/02/14/indo-bangla-joint-venture-rampal-plant-to-resume-power-production-from-wednesday/",
+    "body_preview": "Dhaka, Feb 15 (SocialNews.XYZ) Rampal power plant, a joint venture of Indian state-owned NTPC and Bangladesh Power Development Board (BPDB), will resume its operations from Wednesday.\n\nUnit-1 of the plant, having 660 MW capacity, was forced to shut down on January 14 due to shortage of coal. The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.\n\nAfter a lot of persuasion at the policy level, LC-opening was allowed for importing "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "LCs blocked for coal",
+      "edge_label": "prevents LC opening",
+      "evidence_quote": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+      "scope_justification": "The article explicitly links a 'dollar crisis' (an exchange-rate/foreign-currency problem) to an inability to open LCs for importing coal, which falls within exchange-rate impacts on imports described by the feature.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact sentence stating the authorities 'were unable to open any letter of credit (LC) to import coal due to the dollar crisis,' which explicitly asserts a causal link between the dollar crisis (a macro foreign-currency problem) and blocked LCs for imports, matching the feature's scope of exchange-rate impacts on imports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-15",
+      "currency_log_return",
+      "prevents LC opening",
+      "LCs blocked for coal"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

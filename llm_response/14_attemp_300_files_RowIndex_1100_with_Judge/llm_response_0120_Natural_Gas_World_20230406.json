@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Natural Gas World",
+    "date": "2023-04-06",
+    "url": "https://www.naturalgasworld.com/bangladeshs-energy-plan-faces-gas-dilemma-as-fuel-crisis-bites-104564",
+    "body_preview": "DHAKA, April 6 (Thomson Reuters Foundation) - Jobayer Ahmed's textile business on the outskirts of Dhaka is going through a rough patch with the energy crisis in Bangladesh.\n\nProduction costs at Shah Fatehullah Textile Mills Limited - which employs about 2,200 workers - have risen by 40% in the last two years, Ahmed said, mainly due to the gas price for the company's in-house power plant having nearly doubled in recent months.\n\nDespite this, \"we are still not getting an uninterrupted gas supply,"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "draft plan accelerates imports",
+      "edge_label": "accelerates energy imports",
+      "evidence_quote": "The proposal seeks to accelerate energy imports, as domestic gas production is not expected to rise rapidly.",
+      "scope_justification": "The quote refers to a national draft energy plan that seeks to 'accelerate energy imports', which directly addresses country-level import volumes of energy goods, matching the feature's scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The proposal seeks to accelerate energy imports, as domestic gas production is not expected to rise rapidly.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears verbatim and explicitly states that the draft plan seeks to accelerate energy imports due to slow domestic gas production. This is discussed at the national (Bangladesh) level, matching the scope."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "domestic fuel insufficiency",
+      "edge_label": "necessitates LNG imports",
+      "evidence_quote": "domestic fuel sources are insufficient to meet Bangladesh's needs for power, transport and residential use, making more LNG imports necessary.",
+      "scope_justification": "The statement attributes Bangladesh's national fuel shortfall as causing the need for 'more LNG imports', explicitly linking domestic insufficiency to country-level import volume of LNG, which falls under the feature's scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "domestic fuel sources are insufficient to meet Bangladesh's needs for power, transport and residential use, making more LNG imports necessary.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article includes the exact quote stating that domestic fuel insufficiency makes more LNG imports necessary, explicitly establishing causality at the national (Bangladesh) level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-06",
+      "imports",
+      "accelerates energy imports",
+      "draft plan accelerates imports"
+    ],
+    [
+      "2023-04-06",
+      "imports",
+      "necessitates LNG imports",
+      "domestic fuel insufficiency"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

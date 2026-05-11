@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-28",
+    "url": "https://www.bssnews.net/business/112993",
+    "body_preview": "DHAKA, Feb 28, 2023 (BSS) - Metropolitan Chamber of Commerce and Industry (MCCI) has observed that Bangladesh's economy has been showing some signs of improvement.\n\nIn a report titled 'Review of Economic Situation in Bangladesh October - December 2022 (Q2 of FY23)', MCCI today mentioned that Bangladesh's robust economic recovery from the COVID-19 pandemic has been interrupted by the war in Russia-Ukraine, resultant supply-chain disruptions, global oil-and food-price spikes, slowdown in external "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Russia-Ukraine war",
+      "edge_label": "causes depreciation",
+      "evidence_quote": "Russia-Ukraine, resultant supply-chain disruptions, global oil-and food-price spikes, slowdown in external demand, weak remittance inflow, rise in inflation, negative current account balance, depreciation of the Taka",
+      "scope_justification": "The article explicitly attributes 'depreciation of the Taka' to effects from the Russia-Ukraine war, which matches the feature's scope describing USD/BDT exchange-rate movement.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Russia-Ukraine, resultant supply-chain disruptions, global oil-and food-price spikes, slowdown in external demand, weak remittance inflow, rise in inflation, negative current account balance, depreciation of the Taka",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article text explicitly lists the Russia-Ukraine war and resultant disruptions as interrupting Bangladesh's recovery and then enumerates consequences including 'depreciation of the Taka,' directly linking the war/effects to currency depreciation at the country level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-28",
+      "currency_log_return",
+      "causes depreciation",
+      "Russia-Ukraine war"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

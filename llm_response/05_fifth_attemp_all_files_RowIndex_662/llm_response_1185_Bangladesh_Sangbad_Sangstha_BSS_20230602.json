@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-02",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128791",
+    "body_preview": "DHAKA, June 2, 2023 (BSS) - Bangladesh Bank Governor Abdur Rouf Talukder today ruled out any possibility of creating inflation in the country from the target of government borrowings including from bank borrowings set in the proposed budget for the next fiscal year (FY24).\n\n\"Currently, the inflation in the country is not because of the supply side, rather it is absolutely imported inflation,\" he said.\n\nThe central bank governor said this while replying to a question during the post budget press "
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "policy support extended",
+      "edge_label": "supports improvement",
+      "evidence_quote": "some 3 to 4 major policy issues were solved over the last one year while the central bank has extended necessary policy support in this regard.",
+      "scope_justification": "The quote explicitly describes measures taken to improve the stock market at the national level, matching the feature's scope of overall equity market performance."
+    }
+  ],
+  "triplets": [
+    [
+      "stock_market_close",
+      "supports improvement",
+      "policy support extended"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

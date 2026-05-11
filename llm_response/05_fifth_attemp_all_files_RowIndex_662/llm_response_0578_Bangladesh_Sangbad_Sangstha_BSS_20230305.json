@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-05",
+    "url": "https://www.bssnews.net/agriculture-news/113868",
+    "body_preview": "RANGPUR, March 5, 2023 (BSS) - Experts at a farmers' field day function have stressed on expanding cultivation of new varieties of nutritious potatoes to enhance production and export for earning more foreign exchequer and benefiting farmers.\n\nThey viewed this at the event titled 'Multi-location trials of new varieties of potatoes imported by BADC' held at exhibition plots in village Rashidpur of Mithapukur upazila here on Saturday.\n\nOffice of the Deputy Director (Tuber Crops) of Bangladesh Agri"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "cultivation increases exports",
+      "edge_label": "increases foreign exchange earnings",
+      "evidence_quote": "the nation can earn huge foreign exchange by exporting the surplus produce",
+      "scope_justification": "The article explicitly states that exporting surplus produce will earn the nation foreign exchange, which addresses country-level export earnings (the export side of the balance of trade)."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases foreign exchange earnings",
+      "cultivation increases exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-01-18",
+    "url": "https://www.laprensalatina.com/bangladesh-raises-gas-prices-amid-fears-of-a-fresh-spike-in-inflation/",
+    "body_preview": "Dhaka, Jan 18 (EFE).- Bangladesh increased the retail price for piped gas for industrial use and power production by up to 179 percent on Wednesday, raising fears of more inflation.\n\nThe energy ministry said from Feb.1, power producers would have to pay Taka 14 (0.13 cents) for a cubic meter of gas, up from the previous price of Taka 5.02 (0.05 cents).\n\nThe gas price for captive power producers and all industrial units was set at Taka 30 (0.29 cents) per cubic meter, up 88 percent to 155 percent"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Extra LNG import needs dollars",
+      "edge_label": "constrains LNG importing",
+      "evidence_quote": "“to import extra LNG, it needs dollars, which are scarce at the moment.”",
+      "scope_justification": "The article explicitly discusses importing extra LNG, which is a form of goods brought in, and says scarce dollars constrain that importing; this matches the imports feature’s scope of import volume driven by LC availability and raw material needs.",
+      "verification": {
+        "quote_similarity": 0.986,
+        "quote_best_match": "to import extra LNG, it needs dollars, which are scarce at the moment.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says, \"to import extra LNG, it needs dollars, which are scarce at the moment,\" which directly supports the quoted evidence. This clearly states a cause-and-effect constraint on importing extra LNG at the country policy level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-18",
+      "imports",
+      "constrains LNG importing",
+      "Extra LNG import needs dollars"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

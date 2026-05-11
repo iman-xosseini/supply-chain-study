@@ -1,0 +1,44 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-06",
+    "url": "https://www.bssnews.net/business/109295",
+    "body_preview": "DHAKA, Feb 6, 2023 (BSS) - Bangladesh Garment Manufacturers and Exporters Association (BGMEA) and SOWTEX along with Confederation of Indian Textile Industries (CITI) have planned two Textile Sourcing Meets'23 and Road Show in India from February 9 to 12.\n\nThe event will be led by BGMEA President Faruque Hassan and Vice President Shahidullah Azim along with a team of delegates from Bangladesh RMG Industries.\n\nThe BGMEA team is going for close interaction with top Indian Textile Manufacturers in a"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Textile sourcing roadshow",
+      "edge_label": "increases imports",
+      "evidence_quote": "can contribute $15 billion of raw material support from India in the next 3-5 years.",
+      "scope_justification": "The article explicitly projects a $15 billion raw-material contribution from India to Bangladesh over 3-5 years, which is an aggregate, country-level import amount matching the 'imports' scope."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "Opening land ports",
+      "edge_label": "facilitates imports",
+      "evidence_quote": "open up additional land ports and ease the congestion in Petrapole-Benapole border and better connectivity via train for smooth flow of raw materials from India to Bangladesh.",
+      "scope_justification": "The article directly links opening land ports and improved train connectivity to a 'smooth flow of raw materials from India to Bangladesh,' describing country-level import flows consistent with the 'imports' definition."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-06",
+      "imports",
+      "increases imports",
+      "Textile sourcing roadshow"
+    ],
+    [
+      "2023-02-06",
+      "imports",
+      "facilitates imports",
+      "Opening land ports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

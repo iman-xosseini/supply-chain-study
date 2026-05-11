@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-06-14",
+    "url": "https://asianews.network/power-crisis-perils-of-pursuing-the-old-dangerous-path/",
+    "body_preview": "DHAKA - Bangladesh has been experiencing unprecedented load-shedding for more than two weeks now, and the scale of the current crisis certainly demands an answer from the power sector officials. People have been facing 2,000-2,500MW of load-shedding throughout the day. It is expected to get even worse with the Payra Power Plant shutting down last week. Routine excuses for failure from the power ministry cite the global fuel crisis as well as the dollar crunch, which has made it difficult to open"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Dollar crunch hinders imports",
+      "edge_label": "hinders fuel imports",
+      "evidence_quote": "the dollar crunch, which has made it difficult to open letters of credit (LCs) to import fuel and coal.",
+      "scope_justification": "The article explicitly links a national 'dollar crunch' (USD/BDT issue) to difficulty importing fuel and coal, matching the feature's country-level exchange-rate impact on imports.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the dollar crunch, which has made it difficult to open letters of credit (LCs) to import fuel and coal.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states verbatim that the 'dollar crunch ... has made it difficult to open letters of credit (LCs) to import fuel and coal,' which directly asserts a causal link at the national (Bangladesh) level between the dollar crisis and hindered fuel/coal imports."
+      }
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Energy sector aggravates dollar",
+      "edge_label": "aggravates dollar crisis",
+      "evidence_quote": "energy and power sectors becoming a huge burden on the economy and aggravating the dollar crisis.",
+      "scope_justification": "The article states at the national level that the energy and power sectors' burden is 'aggravating the dollar crisis', directly addressing USD/BDT conditions consistent with the feature's scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "energy and power sectors becoming a huge burden on the economy and aggravating the dollar crisis.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating that the energy and power sectors are 'aggravating the dollar crisis,' which explicitly asserts a cause-and-effect relationship at the national (Bangladesh) level regarding the currency/dollar situation."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-14",
+      "currency_log_return",
+      "hinders fuel imports",
+      "Dollar crunch hinders imports"
+    ],
+    [
+      "2023-06-14",
+      "currency_log_return",
+      "aggravates dollar crisis",
+      "Energy sector aggravates dollar"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

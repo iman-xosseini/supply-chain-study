@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-15",
+    "url": "https://www.bssnews.net/news-flash/105330",
+    "body_preview": "DHAKA, Jan 15, 2023 (BSS) - Bangladesh Bank (BB) today announced 'cautiously accommodative' Monetary Policy Statement (MPS) for the second half of the current fiscal year 2022-23 (H2FY23).\n\n\"BB's monetary and credit programs for H2FY23 will pursue a cautiously accommodative policy stance to contain inflationary and exchange rate pressures, support desired economic growth, ensuring the necessary flow of funds to the economy's productive and employment generating activities,\" said BB Governor Abdu"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "cautiously accommodative policy stance",
+      "edge_label": "contains exchange-rate pressure",
+      "evidence_quote": "pursue a cautiously accommodative policy stance to contain inflationary and exchange rate pressures",
+      "scope_justification": "The article explicitly states the central bank's H2FY23 policy will 'contain ... exchange rate pressures', addressing country-level exchange-rate volatility consistent with the feature's scope."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dissuade non-essential imports",
+      "edge_label": "reduces exchange-rate pressure",
+      "evidence_quote": "dissuade imports of non-essential commodities to reduce the exchange rate pressure",
+      "scope_justification": "The article links discouraging non-essential imports directly to reducing 'exchange rate pressure', which speaks to aggregate exchange-rate dynamics as defined by the feature."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "contains exchange-rate pressure",
+      "cautiously accommodative policy stance"
+    ],
+    [
+      "currency_log_return",
+      "reduces exchange-rate pressure",
+      "dissuade non-essential imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

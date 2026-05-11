@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-16",
+    "url": "https://www.bssnews.net/agriculture-news/110970",
+    "body_preview": "RAJSHAHI, Feb 16, 2023 (BSS) - Agricultural scientists and researchers\n\nunequivocally called for boosting the production of citrus fruits after\n\nfarming expansion and promoting of those through motivating the grassroots\n\nfarmers to meet the gradually mounting demands.\n\nPresent government under the prudent and farsighted leadership of Prime\n\nMinister Sheikh Hasina has taken time-fitting steps to boost the citrus fruit\n\nproduction in Rajshahi division, including its vast Brind tract, as its soil\n\n"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "citrus cultivation expansion",
+      "edge_label": "increases exports",
+      "evidence_quote": "to meet the Vitamin C demand among the population as well as to export them abroad.",
+      "scope_justification": "The article explicitly states the project aims to cultivate citrus 'to export them abroad', which is a national-level export activity falling within the balance_of_trade definition."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases exports",
+      "citrus cultivation expansion"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

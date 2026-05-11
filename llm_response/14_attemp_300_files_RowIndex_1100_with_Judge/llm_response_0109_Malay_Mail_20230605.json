@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Malay Mail",
+    "date": "2023-06-05",
+    "url": "https://www.malaymail.com/news/money/2023/06/05/cash-strapped-bangladesh-shuts-power-plant-as-heatwave-hits/72714",
+    "body_preview": "DHAKA, June 5 -- Cash-strapped Bangladesh shut its biggest power plant today because it was unable to afford the coal to fuel it, as a sweltering heatwave creates surging electricity demand.\n\nThe 1,320-megawatt government-run Payra Power Plant in southern Bangladesh had already slashed production last month due to fuel shortages, but it was forced to go a step further today, manager Shah Abdul Mawla told AFP.\n\n\"Due to the coal shortage, the plant came to a complete shutdown at 12.15pm today,\" Ma"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka depreciation raises import costs",
+      "edge_label": "drives up import costs",
+      "evidence_quote": "\"The Bangladeshi taka depreciated about 25 per cent against the US dollar last year, driving up the cost of fuel imports and power utilities.\"",
+      "scope_justification": "The article directly links a roughly 25% national currency depreciation to higher fuel import costs, matching the feature's focus on exchange-rate movements affecting import costs.",
+      "verification": {
+        "quote_similarity": 0.993,
+        "quote_best_match": "The Bangladeshi taka depreciated about 25 per cent against the US dollar last year, driving up the cost of fuel imports and power utilities.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that the Bangladeshi taka depreciated about 25% last year, driving up the cost of fuel imports and power utilities, at a national level. This directly supports the causal link between currency depreciation and increased import costs."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-05",
+      "currency_log_return",
+      "drives up import costs",
+      "taka depreciation raises import costs"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

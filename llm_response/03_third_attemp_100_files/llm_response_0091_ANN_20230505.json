@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-05-05",
+    "url": "https://asianews.network/no-let-up-in-price-hike-in-bangladesh/",
+    "body_preview": "DHAKA - When people are already struggling to cope with high prices of daily essentials, a fresh hike in the prices of soybean oil, sugar, onions, and potatoes has dealt them a further blow.\n\nThis will only force them to dig deeper into their pockets at a time when inflation is close to double digits.\n\nCrude soybean oil refiners on Wednesday raised the price of one-litre bottled soybean oil by Tk 12 to Tk 199 while the price of loose soybean oil was increased by Tk 9 to Tk 176 a litre. A consume"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "soybean oil price hike",
+      "edge_label": "raises price",
+      "evidence_quote": "Bangladesh Vegetable Oil Refiners' and Vanaspati Manufacturers' Association hiked the prices after consulting with the commerce ministry and the Bangladesh Trade and Tariff Commission.",
+      "scope_justification": "The sentence explicitly attributes a decision by the vegetable-oil refiners to hike prices, which directly affects the specific product (soybean oil) discussed earlier in the article."
+    },
+    {
+      "feature": "Sales_lag_7",
+      "event_summary": "reduced dessert consumption",
+      "edge_label": "reduces weekly sales",
+      "evidence_quote": "they have already cut consumption of desserts like payesh and shemai because of the high prices of sugar.",
+      "scope_justification": "The quote explicitly says consumers cut weekly consumption of sugar-based desserts due to high sugar prices, directly affecting weekly sales performance consistent with Sales_lag_7's weekly scope."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "raises price",
+      "soybean oil price hike"
+    ],
+    [
+      "Sales_lag_7",
+      "reduces weekly sales",
+      "reduced dessert consumption"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-04",
+    "url": "https://www.bssnews.net/news-flash/103425",
+    "body_preview": "DHAKA, Jan 4, 2023 (BSS) - Prime Minister Sheikh Hasina today called upon the expatriate Bangladeshis to send remittance through the banking channels instead of hundi and make investments in Bangladesh.\n\n\"I request you all (expatriates) - please don't send remittances through hundi and take steps to send those directly to the banks,\" she said as expatriate Awami League leaders from various countries, including the USA and the UK, met her at her office here.\n\nUrging the expatriate leaders to make"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "purchasing food internationally",
+      "edge_label": "increases imports",
+      "evidence_quote": "So, we're purchasing food from anywhere in the world, spending whatever money is required.",
+      "scope_justification": "The quote states the government is buying food 'from anywhere in the world' at the national level, which corresponds to country-wide imports of goods as defined."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-04",
+      "imports",
+      "increases imports",
+      "purchasing food internationally"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

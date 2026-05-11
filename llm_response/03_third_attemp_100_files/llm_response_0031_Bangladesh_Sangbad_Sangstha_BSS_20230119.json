@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-19",
+    "url": "https://www.bssnews.net/business/106147",
+    "body_preview": "DHAKA, Jan 19, 2023 (BSS) - Foreign minister Dr AK Abdul Momen today said he directed all the envoys saying abroad to intensify their efforts to promote trade of Bangladesh and investment in their respective host countries.\n\n\"I have directed officers in the (foreign) ministry to redouble our efforts to promote Bangladesh's trade and investment,\" he said while speaking at Bangladesh Business Summit and Networking Luncheon organized by FBCCI at a city hotel.\n\nThe minister said the government is wo"
+  },
+  "llm_connections": [
+    {
+      "feature": "Production",
+      "event_summary": "Government stabilizes production ecosystems",
+      "edge_label": "stabilizes production",
+      "evidence_quote": "government is working with its best possible calculations to stabilize our production ecosystems",
+      "scope_justification": "The article explicitly states the government is working to 'stabilize our production ecosystems', which directly pertains to stabilizing manufacturing production processes within the 'Production' feature's scope."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "Summit attempts to restart supply chain",
+      "edge_label": "attempts to restart supply chain",
+      "evidence_quote": "a desperate attempt to restart the global economy and supply chain",
+      "scope_justification": "The article characterizes the business summit as 'a desperate attempt to restart... the global ... supply chain', which explicitly addresses logistics and supply-chain performance covered by the 'Delivery' feature."
+    }
+  ],
+  "triplets": [
+    [
+      "Production",
+      "stabilizes production",
+      "Government stabilizes production ecosystems"
+    ],
+    [
+      "Delivery",
+      "attempts to restart supply chain",
+      "Summit attempts to restart supply chain"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,44 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-21",
+    "url": "https://www.bssnews.net/district/116749",
+    "body_preview": "KHULNA, March 21, 2023 (BSS)-The price of the essentials commodities has been asked to keep at tolerable level during the upcoming holy Ramadan, as sufficient food grains and essential commodities considering the holy month, are quite available in the market now, speakers at a view exchange meeting at deputy commissioner's office here today said.\n\nWith Khulna deputy commissioner (DC) Khondokar Yasir Arefin in the chair, representatives of Khulna Chamber of Commerce and Industry (KCCI), President"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Government increases consumer imports",
+      "edge_label": "increases imports",
+      "evidence_quote": "The Government has taken necessary steps for increasing the imports of consumer goods to stabilize the market",
+      "scope_justification": "The sentence explicitly states increasing 'the imports of consumer goods', which matches the feature's country‑wide volume of goods brought in."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "Opened LCs bring imports",
+      "edge_label": "brings imports to market",
+      "evidence_quote": "essential products against LCs opened recently have already come to the market",
+      "scope_justification": "The quote links letters of credit being opened to products arriving in the market, directly matching the feature's LC‑driven imports volume."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-21",
+      "imports",
+      "increases imports",
+      "Government increases consumer imports"
+    ],
+    [
+      "2023-03-21",
+      "imports",
+      "brings imports to market",
+      "Opened LCs bring imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

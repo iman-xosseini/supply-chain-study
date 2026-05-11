@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-28",
+    "url": "https://www.bssnews.net/business/112993",
+    "body_preview": "DHAKA, Feb 28, 2023 (BSS) - Metropolitan Chamber of Commerce and Industry (MCCI) has observed that Bangladesh's economy has been showing some signs of improvement.\n\nIn a report titled 'Review of Economic Situation in Bangladesh October - December 2022 (Q2 of FY23)', MCCI today mentioned that Bangladesh's robust economic recovery from the COVID-19 pandemic has been interrupted by the war in Russia-Ukraine, resultant supply-chain disruptions, global oil-and food-price spikes, slowdown in external "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "import payments decreased",
+      "edge_label": "reduces imports",
+      "evidence_quote": "The import payments and inward remittances, however, decreased, which has multiplier effects on other economic sectors.",
+      "scope_justification": "The article reports a decrease in import payments at the national level, which corresponds to the country-wide imports concept in the feature definition."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-28",
+      "imports",
+      "reduces imports",
+      "import payments decreased"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-05-02",
+    "url": "https://www.laprensalatina.com/world-bank-gives-bangladesh-2-25-billion-development-loan/",
+    "body_preview": "Dhaka, May 2 (EFE) The World Bank has agreed to provide Bangladesh a $2.25-billion loan for its five development projects on regional trade and connectivity, disaster preparedness, and environmental management.\n\nBangladesh's Economic Relations Division secretary and World Bank country director signed the agreements in Washington with Bangladesh Prime Minister Sheikh Hasina present on Monday.\n\nHasina is in Washington celebrating Bangladesh's 50-year partnership with the World Bank.\n\nUnder the agr"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Russia-Ukraine war impact",
+      "edge_label": "causes depreciation",
+      "evidence_quote": "It has led to a sharp widening of the current account deficit, depreciation of Bangladeshi currency, the taka, and a decline in foreign exchange reserves.",
+      "scope_justification": "The article explicitly cites depreciation of 'Bangladeshi currency, the taka', which is a national exchange-rate movement that matches the feature's country-level exchange-rate scope."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "causes depreciation",
+      "Russia-Ukraine war impact"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

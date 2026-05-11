@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-19",
+    "url": "https://www.bssnews.net/business/106081",
+    "body_preview": "DHAKA, Jan 19, 2023 (BSS) - German Parliamentary State Secretary for Economic Cooperation and Development Dr Barbel Kofler has expressed his country's interest to support Bangladesh in the development of solar irrigation system.\n\nThe German Parliamentary state secretary expressed the keenness while meeting with Bangladesh's Agricultural Minister Dr Abdur Razzak at Berlin on Wednesday afternoon, said a press release here today.\n\nDuring the meeting, they discussed on various issues including the d"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "sought GAP and labs support",
+      "edge_label": "increases exports",
+      "evidence_quote": "implementing Good Agricultural Practices (GAP) and increasing climate adaptation capacity in agriculture, especially for increasing the export of agricultural products.",
+      "scope_justification": "The article explicitly links implementing GAP, labs and climate adaptation with 'increasing the export of agricultural products', which concerns the volume of goods sent internationally as defined by exports.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "implementing Good Agricultural Practices (GAP) and increasing climate adaptation capacity in agriculture, especially for increasing the export of agricultural products.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence verbatim linking establishing accredited labs, implementing GAP and increasing climate adaptation capacity with 'increasing the export of agricultural products,' which explicitly presents a cause-effect relationship at the national (Bangladesh) export level."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "sought German export support",
+      "edge_label": "facilitates exports to EU",
+      "evidence_quote": "sought German support in exporting the surplus fruits and vegetables produced in Bangladesh to European markets including Germany.",
+      "scope_justification": "The article directly discusses 'exporting the surplus fruits and vegetables ... to European markets', which is the international shipment of goods matching the exports feature scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "sought German support in exporting the surplus fruits and vegetables produced in Bangladesh to European markets including Germany.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article. It explicitly says Razzak \"sought German support in exporting the surplus fruits and vegetables ... to European markets including Germany,\" which links the requested German support to facilitating exports, and the discussion is at the country-to-European-market level, matching the scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-19",
+      "exports",
+      "increases exports",
+      "sought GAP and labs support"
+    ],
+    [
+      "2023-01-19",
+      "exports",
+      "facilitates exports to EU",
+      "sought German export support"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 2
+}

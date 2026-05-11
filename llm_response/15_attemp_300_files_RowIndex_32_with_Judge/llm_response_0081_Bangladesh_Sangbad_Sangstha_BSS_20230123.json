@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-23",
+    "url": "https://www.bssnews.net/business/106775",
+    "body_preview": "DHAKA, Jan 23, 2023 (BSS) - Some 55 Bangladeshi companies are going to showcase their products at the leading global consumer goods show, Ambiente 2023, to be held in Frankfurt, Germany from February 3 to 7.\n\nMore than 4,460 exhibitors from over 92 countries are expected to be presenting trends and innovations for the coming business season in the trade fair, said a press release here today.\n\n'Export Promotion Bureau (EPB)' has been providing subsidised stalls to increase the exports of handicra"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "EPB subsidised stalls",
+      "edge_label": "increases exports",
+      "evidence_quote": "has been providing subsidised stalls to increase the exports of handicrafts, decorative items and kitchen accessories",
+      "scope_justification": "The article explicitly states EPB's subsidised stalls 'increase the exports of handicrafts, decorative items and kitchen accessories', which refers to raising the volume of goods Bangladesh sends internationally.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "has been providing subsidised stalls to increase the exports of handicrafts, decorative items and kitchen accessories",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states: \"EPB has been providing subsidised stalls to increase the exports of handicrafts, decorative items and kitchen accessories by allowing small and medium exporters to exhibit...\", which directly asserts a causal intent and applies to Bangladesh-level exports of those goods."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-23",
+      "exports",
+      "increases exports",
+      "EPB subsidised stalls"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

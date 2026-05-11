@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128488",
+    "body_preview": "DHAKA, June 01, 2023 (BSS) - Finance Minister AHM Mustafa Kamal today said the government will focus on sustaining the economic recovery by successfully implementing the ongoing stimulus packages.\n\n\"We have completely overcome the effects of the pandemic. Therefore, in this budget, our aim will be to sustain the economic recovery by successfully implementing the ongoing stimulus packages,\" he said.\n\nThe minister said this while placing over Taka 7.61 lakh crore national budget for FY23-24 at the"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "War raises import costs",
+      "edge_label": "increases import cost",
+      "evidence_quote": "the increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate",
+      "scope_justification": "The article explicitly refers to import costs at the country level, matching the feature’s national imports scope rather than a single product or company.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says that \"the increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate\" led to higher inflation, and it also states that the Russia-Ukraine war disrupted supply chains and drove up prices of food, fertilizers, and fuel. This is discussed at the national level, matching the claimed imports scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-01",
+      "imports",
+      "increases import cost",
+      "War raises import costs"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

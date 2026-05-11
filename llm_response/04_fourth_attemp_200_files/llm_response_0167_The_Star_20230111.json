@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "The Star ",
+    "date": "2023-01-11",
+    "url": "https://www.thestar.com.my/news/world/2023/01/12/world-bank-trims-bangladesh-growth-outlook-to-52-pct-in-2022-23",
+    "body_preview": "DHAKA, Jan. 11 (Xinhua) -- The World Bank has lowered its 2022-23 fiscal year (July 2022-June 2023) economic growth outlook for Bangladesh due to rising inflation and its negative impact on household incomes and firms' input costs, as well as energy shortages, import restrictions, and monetary policy tightening.\n\nThe global lender in its latest edition of Global Economic Prospects released on Tuesday has forecast a 5.2 percent growth for Bangladesh's gross domestic product (GDP) in the current f"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "import restrictions and purchase limits",
+      "edge_label": "reduces imports",
+      "evidence_quote": "It stopped purchasing vehicles, and made it harder to purchase luxury goods to preserve the country's international reserves.",
+      "scope_justification": "The article describes national-level government actions ('stopped purchasing vehicles' and 'made it harder to purchase luxury goods') and explicitly cites 'import restrictions,' which pertain to country-wide volumes of goods brought in."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "reduces imports",
+      "import restrictions and purchase limits"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

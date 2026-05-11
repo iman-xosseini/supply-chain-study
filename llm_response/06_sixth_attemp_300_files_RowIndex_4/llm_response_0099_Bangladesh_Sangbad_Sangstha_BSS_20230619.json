@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-19",
+    "url": "https://www.bssnews.net/business/132184",
+    "body_preview": "DHAKA, June 19, 2023 (BSS) - Bangladesh has signed an agreement with Omar to import 0.25 to 1.5 million metric tonnes (MMT) of LNG from Oman's OQ Trading on G-to-G basis for ten-year term from 2026.\n\nPetrobangla Secretary Ruchira Islam on behalf of Bangladesh and OQ Trading Limited Executive Director Said Al Maawali on behalf of Oman signed the agreement at a city hotel.\n\nPrime Minister's Power, Energy and Mineral Resources Affairs Adviser Dr Tawfiq-e-Elahi Chowdhury, Bir Bikram, witnessed the d"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LNG import agreement signed",
+      "edge_label": "secures imports",
+      "evidence_quote": "Bangladesh has signed an agreement with Omar to import 0.25 to 1.5 million metric tonnes (MMT) of LNG",
+      "scope_justification": "The article explicitly states a national-level agreement for Bangladesh to import a specified volume of LNG, matching the feature's country-wide 'volume of goods brought in' scope."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "secures imports",
+      "LNG import agreement signed"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

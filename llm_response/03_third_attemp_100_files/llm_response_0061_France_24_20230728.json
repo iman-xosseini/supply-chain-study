@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "France 24",
+    "date": "2023-07-28",
+    "url": "https://www.france24.com/en/live-news/20230728-bangladesh-major-hub-for-tiger-poaching-study",
+    "body_preview": "Dhaka (AFP) - Bangladesh remains a major hub for the poaching of endangered tigers despite government claims of a successful crackdown on pirate groups involved in the trade, according to research published Friday.\n\nThe vast Sundarbans mangrove forest straddling India and Bangladesh hosts one of the world's largest populations of Bengal tigers.\n\nTheir pelts, bones and flesh are bought by black marketeers as part of a broader illegal wildlife trade valued at an estimated $20 billion globally each"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "Domestic consumption increased",
+      "edge_label": "increases demand for",
+      "evidence_quote": "domestic consumption of tiger parts had increased since the crackdown, owing to Bangladesh's burgeoning economy.",
+      "scope_justification": "The article explicitly states consumption of a specific item ('tiger parts') rose due to Bangladesh's economy, which matches the Product feature's item-level scope."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "increases demand for",
+      "Domestic consumption increased"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

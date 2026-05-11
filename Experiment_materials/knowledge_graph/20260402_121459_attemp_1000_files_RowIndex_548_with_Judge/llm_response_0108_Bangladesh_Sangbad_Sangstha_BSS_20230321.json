@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-21",
+    "url": "https://www.bssnews.net/district/116749",
+    "body_preview": "KHULNA, March 21, 2023 (BSS)-The price of the essentials commodities has been asked to keep at tolerable level during the upcoming holy Ramadan, as sufficient food grains and essential commodities considering the holy month, are quite available in the market now, speakers at a view exchange meeting at deputy commissioner's office here today said.\n\nWith Khulna deputy commissioner (DC) Khondokar Yasir Arefin in the chair, representatives of Khulna Chamber of Commerce and Industry (KCCI), President"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Imports rise to stabilize market",
+      "edge_label": "increases imports",
+      "evidence_quote": "The Government has taken necessary steps for increasing the imports of consumer goods to stabilize the market",
+      "scope_justification": "The article explicitly discusses the country-level import flow of consumer goods, which matches the feature’s definition of volume of goods brought in.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The Government has taken necessary steps for increasing the imports of consumer goods to stabilize the market",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says, \"The Government has taken necessary steps for increasing the imports of consumer goods to stabilize the market with sufficient supply during the month of holy Ramadan and Eid-ul-Fitr.\" This directly states the causal relationship and discusses imports at a broad market/government level, matching the claimed scope."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "Huge imports cut prices",
+      "edge_label": "raises import-driven supply",
+      "evidence_quote": "prices of some essential products have decreased due to its huge imports",
+      "scope_justification": "This statement directly links higher imports of essential products to market price changes, and it concerns overall imports of goods rather than a single firm or isolated shipment.",
+      "verification": {
+        "quote_similarity": 0.993,
+        "quote_best_match": "prices of some essential products have decreased due to its huge imports.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says, “prices of some essential products have decreased due to its huge imports,” which directly states the causal relationship. The discussion is about the general market and essential commodities in Khulna during Ramadan, matching the claimed scope of imports affecting prices."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-21",
+      "imports",
+      "increases imports",
+      "Imports rise to stabilize market"
+    ],
+    [
+      "2023-03-21",
+      "imports",
+      "raises import-driven supply",
+      "Huge imports cut prices"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

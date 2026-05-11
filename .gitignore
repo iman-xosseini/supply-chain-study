@@ -6,6 +6,7 @@ dist/
 wheels/
 *.egg-info
 .env
+.claude
 MyNotes.md
 data/tradingeconomics/
 
@@ -14,4 +15,14 @@ data/tradingeconomics/
 description.md
 test*.ipynb
 
+# Exluded folders
+papers/
+new_generated_notebooks/
+Experiment Materials/
+data/tradingeconomics/
+articles/
+notebooks/*
 
+# Ignore Windows null device files accidentally created by scripts
+nul
+notebooks/nul

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Al Jazeera Online",
+    "date": "2023-02-23",
+    "url": "https://www.aljazeera.com/economy/2023/2/23/severe-dollar-crisis-hobbles-bangladesh-businesses",
+    "body_preview": "Dhaka, Bangladesh - Spice trader Mohammed Enayet Ullah has made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, some of the most essential spices used in Bangladeshi cooking, only to be refused by banks due to a shortage of dollars.\n\nImporters in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services. It is essentially a financial contract issued by an importer's b"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "banks refuse LCs",
+      "edge_label": "reduces imports",
+      "evidence_quote": "This has not only forced banks to refuse new letters of credit applications but also has made their promised payments to foreign suppliers for previous imports uncertain.",
+      "scope_justification": "The article describes nationwide bank refusals and a 14% slump in new letters of credit, directly linking country-level LC availability to aggregate import activity.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "This has not only forced banks to refuse new letters of credit applications but also has made their promised payments to foreign suppliers for previous imports uncertain.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article states importers need letters of credit to buy foreign goods and that banks are refusing new LC applications, which strongly implies reduced imports. It discusses this at the national level, citing a 14% slump in new LCs across Bangladesh."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-23",
+      "imports",
+      "reduces imports",
+      "banks refuse LCs"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

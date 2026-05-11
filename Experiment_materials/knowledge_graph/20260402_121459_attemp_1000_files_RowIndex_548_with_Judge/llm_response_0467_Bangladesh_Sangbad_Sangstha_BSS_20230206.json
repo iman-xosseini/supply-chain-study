@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-06",
+    "url": "https://www.bssnews.net/business/109295",
+    "body_preview": "DHAKA, Feb 6, 2023 (BSS) - Bangladesh Garment Manufacturers and Exporters Association (BGMEA) and SOWTEX along with Confederation of Indian Textile Industries (CITI) have planned two Textile Sourcing Meets'23 and Road Show in India from February 9 to 12.\n\nThe event will be led by BGMEA President Faruque Hassan and Vice President Shahidullah Azim along with a team of delegates from Bangladesh RMG Industries.\n\nThe BGMEA team is going for close interaction with top Indian Textile Manufacturers in a"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Smooth raw material flow",
+      "edge_label": "improves material inflow",
+      "evidence_quote": "for smooth flow of raw materials from India to Bangladesh",
+      "scope_justification": "This refers to the flow of raw materials into Bangladesh at an aggregate cross-border supply level, matching the imports feature definition.",
+      "verification": {
+        "quote_similarity": 0.991,
+        "quote_best_match": "for smooth flow of raw materials from India to Bangladesh.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says BGMEA has been working to \"open up additional land ports and ease the congestion in Petrapole-Benapole border and better connectivity via train for smooth flow of raw materials from India to Bangladesh.\" This directly links the described actions to improving cross-border raw material flow at a Bangladesh-India level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-06",
+      "imports",
+      "improves material inflow",
+      "Smooth raw material flow"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-21",
+    "url": "https://www.bssnews.net/news-flash/116759",
+    "body_preview": "DHAKA, March 21, 2023 (BSS)-Prime Minister Sheikh Hasina today emphasized again on boosting of agricultural production in the country alongside ensuring proper preservation, processing and exporting of those abroad.\n\nThe Premier also urged all concerned to give proper attention in cultivation, preservation and processing of pulse, onion and mustard oil side by side ensuring that no land remains idle and thus comes under cultivation.\n\nThe Prime Minister gave the directives while chairing a meetin"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Indo-Bangla pipeline import",
+      "edge_label": "facilitates imports",
+      "evidence_quote": "The two neighbours built a 131.57-km cross-border pipeline through which Bangladesh will import petroleum, especially diesel from India.",
+      "scope_justification": "The quote states Bangladesh will import petroleum via a cross-border pipeline, which directly refers to country-level import flows encompassed by the 'imports' feature definition."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "facilitates imports",
+      "Indo-Bangla pipeline import"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

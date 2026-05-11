@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-12",
+    "url": "https://www.bssnews.net/business/110293",
+    "body_preview": "DHAKA, Feb 12, 2023 (BSS) - National Board of Revenue (NBR) Chairman Abu Hena Md Rahmatul Muneem today said that some sectors should be conserved for small businesses to boost the country's Small and Medium Enterprises.\n\n\"Big businesses should not come on all types of investment. They can rather invest in large ventures such as heavy industries, challenging manufacturing,\" Muneem said at a pre-budget meeting for the next fiscal year (FY24) with the members of the Economic Reporters' Forum (ERF) "
+  },
+  "llm_connections": [
+    {
+      "feature": "Group",
+      "event_summary": "reserve sectors for SMEs",
+      "edge_label": "reserves sectors for small firms",
+      "evidence_quote": "some sectors should be conserved for small businesses to boost the country's Small and Medium Enterprises",
+      "scope_justification": "The article explicitly refers to 'sectors' (broad industry sectors), which matches the Group definition as a broad industry sector."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "amend Companies Act",
+      "edge_label": "specifies allowed products",
+      "evidence_quote": "will specify the goods a company is allowed to produce",
+      "scope_justification": "The article discusses specifying 'the goods a company is allowed to produce', which matches the Product definition's item-level scope."
+    }
+  ],
+  "triplets": [
+    [
+      "Group",
+      "reserves sectors for small firms",
+      "reserve sectors for SMEs"
+    ],
+    [
+      "Product",
+      "specifies allowed products",
+      "amend Companies Act"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "HR ASIA",
+    "date": "2023-05-02",
+    "url": "https://hr.asia/media-outreach/dhl-global-forwarding-expands-its-dedicated-container-freight-station-cfs-space-in-bangladesh-to-meet-global-garment-export-needs/",
+    "body_preview": "DHAKA, BANGLADESH - Media OutReach - 2 May 2023 - DHL Global Forwarding, the freight specialist arm of Deutsche Post DHL Group, invested over 2 million EUR to expand its dedicated Container Freight Station (CFS) space in Bangladesh to cater to the nation's ever-growing readymade garments (RMG) industry. CFSs are a scarcity in Bangladesh, with less than 20 CFSs countrywide. These facilities help pick up goods from multiple suppliers and consolidate them into a single container before shipping to "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Port expansion speeds shipping",
+      "edge_label": "accelerates import-export shipping",
+      "evidence_quote": "“will allow for quicker access to the port, where goods can be promptly shipped out on ocean freight”",
+      "scope_justification": "The article refers to goods being shipped through Chittagong Port, which handles more than 92% of Bangladesh's import-export trade, matching the country-wide trade flow scope of imports.",
+      "verification": {
+        "quote_similarity": 0.985,
+        "quote_best_match": "will allow for quicker access to the port, where goods can be promptly shipped out on ocean freight.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quote appears nearly verbatim in the article: the expansion's strategic location “will allow for quicker access to the port, where goods can be promptly shipped out on ocean freight.” The text explicitly links the facility expansion to quicker port access and faster shipment, and it is discussed in the context of Bangladesh's trade through Chittagong Port, which handles most of the country's import-export trade."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-02",
+      "imports",
+      "accelerates import-export shipping",
+      "Port expansion speeds shipping"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

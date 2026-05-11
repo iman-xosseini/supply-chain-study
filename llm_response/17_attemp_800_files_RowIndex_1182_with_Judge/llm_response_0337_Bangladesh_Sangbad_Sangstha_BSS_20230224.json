@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-24",
+    "url": "https://www.bssnews.net/news-flash/112237",
+    "body_preview": "CHATTOGRAM, Feb 24, 2023 (BSS) - The country would not face any shortage of essential commodities in the coming fasting month of Ramadan as the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.\n\nAlso the adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan, thanks to the government for easing opening letters of credit (LCs) for essential commodities to keep"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "government eased LCs",
+      "edge_label": "increases imports",
+      "evidence_quote": "the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply",
+      "scope_justification": "The article describes increased imports of consumer goods at market and port level driven by government measures and LC easing, matching the feature's country-level import-volume scope.",
+      "verification": {
+        "quote_similarity": 0.997,
+        "quote_best_match": "the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating government measures 'have helped increase the imports of consumer goods.' The piece also explicitly links easing/opening of LCs to incoming imports (products 'against LCs opened recently have started coming to the market'), and it frames the effect at the national level ('The country would not face any shortage...'), matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-24",
+      "imports",
+      "increases imports",
+      "government eased LCs"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

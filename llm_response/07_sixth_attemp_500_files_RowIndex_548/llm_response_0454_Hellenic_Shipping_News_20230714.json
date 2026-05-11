@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Hellenic Shipping News",
+    "date": "2023-07-14",
+    "url": "https://www.hellenicshippingnews.com/bangladesh-to-import-lng-from-malaysia/",
+    "body_preview": "Bangladesh will import liquefied natural gas (LNG) from Malaysia as the Cabinet Committee on Economic Affairs approved in principle a proposal of the state-owned Petrobangla to this effect, reports UNB.\n\n\"Malaysian company Perintis Akal Sdn Bhd will supply the LNG on a long-term basis and Petrobangla will buy it under the Speedy Supply of Power and Energy (Special) Act 2010,\" said Sayed Mahbub Khan, additional secretary of the Cabinet Division, while briefing on the outcomes of the meeting.\n\nFin"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Malaysia LNG long-term import",
+      "edge_label": "secures long-term imports",
+      "evidence_quote": "Bangladesh will import liquefied natural gas (LNG) from Malaysia as the Cabinet Committee on Economic Affairs approved in principle a proposal",
+      "scope_justification": "The article describes a national decision for Bangladesh to import LNG from Malaysia, which is a country-level import of goods and thus matches the feature's scope of volumes brought into the country."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-07-14",
+      "imports",
+      "secures long-term imports",
+      "Malaysia LNG long-term import"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

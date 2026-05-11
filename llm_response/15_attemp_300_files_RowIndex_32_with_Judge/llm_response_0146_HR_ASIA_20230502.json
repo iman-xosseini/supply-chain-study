@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "HR ASIA",
+    "date": "2023-05-02",
+    "url": "https://hr.asia/media-outreach/dhl-global-forwarding-expands-its-dedicated-container-freight-station-cfs-space-in-bangladesh-to-meet-global-garment-export-needs/",
+    "body_preview": "DHAKA, BANGLADESH - Media OutReach - 2 May 2023 - DHL Global Forwarding, the freight specialist arm of Deutsche Post DHL Group, invested over 2 million EUR to expand its dedicated Container Freight Station (CFS) space in Bangladesh to cater to the nation's ever-growing readymade garments (RMG) industry. CFSs are a scarcity in Bangladesh, with less than 20 CFSs countrywide. These facilities help pick up goods from multiple suppliers and consolidate them into a single container before shipping to "
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "DHL CFS expansion",
+      "edge_label": "supports shipment growth",
+      "evidence_quote": "These facilities will support the growth of less than container load shipments especially from the rising demand of e-commerce,",
+      "scope_justification": "The article explicitly states the new CFS facilities 'support the growth of less than container load shipments', which directly pertains to the volume of goods sent internationally (exports).",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "These facilities will support the growth of less than container load shipments especially from the rising demand of e-commerce,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating, “These facilities will support the growth of less than container load shipments…,” which explicitly asserts a causal effect of the new CFS facilities on shipment growth and is presented in the context of Bangladesh’s export activity, matching the country-level scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-02",
+      "exports",
+      "supports shipment growth",
+      "DHL CFS expansion"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

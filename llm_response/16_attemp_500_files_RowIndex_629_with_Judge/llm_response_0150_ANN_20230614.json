@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-06-14",
+    "url": "https://asianews.network/power-crisis-perils-of-pursuing-the-old-dangerous-path/",
+    "body_preview": "DHAKA - Bangladesh has been experiencing unprecedented load-shedding for more than two weeks now, and the scale of the current crisis certainly demands an answer from the power sector officials. People have been facing 2,000-2,500MW of load-shedding throughout the day. It is expected to get even worse with the Payra Power Plant shutting down last week. Routine excuses for failure from the power ministry cite the global fuel crisis as well as the dollar crunch, which has made it difficult to open"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar crunch impeding imports",
+      "edge_label": "hinders import financing",
+      "evidence_quote": "the dollar crunch, which has made it difficult to open letters of credit (LCs) to import fuel and coal.",
+      "scope_justification": "The article links country-level taka depreciation/'dollar crunch' to difficulties opening LCs for importing fuel and coal, matching the feature's focus on exchange-rate impacts on imports.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the dollar crunch, which has made it difficult to open letters of credit (LCs) to import fuel and coal.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states \"the dollar crunch, which has made it difficult to open letters of credit (LCs) to import fuel and coal,\" directly asserting a causal link at the national level (taka depreciation/dollar crisis) that hinders import financing."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-14",
+      "currency_log_return",
+      "hinders import financing",
+      "dollar crunch impeding imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

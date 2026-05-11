@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "Hellenic Shipping News",
+    "date": "2023-06-20",
+    "url": "https://www.hellenicshippingnews.com/commodity-tracker-5-charts-to-watch-this-week-77/",
+    "body_preview": "1. Bangladesh's first ever single-point mooring system to allow higher Saudi, UAE crude imports\n\nWhat's happening? Bangladesh has installed its first single-point mooring system in the Bay of Bengal. Prior to the SPM installation, Bangladesh Petroleum Corp. had to use multiple small vessels to unload imported crude and oil products from large tankers anchored in deep-sea areas and move them to the state-run refiner's Chattogram storage tanks. The process used to take up to seven days to complete"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "SPM facility installed",
+      "edge_label": "enables higher imports",
+      "evidence_quote": "With the new facility set to bolster logistical capacity and efficiency, Bangladesh is poised to increase Middle Eastern crude imports and diesel trades.",
+      "scope_justification": "The article explicitly states Bangladesh (country-level) is 'poised to increase Middle Eastern crude imports', which directly refers to the nation's import volumes, matching the 'imports' feature scope."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-20",
+      "imports",
+      "enables higher imports",
+      "SPM facility installed"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

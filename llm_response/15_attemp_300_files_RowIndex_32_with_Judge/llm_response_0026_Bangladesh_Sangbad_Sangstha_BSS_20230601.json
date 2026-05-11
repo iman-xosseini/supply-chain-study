@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128488",
+    "body_preview": "DHAKA, June 01, 2023 (BSS) - Finance Minister AHM Mustafa Kamal today said the government will focus on sustaining the economic recovery by successfully implementing the ongoing stimulus packages.\n\n\"We have completely overcome the effects of the pandemic. Therefore, in this budget, our aim will be to sustain the economic recovery by successfully implementing the ongoing stimulus packages,\" he said.\n\nThe minister said this while placing over Taka 7.61 lakh crore national budget for FY23-24 at the"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "FX depreciation raised import costs",
+      "edge_label": "raises import costs",
+      "evidence_quote": "the increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate",
+      "scope_justification": "The article explicitly links depreciation of the country's foreign exchange rate to increased import costs at the national level, matching the feature's focus on exchange-rate movements affecting import costs.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence 'the increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate,' which explicitly attributes higher import costs to FX depreciation and discusses this effect at the national (country) level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-01",
+      "currency_log_return",
+      "raises import costs",
+      "FX depreciation raised import costs"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

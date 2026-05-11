@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Poland Sun",
+    "date": "2023-05-16",
+    "url": "https://www.polandsun.com/news/273832902/bangladesh-government-should-think-twice-before-trading-in-chinese-currency-report",
+    "body_preview": "Dhaka [Bangladesh], May 16 (ANI): Certain financial institutions in Bangladesh are exploring for Chinese payment channels to settle transactions with Russian banks that were removed from the SWIFT system to overcome the challenges experienced by importers and exporters as a result of Western sanctions following Russia's attack on Ukraine, The Asian Age reported.\n\nThe Bangladeshi government is apparently under pressure from some pro-Chinese high-ups to switch to the Chinese currency Yuan for fore"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "foreign reserves fall",
+      "edge_label": "discourages imports",
+      "evidence_quote": "This has compelled the government to discourage unnecessary imports and cut spending",
+      "scope_justification": "The article describes a national-level fall in foreign reserves that 'compelled the government to discourage unnecessary imports,' directly addressing aggregate import volume policy at the country level.",
+      "verification": {
+        "quote_similarity": 0.994,
+        "quote_best_match": "This has compelled the government to discourage unnecessary imports and cut spending,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence \"This has compelled the government to discourage unnecessary imports and cut spending,\" immediately after describing the fall in foreign reserves, so it explicitly links the national-level reserves decline to the government discouraging imports."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-16",
+      "imports",
+      "discourages imports",
+      "foreign reserves fall"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

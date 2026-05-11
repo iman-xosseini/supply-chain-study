@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-06-18",
+    "url": "https://www.daily-sun.com/post/695700/BB-announces-contractionary-MPS-with-focus-on-taming-inflation",
+    "body_preview": "DHAKA- Unveiling a 'contractionary' monetary policy statement (MPS), Bangladesh Bank (BB) has projected domestic credit growth ceiling at 15.3 percent in the fiscal 2023-24 (FY24) accommodating 11 percent credit growth in private sector and 30 percent in public sector.\n\n\"The global economy has undergone significant challenges over the past three and a half years, including the impact of the COVID-19 pandemic that began in December 2019, followed by the Russia-Ukraine conflict that started in Feb"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "unified market-driven exchange rate",
+      "edge_label": "reduces exchange-rate volatility",
+      "evidence_quote": "BB will no longer quote specific rates for buying or selling foreign exchanges, promoting stability in the foreign exchange market",
+      "scope_justification": "The article describes a national policy to let market forces determine the BDT-USD exchange rate and explicitly says this promotes forex market stability, which matches the feature's focus on exchange-rate volatility.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "BB will no longer quote specific rates for buying or selling foreign exchanges, promoting stability in the foreign exchange market,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the line 'BB will no longer quote specific rates for buying or selling foreign exchanges, promoting stability in the foreign exchange market,' which explicitly links the switch to a market-driven single exchange rate to greater FX market stability (i.e., reduced exchange-rate volatility) at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-18",
+      "currency_log_return",
+      "reduces exchange-rate volatility",
+      "unified market-driven exchange rate"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

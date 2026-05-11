@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-04-10",
+    "url": "https://www.bssnews.net/news/120149",
+    "body_preview": "DHAKA, April 10, 2023 (BSS) - The cabinet today approved two daft bills, including the draft of the 'Production, Storage, Transfer, Transport, Supply, Distribution and Marketing of Food (Prevention of Harmful Activities) Bill-2023', with a provision of life term imprisonment for illegal hoarding of food.\n\nThe cabinet, with Prime Minister Sheikh Hasina in the chair, gave the final approval in a meeting held at Parliament Complex here.\n\nThe other bill is 'Bangladesh Dairy Board Bill, 2023'.\n\nAfter"
+  },
+  "llm_connections": [
+    {
+      "feature": "inventory_proxy",
+      "event_summary": "punishes illegal hoarding",
+      "edge_label": "punishes hoarding",
+      "evidence_quote": "disobeys any instructions of the government regarding stocking, he or she will be sentenced to life imprisonment",
+      "scope_justification": "The bill targets storing amounts of foodstuff above government-prescribed limits (stocking), which directly pertains to inventory levels of food grains and warehouse utilization."
+    },
+    {
+      "feature": "Group",
+      "event_summary": "creates dairy board",
+      "edge_label": "constitutes oversight board",
+      "evidence_quote": "proposed to constitute a new body named \"Bangladesh Dairy Development Board\" to oversee the dairy related matters",
+      "scope_justification": "The provision establishes a national body to oversee dairy matters and bring commercial milk producers under its purview, directly addressing the dairy industry sector (Group)."
+    }
+  ],
+  "triplets": [
+    [
+      "inventory_proxy",
+      "punishes hoarding",
+      "punishes illegal hoarding"
+    ],
+    [
+      "Group",
+      "constitutes oversight board",
+      "creates dairy board"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

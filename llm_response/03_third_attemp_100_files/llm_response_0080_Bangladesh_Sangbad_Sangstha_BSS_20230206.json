@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-06",
+    "url": "https://www.bssnews.net/business/109295",
+    "body_preview": "DHAKA, Feb 6, 2023 (BSS) - Bangladesh Garment Manufacturers and Exporters Association (BGMEA) and SOWTEX along with Confederation of Indian Textile Industries (CITI) have planned two Textile Sourcing Meets'23 and Road Show in India from February 9 to 12.\n\nThe event will be led by BGMEA President Faruque Hassan and Vice President Shahidullah Azim along with a team of delegates from Bangladesh RMG Industries.\n\nThe BGMEA team is going for close interaction with top Indian Textile Manufacturers in a"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "Open additional land ports",
+      "edge_label": "eases congestion",
+      "evidence_quote": "open up additional land ports and ease the congestion in Petrapole-Benapole border and better connectivity via train for smooth flow of raw materials",
+      "scope_justification": "The article explicitly links opening land ports and easing Petrapole-Benapole congestion to ensuring smooth flow of raw materials, which directly concerns logistics performance and port congestion as defined by Delivery."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "Faster lead times from India",
+      "edge_label": "improves order fulfillment",
+      "evidence_quote": "The faster lead time and additional quality raw materials from a reliable source like India can help fulfill the demand for the buyers",
+      "scope_justification": "The article states faster lead times from India help fulfill buyer demand, an explicit effect on order fulfillment and lead-time aspects of logistics covered by the Delivery definition."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "eases congestion",
+      "Open additional land ports"
+    ],
+    [
+      "Delivery",
+      "improves order fulfillment",
+      "Faster lead times from India"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

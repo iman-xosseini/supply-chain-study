@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-06-21",
+    "url": "https://asianews.network/bangladesh-can-be-the-next-outsourcing-destination-pwc/",
+    "body_preview": "DHAKA - Bangladesh has immense potential to become the next outsourcing destination riding on a higher proportion of the working age population and the government's initiatives aimed at attracting investments, a new study said.\n\nPwC Bangladesh, in its flagship report \"Destination Bangladesh\", an analysis of the country as an investment destination, said the country is striving to enhance its exports on all fronts of production.\n\nPlanning Minister MA Mannan launched the report at an event at the "
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "outsourcing earns $5bn",
+      "edge_label": "generates export earnings",
+      "evidence_quote": "The government is looking to create more than 200,000 direct and 50,000 indirect jobs and earn $5 billion a year in the next decade through outsourcing.",
+      "scope_justification": "The article states a national-level goal to \"earn $5 billion a year ... through outsourcing,\" which is presented as country-wide export-related earnings and therefore matches the balance_of_trade's aggregate exports scope."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-21",
+      "balance_of_trade",
+      "generates export earnings",
+      "outsourcing earns $5bn"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

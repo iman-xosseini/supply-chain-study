@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-03",
+    "url": "https://www.bssnews.net/news/134281",
+    "body_preview": "DHAKA, July 03, 2023 (BSS) - A total of 1.14 lakh kilogram of green chilli was imported in a single day through four land ports from India on Sunday following the government's permission of importing 36,830 tons to curb steep price hike of the essential kitchen item, port sources said.\n\nImport will increase today further, businessmen at land ports said.\n\nAs the price of green chilli started rising before Eid-ul-Azha, Agricultural Extension Department gave permission of importing the essential ki"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Single-day green chilli import",
+      "edge_label": "permits imports",
+      "evidence_quote": "1.14 lakh kilogram of green chilli was imported in a single day through four land ports from India on Sunday following the government's permission of importing 36,830 tons",
+      "scope_justification": "The article gives a quantified volume of goods (1.14 lakh kg) imported into Bangladesh, directly matching the feature's focus on the volume of goods brought in."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "permits imports",
+      "Single-day green chilli import"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

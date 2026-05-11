@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-04-20",
+    "url": "https://asianews.network/is-renewable-deployment-suffering-from-fossil-fuel-lock-in/",
+    "body_preview": "DHAKA - While the peak electricity supply reached 15,604MW in Bangladesh at the beginning of summer, many areas, mostly outside Dhaka, have been facing long hours of load-shedding and disruption of economic activities. The reason behind the current crisis is not the lower installed capacity, but the inability to buy imported energy to run the existing power plants and interrupted services due to technical inefficiency. It is tragic to see that while people are suffering from the crisis, over 40 "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Imported energy shortages",
+      "edge_label": "limit imported energy use",
+      "evidence_quote": "“the inability to buy imported energy to run the existing power plants”",
+      "scope_justification": "The article discusses imported energy at the national level as an input to run existing power plants, which matches the feature’s country-wide import scope.",
+      "verification": {
+        "quote_similarity": 0.986,
+        "quote_best_match": "the inability to buy imported energy to run the existing power plants",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that the current crisis is due to \"the inability to buy imported energy to run the existing power plants,\" which directly links imported energy shortages to limited use of imported energy. This is discussed at the national electricity-system level in Bangladesh, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-20",
+      "imports",
+      "limit imported energy use",
+      "Imported energy shortages"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

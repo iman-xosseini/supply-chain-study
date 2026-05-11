@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-08",
+    "url": "https://www.bssnews.net/agriculture-news/109558",
+    "body_preview": "RAJSHAHI, Feb 8, 2023 (BSS) - Scientists and researchers have unequivocally called for boosting mustard yield after the best uses of high yielding varieties, including BARI Sharisha-17, and modern technologies to meet the gradually mounting demand of the cash crop.\n\nEnhancing domestic production can be the crucial means of meeting the local demands through lessening the pressure on import of the edible oil.\n\nThey made the observation while addressing a farmers' field day meeting at Basantapur vi"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "boosting domestic oilseed production",
+      "edge_label": "reduces import pressure",
+      "evidence_quote": "there is no way but to boost domestic production to cut the import pressure,",
+      "scope_justification": "The article explicitly ties boosting domestic production to cutting national edible-oil imports (imports worth around Taka 30,000 crore), which affects the country's imports component of balance_of_trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "reduces import pressure",
+      "boosting domestic oilseed production"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-12",
+    "url": "https://www.bssnews.net/news/110260",
+    "body_preview": "DHAKA, Feb 12, 2023 (BSS) - The Agriculturists Day will be observed in the country tomorrow through various programmes.\n\nOn this occasion, President M Abdul Hamid and Prime Minister Sheikh Hasina today issued separate messages extending greetings to agriculturists and wishing all programmes of the day a success.\n\nBangabandhu Sheikh Mujibur Rahman announced to upgrade the agriculturists to the class-I status in the government service on February 13, 1973 and in this perspective, observance of Feb"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "people urged to be frugal",
+      "edge_label": "reduces imports",
+      "evidence_quote": "people should be frugal at all levels so that agricultural products do not have to be imported",
+      "scope_justification": "The quote explicitly advocates actions to avoid importing agricultural products (raw materials for industry) at the national level, matching the feature's aggregate import-volume scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "people should be frugal at all levels so that agricultural products do not have to be imported",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the line advising 'people should be frugal at all levels so that agricultural products do not have to be imported,' which explicitly links frugality to avoiding imports; the context discusses imports at the national level, matching the aggregate scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-12",
+      "imports",
+      "reduces imports",
+      "people urged to be frugal"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

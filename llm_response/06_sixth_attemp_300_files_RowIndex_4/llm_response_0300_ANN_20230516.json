@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-05-16",
+    "url": "https://asianews.network/reforms-must-address-rising-inequality/",
+    "body_preview": "DHAKA - The government should adjust economic reforms in such a way so that inequality is reined in, said speakers at a dialogue organised by the Citizen's Platform for SDGs, Bangladesh.\n\nThe dialogue was organised to stress that concerns of the disadvantaged should be addressed in the upcoming national budget. It is the first budget after the IMF started disbursing funds under its $4.7 billion loan programme for Bangladesh.\n\nThe IMF has attached several conditions for the loan.\n\nDebapriya Bhatt"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "inability to import energy",
+      "edge_label": "restricts imports",
+      "evidence_quote": "it is because of the inability to import energy due to dwindling forex reserves.",
+      "scope_justification": "The article links national-level 'inability to import energy' to dwindling forex reserves, which directly concerns country-wide import volumes as defined for 'imports'."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "restricts imports",
+      "inability to import energy"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

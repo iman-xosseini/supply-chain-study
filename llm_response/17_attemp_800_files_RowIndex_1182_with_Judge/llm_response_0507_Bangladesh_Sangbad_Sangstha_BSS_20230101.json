@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-01",
+    "url": "https://www.bssnews.net/business/102891",
+    "body_preview": "DHAKA, Jan 1, 2023 (BSS) - Dhaka Chamber of Commerce and Industry (DCCI) today underscored the need for Public-Private Partnership (PPP) to manage sustainable economic recovery.\n\nTo further accelerate the country's economic recovery in 2023, DCCI urged the government to focus on uninterrupted and affordable energy supply to local and export-oriented manufacturing industries, improve the ease of doing business, develop an infrastructural environment conducive to attracting local and foreign inves"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "currency crisis and devaluation",
+      "edge_label": "negatively impacts imports",
+      "evidence_quote": "resulting in some negative impact on the import of energy, industrial raw materials",
+      "scope_justification": "The article explicitly states a negative impact on imports of energy and industrial raw materials, which are categories of goods imported at the national level, matching the feature's country-wide imports scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "resulting in some negative impact on the import of energy, industrial raw materials",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that the foreign currency crisis and Taka devaluation have 'resulting in some negative impact on the import of energy, industrial raw materials,' which directly asserts a causal negative effect on national-level imports of those goods."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-01",
+      "imports",
+      "negatively impacts imports",
+      "currency crisis and devaluation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

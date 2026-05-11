@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128488",
+    "body_preview": "DHAKA, June 01, 2023 (BSS) - Finance Minister AHM Mustafa Kamal today said the government will focus on sustaining the economic recovery by successfully implementing the ongoing stimulus packages.\n\n\"We have completely overcome the effects of the pandemic. Therefore, in this budget, our aim will be to sustain the economic recovery by successfully implementing the ongoing stimulus packages,\" he said.\n\nThe minister said this while placing over Taka 7.61 lakh crore national budget for FY23-24 at the"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "War impacts reserves and exchange rates",
+      "edge_label": "disrupts external accounts",
+      "evidence_quote": "The Russia-Ukraine war situation has had the biggest impact on inflation, government spending, balance of payments, foreign exchange reserves and exchange rates.",
+      "scope_justification": "The article explicitly mentions the country's balance of payments, which aligns with the national external trade-account scope of balance_of_trade.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the Russia-Ukraine war situation has had the biggest impact on inflation, government spending, balance of payments, foreign exchange reserves and exchange rates.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that the Russia-Ukraine war situation has had the biggest impact on Bangladesh's balance of payments, foreign exchange reserves, and exchange rates, matching the quoted evidence. This is a direct cause-and-effect claim at the national level, so the scope aligns with balance_of_trade/external accounts."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-01",
+      "balance_of_trade",
+      "disrupts external accounts",
+      "War impacts reserves and exchange rates"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

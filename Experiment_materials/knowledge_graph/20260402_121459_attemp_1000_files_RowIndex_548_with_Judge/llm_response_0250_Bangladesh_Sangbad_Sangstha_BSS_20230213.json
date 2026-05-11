@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-13",
+    "url": "https://www.bssnews.net/business/110385",
+    "body_preview": "DHAKA, Feb 13, 2023 (BSS) - To support export and import-based businesses to\n\ncope with global uncertainties brought on by the COVID-19 pandemic, IFC is\n\nproviding $50 million to Prime Bank Limited in Bangladesh.\n\nThis IFC funding will support working capital, trade finance, and foreign\n\nexchange liquidity needs of export and import based entities borrowing\n\nthrough Prime Bank's Offshore Banking Unit.\n\nThe financing package is part of IFC's 'Fast Track COVID-19 Facility,' a\n\npackage designed to "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Funding supports trade finance",
+      "edge_label": "supports import financing",
+      "evidence_quote": "This IFC funding will support working capital, trade finance, and foreign exchange liquidity needs of export and import based entities",
+      "scope_justification": "The article explicitly discusses import-based entities and their trade finance needs, which matches the feature’s country-level concept of imports as goods brought in.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "This IFC funding will support working capital, trade finance, and foreign exchange liquidity needs of export and import based entities",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted text appears verbatim in the article. The article explicitly says the funding will support working capital, trade finance, and foreign exchange liquidity needs of export and import-based entities, which directly implies support for import financing. The discussion is at the broader Bangladesh trade-finance/market level, not just a single-company level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-13",
+      "imports",
+      "supports import financing",
+      "Funding supports trade finance"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

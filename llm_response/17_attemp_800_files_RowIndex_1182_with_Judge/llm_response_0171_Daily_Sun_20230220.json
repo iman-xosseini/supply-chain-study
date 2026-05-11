@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-02-20",
+    "url": "https://www.daily-sun.com/post/675220/Businessmen-of-West-Bengal-interested-to-invest-in-economic-zones",
+    "body_preview": "DHAKA - The businessmen of West Bengal have showed their interest to invest in the economic zones in Bangladesh.\n\nThe visiting leaders of Bengal Chamber of Commerce and Industry expressed such interest during a view-exchange meeting with executive chairman of Bangladesh Economic Zones Authority (BEZA) Shaikh Yusuf Harun at the BEZA office today in the capital's Agargaon area.\n\nBEZA general manager Md Hasan Arif made a power-point presentation on the overall operations of BEZA in the view-exchang"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "economic zones boost exports",
+      "edge_label": "increases export receipts",
+      "evidence_quote": "He said they are expecting to fetch additional export receipts of $40 billion per year by 2030 from these economic zones.",
+      "scope_justification": "The quote refers to additional export receipts at a national scale (a $40 billion per year increase), which directly pertains to the country-wide exports component of the balance of trade.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "He said they are expecting to fetch additional export receipts of $40 billion per year by 2030 from these economic zones.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article stating an expectation that the economic zones will 'fetch additional export receipts of $40 billion per year by 2030,' which explicitly links the economic zones to increased national export receipts."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-20",
+      "balance_of_trade",
+      "increases export receipts",
+      "economic zones boost exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,42 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-10",
+    "url": "https://asianews.network/overcoming-looming-economic-challenges-in-2023/",
+    "body_preview": "DHAKA - In 2023, several economies globally will face recession, while three large economies - the US, the EU and China - will continue to slow down, as the International Monetary Fund (IMF) observed on the eve of the new year. In October 2022, the IMF projected global economic growth to decrease from 3.2 percent in 2022 to 2.7 percent in 2023. This has been causing difficulties across countries and affecting the living standards of low-income households.\n\nFor Bangladesh, though inflation has su"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar shortage causes depreciation",
+      "edge_label": "causes depreciation",
+      "evidence_quote": "The supply shortage of dollars in the market has led to a free fall of the taka against the US dollar.",
+      "scope_justification": "The article explicitly describes a national exchange-rate movement (a 'free fall' of the taka), which matches the feature's focus on country-level exchange-rate volatility (USD/BDT)."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "USD injections propped taka",
+      "edge_label": "artificially strengthens currency",
+      "evidence_quote": "Policymakers have kept the taka artificially stronger against the dollar for a long time by injecting US dollars into the market.",
+      "scope_justification": "The article attributes the national exchange-rate level to policy actions (USD injections), directly addressing country-level exchange-rate behavior consistent with the feature's scope."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "causes depreciation",
+      "dollar shortage causes depreciation"
+    ],
+    [
+      "currency_log_return",
+      "artificially strengthens currency",
+      "USD injections propped taka"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 2
+}

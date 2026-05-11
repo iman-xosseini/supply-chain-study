@@ -1,0 +1,67 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128532",
+    "body_preview": "DHAKA, June 1, 2023 (BSS) - Finance Minister AHM Mustafa Kamal today said the\n\ngovernment is giving priority to addressing climate-change impacts to ensure\n\nlong-term sustainable development.\n\n\"We need to maintain a robust rate of economic growth and thriving\n\ninfrastructure, energy, power and information-technology sectors along with\n\nan uninterrupted supply chain to build a developed and smart Bangladesh,\" he\n\nsaid.\n\nThe minister said this while placing over Taka 7.61 lakh crore proposed\n\nnati"
+  },
+  "llm_connections": [
+    {
+      "feature": "Production",
+      "event_summary": "Mechanisation and subsidies",
+      "edge_label": "increases production",
+      "evidence_quote": "increasing agricultural production to ensure food security by undertaking activities like mechanisation, rehabilitation, research and innovation",
+      "scope_justification": "The article explicitly links mechanisation, rehabilitation, research, innovation and subsidies to increasing agricultural production, which corresponds to the feature's measurement of production volume."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Exchange rate volatility considered",
+      "edge_label": "influences allocations",
+      "evidence_quote": "the volatility in the exchange rate etc. while deciding upon the allocation of subsidies, interest expenses etc.",
+      "scope_justification": "The article explicitly cites volatility in the exchange rate as a factor in budget allocation decisions, directly addressing exchange-rate volatility as described by this feature."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "Maintain uninterrupted supply chain",
+      "edge_label": "maintains supply flow",
+      "evidence_quote": "maintain a robust rate of economic growth and thriving infrastructure, energy, power and information-technology sectors along with an uninterrupted supply chain to build a developed and smart Bangladesh",
+      "scope_justification": "The article explicitly calls for maintaining an 'uninterrupted supply chain' at the national level, which matches the Delivery feature's focus on logistics performance and supply flow."
+    }
+  ],
+  "triplets": [
+    [
+      "Production",
+      "increases production",
+      "Mechanisation and subsidies"
+    ],
+    [
+      "currency_log_return",
+      "influences allocations",
+      "Exchange rate volatility considered"
+    ],
+    [
+      "Delivery",
+      "maintains supply flow",
+      "Maintain uninterrupted supply chain"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 3
+}

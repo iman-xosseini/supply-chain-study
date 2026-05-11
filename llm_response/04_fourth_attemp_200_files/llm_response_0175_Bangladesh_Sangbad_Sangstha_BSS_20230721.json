@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-21",
+    "url": "https://www.bssnews.net/news-flash/137581",
+    "body_preview": "DHAKA, July 21, 2023 (BSS) - Prime Minister Sheikh Hasina today laid emphasis on an amicable end to the Ukraine war, saying international cooperation in this time of growing instability is clearly vital to the vulnerable among the global community to build resilience against future shocks.\n\n\"The prolonging war and the imposed sanctions and counter sanctions continue to destabilise the world. Each passing day of the war take as well as destroy many lives in the conflict zone, and also in the far-"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "limited non-essential imports",
+      "edge_label": "reduces import volume",
+      "evidence_quote": "We had to limit import of non-essential and luxury items;",
+      "scope_justification": "The quote records a national policy to limit imports of entire categories (non-essential and luxury items), which directly pertains to the country-wide volume of goods brought in."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "reduces import volume",
+      "limited non-essential imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

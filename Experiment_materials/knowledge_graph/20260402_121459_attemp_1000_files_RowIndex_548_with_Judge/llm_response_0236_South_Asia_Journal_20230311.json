@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "South Asia Journal",
+    "date": "2023-03-11",
+    "url": "http://southasiajournal.net/bangladesh-banks-feel-squeeze-of-moodys-outlook-downgrade/",
+    "body_preview": "DHAKA -- Bangladesh's banking sector is girding for a rougher ride after Moody's, one of the big three global rating agencies, downgraded its outlook for the sector from \"stable\" to \"negative.\"\n\nEconomists and financial analysts say last week's downgrade is a major blow for an economy hobbled by a weakened currency, high inflation and declining foreign reserves amid the global shock waves from the Ukraine war. They warn that cross-border financial transactions will become more difficult and cost"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Credit downgrade delays import settlement",
+      "edge_label": "raises payment difficulty",
+      "evidence_quote": "“cross-border financial transactions will become more difficult and costly for the import-dependent South Asian nation”",
+      "scope_justification": "The article explicitly links the banking-sector downgrade to cross-border transactions for the import-dependent nation, which matches the country-wide import flow definition.",
+      "verification": {
+        "quote_similarity": 0.987,
+        "quote_best_match": "cross-border financial transactions will become more difficult and costly for the import-dependent South Asian nation.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted wording appears nearly verbatim in the article: cross-border financial transactions will become more difficult and costly for the import-dependent nation. The text explicitly links the Moody's downgrade to making cross-border transactions harder and costlier at the country level, which matches the claimed import-settlement/payment difficulty scope."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "Dollar shortage stalls import bills",
+      "edge_label": "stalls import payments",
+      "evidence_quote": "“the dollar crisis was stalling new credit arrangements and payments on previous ones”",
+      "scope_justification": "This refers to the banking system’s financing of import-related credit arrangements and payments at the national level, aligning with the definition of imports as goods brought in through LC availability.",
+      "verification": {
+        "quote_similarity": 0.982,
+        "quote_best_match": "the dollar crisis was stalling new credit arrangements and payments on previous ones.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says that “the dollar crisis was stalling new credit arrangements and payments on previous ones,” which directly supports the claimed causal link. It is discussed at the Bangladesh banking-system level, matching the country-level import-financing scope implied by the claim."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-11",
+      "imports",
+      "raises payment difficulty",
+      "Credit downgrade delays import settlement"
+    ],
+    [
+      "2023-03-11",
+      "imports",
+      "stalls import payments",
+      "Dollar shortage stalls import bills"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,42 @@
+To represent interactions among the operational variables, several derived indicators were constructed from the supply graph data. These variables were intended to capture operational balance, distribution intensity, disruption severity, and stock accumulation.
+
+First, the \textit{production\_sales\_ratio} was computed as
+\[
+\frac{\text{Production}}{\text{Sales} + \varepsilon}
+\]
+where a small constant $\varepsilon$ was added to avoid division by zero. This variable reflects whether production is keeping pace with realized demand. Second, the \textit{delivery\_sales\_ratio} was computed as
+\[
+\frac{\text{Delivery}}{\text{Sales} + \varepsilon}
+\]
+providing a measure of downstream replenishment relative to demand. Third, the \textit{factory\_issue\_rate} was defined as
+\[
+\frac{\text{Factory\_Issue}}{\text{Production} + \varepsilon}
+\]
+which normalizes production-related issues by the scale of output. 
+
+Finally, an \textit{inventory\_proxy} was constructed as the cumulative sum of $(\text{Production} - \text{Sales})$ within each product, yielding an approximate indicator of stock build-up or depletion over time.
+
+The calculation of the inventory proxy can be expressed mathematically using either a cumulative summation or a recursive formulation.
+
+Summation Formula:
+\begin{equation}
+I_{p,t} = \sum_{i=1}^{t} \left( P_{p,i} - S_{p,i} \right)
+\end{equation}
+
+Recursive Formula:
+\begin{equation}
+I_{p,t} = I_{p,t-1} + P_{p,t} - S_{p,t}
+\end{equation}
+
+\noindent Where:
+\begin{itemize}
+    \item $I_{p,t}$ denotes the \textit{inventory proxy} for product $p$ at time step $t$.
+    \item $P_{p,i}$ denotes the \textit{Production} volume for product $p$ at time step $i$.
+    \item $S_{p,i}$ denotes the \textit{Sales} volume for product $p$ at time step $i$.
+    \item $i = 1, 2, \dots, t$ represents the chronological sequence of time steps up to the current period $t$, corresponding to the cumulative summation applied within each product group.
+    \item For the recursive formulation, the initial inventory prior to the first observation is assumed to be zero (i.e., $I_{p,0} = 0$).
+\end{itemize}
+
+Together, these derived variables extend the raw operational signals by encoding relationships that are more directly interpretable from a supply-chain perspective. Rather than treating production, delivery, and factory issues as isolated measurements, the engineered ratios and cumulative inventory term represent the operational
+state of the system in a form that is more suitable for predictive and causal analysis. An overview of these derived features is provided in \cref{tab:derived_features}.
+

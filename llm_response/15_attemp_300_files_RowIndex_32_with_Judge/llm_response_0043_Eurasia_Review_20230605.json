@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Eurasia Review",
+    "date": "2023-06-05",
+    "url": "https://www.eurasiareview.com/05062023-after-usa-why-does-bangladesh-now-want-to-expand-its-apparel-export-to-east-asia-oped/",
+    "body_preview": "For Bangladesh's apparel sector (RMG), South Korea, Taiwan and Japan have a lot of promises. Bangladesh now holds roughly a 3.0% market share in Japan, which has an annual market size of about $23 billion.\n\nIf one looks at history, the Japanese market opened up to Bangladeshi RMG in 2010, and there are many reasons why the country's share hasn't increased dramatically. In fact, woven goods from Bangladesh have been able to enter that market duty-free since April 2014 and knit goods since 1 April"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "Strict Japanese quality control",
+      "edge_label": "limits exports",
+      "evidence_quote": "have RMG exports to Japan not performed better? As several industry insiders have noted, Japanese quality control is quite strict.",
+      "scope_justification": "The article explicitly links Japanese quality control to underperformance of Bangladeshi RMG exports to Japan, which is a discussion of exported garments (volume sent internationally).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "have RMG exports to Japan not performed better? As several industry insiders have noted, Japanese quality control is quite strict.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The provided sentence appears verbatim in the article and is immediately followed by explanations (third‑party inspections, producers unable to meet standards and avoidance of the market) that explicitly link strict Japanese quality control to weaker Bangladeshi RMG exports to Japan at the country/market level."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Industry sought lenient buyers",
+      "edge_label": "discourages exports",
+      "evidence_quote": "the industry as a whole has historically sought out the 'low-hanging fruits' or the more lenient terms and conditions provided by the US and EU buyers. As a result, RMG makers have hitherto avoided the Japanese market.",
+      "scope_justification": "The article states that seeking lenient buyers caused RMG makers to avoid the Japanese market, directly relating to Bangladesh's RMG export flows to Japan (international shipments).",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the industry as a whole has historically sought out the 'low-hanging fruits' or the more lenient terms and conditions provided by the US and EU buyers. As a result, RMG makers have hitherto avoided the Japanese market.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact quoted sentences appear in the article. The phrase 'As a result' explicitly links the industry's pursuit of 'low-hanging fruits' (lenient US/EU buyers) to RMG makers avoiding the Japanese market, and this is stated at the industry/country level, matching the claim about Bangladesh's RMG exports to Japan."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-05",
+      "exports",
+      "limits exports",
+      "Strict Japanese quality control"
+    ],
+    [
+      "2023-06-05",
+      "exports",
+      "discourages exports",
+      "Industry sought lenient buyers"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-20",
+    "url": "https://asianews.network/money-or-no-money-crisis-persists/",
+    "body_preview": "DHAKA - We are told that taka is available, and then it's not there anymore. The same can be seen in the case of the US dollar as well. According to the government, there is no shortage of money. The central bank has enough taka, too. And any talk of a dollar crisis is made out to seem absolutely absurd.\n\nHowever, this plainly contradicts what is being reported in the media. The Rampal Power Station's production had to be shut down within 27 days of its inception, thanks to depletion of imported"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Coal imports halted",
+      "edge_label": "halts import opening",
+      "evidence_quote": "“Due to a shortage of greenbacks, we could not open LCs and import coal from Indonesia.”",
+      "scope_justification": "The article explicitly discusses the import of coal as a real-world import activity and states that LC shortage prevented it, matching the feature’s definition of goods brought in via LC availability.",
+      "verification": {
+        "quote_similarity": 0.989,
+        "quote_best_match": "Due to a shortage of greenbacks, we could not open LCs and import coal from Indonesia.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states, \"Due to a shortage of greenbacks, we could not open LCs and import coal from Indonesia,\" which directly links the shortage to the halted import. This is presented at the relevant real-world import/company-operations scope, so the claimed causal relationship is supported."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-20",
+      "imports",
+      "halts import opening",
+      "Coal imports halted"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

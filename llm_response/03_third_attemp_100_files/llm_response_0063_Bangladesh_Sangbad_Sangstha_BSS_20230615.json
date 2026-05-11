@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-15",
+    "url": "https://www.bssnews.net/business/131382",
+    "body_preview": "DHAKA, June 15, 2023 (BSS) - Chinese company Mingda (Bangladesh) New Material Co. Ltd. is going to invest US$ 76.41 million in BEPZA Economic Zone (EZ) for producing diversified products.\n\nIt is the highest amount of proposed investment from a single company that has signed an agreement to establish factories in BEPZA EZ, said a press release.\n\nThe company today signed the agreement with Bangladesh Export Processing Zones Authority (BEPZA) to this effect at BEPZA Complex in the city.\n\nAli Reza M"
+  },
+  "llm_connections": [
+    {
+      "feature": "Production",
+      "event_summary": "sets up factories in Bangladesh",
+      "edge_label": "shifts production",
+      "evidence_quote": "Now they are going to set up factories in Bangladesh due to increasing wages of the workers of China, he added.",
+      "scope_justification": "The article explicitly links rising Chinese wages to the company's decision to establish factories in Bangladesh, which is a company-level decision to locate manufacturing (factory-level production)."
+    }
+  ],
+  "triplets": [
+    [
+      "Production",
+      "shifts production",
+      "sets up factories in Bangladesh"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

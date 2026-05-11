@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "MSN International Edition",
+    "date": "2023-02-17",
+    "url": "https://www.msn.com/en-xl/asia/bangladesh/dollar-crisis-casts-a-shadow-over-operation-of-rampal-coal-fired-power-plant/ar-AA17z4yx",
+    "body_preview": "Dhaka, Feb. 16 -- The 1320 MW Rampal power plant has resumed its partial production, but officials still worry about its uninterrupted operation due to dollar crisis that may again disrupt the import of coal, the plant's main fuel.\n\nThe Unit-1 of the coal-fired plant resumed production from Wednesday after a month-long shutdown caused by shortage of coal.\n\nThe plant is still under a test run that started in August before being discontinued last month.\n\nA kind of concern was expressed by the offi"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar crisis halts coal imports",
+      "edge_label": "prevents LC opening",
+      "evidence_quote": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+      "scope_justification": "The article explicitly links a 'dollar crisis' to inability to open letters of credit for coal imports, matching the feature's scope of exchange-rate related disruption to imports.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article and explicitly states the authorities were unable to open letters of credit to import coal 'due to the dollar crisis,' which directly links the currency problem to import disruption for the plant (matching the feature's exchange-rate-related import disruption)."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-17",
+      "currency_log_return",
+      "prevents LC opening",
+      "dollar crisis halts coal imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

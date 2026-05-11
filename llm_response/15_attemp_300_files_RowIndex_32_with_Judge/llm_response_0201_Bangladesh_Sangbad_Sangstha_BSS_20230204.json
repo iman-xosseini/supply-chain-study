@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-04",
+    "url": "https://www.bssnews.net/news/108918",
+    "body_preview": "DHAKA, Feb 4, 2023 (BSS) - State Minister for Foreign Affairs Md Shahriar Alam has said Bangladesh and South Africa have common socio-economic development objectives and there are huge potentials to boost trade and investment between the two countries.\n\nHe observed that visa waiver agreement for diplomatic and official passport holders and agreement on avoidance of double taxation between Bangladesh and South Africa will facilitate contacts and increase trade and investment between the two count"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "visa and tax agreements",
+      "edge_label": "increase exports",
+      "evidence_quote": "will facilitate contacts and increase trade and investment between the two countries.",
+      "scope_justification": "The article explicitly says these agreements will 'increase trade' between Bangladesh and South Africa, which refers to international goods flows (exports) between the two countries.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "will facilitate contacts and increase trade and investment between the two countries.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating the visa waiver and double taxation agreements \"will facilitate contacts and increase trade and investment between the two countries,\" which explicitly claims a causal effect at the bilateral (country-to-country) level, matching the exports/trade scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-04",
+      "exports",
+      "increase exports",
+      "visa and tax agreements"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

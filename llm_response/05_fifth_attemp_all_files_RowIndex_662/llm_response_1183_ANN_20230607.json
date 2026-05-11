@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-06-07",
+    "url": "https://asianews.network/high-inflation-and-power-crisis-pm-hasina-asks-ministries-to-find-a-way-out/",
+    "body_preview": "DHAKA - Prime Minister Sheikh Hasina yesterday asked the ministries concerned to come up with a roadmap to tackle inflation and power crisis, the biggest sources of people's sufferings.\n\n\"Inflation can't be allowed to rise any further,\" Planning Minister MA Mannan quoted the prime minister as saying at a meeting of the Executive Committee of the National Economic Council (Ecnec).\n\nThe prime minister ordered the Trading Corporation of Bangladesh (TCB) to have larger stocks of essentials so that i"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka losing value",
+      "edge_label": "raises import costs",
+      "evidence_quote": "The taka has been losing its value against the dollar because of the dollar crisis.",
+      "scope_justification": "The article explicitly states the taka (BDT) has lost value against the dollar and links this to higher 'actual buying price' for goods, matching USD-BDT exchange-rate effects on import costs."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "raises import costs",
+      "taka losing value"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

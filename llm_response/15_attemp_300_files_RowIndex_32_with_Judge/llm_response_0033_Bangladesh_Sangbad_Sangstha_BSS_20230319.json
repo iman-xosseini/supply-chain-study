@@ -1,0 +1,75 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-19",
+    "url": "https://www.bssnews.net/business/116386",
+    "body_preview": "DHAKA, March 19, 2023 (BSS) - Potato export from farmers, supported by the Food and Agriculture Organization of the United Nations (FAO), continues to grow, as producers came together today to celebrate another year of success.\n\nFour producer co-operatives joined the fourth annual potato export inauguration in Rangpur - the country's main potato growing region, a FAO press release said.\n\nLast year, Bangladesh produced 11 million metric tonnes - making it the third largest producer in Asia, after"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "FAO support increases exports",
+      "edge_label": "increases exports",
+      "evidence_quote": "Potato export from farmers, supported by the Food and Agriculture Organization of the United Nations (FAO), continues to grow,",
+      "scope_justification": "The article explicitly states that FAO support is associated with growing potato export volumes—i.e., shipments of a commodity to international markets, matching the 'exports' definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Potato export from farmers, supported by the Food and Agriculture Organization of the United Nations (FAO), continues to grow,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact quoted sentence appears at the start of the article. The text explicitly attributes the export initiative's success to a partnership with FAO and describes FAO-led training, matchmaking and facilitation as reasons exports have grown. The article discusses exports at the national/regional level (national export figures and destination countries), matching the claimed scope."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Government support increases exports",
+      "edge_label": "supports increase in exports",
+      "evidence_quote": "The Ministry of Agriculture, through the Department of Agricultural Extension (DAE), and BADC have been supporting potato producers to increase exports since 2019.",
+      "scope_justification": "This sentence explicitly links government agencies' support to increased potato exports, referring to the volume of goods sent internationally for that commodity.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The Ministry of Agriculture, through the Department of Agricultural Extension (DAE), and BADC have been supporting potato producers to increase exports since 2019.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article. The text explicitly links government support (DAE and BADC) to the goal and outcome of increasing potato exports, and the article discusses this at the national level for Bangladesh."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Partnership drives export success",
+      "edge_label": "drives export success",
+      "evidence_quote": "The success of the export initiative is due to a partnership between the Sara Bangla Krishak Society (SBKS), a national network of farmers' organizations, and FAO",
+      "scope_justification": "The article directly attributes success of the potato export initiative to a partnership, tying that partnership to export performance (international shipments) as defined by 'exports.'",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The success of the export initiative is due to a partnership between the Sara Bangla Krishak Society (SBKS), a national network of farmers' organizations, and FAO",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence \"The success of the export initiative is due to a partnership between the Sara Bangla Krishak Society (SBKS) ... and FAO...\", which explicitly attributes the export initiative's success to that partnership, and the context concerns potato exports at the regional/national level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-19",
+      "exports",
+      "increases exports",
+      "FAO support increases exports"
+    ],
+    [
+      "2023-03-19",
+      "exports",
+      "supports increase in exports",
+      "Government support increases exports"
+    ],
+    [
+      "2023-03-19",
+      "exports",
+      "drives export success",
+      "Partnership drives export success"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 3
+}

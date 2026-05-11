@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-19",
+    "url": "https://www.bssnews.net/business/132106",
+    "body_preview": "DHAKA, June 19, 2023 (BSS) - Stock markets today closed the session of the week with an upward trend since investors found positive gestures in the new monetary policy statement of the Bangladesh Bank (BB).\n\nThe central bank on Sunday announced its monetary policy statement (MPS) for the first half of the fiscal 2023-24 adopting a contractionary monetary policy stance to contain inflation.\n\nThe central bank has removed the interest rate cap of 6 percent-9 percent and replaced it with a market-dr"
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "Market closes upward",
+      "edge_label": "boosts equity market",
+      "evidence_quote": "Stock markets today closed the session of the week with an upward trend since investors found positive gestures in the new monetary policy statement",
+      "scope_justification": "The article explicitly discusses the overall stock markets and DSE/CSE index performance, which matches the feature’s broad equity market scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Stock markets today closed the session of the week with an upward trend since investors found positive gestures in the new monetary policy statement",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quote appears almost verbatim in the article, stating that stock markets closed upward because investors found positive gestures in the new monetary policy statement. The article also discusses the broader stock markets and the DSE/CSE indices, matching the feature’s scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-19",
+      "stock_market_close",
+      "boosts equity market",
+      "Market closes upward"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

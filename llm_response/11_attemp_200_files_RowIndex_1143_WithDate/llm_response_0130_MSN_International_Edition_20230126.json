@@ -1,0 +1,31 @@
+{
+  "article": {
+    "source": "MSN International Edition",
+    "date": "2023-01-26",
+    "url": "https://www.msn.com/en-xl/asia/bangladesh/sugar-to-cost-tk-5-more-per-kg-from-feb-1/ar-AA16LFmA",
+    "body_preview": "Dhaka, Jan. 26 -- The government has increased sugar price again, by Tk 5 per kg, which will be effective from February 1, 2023.\n\nAs per discussion with the commerce ministry, a circular has been issued today by the executive secretary of Bangladesh Sugar Refiners Association.\n\nAfter the price hike, the maximum retail price of unpackaged sugar will be Tk 107 while the price of packaged sugar will be Tk 112.\n\n\"Taking into account the price increase in the international market and the exchange rat"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "government raised sugar price",
+      "edge_label": "reflects exchange-rate impact",
+      "evidence_quote": "Taking into account the price increase in the international market and the exchange rate of the US dollar",
+      "scope_justification": "The article explicitly cites the US dollar exchange rate as a reason for setting higher domestic sugar prices, directly addressing exchange-rate movement at the national level described by the feature."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-26",
+      "currency_log_return",
+      "reflects exchange-rate impact",
+      "government raised sugar price"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,56 @@
+{
+  "article": {
+    "source": "Al Jazeera Online",
+    "date": "2023-02-23",
+    "url": "https://www.aljazeera.com/economy/2023/2/23/severe-dollar-crisis-hobbles-bangladesh-businesses",
+    "body_preview": "Dhaka, Bangladesh - Spice trader Mohammed Enayet Ullah has made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, some of the most essential spices used in Bangladeshi cooking, only to be refused by banks due to a shortage of dollars.\n\nImporters in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services. It is essentially a financial contract issued by an importer's b"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Import curbs and dollar shortage",
+      "edge_label": "reduces import availability",
+      "evidence_quote": "the government had stopped all non-essential imports and reduced the supply of dollars to commercial banks",
+      "scope_justification": "The article discusses Bangladesh’s overall imports and import financing conditions, matching the country-wide scope of the imports feature.",
+      "verification": {
+        "quote_similarity": 0.995,
+        "quote_best_match": "the government had stopped all non-essential imports and reduced the supply of dollars to commercial banks.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the government had stopped all non-essential imports and reduced the supply of dollars to commercial banks, and explains that this has forced banks to refuse new letters of credit applications. This is a country-level discussion of Bangladesh’s import conditions, matching the claimed scope and causal relationship."
+      }
+    },
+    {
+      "feature": "imports",
+      "event_summary": "Spice importer struggles to import",
+      "edge_label": "blocks import financing",
+      "evidence_quote": "made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, only to be refused by banks due to a shortage of dollars.",
+      "scope_justification": "Although this is a specific importer, the event directly concerns the import of goods into Bangladesh; however, it is narrower than the national aggregate import measure.",
+      "verification": {
+        "quote_similarity": 0.849,
+        "quote_best_match": "made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, some of the most essential spices used in Bangladeshi cooking, only to be refused by banks due to a shortage of dollars.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says Ullah tried to open letters of credit for spice imports and was refused by banks due to a shortage of dollars, which directly links import financing to the shortage. The discussion is about a specific importer but still squarely concerns import activity, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-23",
+      "imports",
+      "reduces import availability",
+      "Import curbs and dollar shortage"
+    ],
+    [
+      "2023-02-23",
+      "imports",
+      "blocks import financing",
+      "Spice importer struggles to import"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

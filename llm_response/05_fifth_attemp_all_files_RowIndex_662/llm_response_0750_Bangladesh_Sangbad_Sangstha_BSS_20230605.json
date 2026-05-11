@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-05",
+    "url": "https://www.bssnews.net/news-flash/129314",
+    "body_preview": "DHAKA, June 5, 2023 (BSS) - Awami League President and Prime Minister Sheikh Hasina today urged the party leaders and activists to take all out preparations for the next national polls saying it would be a challenge due to multifaceted conspiracies.\n\nThe next election is a challenge because there are conspiracies from various quarters ,\" she said while exchanging views with the leaders , activists of Awami League (AL) and its associates bodies at her official residence Ganabhaban.\n\nSheikh Hasina"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "boost agricultural production",
+      "edge_label": "increases exports",
+      "evidence_quote": "The head of the government urged all to boost up agricultural production by not keeping any piece of land uncultivated in the country, in order to meet the local demand and also export those.",
+      "scope_justification": "The article explicitly links boosting national agricultural production to exporting goods, which directly concerns country-level exports that are a component of the balance of trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases exports",
+      "boost agricultural production"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

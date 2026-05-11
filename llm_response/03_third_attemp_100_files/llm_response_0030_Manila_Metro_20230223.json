@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Manila Metro",
+    "date": "2023-02-23",
+    "url": "https://www.manilametro.com/news/273558627/adani-a-good-deal-for-bangladesh-report",
+    "body_preview": "Dhaka [Bangladesh], February 23 (ANI): Although US short seller Hindenburg Research on January 24 published the findings of a two-year investigation alleging that the Adani Group had engaged in market manipulation and accounting malpractices, it is, itself, into short selling of shares, which is considered unethical in many countries, the Dhaka Tribune reported, adding that its position as a short seller may influence the positions it takes.\n\nAs per the agreement with the Bangladesh government, "
+  },
+  "llm_connections": [
+    {
+      "feature": "Production",
+      "event_summary": "Seasonal demand alters production",
+      "edge_label": "adjusts production",
+      "evidence_quote": "The government of Bangladesh will produce or not produce electricity (depending on the variation of seasonal demands) from the Adani power plant",
+      "scope_justification": "The article explicitly states that seasonal demand will determine whether electricity is produced from the Adani plant, directly describing production-volume decisions for electricity generation."
+    },
+    {
+      "feature": "Production",
+      "event_summary": "1600 MW requires alternative fuels",
+      "edge_label": "shifts production fuel",
+      "evidence_quote": "this 1,600 MW of electricity inside Bangladesh would have had to be produced with diesel, furnace oil, or imported LNG instead of coal",
+      "scope_justification": "The sentence explicitly states a causal change in how 1,600 MW of electricity would be produced (fuel type), which directly pertains to the production process and output composition."
+    }
+  ],
+  "triplets": [
+    [
+      "Production",
+      "adjusts production",
+      "Seasonal demand alters production"
+    ],
+    [
+      "Production",
+      "shifts production fuel",
+      "1600 MW requires alternative fuels"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

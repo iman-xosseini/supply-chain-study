@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-06",
+    "url": "https://www.bssnews.net/business/109295",
+    "body_preview": "DHAKA, Feb 6, 2023 (BSS) - Bangladesh Garment Manufacturers and Exporters Association (BGMEA) and SOWTEX along with Confederation of Indian Textile Industries (CITI) have planned two Textile Sourcing Meets'23 and Road Show in India from February 9 to 12.\n\nThe event will be led by BGMEA President Faruque Hassan and Vice President Shahidullah Azim along with a team of delegates from Bangladesh RMG Industries.\n\nThe BGMEA team is going for close interaction with top Indian Textile Manufacturers in a"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "India raw material support",
+      "edge_label": "adds import volume",
+      "evidence_quote": "can contribute $15 billion of raw material support from India in the next 3-5 years.",
+      "scope_justification": "The article explicitly quantifies a country-level amount ($15 billion) of raw material support from India to Bangladesh, which corresponds to nationwide import volume of goods."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "adds import volume",
+      "India raw material support"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

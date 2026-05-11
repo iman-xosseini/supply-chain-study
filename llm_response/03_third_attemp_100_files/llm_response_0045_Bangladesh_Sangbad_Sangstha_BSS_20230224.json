@@ -1,0 +1,67 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-02-24",
+    "url": "https://www.bssnews.net/news-flash/112237",
+    "body_preview": "CHATTOGRAM, Feb 24, 2023 (BSS) - The country would not face any shortage of essential commodities in the coming fasting month of Ramadan as the timely measures of the government have helped increase the imports of consumer goods significantly stabilizing the market with sufficient supply.\n\nAlso the adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan, thanks to the government for easing opening letters of credit (LCs) for essential commodities to keep"
+  },
+  "llm_connections": [
+    {
+      "feature": "inventory_proxy",
+      "event_summary": "wholesalers built stocks",
+      "edge_label": "increases inventory",
+      "evidence_quote": "the adequate imports of commodities have helped wholesalers build sizable stocks ahead of the Ramadan",
+      "scope_justification": "The article explicitly states wholesalers built sizable stocks, which directly corresponds to the feature's scope of unsold stock or warehouse inventory levels."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "LCs opened shipments arrived",
+      "edge_label": "increases arrivals",
+      "evidence_quote": "essential products against LCs opened recently have started coming to the market",
+      "scope_justification": "This sentence describes goods arriving at the market/port as a result of LC openings, which falls within Delivery's logistics and shipment arrival scope."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "supply chain ensures normal market",
+      "edge_label": "normalizes market",
+      "evidence_quote": "If the supply chain is in place, the market will be normal",
+      "scope_justification": "The statement links having the supply chain in place (logistics performance) to market normality, matching Delivery's focus on logistics performance."
+    }
+  ],
+  "triplets": [
+    [
+      "inventory_proxy",
+      "increases inventory",
+      "wholesalers built stocks"
+    ],
+    [
+      "Delivery",
+      "increases arrivals",
+      "LCs opened shipments arrived"
+    ],
+    [
+      "Delivery",
+      "normalizes market",
+      "supply chain ensures normal market"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 3
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "SME & Entrepreneurship Magazine",
+    "date": "2023-05-02",
+    "url": "https://sme.asia/dhl-global-forwarding-expands-its-dedicated-container-freight-station-cfs-space-in-bangladesh-to-meet-global-garment-export-needs/",
+    "body_preview": "DHAKA, BANGLADESH - Media OutReach - 2 May 2023 - DHL Global Forwarding, the freight specialist arm of Deutsche Post DHL Group, invested over 2 million EUR to expand its dedicated Container Freight Station (CFS) space in Bangladesh to cater to the nation's ever-growing readymade garments (RMG) industry. CFSs are a scarcity in Bangladesh, with less than 20 CFSs countrywide. These facilities help pick up goods from multiple suppliers and consolidate them into a single container before shipping to "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Port access speeds shipments",
+      "edge_label": "accelerates shipment flow",
+      "evidence_quote": "“The expansion to 70,000 square foot facility's strategic location will allow for quicker access to the port”",
+      "scope_justification": "The article explicitly discusses shipping goods out through the port, which relates to the movement of goods brought in or shipped via Bangladesh’s trade logistics at a countrywide level.",
+      "verification": {
+        "quote_similarity": 0.986,
+        "quote_best_match": "The expansion to 70,000 square foot facility's strategic location will allow for quicker access to the port,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted idea appears in the article almost verbatim: the expansion's strategic location will allow for quicker access to the port. The text explicitly links the facility's location to faster shipping of goods, but the discussion is about DHL's specific CFS facility in Chittagong, not Bangladesh-wide imports at a countrywide scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-02",
+      "imports",
+      "accelerates shipment flow",
+      "Port access speeds shipments"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

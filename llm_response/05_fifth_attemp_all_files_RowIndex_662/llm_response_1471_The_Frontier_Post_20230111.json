@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "The Frontier Post",
+    "date": "2023-01-11",
+    "url": "https://thefrontierpost.com/bd-opp-holds-rally-seeking-pms-resignation/",
+    "body_preview": "DHAKA (Agencies): Thousands of supporters of Bangladesh's main opposition party have rallied across Bangladeshi cities to demand Prime Minister Sheikh Hasina's resignation and the formation of a caretaker government to conduct general elections. The Bangladesh Nationalist Party (BNP) and its allies staged protests in the capital Dhaka and nine other cities on Wednesday, the latest of several demonstrations in recent months amid mounting anger over the rising cost of living.\n\nThe opposition and r"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Bangladeshi taka depreciation",
+      "edge_label": "drives up import costs",
+      "evidence_quote": "The Bangladeshi taka has depreciated by up to 25 percent, driving up the cost of food imports and making life harder for the country's poorest citizens.",
+      "scope_justification": "The article explicitly links a depreciation of the national currency to higher costs of food imports, which matches the feature's focus on exchange-rate changes affecting import costs."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "drives up import costs",
+      "Bangladeshi taka depreciation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

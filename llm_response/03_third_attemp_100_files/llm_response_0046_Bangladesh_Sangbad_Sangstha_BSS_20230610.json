@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-10",
+    "url": "https://www.bssnews.net/news/130295",
+    "body_preview": "DHAKA, June 10, 2023 (BSS) - The three-day Bangladesh International Aquaculture Seafood Show 2023 will be held for the first time in the country in a large extent on October 19-21, 2023 in Dhaka.\n\nThe show will be held at the Bangabandhu International Conference Center (BICC) in the capital where both local and foreign companies related to aquaculture and seafood industry, seafood processors, exporters, researchers and educationists, representatives from government agencies, financial institutio"
+  },
+  "llm_connections": [
+    {
+      "feature": "Group",
+      "event_summary": "Bangladesh aquaculture show",
+      "edge_label": "promotes industry growth",
+      "evidence_quote": "this show will be held in a bid to ensure speedy flourish of the country's aquaculture seafood industry in both local and international arena",
+      "scope_justification": "The quote explicitly states the show is intended to cause a 'speedy flourish' of the 'aquaculture seafood industry', which matches the 'Group' feature's scope as the broad industry sector."
+    }
+  ],
+  "triplets": [
+    [
+      "Group",
+      "promotes industry growth",
+      "Bangladesh aquaculture show"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

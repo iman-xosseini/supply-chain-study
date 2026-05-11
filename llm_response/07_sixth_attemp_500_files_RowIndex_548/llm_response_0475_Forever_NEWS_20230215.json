@@ -1,0 +1,44 @@
+{
+  "article": {
+    "source": "Forever NEWS",
+    "date": "2023-02-15",
+    "url": "https://www.forevernews.in/politics/indo-bangla-joint-venture-rampal-plant-to-resume-power-production-from-wednesday-750189",
+    "body_preview": "By Sumi Khan\n\nDhaka, Feb 15 (IANS) Rampal power plant, a joint venture of Indian state-owned NTPC and Bangladesh Power Development Board (BPDB), will resume its operations from Wednesday.\n\nUnit-1 of the plant, having 660 MW capacity, was forced to shut down on January 14 due to shortage of coal. The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.\n\nAfter a lot of persuasion at the policy level, LC-opening was allowed for import"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LC blocked imports",
+      "edge_label": "blocks imports",
+      "evidence_quote": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+      "scope_justification": "The article explicitly states LC availability (blocked by the dollar crisis) prevented importing coal, matching the 'imports' feature which cites LC availability as a driver of goods brought in."
+    },
+    {
+      "feature": "imports",
+      "event_summary": "LC opened; consignment arrived",
+      "edge_label": "enables imports",
+      "evidence_quote": "After a lot of persuasion at the policy level, LC-opening was allowed for importing coal and the supplier sent a consignment of 30,000 metric tonnes",
+      "scope_justification": "The article explicitly links policy-enabled LC opening to a supplier sending a coal consignment to the country, directly relating LC availability to import volumes as defined."
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-15",
+      "imports",
+      "blocks imports",
+      "LC blocked imports"
+    ],
+    [
+      "2023-02-15",
+      "imports",
+      "enables imports",
+      "LC opened; consignment arrived"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 2
+}

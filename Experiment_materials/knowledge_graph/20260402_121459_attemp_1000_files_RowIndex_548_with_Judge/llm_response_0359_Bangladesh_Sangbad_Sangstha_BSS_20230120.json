@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-20",
+    "url": "https://www.bssnews.net/business/106297",
+    "body_preview": "DHAKA, Jan 20, 2023 (BSS) - Commerce Minister Tipu Munshi today sought duty\n\nfree benefits from the United States of America (USA) in importing cotton.\n\n\"Bangladesh is the second largest exporter of Ready-made Garments (RMG) in\n\nthe world. About 82 percent of Bangladesh's total exports come from RMG. The\n\nUSA is a major cotton producer. Every year, Bangladesh imports a huge amount\n\nof cotton from different countries for use in garment factories. If the USA\n\ngrants Bangladesh duty-free trade faci"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Duty-free cotton import request",
+      "edge_label": "seeks duty-free import access",
+      "evidence_quote": "sought duty free benefits from the United States of America (USA) in importing cotton",
+      "scope_justification": "The article discusses Bangladesh's import of cotton as a country-level input for garment factories, which matches the feature's national imports scope.",
+      "verification": {
+        "quote_similarity": 0.994,
+        "quote_best_match": "sought duty free benefits from the United States of America (USA) in importing cotton.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says Tipu Munshi \"sought duty free benefits\" from the USA for importing cotton, closely matching the quoted evidence. It also states that if the USA grants duty-free trade facilities for cotton imports used in RMG factories, it will benefit Bangladesh's industry, which explicitly links the requested duty-free import access to the stated outcome at the country/industry level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-20",
+      "imports",
+      "seeks duty-free import access",
+      "Duty-free cotton import request"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

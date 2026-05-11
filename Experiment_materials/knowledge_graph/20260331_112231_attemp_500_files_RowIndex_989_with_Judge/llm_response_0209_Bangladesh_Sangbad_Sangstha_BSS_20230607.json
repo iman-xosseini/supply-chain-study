@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-07",
+    "url": "https://www.bssnews.net/business/129745",
+    "body_preview": "DHAKA, June 7, 2023 (BSS) - Federation of Bangladesh Chambers of Commerce and Industry (FBCCI) President Md Jashim Uddin today urged the government to extend policy support towards import-substitute industries in the country to lessen import pressure on foreign exchange.\n\nThe FBCCI president made the call while addressing a post-budget discussion as a special guest organized by the Economic Reporters' Forum (ERF) jointly with RAPID and Asia Foundation held at the ERF auditorium at Paltan in the "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "import-cutting policy fails",
+      "edge_label": "fails to reduce",
+      "evidence_quote": "So, the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar,",
+      "scope_justification": "The quote explicitly links a national policy (cutting imports) to 'stress on the dollar', referring to country-level USD/BDT exchange-rate pressure, which matches the feature's exchange-rate volatility scope.",
+      "verification": {
+        "quote_similarity": 0.99,
+        "quote_best_match": "\"So, the Bangladesh Bank's move only to cut imports is not a solution to reduce stress on the dollar,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact quote appears in the article. It explicitly states that cutting imports 'is not a solution to reduce stress on the dollar,' asserting a causal claim that the import-cutting policy fails to reduce exchange-rate pressure, and the context (Bangladesh Bank, Taka per dollar) is at the national currency level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-07",
+      "currency_log_return",
+      "fails to reduce",
+      "import-cutting policy fails"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

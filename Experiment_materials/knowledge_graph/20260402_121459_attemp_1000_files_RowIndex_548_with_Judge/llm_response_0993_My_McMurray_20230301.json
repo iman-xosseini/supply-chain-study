@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "My McMurray",
+    "date": "2023-03-01",
+    "url": "https://www.mymcmurray.com/?p=1472239",
+    "body_preview": "DHAKA, Bangladesh (AP) -- Argentina's Foreign Minister Santiago Cafiero said Tuesday that Russia's invasion of Ukraine must stop and has not only destabilized peace but also impacted prices in his country.\n\n\"Latin America is a zone of peace, the most densely populated zone of peace,\" Cafiero told The Associated Press in an interview. \"And we have no military developments and no military infrastructure to participate in a war that we demand should be finished and should not continue.\"\n\nHe said th"
+  },
+  "llm_connections": [
+    {
+      "feature": "stock_market_close",
+      "event_summary": "War increases Argentina prices",
+      "edge_label": "pushes prices higher",
+      "evidence_quote": "the war ... resulted in the increase in food, fertilizer and energy prices ... \"generated high inflation,\"",
+      "scope_justification": "The article links the war to broad price inflation in Argentina, which is a country-level economic impact relevant to market sentiment at the national scale.",
+      "verification": {
+        "quote_similarity": 0.768,
+        "quote_best_match": "resulted in the increase in food, fertilizer and energy prices that had",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the war resulted in increases in food, fertilizer, and energy prices and that this impacted Argentina, with Cafiero adding that it generated high inflation. This is a country-level economic effect, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-03-01",
+      "stock_market_close",
+      "pushes prices higher",
+      "War increases Argentina prices"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/national-budget-2023-2024/128488",
+    "body_preview": "DHAKA, June 01, 2023 (BSS) - Finance Minister AHM Mustafa Kamal today said the government will focus on sustaining the economic recovery by successfully implementing the ongoing stimulus packages.\n\n\"We have completely overcome the effects of the pandemic. Therefore, in this budget, our aim will be to sustain the economic recovery by successfully implementing the ongoing stimulus packages,\" he said.\n\nThe minister said this while placing over Taka 7.61 lakh crore national budget for FY23-24 at the"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "War impacts exchange rates",
+      "edge_label": "impacts exchange rates",
+      "evidence_quote": "has had the biggest impact on inflation, government spending, balance of payments, foreign exchange reserves and exchange rates",
+      "scope_justification": "The article explicitly states the Russia-Ukraine war affected exchange rates at the national level, matching the feature's country-level exchange-rate (volatility) scope."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Exchange rate depreciation",
+      "edge_label": "depreciation increases import costs",
+      "evidence_quote": "increase in import costs due to post-war global inflation and the depreciation of the country's foreign exchange rate",
+      "scope_justification": "The article links depreciation of the country's foreign exchange rate to higher import costs, addressing country-level exchange-rate movements affecting import costs as defined by the feature."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "impacts exchange rates",
+      "War impacts exchange rates"
+    ],
+    [
+      "currency_log_return",
+      "depreciation increases import costs",
+      "Exchange rate depreciation"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade",
+    "stock_market_close"
+  ],
+  "num_connections_found": 2
+}

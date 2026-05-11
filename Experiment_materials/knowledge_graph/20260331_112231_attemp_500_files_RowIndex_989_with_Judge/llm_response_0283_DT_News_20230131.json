@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "DT News",
+    "date": "2023-01-31",
+    "url": "https://www.newsofbahrain.com/world/87779.html",
+    "body_preview": "Agencies | Dhaka\n\nThe Daily Tribune - www.newsofbahrain.com\n\nThe International Monetary Fund (IMF) has signed off on a $4.7 billion support loan package for Bangladesh to help it cope with soaring energy and food costs that have sparked huge protests.\n\nBangladesh and other South Asian countries dependent on fossil fuel imports were hit hard by sharp cost-of-living increases following Russia's attack of Ukraine.\n\nNationwide blackouts of up to 13 hours a day hit the electricity grid last year and "
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "local currency depreciation",
+      "edge_label": "increases costs",
+      "evidence_quote": "The local currency has depreciated around 25 per cent against the US dollar since last May, driving up costs for petrol distributors and power utilities",
+      "scope_justification": "The article reports a country-level USD–BDT depreciation causing higher costs for major energy distributors and utilities, which matches the feature's focus on exchange-rate-driven cost impacts at the national level.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The local currency has depreciated around 25 per cent against the US dollar since last May, driving up costs for petrol distributors and power utilities",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating the local currency 'has depreciated around 25 per cent ... driving up costs for petrol distributors and power utilities,' which explicitly asserts a causal link at the country level between depreciation and higher costs for major energy distributors/utilities."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-31",
+      "currency_log_return",
+      "increases costs",
+      "local currency depreciation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "LatestLY",
+    "date": "2023-02-15",
+    "url": "https://www.latestly.com/agency-news/world-news-india-bangladesh-joint-venture-power-plant-to-resume-production-after-month-long-halt-4845288.html",
+    "body_preview": "Dhaka, Feb 15 (PTI) A joint India-Bangladesh super thermal power plant in this country, shut down for a month due to coal shortage, will resume partial operations, according to media reports on Wednesday.\n\nOne of the two 660 MW units at Rampal power plant will resume electricity production on Wednesday after the coal import to run the unit was ensured amid a dollar crisis facing Bangladesh, BD News quoted Anwarul Azim, deputy general manager of Bangladesh-India Friendship Power Company Limited, "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Coal shipment enables restart",
+      "edge_label": "ensures fuel import",
+      "evidence_quote": "“the coal import to run the unit was ensured amid a dollar crisis”",
+      "scope_justification": "The article explicitly discusses imported coal needed to run the power unit, which fits the feature’s definition of goods brought in through import activity.",
+      "verification": {
+        "quote_similarity": 0.985,
+        "quote_best_match": "the coal import to run the unit was ensured amid a dollar crisis",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the unit will resume electricity production after the coal import to run the unit was ensured amid a dollar crisis. It also discusses this at the specific power-plant/unit level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-15",
+      "imports",
+      "ensures fuel import",
+      "Coal shipment enables restart"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

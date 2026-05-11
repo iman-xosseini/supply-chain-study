@@ -1,0 +1,75 @@
+{
+  "article": {
+    "source": "Asian News International (ANI)",
+    "date": "2023-01-24",
+    "url": "https://www.aninews.in/news/world/asia/bangladesh-may-overtake-china-to-be-eus-biggest-apparel-source20230124225226/",
+    "body_preview": "Dhaka [Bangladesh], January 24 (ANI): As China witnessing a decrease in its share of trade due to economic slowdown due to Covid implications, Bangladesh may overtake it as the source of most of the European Union's (EU) apparel, reported The Daily Star.\n\nAccording to Ahsan H Mansur, Executive Director of the Policy Research Institute, primarily it will be for the shortage of skilled labour (China's demography as its population is decreasing) and secondly for Bangladesh producing high-end value-"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "China loses market share",
+      "edge_label": "reduces exports",
+      "evidence_quote": "China has been losing its global apparel market share over the last couple of years mainly because of a shortage of skilled workforce",
+      "scope_justification": "The article explicitly ties China's shortage of skilled workers to a loss in its global apparel market share, which is a country-level change in export volumes.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "China has been losing its global apparel market share over the last couple of years mainly because of a shortage of skilled workforce,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating China has been losing global apparel market share 'mainly because of a shortage of skilled workforce,' which explicitly asserts a cause-and-effect link and refers to China's nation-level market share (exports), so the scope matches."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "Factory remediation increases orders",
+      "edge_label": "increases export orders",
+      "evidence_quote": "This ultimately brightened the image of the country and the sector itself for which international retailers and brands are coming up with increasing volumes of work orders.",
+      "scope_justification": "The article explicitly states remediation improved Bangladesh's image and caused international retailers to place increasing work orders, directly affecting export order volumes at the national level.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "This ultimately brightened the image of the country and the sector itself for which international retailers and brands are coming up with increasing volumes of work orders.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence verbatim. It explicitly links remediation (fortified workplace safety) to a brighter national/sector image which led international retailers and brands to place increasing volumes of work orders, and this effect is described at the country/sector level."
+      }
+    },
+    {
+      "feature": "exports",
+      "event_summary": "High-end production boosts exports",
+      "edge_label": "increases exports to EU",
+      "evidence_quote": "secondly for Bangladesh producing high-end value-added garment items, that it may overtake China with regard to exports to the EU in the near future.",
+      "scope_justification": "The article explicitly links Bangladesh's production of high-end value-added garments to the possibility of overtaking China in exports to the EU, matching the feature's country-level export scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "secondly for Bangladesh producing high-end value-added garment items, that it may overtake China with regard to exports to the EU in the near future.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the quoted sentence attributing to Ahsan H Mansur that Bangladesh's production of high-end value-added garments is a (second) reason it may overtake China in exports to the EU, explicitly linking the high-end production to increased/export prospects at the country level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-24",
+      "exports",
+      "reduces exports",
+      "China loses market share"
+    ],
+    [
+      "2023-01-24",
+      "exports",
+      "increases export orders",
+      "Factory remediation increases orders"
+    ],
+    [
+      "2023-01-24",
+      "exports",
+      "increases exports to EU",
+      "High-end production boosts exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 3
+}

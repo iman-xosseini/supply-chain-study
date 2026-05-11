@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-04-13",
+    "url": "https://asianews.network/investing-in-tech-education-key-to-raising-farm-output/",
+    "body_preview": "DHAKA - Investing in modern technologies and education is crucial to increasing productivity, sustainability and profitability for Bangladeshi's farmers and achieving the goal of smart agriculture, speakers said yesterday.\n\nIt is also important to train farmers to adopt technologies and advanced technology-based agricultural management, they said.\n\n\"For food security, we need more productivity,\" said Agriculture Minister Muhammad Abdur Razzaque.\n\nHe said smart agriculture needs time and for this"
+  },
+  "llm_connections": [
+    {
+      "feature": "inventory_proxy",
+      "event_summary": "Call for cold storage",
+      "edge_label": "mitigates wastage",
+      "evidence_quote": "Razzaque called for a multipurpose cold storage system to mitigate wastages",
+      "scope_justification": "The article explicitly links multipurpose cold storage to mitigating wastage of agricultural products, which directly pertains to levels of unsold stock and warehouse utilization described by inventory_proxy."
+    }
+  ],
+  "triplets": [
+    [
+      "inventory_proxy",
+      "mitigates wastage",
+      "Call for cold storage"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Northern Ireland News",
+    "date": "2023-01-24",
+    "url": "https://www.northernirelandnews.com/news/273425360/bangladesh-may-overtake-china-to-be-eu-biggest-apparel-source",
+    "body_preview": "Dhaka [Bangladesh], January 24 (ANI): As China witnessing a decrease in its share of trade due to economic slowdown due to Covid implications, Bangladesh may overtake it as the source of most of the European Union's (EU) apparel, reported The Daily Star.\n\nAccording to Ahsan H Mansur, Executive Director of the Policy Research Institute, primarily it will be for the shortage of skilled labour (China's demography as its population is decreasing) and secondly for Bangladesh producing high-end value-"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Orders shift from China",
+      "edge_label": "diverts work orders",
+      "evidence_quote": "“This is resulting in work orders being shifted from China to other Asian countries like Bangladesh”",
+      "scope_justification": "The article explicitly discusses work orders shifting between countries, which matches the feature’s country-level import volume context as trade inflows of goods/orders.",
+      "verification": {
+        "quote_similarity": 0.985,
+        "quote_best_match": "This is resulting in work orders being shifted from China to other Asian countries like Bangladesh,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states, “This is resulting in work orders being shifted from China to other Asian countries like Bangladesh,” which directly matches the quoted evidence. It also discusses this at the country/trade-flow level, so the scope aligns with the claimed import-related relationship."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-24",
+      "imports",
+      "diverts work orders",
+      "Orders shift from China"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-02-20",
+    "url": "https://www.daily-sun.com/post/675220/Businessmen-of-West-Bengal-interested-to-invest-in-economic-zones",
+    "body_preview": "DHAKA - The businessmen of West Bengal have showed their interest to invest in the economic zones in Bangladesh.\n\nThe visiting leaders of Bengal Chamber of Commerce and Industry expressed such interest during a view-exchange meeting with executive chairman of Bangladesh Economic Zones Authority (BEZA) Shaikh Yusuf Harun at the BEZA office today in the capital's Agargaon area.\n\nBEZA general manager Md Hasan Arif made a power-point presentation on the overall operations of BEZA in the view-exchang"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "economic zones boost exports",
+      "edge_label": "increases export receipts",
+      "evidence_quote": "they are expecting to fetch additional export receipts of $40 billion per year by 2030 from these economic zones.",
+      "scope_justification": "The article explicitly states a projected increase in national export receipts from economic zones, which directly concerns the exports component of the country's balance of trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases export receipts",
+      "economic zones boost exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

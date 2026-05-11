@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "MSN International Edition",
+    "date": "2023-02-17",
+    "url": "https://www.msn.com/en-xl/asia/bangladesh/dollar-crisis-casts-a-shadow-over-operation-of-rampal-coal-fired-power-plant/ar-AA17z4yx",
+    "body_preview": "Dhaka, Feb. 16 -- The 1320 MW Rampal power plant has resumed its partial production, but officials still worry about its uninterrupted operation due to dollar crisis that may again disrupt the import of coal, the plant's main fuel.\n\nThe Unit-1 of the coal-fired plant resumed production from Wednesday after a month-long shutdown caused by shortage of coal.\n\nThe plant is still under a test run that started in August before being discontinued last month.\n\nA kind of concern was expressed by the offi"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LC blocks coal import",
+      "edge_label": "blocks imports",
+      "evidence_quote": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+      "scope_justification": "The article explicitly links Letter of Credit (LC) availability to the import of coal for the plant, matching the feature's focus on import volumes driven by LC availability.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The authorities of the power plant were unable to open any letter of credit (LC) to import coal due to the dollar crisis.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears verbatim and explicitly links the inability to open LCs to the inability to import coal. The article discusses LC availability affecting coal imports specifically for the Rampal power plant, matching the claim’s scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-17",
+      "imports",
+      "blocks imports",
+      "LC blocks coal import"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

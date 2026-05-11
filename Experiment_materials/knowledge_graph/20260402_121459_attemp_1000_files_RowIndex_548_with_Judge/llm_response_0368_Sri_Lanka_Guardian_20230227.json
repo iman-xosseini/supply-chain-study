@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Sri Lanka Guardian",
+    "date": "2023-02-27",
+    "url": "http://www.srilankaguardian.org/2023/02/bangladesh-withdraws-duty-on-sugar.html",
+    "body_preview": "Bangladesh's National Board of Revenue (NBR) on Sunday withdrew import duty on both raw and refined sugar in order to enable consumers to get the sweetener at lower prices.\n\nIn a notification, NBR withdrew a 3,000 taka (about 28 U.S. dollars) specific duty on the import of raw sugar and 6,000 taka duty on refined sugar per tonne with immediate effect.\n\nApart from this, the NBR reduced the regulatory duty on the import of sugar to 25 percent from 30 percent.\n\nThe reduced import benefit, which rep"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Sugar import duties withdrawn",
+      "edge_label": "reduces import cost",
+      "evidence_quote": "withdrew import duty on both raw and refined sugar in order to enable consumers to get the sweetener at lower prices",
+      "scope_justification": "The article explicitly discusses the import of sugar, which is a type of goods brought in, matching the imports feature at the commodity-import level.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "withdrew import duty on both raw and refined sugar in order to enable consumers to get the sweetener at lower prices.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says NBR withdrew import duty on raw and refined sugar to enable consumers to get the sweetener at lower prices, and it further states that the overall import cost is expected to decline after the duty waiver and reduction. This is country-level policy on sugar imports, matching the stated scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-27",
+      "imports",
+      "reduces import cost",
+      "Sugar import duties withdrawn"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

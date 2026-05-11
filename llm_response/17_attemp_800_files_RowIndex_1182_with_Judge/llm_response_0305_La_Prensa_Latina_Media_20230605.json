@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-06-05",
+    "url": "https://www.laprensalatina.com/bangladesh-inflation-hits-decade-high-of-9-94/",
+    "body_preview": "Dhaka, June 5 (EFE).- Bangladesh's inflation hit a decade-high of 9.94 percent in May amid price hikes in food and non-food items, in a fresh indication of the country's growing economic woes, officials said on Monday.\n\nThe monthly inflation in May was the highest in recent months, surpassing 9.52 percent in August 2022, according to the Bangladesh Bureau of Statistics.\n\nThe last time Bangladesh witnessed a double-digit inflation rate was in 2011, when the country recorded 10.92 percent inflatio"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "dollar shortage halts coal imports",
+      "edge_label": "halts coal imports",
+      "evidence_quote": "could not import coal due to a dollar shortage",
+      "scope_justification": "The article explicitly states a dollar shortage prevented importing coal for the country's largest power station, describing an interruption to goods being brought into Bangladesh (imports) at the national level.",
+      "verification": {
+        "quote_similarity": 0.989,
+        "quote_best_match": "could not import coal due to a dollar shortage,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence 'it could not import coal due to a dollar shortage,' which explicitly states the dollar shortage caused the inability to import coal; this is described in the context of the country's largest power station and broader national dollar crisis, matching the national-level import scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-05",
+      "imports",
+      "halts coal imports",
+      "dollar shortage halts coal imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

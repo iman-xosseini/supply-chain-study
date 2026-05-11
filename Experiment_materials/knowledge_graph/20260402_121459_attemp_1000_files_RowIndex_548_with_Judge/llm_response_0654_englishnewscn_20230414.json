@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "english.news.cn",
+    "date": "2023-04-14",
+    "url": "https://english.news.cn/asiapacific/20230414/957c3bfcd3f742c9a663d14f843bc19a/c.html",
+    "body_preview": "NARSINGDI, Bangladesh, April 14 (Xinhua) -- With machines roaring, the construction work of Bangladesh's Ghorashal-Polash Urea fertilizer project (GPUFP), set to be the country's largest and first-ever green fertilizer factory in South Asia, is nearing completion.\n\nMore than 850 Chinese employees from the China National Chemical Engineering & Construction Corporation Seven Ltd. (CC7), in collaboration with its Japanese partner Mitsubishi Heavy Industries (MHI), have been working round the clock "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Fertilizer output meets demand",
+      "edge_label": "helps satisfy demand",
+      "evidence_quote": "“will help Bangladesh meet the growing demand for fertilizer”",
+      "scope_justification": "The article discusses Bangladesh’s fertilizer supply at a national level, but it does not explicitly mention country-wide imports or import volumes, so this only weakly matches the imports definition and is excluded.",
+      "verification": {
+        "quote_similarity": 0.983,
+        "quote_best_match": "will help Bangladesh meet the growing demand for fertilizer",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the factory \"will help Bangladesh meet the growing demand for fertilizer,\" which directly supports a cause-and-effect link between the project and satisfying demand. The discussion is at the national Bangladesh level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-14",
+      "imports",
+      "helps satisfy demand",
+      "Fertilizer output meets demand"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

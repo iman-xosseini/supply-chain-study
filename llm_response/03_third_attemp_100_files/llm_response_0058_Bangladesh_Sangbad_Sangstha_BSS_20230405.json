@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-04-05",
+    "url": "https://www.bssnews.net/business/119357",
+    "body_preview": "DHAKA, April 5, 2023 (BSS) - Bangladesh Garment Manufacturers and Exporters Association (BGME) has joined a global alliance urging governments around the world to modernize the domestic fashion labeling requirements and support the use of more sustainable digital labels.\n\nThe President of BGMEA Faruque Hassan signed a letter in this regard yesterday (Tuesday).\n\nThe letter calls upon the governments to amend national regulations to allow the adoption of fully digital labeling. By signing this let"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "Adoption of digital labeling",
+      "edge_label": "reduces lead time",
+      "evidence_quote": "this would also reduce lead time",
+      "scope_justification": "The article explicitly states that a fully digital labeling solution \"would also reduce lead time,\" which directly addresses logistics performance as defined by the 'Delivery' feature."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "reduces lead time",
+      "Adoption of digital labeling"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

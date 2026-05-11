@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Prothomalo",
+    "date": "2023-06-04",
+    "url": "https://en.prothomalo.com/business/local/1q4bvruzz4",
+    "body_preview": "Bangladesh Trade and Tariff Commission (BTTC), under the Ministry of Commerce, shows the price of unrefined soybean oil in Argentina was USD 847 per tonne on 31 May. The price was USD 1970 dollars exactly a year ago. The price has dropped by nearly 57 per cent.\n\nA bottle of soybean oil in the country's market went up to Tk 199 after it had been increased by Tk 12 per litre on 3 May. The price hike was caused by the withdrawal of exemption of value added tax (VAT) on soybean oil. The prices stood"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "disruption of imports",
+      "edge_label": "disrupts imports",
+      "evidence_quote": "disruption of imports due to the crisis",
+      "scope_justification": "The article explicitly states a country-level 'disruption of imports', which matches the feature's scope of the volume of goods brought into the country.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "disruption of imports due to the crisis",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact phrase \"disruption of imports due to the crisis\" appears in the article, which explicitly states that the crisis caused disruption of imports. The statement clearly refers to imports at the country level, matching the feature's scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-04",
+      "imports",
+      "disrupts imports",
+      "disruption of imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "La Prensa Latina Media",
+    "date": "2023-04-25",
+    "url": "https://www.laprensalatina.com/imf-team-reviews-bangladeshs-compliance-with-loan-package-conditions/",
+    "body_preview": "Dhaka, Apr 25 (EFE).- A team of the International Monetary Fund started a weeklong visit to Bangladesh on Tuesday to review the implementation strategies for reforms it had proposed while approving a $4.7 billion support loan package for the country in January.\n\nThe IMF Asia and Pacific Division head, Rahul Anand, will lead the delegation in meetings with Bangladesh Bank, the finance ministry, and National Board of Revenue officials until May 2, authorities said.\n\nMd Mesbaul Haque, executive dir"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Russia-Ukraine war impact",
+      "edge_label": "causes depreciation",
+      "evidence_quote": "It has led to a sharp widening of Bangladesh's current account deficit, a depreciation of its currency, the taka, and a decline in foreign exchange reserves.",
+      "scope_justification": "The article explicitly attributes a depreciation of the taka (the national currency) to the Russia-Ukraine war, matching the feature's country-level exchange-rate volatility scope.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "It has led to a sharp widening of Bangladesh's current account deficit, a depreciation of its currency, the taka, and a decline in foreign exchange reserves.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating that Russia's war in Ukraine 'has led to ... a depreciation of its currency, the taka,' which explicitly attributes cause-and-effect at the country (Bangladesh) currency level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-25",
+      "currency_log_return",
+      "causes depreciation",
+      "Russia-Ukraine war impact"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

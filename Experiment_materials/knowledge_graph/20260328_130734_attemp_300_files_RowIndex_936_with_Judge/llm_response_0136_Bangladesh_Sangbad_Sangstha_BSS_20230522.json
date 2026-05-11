@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-22",
+    "url": "https://www.bssnews.net/business/126830",
+    "body_preview": "DHAKA, May 22, 2023 (BSS) - The United States (US) today hailed Bangladesh's decision as Bangladesh Government has relaxed the mandatory on-arrival fumigation requirements of US cotton.\n\nEffective on May 16, 2023, US cotton can arrive in Bangladesh without fumigation at the port of entry, a media release issued by the US embassy said here.\n\nIn this connection US Ambassador in Dhaka Peter Haas said, \"Working together with Bangladesh to solve this issue is a great example of how our two countries "
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "Access to US cotton",
+      "edge_label": "increases foreign exchange earnings",
+      "evidence_quote": "Bangladesh needs high-quality US cotton to fuel its growth and increase foreign exchange earnings",
+      "scope_justification": "The quote refers to increasing Bangladesh's foreign exchange earnings (country-level export earnings), which falls within the national imports/exports scope of balance_of_trade.",
+      "verification": {
+        "quote_similarity": 0.995,
+        "quote_best_match": "Bangladesh needs high-quality US cotton to fuel its growth and increase foreign exchange earnings,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact sentence appears in the article. The ambassador explicitly links US cotton to 'fuel its growth and increase foreign exchange earnings,' asserting a cause-effect relationship, and this refers to Bangladesh's national-level foreign exchange earnings."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-22",
+      "balance_of_trade",
+      "increases foreign exchange earnings",
+      "Access to US cotton"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

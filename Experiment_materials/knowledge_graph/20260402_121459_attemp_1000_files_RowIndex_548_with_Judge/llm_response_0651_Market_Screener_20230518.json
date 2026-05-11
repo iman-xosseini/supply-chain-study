@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Market Screener",
+    "date": "2023-05-18",
+    "url": "https://www.marketscreener.com//quote/stock/THE-GAP-INC-12816/news/Apparel-makers-in-cyclone-hit-Bangladesh-consider-rare-expensive-airlifts-for-exports-43883425/",
+    "body_preview": "DHAKA (Reuters) - Apparel makers in Bangladesh are considering rare bulk exports by air to Europe and the United States, as they race to meet deadlines and avoid cancellations after a cyclone delayed shipments, caused power cuts and disrupted production.\n\nThe crunch could disrupt summer clothes supplies for retailers such as Walmart, Gap Inc, H&M, VF Corp, Zara and American Eagle Outfitters, some of Bangladesh's largest export customers.\n\nCyclone Mocha, one of the strongest storms to hit the reg"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Airlifted goods raise transport costs",
+      "edge_label": "increases shipping costs",
+      "evidence_quote": "“when goods are airlifted, all transportation-related costs are borne by the manufacturers”",
+      "scope_justification": "The article discusses transportation costs for exported goods, which is directly about goods movement, matching the imports feature’s scope of volume/cost conditions for traded goods at a supply-chain level.",
+      "verification": {
+        "quote_similarity": 0.983,
+        "quote_best_match": "when goods are airlifted, all transportation-related costs are borne by the manufacturers,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says, \"when goods are airlifted, all transportation-related costs are borne by the manufacturers,\" which closely matches the quoted evidence. It clearly states a cause-and-effect relationship between airlifting goods and higher transportation costs, and it is discussed at the industry-wide export level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-18",
+      "imports",
+      "increases shipping costs",
+      "Airlifted goods raise transport costs"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

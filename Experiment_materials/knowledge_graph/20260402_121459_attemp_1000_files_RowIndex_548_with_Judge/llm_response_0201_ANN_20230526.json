@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-05-26",
+    "url": "https://asianews.network/rise-of-inequality-drumbeat-of-development/",
+    "body_preview": "DHAKA - Recently, a five-star hotel in the capital announced the sale of Jilapi wrapped in 24-carat edible gold. Priced at Tk 20,000 per kg, those jilapis were sold out so quickly that the hotel's stock of imported edible gold ran out within six days and it had to stop taking orders. Ironically, in March 2023, a survey by Sanem revealed that the majority of the people in the country are forced to reduce their food intake after massive food price hikes. According to the survey, in February, 96.4 "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Gold stock ran out",
+      "edge_label": "halts further orders",
+      "evidence_quote": "“the hotel's stock of imported edible gold ran out within six days and it had to stop taking orders”",
+      "scope_justification": "This is about a specific imported input used by the hotel, so it matches the imports definition only at the level of a brought-in good affecting availability.",
+      "verification": {
+        "quote_similarity": 0.985,
+        "quote_best_match": "the hotel's stock of imported edible gold ran out within six days and it had to stop taking orders.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted wording appears in the article almost exactly: the hotel's stock of imported edible gold ran out within six days and it had to stop taking orders. This is an explicit cause-and-effect statement at the same single-hotel scope, so the claimed relationship is supported."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-26",
+      "imports",
+      "halts further orders",
+      "Gold stock ran out"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

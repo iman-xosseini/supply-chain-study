@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-26",
+    "url": "https://www.bssnews.net/business/107336",
+    "body_preview": "DHAKA, Jan 26, 2023 (BSS) - Bangladesh Sugar Refiners Association has increased the price of loose refined sugar by Taka 5 per kg to Taka 107 per kg and packaged refined sugar by Taka 4 to Taka 112 per kg.\n\nThe new prices will be effective from February 1, according to a press release published by the Bangladesh Sugar Refiners Association today.\n\nEarlier on November 17, 2022, the price of refined sugar was increased by Taka 13 per kg to Taka 102 per kg for loose sugar and Taka 108 per kg for pac"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar price increase",
+      "edge_label": "increases import costs",
+      "evidence_quote": "The price was increased considering the price hike of unrefined sugar in the global market, dollar price increase, and increase in operational costs of local mills,",
+      "scope_justification": "The article explicitly states a 'dollar price increase' caused higher refined-sugar prices and also reports Bangladesh imports most sugar, matching the feature's focus on exchange-rate effects on import costs.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The price was increased considering the price hike of unrefined sugar in the global market, dollar price increase, and increase in operational costs of local mills,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states the refined-sugar price was raised “considering … dollar price increase,” and also reports Bangladesh imports nearly all its sugar, together explicitly linking a dollar-price rise to higher import-related prices at the national level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-26",
+      "currency_log_return",
+      "increases import costs",
+      "dollar price increase"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

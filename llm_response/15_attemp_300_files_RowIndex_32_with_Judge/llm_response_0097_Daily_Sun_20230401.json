@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-04-01",
+    "url": "https://www.daily-sun.com/post/682294/Vannamei-shrimp:-Govt-approves-commercial-cultivation",
+    "body_preview": "Khulna - The government has approved the commercial cultivation of vannamei shrimp -- also known as king prawn -- in Bangladesh.\n\nThe Ministry of Fisheries and Livestock approved the cultivation of vannamei shrimp in a letter to the Director General of the Fisheries Department on March 29. At the same time, guidelines for commercial shrimp cultivation in Bangladesh were provided.\n\nThe demand for vannamei shrimp in the global market is high as the price is lower than that of Bagda shrimp.\n\nBangla"
+  },
+  "llm_connections": [
+    {
+      "feature": "exports",
+      "event_summary": "Freshwater shrimp cultivation",
+      "edge_label": "causes export decline",
+      "evidence_quote": "Bangladesh's shrimp export has been in decline in the past few years as the country mainly cultivates and exports freshwater shrimp species such as black tiger shrimp",
+      "scope_justification": "The article explicitly states a country-level decline in Bangladesh's shrimp export volume and attributes it to primarily cultivating freshwater shrimp species, matching the exports feature's national-volume scope.",
+      "verification": {
+        "quote_similarity": 0.997,
+        "quote_best_match": "Bangladesh's shrimp export has been in decline in the past few years as the country mainly cultivates and exports freshwater shrimp species such as black tiger shrimp,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence stating 'Bangladesh's shrimp export has been in decline in the past few years as the country mainly cultivates and exports freshwater shrimp species...' which explicitly attributes the national-level export decline to primarily cultivating freshwater shrimp species, matching the claimed causal relationship and scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-01",
+      "exports",
+      "causes export decline",
+      "Freshwater shrimp cultivation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "exports"
+  ],
+  "num_connections_found": 1
+}

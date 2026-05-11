@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Deccan Herald",
+    "date": "2023-02-07",
+    "url": "https://www.deccanherald.com/opinion/second-edit/take-note-of-bangla-crisis-hedge-bets-1188965.html",
+    "body_preview": "Bangladesh is roiled in multiple crises. Its economy is in deep trouble. Foreign exchange reserves have fallen below $33 billion. The pandemic not only shrank foreign remittances to Bangladesh but also weakened global demand for its exports. The situation worsened with Russia's invasion of Ukraine, which raised the cost of imports, forcing Bangladesh's Awami League (AL) government to cut imports.\n\nThis has led to a shortage of essential commodities. The country is battling inflation, too. Meanwh"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Ukraine war raises import costs",
+      "edge_label": "increases import costs",
+      "evidence_quote": "“Russia's invasion of Ukraine, which raised the cost of imports”",
+      "scope_justification": "The article explicitly discusses Bangladesh’s imports at the country level and says their cost rose, which directly matches the imports feature definition.",
+      "verification": {
+        "quote_similarity": 0.976,
+        "quote_best_match": "Russia's invasion of Ukraine, which raised the cost of imports,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says, \"Russia's invasion of Ukraine, which raised the cost of imports,\" so the quoted evidence appears verbatim and states a direct causal link. It discusses Bangladesh’s imports at the country level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-07",
+      "imports",
+      "increases import costs",
+      "Ukraine war raises import costs"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

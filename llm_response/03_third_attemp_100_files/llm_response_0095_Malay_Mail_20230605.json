@@ -1,0 +1,79 @@
+{
+  "article": {
+    "source": "Malay Mail",
+    "date": "2023-06-05",
+    "url": "https://www.malaymail.com/news/money/2023/06/05/cash-strapped-bangladesh-shuts-power-plant-as-heatwave-hits/72714",
+    "body_preview": "DHAKA, June 5 -- Cash-strapped Bangladesh shut its biggest power plant today because it was unable to afford the coal to fuel it, as a sweltering heatwave creates surging electricity demand.\n\nThe 1,320-megawatt government-run Payra Power Plant in southern Bangladesh had already slashed production last month due to fuel shortages, but it was forced to go a step further today, manager Shah Abdul Mawla told AFP.\n\n\"Due to the coal shortage, the plant came to a complete shutdown at 12.15pm today,\" Ma"
+  },
+  "llm_connections": [
+    {
+      "feature": "Production",
+      "event_summary": "Payra plant shutdown",
+      "edge_label": "halts production",
+      "evidence_quote": "had already slashed production last month due to fuel shortages",
+      "scope_justification": "The article explicitly states the Payra power plant 'slashed production' and later shut down, which directly describes the facility's output levels matching the Production definition."
+    },
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "Coal-caused plant shutdown",
+      "edge_label": "halts operations",
+      "evidence_quote": "Due to the coal shortage, the plant came to a complete shutdown at 12.15pm today",
+      "scope_justification": "The article describes a facility-level 'complete shutdown' caused by coal shortage, which is an operational disruption consistent with the Factory_Issue definition."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Taka depreciation increases costs",
+      "edge_label": "raises import costs",
+      "evidence_quote": "The Bangladeshi taka depreciated about 25 per cent against the US dollar last year, driving up the cost of fuel imports and power utilities.",
+      "scope_justification": "The article explicitly links a 25% depreciation of the taka to higher fuel import costs, matching the feature's focus on exchange-rate movements affecting import costs."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "Awaited coal shipments arrival",
+      "edge_label": "restores production",
+      "evidence_quote": "he hoped production could be restored within three weeks when coal shipments arrived",
+      "scope_justification": "The article ties the arrival of coal shipments (a logistics event) to restoring plant production, which falls under Delivery's scope of logistics performance and shipment outcomes."
+    }
+  ],
+  "triplets": [
+    [
+      "Production",
+      "halts production",
+      "Payra plant shutdown"
+    ],
+    [
+      "Factory_Issue",
+      "halts operations",
+      "Coal-caused plant shutdown"
+    ],
+    [
+      "currency_log_return",
+      "raises import costs",
+      "Taka depreciation increases costs"
+    ],
+    [
+      "Delivery",
+      "restores production",
+      "Awaited coal shipments arrival"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 4
+}

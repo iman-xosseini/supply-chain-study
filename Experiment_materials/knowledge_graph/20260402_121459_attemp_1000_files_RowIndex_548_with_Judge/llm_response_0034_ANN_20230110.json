@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-10",
+    "url": "https://asianews.network/overcoming-looming-economic-challenges-in-2023/",
+    "body_preview": "DHAKA - In 2023, several economies globally will face recession, while three large economies - the US, the EU and China - will continue to slow down, as the International Monetary Fund (IMF) observed on the eve of the new year. In October 2022, the IMF projected global economic growth to decrease from 3.2 percent in 2022 to 2.7 percent in 2023. This has been causing difficulties across countries and affecting the living standards of low-income households.\n\nFor Bangladesh, though inflation has su"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Import growth raises deficit",
+      "edge_label": "worsens import balance",
+      "evidence_quote": "High import growth and low remittance growth have resulted in a current account deficit.",
+      "scope_justification": "The article explicitly discusses country-wide import growth, which matches the feature’s scope of aggregate imports rather than a single commodity or firm.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "High import growth and low remittance growth have resulted in a current account deficit.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quote appears verbatim in the article: \"High import growth and low remittance growth have resulted in a current account deficit.\" This explicitly states a cause-and-effect relationship at the country-wide economic level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-10",
+      "imports",
+      "worsens import balance",
+      "Import growth raises deficit"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

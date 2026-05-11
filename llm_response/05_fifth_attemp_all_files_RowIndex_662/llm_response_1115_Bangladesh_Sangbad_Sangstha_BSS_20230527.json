@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-27",
+    "url": "https://www.bssnews.net/business/127672",
+    "body_preview": "DHAKA, May 27, 2023 (BSS) - The Centre for Policy Dialogue (CPD) today recommended for raising the coordination between monetary policy and fiscal policy alongside ensuring institutional reforms to tame inflation and maintain stability in the financial sector.\n\nThe civil society think tank came up with the recommendation at a press conference to reveal the \"Bangladesh's economy 2022-23: Third interim review\" held at its office in the capital's Dhanmondi area.\n\nWhile presenting the written review"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Taka-US dollar exchange raises prices",
+      "edge_label": "raises import costs",
+      "evidence_quote": "the Taka and US dollar exchange rate is also playing a role to raise the price of commodities",
+      "scope_justification": "The article explicitly links the Taka–US dollar exchange rate to higher commodity prices, which matches the feature's focus on the USD–BDT exchange rate affecting costs at the national level."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "raises import costs",
+      "Taka-US dollar exchange raises prices"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

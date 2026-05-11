@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-05-24",
+    "url": "https://www.bssnews.net/business/127221",
+    "body_preview": "DHAKA, May 24, 2023 (BSS) - Speakers at a conference today laid emphasis on exploring the vast untapped potential in SAARC region.\n\nThey observed that the SAARC has low intra-regional trade of five percent which means there is still vast untapped potential.\n\nIt is more important than ever we must recognize the significance of using our regional strengths and working together towards a common vision in a rapidly changing world, they opined.\n\nThey made the observation at the conference on 'Harness"
+  },
+  "llm_connections": [
+    {
+      "feature": "Delivery",
+      "event_summary": "Develop efficient logistics networks",
+      "edge_label": "facilitates trade",
+      "evidence_quote": "Cross-border investments, simplifying customs procedures, and developing efficient logistics networks within SAARC can facilitate trade.",
+      "scope_justification": "The article explicitly links 'developing efficient logistics networks within SAARC' to facilitating trade, which pertains to regional logistics performance and therefore matches the Delivery feature's scope."
+    }
+  ],
+  "triplets": [
+    [
+      "Delivery",
+      "facilitates trade",
+      "Develop efficient logistics networks"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

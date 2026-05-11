@@ -1,0 +1,2 @@
+row_number,file,rows_in_enriched_kg,unique_features_with_event_evidence,unique_event_triplets,unique_event_entities,unique_event_relations,unique_attribute_categories,unique_articles_by_title,unique_articles_by_url,min_event_date,max_event_date
+121547,enriched_kg_17_20260325_121547.csv,110,3,0,0,0,10,60,65,2023-01-01,2023-07-21

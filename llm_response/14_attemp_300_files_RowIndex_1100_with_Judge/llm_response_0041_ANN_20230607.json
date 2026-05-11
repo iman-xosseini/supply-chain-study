@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-06-07",
+    "url": "https://asianews.network/high-inflation-and-power-crisis-pm-hasina-asks-ministries-to-find-a-way-out/",
+    "body_preview": "DHAKA - Prime Minister Sheikh Hasina yesterday asked the ministries concerned to come up with a roadmap to tackle inflation and power crisis, the biggest sources of people's sufferings.\n\n\"Inflation can't be allowed to rise any further,\" Planning Minister MA Mannan quoted the prime minister as saying at a meeting of the Executive Committee of the National Economic Council (Ecnec).\n\nThe prime minister ordered the Trading Corporation of Bangladesh (TCB) to have larger stocks of essentials so that i"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "depreciation raises buying price",
+      "edge_label": "increases import buying price",
+      "evidence_quote": "That's why our actual buying price is more than whatever the price is in the international market.",
+      "scope_justification": "The article links the currency situation to Bangladesh's 'actual buying price,' directly addressing exchange-rate effects on import costs as defined by the feature.",
+      "verification": {
+        "quote_similarity": 0.99,
+        "quote_best_match": "\"That's why our actual buying price is more than whatever the price is in the international market.\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears verbatim and is directly tied to the taka losing value against the dollar, explicitly stating this causes Bangladesh’s actual buying price to exceed international prices, which matches the country-level scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-07",
+      "currency_log_return",
+      "increases import buying price",
+      "depreciation raises buying price"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

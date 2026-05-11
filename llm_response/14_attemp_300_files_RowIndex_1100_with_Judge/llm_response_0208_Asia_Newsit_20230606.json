@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Asia News.it",
+    "date": "2023-06-06",
+    "url": "https://www.asianews.it/news-en/Power-outages-threaten-lives-and-production-58532.html",
+    "body_preview": "Dhaka (AsiaNews) - Bangladesh is facing an energy crisis. Power cuts can last eight to 10 hours every day.\n\nWith the price of fuel to run generators rising and disruptions in energy supply in both cities and agricultural areas, doing business is a daily challenge.\n\nFor people like Bablu Ratno, a Catholic printer, outages mean higher costs and delays in delivering products to customers.\n\nPower losses are the top issue. The Rural Electrification Board (REB), the agency that supplies most of the co"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "production disruptions reduce exports",
+      "edge_label": "cuts exports",
+      "evidence_quote": "disruptions in production will cut into exports",
+      "scope_justification": "The article refers to disruptions across most factories and main manufacturing regions in Bangladesh, describing a country-level reduction in exports which directly affects the exports component of the national balance of trade.",
+      "verification": {
+        "quote_similarity": 0.989,
+        "quote_best_match": "disruptions in production will cut into exports,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states that industry officials fear disruptions in production will cut into exports. It discusses widespread disruptions across most factories and main manufacturing regions in Bangladesh, indicating a country-level impact on exports relevant to the balance of trade."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-06",
+      "balance_of_trade",
+      "cuts exports",
+      "production disruptions reduce exports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

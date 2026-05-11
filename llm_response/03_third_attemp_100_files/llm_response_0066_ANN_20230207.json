@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-02-07",
+    "url": "https://asianews.network/proposed-life-term-for-manufacturers-of-fake-drugs-in-bangladesh/",
+    "body_preview": "DHAKA - The cabinet yesterday approved the draft of the Drugs and Cosmetics Act-2023 keeping provisions for imposing fines for sale of medicines, including antibiotics, without registered doctors' prescriptions, and handing out a maximum punishment of life term for manufacturing adulterated medicines.\n\nThe proposed law also seeks to make licensing mandatory to regulate the manufacturing and marketing of cosmetics.\n\nManufacturers and marketers of cosmetics will have to have licence from the Direc"
+  },
+  "llm_connections": [
+    {
+      "feature": "inventory_proxy",
+      "event_summary": "Hoarding medicines creates crisis",
+      "edge_label": "creates artificial crisis",
+      "evidence_quote": "hoarding medicines and creating artificial crisis in the market to make an extra profit",
+      "scope_justification": "The article explicitly discusses hoarding of medicines (accumulation of stock) which directly pertains to levels of unsold stock, matching the inventory_proxy definition."
+    },
+    {
+      "feature": "Sub-Group",
+      "event_summary": "Licensing for cosmetics manufacturing",
+      "edge_label": "requires licensing (regulates)",
+      "evidence_quote": "The proposed law also seeks to make licensing mandatory to regulate the manufacturing and marketing of cosmetics",
+      "scope_justification": "The article directly addresses regulation of cosmetics manufacturing and marketing, which concerns the cosmetics sub-group (a specific niche) as defined."
+    }
+  ],
+  "triplets": [
+    [
+      "inventory_proxy",
+      "creates artificial crisis",
+      "Hoarding medicines creates crisis"
+    ],
+    [
+      "Sub-Group",
+      "requires licensing (regulates)",
+      "Licensing for cosmetics manufacturing"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

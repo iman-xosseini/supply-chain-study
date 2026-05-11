@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-19",
+    "url": "https://www.bssnews.net/news/137135",
+    "body_preview": "DHAKA, July 19, 2023 (BSS) - The Asian Development Bank (ADB) said the current gross domestic product (GDP) growth rate in Bangladesh is estimated higher than forecast for fiscal year 2023 as it kept the country's growth forecast unchanged at 6.5 percent for fiscal 2024.\n\n\"The current growth rate in Bangladesh is estimated higher than forecast for fiscal year 2023,\" ADB said in its April report.\n\nThe economic recovery was supported by robust domestic demand and declining fuel and food prices, ac"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "strong net exports",
+      "edge_label": "contributed to growth",
+      "evidence_quote": "The Manila-based lending agency also attributed Bangladesh's higher estimate of 6.0 percent for FY2023, which ended on 30 June, to strong net exports and supportive policies.",
+      "scope_justification": "The article's phrase 'strong net exports' refers to the country-level net exports (exports minus imports), which matches the balance_of_trade definition as the difference between country-wide imports and exports.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "The Manila-based lending agency also attributed Bangladesh's higher estimate of 6.0 percent for FY2023, which ended on 30 June, to strong net exports and supportive policies.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The exact quote appears and explicitly attributes higher GDP growth to strong net exports, indicating causality. It refers to Bangladesh at the country level, matching the balance_of_trade scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-07-19",
+      "balance_of_trade",
+      "contributed to growth",
+      "strong net exports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,22 @@
+[11/50] Analyzing: Poland Sun (2023-05-16)...
+    -> LINK FOUND: [balance_of_trade] --(lowers export revenue)--> [Moving to Yuan hurts exports]
+    -> LINK FOUND: [imports] --(discourages imports)--> [Reserve decline prompts import curbs]
+    -> Saved LLM response to: llm_response_0010_Poland_Sun_20230516.json
+
+
+
+
+[17/50] Analyzing: Bangladesh Sangbad Sangstha (BSS) (2023-01-09)...
+    -> LINK FOUND: [balance_of_trade] --(causes export losses)--> [LDC graduation tariffs]
+    -> Saved LLM response to: llm_response_0016_Bangladesh_Sangbad_Sangstha_BSS_20230109.json
+
+
+ [19/50] Analyzing: Myanmar News.Net (2023-05-16)...
+    -> LINK FOUND: [imports] --(discourages imports)--> [reserve decline discourages imports]
+    -> Saved LLM response to: llm_response_0018_Myanmar_NewsNet_20230516.json
+
+
+
+[30/50] Analyzing: The Daily Star (2023-01-01)...
+    -> LINK FOUND: [imports] --(reduces imports)--> [foreign currency shortage and devaluation]
+    -> Saved LLM response to: llm_response_0029_The_Daily_Star_20230101.json    

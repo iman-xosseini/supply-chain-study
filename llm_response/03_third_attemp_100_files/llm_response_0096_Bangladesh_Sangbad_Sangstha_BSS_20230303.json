@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-03-03",
+    "url": "https://www.bssnews.net/news/113581",
+    "body_preview": "RAJSHAHI, March 3, 2023 (BSS) - The overall situation in the Rajshahi city became volatile amid the spontaneous protest of general masses since March 1 in 1971 when the then Pakistani rulers had postponed the scheduled March 3 session of National Assembly.\n\nSuspension of the scheduled parliament session by the Pakistani junta, as part of a heinous conspiracy, instantly turned the Rajshahi people revolutionary since the beginning of March in 1971 with impulsive protest of the common people.\n\nFath"
+  },
+  "llm_connections": [
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "general strike paralyzed",
+      "edge_label": "paralyzes operations",
+      "evidence_quote": "Total general strike was observed in the city paralyzing the civic lives and business activities.",
+      "scope_justification": "The article explicitly states a city-wide general strike paralyzed civic and business activity, which matches Factory_Issue's scope of operational disruptions (including labor strikes)."
+    },
+    {
+      "feature": "Production",
+      "event_summary": "production halted",
+      "edge_label": "halts production",
+      "evidence_quote": "Total general strike was observed in the city paralyzing the civic lives and business activities.",
+      "scope_justification": "The article links a general strike to paralysis of business activity and also states that \"production in mills and factories throughout the city remained stopped for an indefinite period\", matching Production's scope (manufactured output)."
+    }
+  ],
+  "triplets": [
+    [
+      "Factory_Issue",
+      "paralyzes operations",
+      "general strike paralyzed"
+    ],
+    [
+      "Production",
+      "halts production",
+      "production halted"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,43 @@
+{
+  "article": {
+    "source": "The Financial Express",
+    "date": "2023-01-15",
+    "url": "https://thefinancialexpress.com.bd/trade/power-tariff-hike-poses-a-challenge-for-private-sector-says-dcci-president-1673751569",
+    "body_preview": "The Dhaka Chamber of Commerce and Industry (DCCI) has raised a concern about the recent electricity tariff hike, saying that this will be a challenge for the private sector.\n\n\"The recent retail electricity tariff hike, although relatively minimal, will ultimately create an additional economic burden on the smooth operations of the private sector and power-intensive industries,\" DCCI President Barrister Md Sameer Sattar said in a statement on Saturday.\n\nThe country's economy has already been expe"
+  },
+  "llm_connections": [
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "retail electricity tariff hike",
+      "edge_label": "burdens operations",
+      "evidence_quote": "The recent retail electricity tariff hike, although relatively minimal, will ultimately create an additional economic burden on the smooth operations of the private sector and power-intensive industries,",
+      "scope_justification": "The article explicitly states the tariff hike will create an economic burden on the 'smooth operations' of private and power‑intensive industries, which pertains to operational disruptions described by the 'Factory_Issue' definition."
+    }
+  ],
+  "triplets": [
+    [
+      "Factory_Issue",
+      "burdens operations",
+      "retail electricity tariff hike"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 1
+}

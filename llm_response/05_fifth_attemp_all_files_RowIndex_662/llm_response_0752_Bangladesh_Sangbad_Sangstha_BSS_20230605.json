@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-05",
+    "url": "https://www.bssnews.net/news-flash/129302",
+    "body_preview": "DHAKA, June 5, 2023 (BSS) - Mentioning that everybody across the country is suffering due to the ongoing load shedding, State Minister for Power, Energy and Mineral Resources Nasrul Hamid today expressed optimism that the supply of electricity will be normal within the next two weeks.\n\n\"People of the country are suffering due to ongoing heat wave and load shedding, which are not enviable, but we are working on a priority basis to bring relief to public life very soon . . . Hopefully, the situati"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar exchange rate rise",
+      "edge_label": "affects fuel imports",
+      "evidence_quote": "On the other hand, the exchange rate of the dollar rose unabatedly. This has affected the import of fuel",
+      "scope_justification": "The article explicitly links a nationwide rise in the dollar exchange rate to affecting imports of fuel, which matches the feature's scope of exchange-rate movements impacting imports."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "affects fuel imports",
+      "dollar exchange rate rise"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

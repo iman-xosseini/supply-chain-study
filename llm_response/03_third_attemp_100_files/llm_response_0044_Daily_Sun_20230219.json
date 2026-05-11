@@ -1,0 +1,55 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-02-19",
+    "url": "https://www.daily-sun.com/post/674984/Expanding-banana-farming-brings-fortunes-to-many-farmers",
+    "body_preview": "RANGPUR- Highly profitable banana farming continues expanding in mainland and riverine char areas of Rangpur agriculture region bringing fortunes to many farmers by making them self-reliant.\n\nOfficials of the Department of Agricultural Extension (DAE) farmers have brought an all-time record land area of 3,167 hectares of land under banana cultivation during this Rabi season after getting repeated bumper production with lucrative prices in recent years.\n\nShah Alam said cultivation of bananas is e"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "DAE assistance expands cultivation",
+      "edge_label": "expands cultivation",
+      "evidence_quote": "With the DAE assistance, many small and marginal farmers and landless char and riverside people have cultivated bananas in all 58 upazilas",
+      "scope_justification": "The article explicitly states DAE assistance caused widespread cultivation of bananas, directly affecting the specific commercial item (bananas) identified by the 'Product' feature."
+    },
+    {
+      "feature": "Product",
+      "event_summary": "Bumper yields drive expansion",
+      "edge_label": "drives expansion of cultivated area",
+      "evidence_quote": "farmers have brought an all-time record land area of 3,167 hectares of land under banana cultivation during this Rabi season after getting repeated bumper production with lucrative prices",
+      "scope_justification": "The article links repeated bumper production and lucrative prices to increased land area under banana cultivation, directly changing the scale of the banana product's cultivation."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "expands cultivation",
+      "DAE assistance expands cultivation"
+    ],
+    [
+      "Product",
+      "drives expansion of cultivated area",
+      "Bumper yields drive expansion"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 2
+}

@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Prothomalo",
+    "date": "2023-06-04",
+    "url": "https://en.prothomalo.com/business/local/1q4bvruzz4",
+    "body_preview": "Bangladesh Trade and Tariff Commission (BTTC), under the Ministry of Commerce, shows the price of unrefined soybean oil in Argentina was USD 847 per tonne on 31 May. The price was USD 1970 dollars exactly a year ago. The price has dropped by nearly 57 per cent.\n\nA bottle of soybean oil in the country's market went up to Tk 199 after it had been increased by Tk 12 per litre on 3 May. The price hike was caused by the withdrawal of exemption of value added tax (VAT) on soybean oil. The prices stood"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar appreciation spike",
+      "edge_label": "fuels inflation",
+      "evidence_quote": "inflation in the country is now caused by the appreciation of the dollar",
+      "scope_justification": "The article explicitly attributes nationwide inflation to appreciation of the dollar, i.e., an exchange-rate movement (USD price) at the country level, matching the currency_log_return scope.",
+      "verification": {
+        "quote_similarity": 0.993,
+        "quote_best_match": "Inflation in the country is now caused by the appreciation of the dollar,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the sentence 'Inflation in the country is now caused by the appreciation of the dollar...' which explicitly states a cause-and-effect link and refers to nationwide inflation, matching the country-level scope of the claimed currency appreciation event."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-04",
+      "currency_log_return",
+      "fuels inflation",
+      "dollar appreciation spike"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

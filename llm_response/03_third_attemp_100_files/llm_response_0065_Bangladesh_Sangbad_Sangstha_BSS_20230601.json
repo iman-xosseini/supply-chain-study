@@ -1,0 +1,67 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-01",
+    "url": "https://www.bssnews.net/business/128640",
+    "body_preview": "DHAKA, June 1, 2023 (BSS) - The Institute of Chartered Accountants of Bangladesh (ICAB) today hailed the proposed national budget for fiscal year (2023-2024).\n\n\"We congratulate the government of Bangladesh led by Prime Minister Sheikh Hasina on the announcement of 16th consecutive budget for the FY 2023-24,\" said the ICAB in a statement.\n\nFinance Minister AHM Mustafa Kamal today placed a Taka 761,785 crore proposed budget for the next fiscal year, which is equivalent to 15.2 percent of GDP.\n\nThe"
+  },
+  "llm_connections": [
+    {
+      "feature": "Product",
+      "event_summary": "VAT exemption for optical fiber cable",
+      "edge_label": "reduces tax burden",
+      "evidence_quote": "to reduce tax burden at the local manufacturing stage VAT exemption in excess of 5% at the production stage on 'optical fiber cable' is proposed",
+      "scope_justification": "The article explicitly names the specific product 'optical fiber cable' and states a proposed VAT exemption for it to reduce local manufacturing tax burden, matching the 'Product' scope of a specific commercial item."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "Environment surcharge introduced",
+      "edge_label": "reduces traffic congestion",
+      "evidence_quote": "Introduction of environment surcharge which is expected to protect our environment, reduce hectic traffic congestion etc.",
+      "scope_justification": "The article explicitly states the environment surcharge is expected to 'reduce hectic traffic congestion', which is a transport/logistics issue directly within the 'Delivery' definition."
+    },
+    {
+      "feature": "Delivery",
+      "event_summary": "Ex-bond bill clearance allowed",
+      "edge_label": "enables clearance",
+      "evidence_quote": "Submission of ex-bond bill of entry for clearance of bonded goods for home consumption",
+      "scope_justification": "The article explicitly describes a Customs Act change allowing submission of ex-bond bills 'for clearance of bonded goods for home consumption', directly addressing customs clearance, a logistics performance element in 'Delivery'."
+    }
+  ],
+  "triplets": [
+    [
+      "Product",
+      "reduces tax burden",
+      "VAT exemption for optical fiber cable"
+    ],
+    [
+      "Delivery",
+      "reduces traffic congestion",
+      "Environment surcharge introduced"
+    ],
+    [
+      "Delivery",
+      "enables clearance",
+      "Ex-bond bill clearance allowed"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 3
+}

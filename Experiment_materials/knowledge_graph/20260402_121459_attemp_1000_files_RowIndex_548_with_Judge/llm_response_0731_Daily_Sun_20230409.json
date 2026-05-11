@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Daily Sun",
+    "date": "2023-04-09",
+    "url": "https://www.daily-sun.com/printversion/details/683876/Review-tax-on-gold-industry",
+    "body_preview": "Bangladesh Jeweller's Association (BAJUS) has called upon Finance Minister AHM Mustafa Kamal to review the retail tax on gold ornaments and the import duty on capital machinery to support the gold industry.\n\nBAJUS President Sayem Sobhan Anvir recently wrote to the finance minister seeking policy support for the jewellery industry ahead of the national budget.\n\n\"The high prices of raw materials, increasing production costs, and high duty on imported capital machinery are major barriers to the gro"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Gold import duty cuts sought",
+      "edge_label": "reduces import barriers",
+      "evidence_quote": "“the customs duty on importing gold is reduced from five percent to one percent.”",
+      "scope_justification": "The article discusses import duties on gold at the industry level, which directly relates to the volume of goods brought into the country through imports.",
+      "verification": {
+        "quote_similarity": 0.988,
+        "quote_best_match": "the customs duty on importing gold is reduced from five percent to one percent.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the gold industry has the potential to attract more investment if the customs duty on importing gold is reduced from five percent to one percent. This directly supports the claimed causal relationship at the industry/national policy level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-04-09",
+      "imports",
+      "reduces import barriers",
+      "Gold import duty cuts sought"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

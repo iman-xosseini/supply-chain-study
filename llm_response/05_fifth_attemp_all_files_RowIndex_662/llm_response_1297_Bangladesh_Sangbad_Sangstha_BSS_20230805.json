@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-08-05",
+    "url": "https://www.bssnews.net/news-flash/140287",
+    "body_preview": "DHAKA, Aug 5, 2023 (BSS) - State Minister for Power, Energy and Mineral\n\nResources Nasrul Hamid today said that the government has taken initiatives\n\nto overcome speedily the existing energy crisis in the industries.\n\nHe said that in line with that goal, multipurpose energy master plan has been\n\nadopted which includes drilling newer wells, generating wind power, setting\n\nup single mooring pipelines for oil import and increasing the production of\n\nrenewable energy.\n\nThe state minister was address"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "continued energy import dependency",
+      "edge_label": "increases import costs",
+      "evidence_quote": "if the import dependency continues like present, then energy imports will cost US$24 to US$30 billion by 2030.",
+      "scope_justification": "The article gives a national estimate of future energy import costs (US$24–30 billion by 2030), which directly pertains to country-level import values used in the balance of trade."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "increases import costs",
+      "continued energy import dependency"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "The Daily Star",
+    "date": "2023-01-01",
+    "url": "https://www.thedailystar.net/business/economy/news/ensure-stable-energy-prices-economic-recovery-3210341",
+    "body_preview": "The Dhaka Chamber of Commerce and Industry (DCCI) today urged the government to focus on ensuring uninterrupted and affordable energy for both local and export-oriented manufacturing units to further accelerate Bangladesh's economic recovery in 2023.\n\nAlso, emphasis should be placed on improving the ease of doing business and developing an infrastructural environment that is conducive for attracting local and foreign investment, according to a press release from the trade body.\n\nIn addition, the"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "foreign currency shortage impacts imports",
+      "edge_label": "negatively impacts imports",
+      "evidence_quote": "resulting in some negative impacts on the import of energy, industrial raw materials",
+      "scope_justification": "The article explicitly ties the country's foreign currency shortage and taka devaluation to 'negative impacts on the import of energy, industrial raw materials', which addresses imports at the country-wide level as defined."
+    }
+  ],
+  "triplets": [
+    [
+      "imports",
+      "negatively impacts imports",
+      "foreign currency shortage impacts imports"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

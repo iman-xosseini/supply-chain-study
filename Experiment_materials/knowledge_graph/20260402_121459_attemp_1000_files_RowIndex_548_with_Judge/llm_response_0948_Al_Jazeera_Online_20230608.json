@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Al Jazeera Online",
+    "date": "2023-06-08",
+    "url": "https://www.aljazeera.com/news/2023/6/8/bangladesh-suffers-long-power-cuts-amid-worst-heatwave-in-decades",
+    "body_preview": "Dhaka, Bangladesh - Abdur Rahman nearly fainted while pulling his rickshaw under the scorching sun in Bangladesh's capital city. \"It is not possible to continue doing this in such weather,\" he told Al Jazeera.\n\nFor the last few weeks, the slum in Dhaka where Rahman lives has hardly had any electricity at night.\n\n\"After a hard, laborious day, I used to get some sleep. Now my sleeps are disrupted without a fan. I wake up many times, drenched in sweat,\" he said.\n\nA crippling power crisis has added "
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Fuel import difficulties",
+      "edge_label": "reduces fuel imports",
+      "evidence_quote": "the government is unable to import fuel due to a decline in foreign exchange reserves",
+      "scope_justification": "The article explicitly discusses national fuel imports, which fits the imports feature’s country-wide goods brought in definition.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "the government is unable to import fuel due to a decline in foreign exchange reserves",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says the government is unable to import fuel due to a decline in foreign exchange reserves, which directly links the cause to the fuel-import problem. This is discussed at the national level in the context of Bangladesh's overall power and fuel crisis, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-08",
+      "imports",
+      "reduces fuel imports",
+      "Fuel import difficulties"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

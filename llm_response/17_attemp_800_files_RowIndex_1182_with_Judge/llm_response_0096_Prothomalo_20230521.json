@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Prothomalo",
+    "date": "2023-05-21",
+    "url": "https://en.prothomalo.com/business/local/sycr1wg79y",
+    "body_preview": "Bangladesh's economy is still in dire straits. Foreign exchange reserves have been declining with the persisting high rate of the US dollar. Inflation pressure remains steep. Amid this, the growth in export and remittance inflow brought some respite to the government. At the same time, the cost of imports fell. This has reduced the existing current account deficit by one-fourth. However, the country's current account deficit was the highest in the last 51 years in the fiscal 2021-22.\n\nAmid the g"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "imports exceed exports",
+      "edge_label": "increases trade deficit",
+      "evidence_quote": "The import costs here are much higher than the export revenue. As a result, the trade deficit has to be met mainly with remittance.",
+      "scope_justification": "The article refers to national-level import costs and export revenue and explicitly describes the resulting national trade deficit, matching the balance_of_trade definition (imports minus exports).",
+      "verification": {
+        "quote_similarity": 0.769,
+        "quote_best_match": "imports come from China and India. As a result, the trade deficit has to be met mainly with remittance.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article literally states 'The import costs here are much higher than the export revenue. As a result, the trade deficit has to be met mainly with remittance,' which explicitly links imports exceeding exports to creating a national trade deficit."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-05-21",
+      "balance_of_trade",
+      "increases trade deficit",
+      "imports exceed exports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

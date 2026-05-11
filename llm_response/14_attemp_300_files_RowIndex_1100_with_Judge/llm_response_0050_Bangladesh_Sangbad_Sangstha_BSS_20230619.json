@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-06-19",
+    "url": "https://www.bssnews.net/business/132184",
+    "body_preview": "DHAKA, June 19, 2023 (BSS) - Bangladesh has signed an agreement with Omar to import 0.25 to 1.5 million metric tonnes (MMT) of LNG from Oman's OQ Trading on G-to-G basis for ten-year term from 2026.\n\nPetrobangla Secretary Ruchira Islam on behalf of Bangladesh and OQ Trading Limited Executive Director Said Al Maawali on behalf of Oman signed the agreement at a city hotel.\n\nPrime Minister's Power, Energy and Mineral Resources Affairs Adviser Dr Tawfiq-e-Elahi Chowdhury, Bir Bikram, witnessed the d"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "LNG import agreement signed",
+      "edge_label": "commits to import",
+      "evidence_quote": "Bangladesh has signed an agreement with Omar to import 0.25 to 1.5 million metric tonnes (MMT) of LNG from Oman's OQ Trading on G-to-G basis for ten-year term from 2026.",
+      "scope_justification": "The article specifies national-level LNG import volumes and a government-to-government ten-year contract, directly affecting the country's aggregate import volume as defined.",
+      "verification": {
+        "quote_similarity": 1.0,
+        "quote_best_match": "Bangladesh has signed an agreement with Omar to import 0.25 to 1.5 million metric tonnes (MMT) of LNG from Oman's OQ Trading on G-to-G basis for ten-year term from 2026.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly states Bangladesh signed an agreement to import specified LNG volumes, directly linking the signing to a commitment to import at a national (G-to-G) level."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-06-19",
+      "imports",
+      "commits to import",
+      "LNG import agreement signed"
+    ]
+  ],
+  "features_queried": [
+    "imports",
+    "currency_log_return",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

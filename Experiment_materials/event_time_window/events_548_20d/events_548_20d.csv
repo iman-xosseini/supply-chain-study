@@ -1,0 +1,7 @@
+,source,relation,target,edge_type,weight,date,title,attribute,days_before
+0,"Government's Permission to Import 36,830 Tons",increase,imports,event,,2023-07-03,1.14 lakh kilograms of green chilli imported on Sunday  | News,"""Government's Permission: Government Policy"", ""36,830 Tons: Trade Policy""",16
+1,imports,has_attribute,Government Policy,attribute,,2023-07-03,1.14 lakh kilograms of green chilli imported on Sunday  | News,"""Government's Permission: Government Policy"", ""36,830 Tons: Trade Policy""",16
+2,imports,has_attribute,Trade Policy,attribute,,2023-07-03,1.14 lakh kilograms of green chilli imported on Sunday  | News,"""Government's Permission: Government Policy"", ""36,830 Tons: Trade Policy""",16
+3,Government Permission to Import Chilli,increase,imports,event,,2023-07-02,"Govt allows import of 36,830 tons green chilli     | Daily Sun |","""Government Permission: Government Policy"", ""Import Chilli: Trade Policy""",17
+4,imports,has_attribute,Government Policy,attribute,,2023-07-02,"Govt allows import of 36,830 tons green chilli     | Daily Sun |","""Government Permission: Government Policy"", ""Import Chilli: Trade Policy""",17
+5,imports,has_attribute,Trade Policy,attribute,,2023-07-02,"Govt allows import of 36,830 tons green chilli     | Daily Sun |","""Government Permission: Government Policy"", ""Import Chilli: Trade Policy""",17

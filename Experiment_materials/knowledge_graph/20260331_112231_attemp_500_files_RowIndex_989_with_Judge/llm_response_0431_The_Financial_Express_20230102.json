@@ -1,0 +1,36 @@
+{
+  "article": {
+    "source": "The Financial Express",
+    "date": "2023-01-02",
+    "url": "https://thefinancialexpress.com.bd/trade/dcci-pushes-to-ensure-smooth-energy-supply-improve-ease-of-doing-business-in-2023-1672628067",
+    "body_preview": "Dhaka Chamber of Commerce and Industry (DCCI) called on the government to provide uninterrupted supply of energy to the local and export-oriented manufacturing industries and improve ease of doing business for attaining sustainable development through public-private partnership (PPP).\n\nMentioning the global economic downturn due to the Covid-19 pandemic and subsequent Russia-Ukraine war that have hindered Bangladesh's progressive growth, the trade body also recommended accelerating the country's"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Taka devaluation harms imports",
+      "edge_label": "negatively impacts imports",
+      "evidence_quote": "devaluation of the Taka against the US Dollar has challenged the country's financial sector, resulting in some negative impact on the import of energy",
+      "scope_justification": "The article explicitly links devaluation of the national currency (Taka) to negative impacts on imports of energy and raw materials, matching the feature's focus on exchange-rate effects on imports.",
+      "verification": {
+        "quote_similarity": 0.997,
+        "quote_best_match": "devaluation of the Taka against the US Dollar has challenged the country's financial sector, resulting in some negative impact on the import of energy,",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the line that devaluation of the Taka has 'resulting in some negative impact on the import of energy, industrial raw materials and supply chain,' which explicitly states a causal link at the national (Bangladesh) level, matching the feature's focus."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-02",
+      "currency_log_return",
+      "negatively impacts imports",
+      "Taka devaluation harms imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close"
+  ],
+  "num_connections_found": 1
+}

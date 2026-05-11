@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "ANN",
+    "date": "2023-01-10",
+    "url": "https://asianews.network/overcoming-looming-economic-challenges-in-2023/",
+    "body_preview": "DHAKA - In 2023, several economies globally will face recession, while three large economies - the US, the EU and China - will continue to slow down, as the International Monetary Fund (IMF) observed on the eve of the new year. In October 2022, the IMF projected global economic growth to decrease from 3.2 percent in 2022 to 2.7 percent in 2023. This has been causing difficulties across countries and affecting the living standards of low-income households.\n\nFor Bangladesh, though inflation has su"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "dollar shortage causes depreciation",
+      "edge_label": "causes depreciation",
+      "evidence_quote": "The supply shortage of dollars in the market has led to a free fall of the taka against the US dollar.",
+      "scope_justification": "The article explicitly links a domestic dollar supply shortage to a fall of the taka against the US dollar, which directly describes national exchange-rate movement (USD to BDT)."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "causes depreciation",
+      "dollar shortage causes depreciation"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

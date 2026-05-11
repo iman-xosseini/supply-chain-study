@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "MSN International Edition",
+    "date": "2023-03-23",
+    "url": "https://www.msn.com/en-xl/news/others/bci-places-5-point-proposal-for-capacity-building-of-local-industries-promoting-young-entrepreneurs/ar-AA18WXK4",
+    "body_preview": "Dhaka, March 22 -- Bangladesh Chamber of Industries (BCI) on Wednesday placed a five-point proposal for the upcoming budget to increase capacity of local micro, cottage and small industries and promote young entrepreneurs in the industrial sector.\n\nThe leaders of the lone chamber body representing the country's industrial sector, placed the proposals along with a number of recommendations during a pre-budget meeting with the National Board of Revenue (NBR) in the city on Wednesday.\n\nNBR chairman"
+  },
+  "llm_connections": [
+    {
+      "feature": "balance_of_trade",
+      "event_summary": "industrial sector reduces imports",
+      "edge_label": "reduces imports",
+      "evidence_quote": "the industrial sector plays a greater role in the country's economy by saving foreign exchange income through exports and reducing imports",
+      "scope_justification": "The quote explicitly refers to the country's exports and imports and thus addresses national-level trade flows matching the balance_of_trade definition."
+    }
+  ],
+  "triplets": [
+    [
+      "balance_of_trade",
+      "reduces imports",
+      "industrial sector reduces imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

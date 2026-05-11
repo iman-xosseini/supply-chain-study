@@ -1,0 +1,67 @@
+{
+  "article": {
+    "source": "Iraqi News",
+    "date": "2023-06-07",
+    "url": "https://www.iraqinews.com/world/bangladesh-shuts-schools-cuts-power-in-longest-heatwave-in-decades/",
+    "body_preview": "Dhaka - Bangladesh has shut thousands of schools as it struggles through its lengthiest heatwave in half a century, with widespread power cuts only compounding locals' misery.\n\nTemperatures in the South Asian nation's capital of Dhaka have surged to around 40 degrees Celsius (104 degrees Fahrenheit), with the poor bearing the brunt of the blazing sun.\n\n\"We have never seen such a prolonged heatwave since Bangladesh's independence in 1971,\" said Bazlur Rashid, a senior official at the Bangladesh M"
+  },
+  "llm_connections": [
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "biggest power plant suspended",
+      "edge_label": "suspends operations",
+      "evidence_quote": "On Monday, the country was forced to suspend operations at its biggest power plant because the government was unable to afford the coal to fuel it.",
+      "scope_justification": "The article describes the forced suspension of a major power plant, which is an operational disruption consistent with the 'Factory_Issue' definition (power outages or operational failures)."
+    },
+    {
+      "feature": "Factory_Issue",
+      "event_summary": "plants fell short",
+      "edge_label": "causes blackouts",
+      "evidence_quote": "Other plants have fallen well short of meeting demand, leading to hours-long blackouts.",
+      "scope_justification": "The piece explicitly links power plants failing to meet demand to hours-long blackouts, which are power outage events fitting the 'Factory_Issue' scope of operational disruptions."
+    },
+    {
+      "feature": "currency_log_return",
+      "event_summary": "taka depreciated 25%",
+      "edge_label": "increases import costs",
+      "evidence_quote": "The Bangladeshi taka depreciated about 25 percent against the US dollar last year, driving up the cost of fuel imports and power utilities.",
+      "scope_justification": "The article explicitly ties a large depreciation in the exchange rate to higher fuel import costs, matching the 'currency_log_return' scope of exchange-rate moves affecting import costs."
+    }
+  ],
+  "triplets": [
+    [
+      "Factory_Issue",
+      "suspends operations",
+      "biggest power plant suspended"
+    ],
+    [
+      "Factory_Issue",
+      "causes blackouts",
+      "plants fell short"
+    ],
+    [
+      "currency_log_return",
+      "increases import costs",
+      "taka depreciated 25%"
+    ]
+  ],
+  "features_queried": [
+    "Delivery",
+    "Sales_lag_28",
+    "production_sales_ratio",
+    "factory_issue_rate",
+    "Product",
+    "Sub-Group",
+    "Group",
+    "currency_log_return",
+    "delivery_sales_ratio",
+    "Production",
+    "Factory_Issue",
+    "inventory_proxy",
+    "Sales_lag_7",
+    "Sales_lag_21",
+    "Sales_lag_3",
+    "Humidity"
+  ],
+  "num_connections_found": 3
+}

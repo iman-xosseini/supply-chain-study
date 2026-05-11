@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Al Jazeera Online",
+    "date": "2023-02-23",
+    "url": "https://www.aljazeera.com/economy/2023/2/23/severe-dollar-crisis-hobbles-bangladesh-businesses",
+    "body_preview": "Dhaka, Bangladesh - Spice trader Mohammed Enayet Ullah has made at least four attempts since November to open a letter of credit to pay for imports of cumin, cardamom and cloves, some of the most essential spices used in Bangladeshi cooking, only to be refused by banks due to a shortage of dollars.\n\nImporters in Bangladesh need to open letters of credit with one of the country's 61 scheduled banks to buy foreign goods and services. It is essentially a financial contract issued by an importer's b"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Import curbs reduce imports",
+      "edge_label": "reduces import volume",
+      "evidence_quote": "“Since we have curbed our spending on imports, our import bills will be lower in the coming months.”",
+      "scope_justification": "The article explicitly discusses Bangladesh’s import spending and import bills at the country level, matching the feature’s aggregate imports scope.",
+      "verification": {
+        "quote_similarity": 0.97,
+        "quote_best_match": "\"Since we have curbed our spending on imports, our import bills will be lower in the coming months,\"",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The quoted sentence appears verbatim in the article: \"Since we have curbed our spending on imports, our import bills will be lower in the coming months.\" The text explicitly connects curbing import spending with lower import bills, and it is discussed at the country level in the context of Bangladesh's import restrictions and reserves."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-02-23",
+      "imports",
+      "reduces import volume",
+      "Import curbs reduce imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

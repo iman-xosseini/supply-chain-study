@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-01",
+    "url": "https://www.bssnews.net/business/102891",
+    "body_preview": "DHAKA, Jan 1, 2023 (BSS) - Dhaka Chamber of Commerce and Industry (DCCI) today underscored the need for Public-Private Partnership (PPP) to manage sustainable economic recovery.\n\nTo further accelerate the country's economic recovery in 2023, DCCI urged the government to focus on uninterrupted and affordable energy supply to local and export-oriented manufacturing industries, improve the ease of doing business, develop an infrastructural environment conducive to attracting local and foreign inves"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "Foreign currency crisis hurts imports",
+      "edge_label": "reduces import capacity",
+      "evidence_quote": "resulting in some negative impact on the import of energy, industrial raw materials and supply chain for local export-oriented industries",
+      "scope_justification": "The article explicitly discusses import of energy and industrial raw materials at the country level, which matches the feature’s scope of nationwide imports.",
+      "verification": {
+        "quote_similarity": 0.996,
+        "quote_best_match": "resulting in some negative impact on the import of energy, industrial raw materials and supply chain for local export-oriented industries.",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article explicitly says that the ongoing foreign currency crisis and devaluation of the Taka have 'result[ed] in some negative impact on the import of energy, industrial raw materials and supply chain.' This is a direct cause-and-effect statement at the country level, matching the claimed scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-01-01",
+      "imports",
+      "reduces import capacity",
+      "Foreign currency crisis hurts imports"
+    ]
+  ],
+  "features_queried": [
+    "stock_market_close",
+    "balance_of_trade",
+    "imports"
+  ],
+  "num_connections_found": 1
+}

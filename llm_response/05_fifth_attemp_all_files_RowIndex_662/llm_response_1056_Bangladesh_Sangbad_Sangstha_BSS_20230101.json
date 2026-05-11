@@ -1,0 +1,30 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-01-01",
+    "url": "https://www.bssnews.net/business/102891",
+    "body_preview": "DHAKA, Jan 1, 2023 (BSS) - Dhaka Chamber of Commerce and Industry (DCCI) today underscored the need for Public-Private Partnership (PPP) to manage sustainable economic recovery.\n\nTo further accelerate the country's economic recovery in 2023, DCCI urged the government to focus on uninterrupted and affordable energy supply to local and export-oriented manufacturing industries, improve the ease of doing business, develop an infrastructural environment conducive to attracting local and foreign inves"
+  },
+  "llm_connections": [
+    {
+      "feature": "currency_log_return",
+      "event_summary": "Taka devaluation impacts imports",
+      "edge_label": "reduces import capacity",
+      "evidence_quote": "devaluation of the Taka against the US Dollar have challenged the country's financial sector, resulting in some negative impact on the import of energy",
+      "scope_justification": "The article explicitly links devaluation of the Taka (an exchange-rate movement) to negative impacts on imports, matching the feature's focus on exchange-rate volatility affecting import outcomes."
+    }
+  ],
+  "triplets": [
+    [
+      "currency_log_return",
+      "reduces import capacity",
+      "Taka devaluation impacts imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "stock_market_close",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}

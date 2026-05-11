@@ -1,0 +1,37 @@
+{
+  "article": {
+    "source": "Bangladesh Sangbad Sangstha (BSS)",
+    "date": "2023-07-21",
+    "url": "https://www.bssnews.net/news-flash/137581",
+    "body_preview": "DHAKA, July 21, 2023 (BSS) - Prime Minister Sheikh Hasina today laid emphasis on an amicable end to the Ukraine war, saying international cooperation in this time of growing instability is clearly vital to the vulnerable among the global community to build resilience against future shocks.\n\n\"The prolonging war and the imposed sanctions and counter sanctions continue to destabilise the world. Each passing day of the war take as well as destroy many lives in the conflict zone, and also in the far-"
+  },
+  "llm_connections": [
+    {
+      "feature": "imports",
+      "event_summary": "limited non-essential imports",
+      "edge_label": "reduces import volume",
+      "evidence_quote": "We had to limit import of non-essential and luxury items;",
+      "scope_justification": "The quote describes a national policy by the Bangladesh government to limit imports of categories of goods, which directly pertains to the country-wide volume of goods brought in as defined for 'imports'.",
+      "verification": {
+        "quote_similarity": 0.991,
+        "quote_best_match": "\"We had to limit import of non-essential and luxury items;",
+        "judge_verdict": "CONFIRMED",
+        "judge_reasoning": "The article contains the exact line \"We had to limit import of non-essential and luxury items;\" which explicitly describes a policy action to limit (i.e., reduce) imports. The statement is presented as a nationwide government measure, matching the country-level scope."
+      }
+    }
+  ],
+  "triplets": [
+    [
+      "2023-07-21",
+      "imports",
+      "reduces import volume",
+      "limited non-essential imports"
+    ]
+  ],
+  "features_queried": [
+    "currency_log_return",
+    "imports",
+    "balance_of_trade"
+  ],
+  "num_connections_found": 1
+}
