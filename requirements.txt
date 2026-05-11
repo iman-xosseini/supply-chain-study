@@ -1,0 +1,44 @@
+# Core scientific stack
+numpy
+pandas
+scipy
+scikit-learn
+statsmodels
+joblib
+tqdm
+
+# Machine-learning models
+xgboost
+lightgbm
+catboost
+
+# Explainability
+shap
+
+# Causal discovery
+lingam
+
+# Graph construction and visualization
+networkx
+pyvis
+plotly
+matplotlib
+seaborn
+
+# LLM and API access
+openai
+requests
+python-dotenv
+
+# Event Registry
+eventregistry
+
+# Notebook support
+jupyter
+notebook
+ipykernel
+ipywidgets
+
+# Utilities
+beautifulsoup4
+lxml
